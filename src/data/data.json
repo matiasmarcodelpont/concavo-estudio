@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "slug": "azulejos-los-peores",
+      "name": "Azulejos los peores",
+      "sponsor": {
+        "slug": "facu"
+      }
+    },
+    {
+      "slug": "azulejos-los-mejores",
+      "name": "Azulejos los mejores",
+      "sponsor": {
+        "slug": "mati"
+      }
+    },
+    {
+      "slug": "azulejos-verdes",
+      "name": "Azulejos verdes",
+      "sponsor": null
+    },
+    {
+      "slug": "azulejos-azules",
+      "name": "Azulejos azules",
+      "sponsor": null
+    }
+  ]
+}
