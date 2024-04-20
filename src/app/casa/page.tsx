@@ -5,6 +5,7 @@ import { roomsRepository } from '@/controllers'
 export default function CasaConcavo() {
   return (
     <main>
+      <h1>Casa Cóncavo</h1>
       <ul>
         {roomsRepository.getRooms().map((room) => (
           <li key={room.slug}>
