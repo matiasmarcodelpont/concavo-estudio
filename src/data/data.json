@@ -4,93 +4,93 @@
       "slug": "living-comedor",
       "name": "Living/Comedor",
       "products": [],
-      "sponsors": []
+      "contributors": []
     },
     {
       "slug": "cocina",
       "name": "Cocina",
       "products": [],
-      "sponsors": []
+      "contributors": []
     },
     {
       "slug": "lavadero",
       "name": "Lavadero",
       "products": [],
-      "sponsors": []
+      "contributors": []
     },
     {
       "slug": "escritorio",
       "name": "Escritorio",
       "products": [],
-      "sponsors": []
+      "contributors": []
     },
     {
       "slug": "toilet",
       "name": "Toilet",
       "products": [],
-      "sponsors": []
+      "contributors": []
     },
     {
       "slug": "cuarto-alegra",
       "name": "Cuarto Alegra",
       "products": [],
-      "sponsors": []
+      "contributors": []
     },
     {
       "slug": "baño-alegra",
       "name": "Baño Alegra",
       "products": [],
-      "sponsors": []
+      "contributors": []
     },
     {
       "slug": "cuarto-principal",
       "name": "Cuarto principal",
       "products": [],
-      "sponsors": []
+      "contributors": []
     },
     {
       "slug": "baño-principal",
       "name": "Baño principal",
       "products": [],
-      "sponsors": []
+      "contributors": []
     },
     {
       "slug": "galeria",
       "name": "Galería",
       "products": [],
-      "sponsors": []
+      "contributors": []
     },
     {
       "slug": "jardin",
       "name": "Jardín",
       "products": [],
-      "sponsors": []
+      "contributors": []
     }
   ],
   "products": [
     {
       "slug": "azulejos-los-peores",
       "name": "Azulejos los peores",
-      "sponsor": {
+      "contributor": {
         "slug": "facu"
       }
     },
     {
       "slug": "azulejos-los-mejores",
       "name": "Azulejos los mejores",
-      "sponsor": {
+      "contributor": {
         "slug": "mati"
       }
     },
     {
       "slug": "azulejos-verdes",
       "name": "Azulejos verdes",
-      "sponsor": null
+      "contributor": null
     },
     {
       "slug": "azulejos-azules",
       "name": "Azulejos azules",
-      "sponsor": null
+      "contributor": null
     }
   ]
 }

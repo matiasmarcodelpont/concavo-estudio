@@ -8,7 +8,7 @@ import { ConcavoProduct, DataSet, isConcavoProduct } from '../types'
 export function createProductsRepository(data: DataSet) {
   return {
     /**
-     * Concavo products are products without sponsors. This function returns all concavo products.
+     * Concavo products are products without contributors. This function returns all concavo products.
      * @returns The list of all concavo products.
      */
     getConcavoProducts(): ConcavoProduct[] {

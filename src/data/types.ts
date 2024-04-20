@@ -11,13 +11,13 @@ export type OmitReferences<T> = {
 export type Product = {
   name: string
   slug: string
-  sponsor: Reference | null
+  contributor: Reference | null
 }
 
-export type ConcavoProduct = WithNullProp<Product, 'sponsor'>
+export type ConcavoProduct = WithNullProp<Product, 'contributor'>
 
 export function isConcavoProduct(product: Product): product is ConcavoProduct {
-  return product.sponsor === null
+  return product.contributor === null
 }
 
 export type Room = {

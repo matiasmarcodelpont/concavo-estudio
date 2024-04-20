@@ -8,26 +8,26 @@ jest.mock('../data/data.json', () => ({
     {
       slug: 'azulejos-los-peores',
       name: 'Azulejos los peores',
-      sponsor: {
+      contributor: {
         slug: 'facu',
       },
     },
     {
       slug: 'azulejos-verdes',
       name: 'Azulejos verdes',
-      sponsor: null,
+      contributor: null,
     },
     {
       slug: 'azulejos-los-mejores',
       name: 'Azulejos los mejores',
-      sponsor: {
+      contributor: {
         slug: 'mati',
       },
     },
     {
       slug: 'azulejos-azules',
       name: 'Azulejos azules',
-      sponsor: null,
+      contributor: null,
     },
   ],
 }))
