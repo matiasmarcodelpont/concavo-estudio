@@ -38,6 +38,7 @@ describe('products repository', () => {
       const productsRepository = createProductsRepository({
         products: [...notConcavoProducts, ...concavoProducts],
         rooms: [],
+        contributors: [],
       })
 
       const result = productsRepository.getConcavoProducts()

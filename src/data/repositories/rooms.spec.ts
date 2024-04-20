@@ -31,6 +31,7 @@ describe('rooms repository', () => {
       const roomsRepository = createRoomsRepository({
         products: [],
         rooms,
+        contributors: [],
       })
 
       const result = roomsRepository.getRooms()

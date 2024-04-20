@@ -6,22 +6,50 @@ exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
     <h1>
       Casa Cóncavo
     </h1>
-    <ul>
-      <li>
-        <a
-          href="/ambientes/cocina"
-        >
-          Cocina
-        </a>
-      </li>
-      <li>
-        <a
-          href="/ambientes/living-comedor"
-        >
-          Living/Comedor
-        </a>
-      </li>
-    </ul>
+    <section>
+      <ul
+        aria-label="Lista de Ambientes"
+      >
+        <li>
+          <a
+            href="/ambientes/cocina"
+          >
+            Cocina
+          </a>
+        </li>
+        <li>
+          <a
+            href="/ambientes/living-comedor"
+          >
+            Living/Comedor
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <ul
+        aria-label="Lista de los principales Colaboradores"
+      >
+        <li>
+          Elegance
+        </li>
+        <li>
+          Luz Viva
+        </li>
+      </ul>
+    </section>
+    <section>
+      <ul
+        aria-label="Lista del resto de los Colaboradores"
+      >
+        <li>
+          Muebles de Arte
+        </li>
+        <li>
+          Cocina Design
+        </li>
+      </ul>
+    </section>
   </main>
 </div>
 `;
