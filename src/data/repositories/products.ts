@@ -13,6 +13,6 @@ export function createProductsRepository(data: DataSet) {
      */
     getConcavoProducts(): ConcavoProduct[] {
       return data.products.filter(isConcavoProduct)
-    }
+    },
   }
 }

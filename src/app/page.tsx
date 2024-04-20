@@ -1,7 +1,7 @@
-import { useMemo } from "react";
-import Link from "next/link";
+import { useMemo } from 'react'
+import Link from 'next/link'
 
-import { createProductsRepository } from "@/data/repositories/products";
+import { createProductsRepository } from '@/data/repositories/products'
 import data from '@/data/data.json'
 
 function useConcavoProducts() {
@@ -13,7 +13,7 @@ function useConcavoProducts() {
     return productsRepository.getConcavoProducts()
   }, [productsRepository])
 
-  return concavoProducts;
+  return concavoProducts
 }
 
 export default function Home() {
@@ -29,5 +29,5 @@ export default function Home() {
         ))}
       </ul>
     </main>
-  );
+  )
 }
