@@ -4,6 +4,10 @@ export type WithNullProp<T, K extends keyof T> = Omit<T, K> & {
 
 export type Reference = { slug: string }
 
+export type OmitReferences<T> = {
+  [K in keyof T as T[K] extends Reference | Array<Reference> ? never : K]: T[K]
+}
+
 export type Product = {
   name: string
   slug: string

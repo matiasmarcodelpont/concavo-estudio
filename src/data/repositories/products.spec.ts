@@ -35,7 +35,10 @@ describe('products repository', () => {
         },
       ]
 
-      const productsRepository = createProductsRepository([...notConcavoProducts, ...concavoProducts])
+      const productsRepository = createProductsRepository({
+        products: [...notConcavoProducts, ...concavoProducts],
+        rooms: [],
+      })
 
       const result = productsRepository.getConcavoProducts()
       expect(result).toEqual(concavoProducts)

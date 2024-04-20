@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
+<div>
+  <main>
+    <ul>
+      <li>
+        <a
+          href="/ambientes/cocina"
+        >
+          Cocina
+        </a>
+      </li>
+      <li>
+        <a
+          href="/ambientes/living-comedor"
+        >
+          Living/Comedor
+        </a>
+      </li>
+    </ul>
+  </main>
+</div>
+`;
+
+exports[`Casa Cóncavo renders homepage unchanged 1`] = `
+<div>
+  <main>
+    <ul>
+      <li>
+        <a
+          href="/ambientes/cocina"
+        >
+          Cocina
+        </a>
+      </li>
+      <li>
+        <a
+          href="/ambientes/living-comedor"
+        >
+          Living/Comedor
+        </a>
+      </li>
+    </ul>
+  </main>
+</div>
+`;

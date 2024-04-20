@@ -5,14 +5,14 @@ import { ConcavoProduct, DataSet, isConcavoProduct } from '../types'
  * @param data The application dataset
  * @returns The product repository with the data getters.
  */
-export function createProductsRepository(products: DataSet['products']) {
+export function createProductsRepository(data: DataSet) {
   return {
     /**
      * Concavo products are products without sponsors. This function returns all concavo products.
      * @returns The list of all concavo products.
      */
     getConcavoProducts(): ConcavoProduct[] {
-      return products.filter(isConcavoProduct)
+      return data.products.filter(isConcavoProduct)
     },
   }
 }
