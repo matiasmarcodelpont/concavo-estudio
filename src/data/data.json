@@ -1,4 +1,72 @@
 {
+  "rooms": [
+    {
+      "slug": "living-comedor",
+      "name": "Living/Comedor",
+      "products": [],
+      "sponsors": []
+    },
+    {
+      "slug": "cocina",
+      "name": "Cocina",
+      "products": [],
+      "sponsors": []
+    },
+    {
+      "slug": "lavadero",
+      "name": "Lavadero",
+      "products": [],
+      "sponsors": []
+    },
+    {
+      "slug": "escritorio",
+      "name": "Escritorio",
+      "products": [],
+      "sponsors": []
+    },
+    {
+      "slug": "toilet",
+      "name": "Toilet",
+      "products": [],
+      "sponsors": []
+    },
+    {
+      "slug": "cuarto-alegra",
+      "name": "Cuarto Alegra",
+      "products": [],
+      "sponsors": []
+    },
+    {
+      "slug": "baño-alegra",
+      "name": "Baño Alegra",
+      "products": [],
+      "sponsors": []
+    },
+    {
+      "slug": "cuarto-principal",
+      "name": "Cuarto principal",
+      "products": [],
+      "sponsors": []
+    },
+    {
+      "slug": "baño-principal",
+      "name": "Baño principal",
+      "products": [],
+      "sponsors": []
+    },
+    {
+      "slug": "galeria",
+      "name": "Galería",
+      "products": [],
+      "sponsors": []
+    },
+    {
+      "slug": "jardin",
+      "name": "Jardín",
+      "products": [],
+      "sponsors": []
+    }
+  ],
   "products": [
     {
       "slug": "azulejos-los-peores",
