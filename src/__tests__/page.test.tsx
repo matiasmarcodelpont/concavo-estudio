@@ -6,30 +6,30 @@ import Page from '../app/page'
 jest.mock('../data/data.json', () => ({
   products: [
     {
-      slug: "azulejos-los-peores",
-      name: "Azulejos los peores",
+      slug: 'azulejos-los-peores',
+      name: 'Azulejos los peores',
       sponsor: {
-        slug: "facu"
-      }
+        slug: 'facu',
+      },
     },
     {
-      slug: "azulejos-verdes",
-      name: "Azulejos verdes",
-      sponsor: null
+      slug: 'azulejos-verdes',
+      name: 'Azulejos verdes',
+      sponsor: null,
     },
     {
-      slug: "azulejos-los-mejores",
-      name: "Azulejos los mejores",
+      slug: 'azulejos-los-mejores',
+      name: 'Azulejos los mejores',
       sponsor: {
-        slug: "mati"
-      }
+        slug: 'mati',
+      },
     },
     {
-      slug: "azulejos-azules",
-      name: "Azulejos azules",
-      sponsor: null
-    }
-  ]
+      slug: 'azulejos-azules',
+      name: 'Azulejos azules',
+      sponsor: null,
+    },
+  ],
 }))
 
 describe('Page', () => {
