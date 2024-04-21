@@ -2,9 +2,9 @@ import Link from 'next/link'
 
 import { roomsRepository } from '@/controllers'
 
-const rooms = roomsRepository.getRooms()
-
 export default function CasaConcavo() {
+  const rooms = roomsRepository.getRooms()
+
   return (
     <main>
       <h1>Casa Cóncavo</h1>
