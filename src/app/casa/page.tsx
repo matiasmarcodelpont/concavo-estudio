@@ -2,11 +2,11 @@ import Link from 'next/link'
 
 import { contributorsRepository, roomsRepository } from '@/controllers'
 
-const rooms = roomsRepository.getRooms()
-const mainContributors = contributorsRepository.getMainContributors()
-const standardContributors = contributorsRepository.getStandardContributors()
-
 export default function CasaConcavo() {
+  const rooms = roomsRepository.getRooms()
+  const mainContributors = contributorsRepository.getMainContributors()
+  const standardContributors = contributorsRepository.getStandardContributors()
+
   return (
     <main>
       <h1>Casa Cóncavo</h1>
