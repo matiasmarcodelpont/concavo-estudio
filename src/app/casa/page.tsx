@@ -2,13 +2,17 @@ import Link from 'next/link'
 
 import { contributorsRepository, roomsRepository } from '@/controllers'
 
+const rooms = roomsRepository.getRooms()
+const mainContributors = contributorsRepository.getMainContributors()
+const standardContributors = contributorsRepository.getStandardContributors()
+
 export default function CasaConcavo() {
   return (
     <main>
       <h1>Casa Cóncavo</h1>
       <section>
         <ul aria-label='Lista de Ambientes'>
-          {roomsRepository.getRooms().map((room) => (
+          {rooms.map((room) => (
             <li key={room.slug}>
               <Link href={`/ambientes/${room.slug}`}>{room.name}</Link>
             </li>
@@ -17,14 +21,14 @@ export default function CasaConcavo() {
       </section>
       <section>
         <ul aria-label='Lista de los principales Colaboradores'>
-          {contributorsRepository.getMainContributors().map((mainContributor) => (
+          {mainContributors.map((mainContributor) => (
             <li key={mainContributor.slug}>{mainContributor.name}</li>
           ))}
         </ul>
       </section>
       <section>
         <ul aria-label='Lista del resto de los Colaboradores'>
-          {contributorsRepository.getStandardContributors().map((standardContributor) => (
+          {standardContributors.map((standardContributor) => (
             <li key={standardContributor.slug}>{standardContributor.name}</li>
           ))}
         </ul>
