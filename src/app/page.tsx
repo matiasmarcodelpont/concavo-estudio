@@ -2,9 +2,9 @@ import Link from 'next/link'
 
 import { productsRepository } from '@/controllers'
 
-const products = productsRepository.getConcavoProducts()
-
 export default function Home() {
+  const products = productsRepository.getConcavoProducts()
+
   return (
     <main>
       <h1>Cóncavo</h1>
