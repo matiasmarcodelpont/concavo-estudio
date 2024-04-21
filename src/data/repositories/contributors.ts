@@ -33,5 +33,21 @@ export function createContributorsRepository(data: DataSet) {
         .filter((contributor) => !isMainContributor(contributor))
         .map(({ slug, name, website }) => ({ slug, name, website }))
     },
+
+    /**
+     * This function returns all contributors of the products that are in a certain room.
+     * @returns The list of the contributors of the room.
+     */
+    getContributorsByRoom(roomSlug: string) {
+      const room = data.rooms.find((room) => room.slug === roomSlug)
+
+      const productsInRoom = data.products.filter((product) =>
+        room?.products.some((productInRoom) => productInRoom.slug === product.slug),
+      )
+
+      return data.contributors.filter((contributor) =>
+        productsInRoom.some((productInRoom) => productInRoom.contributor?.slug === contributor.slug),
+      )
+    },
   }
 }

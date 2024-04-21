@@ -78,7 +78,6 @@ describe('contributors repository', () => {
       const result = contributorsRepository.getMainContributors()
       expect(result).toEqual(mainContributors)
     })
-
     it('returns standard contributors', () => {
       const contributors: Contributors[] = [
         {
