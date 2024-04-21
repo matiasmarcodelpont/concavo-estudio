@@ -14,7 +14,7 @@ export default function CasaConcavo() {
         <ul aria-label='Lista de Ambientes'>
           {rooms.map((room) => (
             <li key={room.slug}>
-              <Link href={`/ambientes/${room.slug}`}>{room.name}</Link>
+              <Link href={`/casa/${room.slug}`}>{room.name}</Link>
             </li>
           ))}
         </ul>

@@ -12,14 +12,14 @@ exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
       >
         <li>
           <a
-            href="/ambientes/cocina"
+            href="/casa/cocina"
           >
             Cocina
           </a>
         </li>
         <li>
           <a
-            href="/ambientes/living-comedor"
+            href="/casa/living-comedor"
           >
             Living/Comedor
           </a>

@@ -75,12 +75,12 @@ describe('Casa Cóncavo', () => {
     expect(rooms[0]).toBeInTheDocument()
     const link0 = within(rooms[0]).getByRole('link', { name: 'Cocina' }) as HTMLAnchorElement
     expect(link0).toBeInTheDocument()
-    expect(link0.href).toMatch(/^https?:\/\/[^/]+\/ambientes\/cocina$/)
+    expect(link0.href).toMatch(/^https?:\/\/[^/]+\/casa\/cocina$/)
 
     expect(rooms[1]).toBeInTheDocument()
     const link1 = within(rooms[1]).getByRole('link', { name: 'Living/Comedor' }) as HTMLAnchorElement
     expect(link1).toBeInTheDocument()
-    expect(link1.href).toMatch(/^https?:\/\/[^/]+\/ambientes\/living-comedor$/)
+    expect(link1.href).toMatch(/^https?:\/\/[^/]+\/casa\/living-comedor$/)
   })
 
   it('renders Casa Cóncavo main Contributors', () => {

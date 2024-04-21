@@ -45,4 +45,61 @@ describe('products repository', () => {
       expect(result).toEqual(concavoProducts)
     })
   })
+
+  describe('getProductsByRoom', () => {
+    it('returns the products of a certain room', () => {
+      const rooms = [
+        {
+          slug: 'living-comedor',
+          name: 'Living/Comedor',
+          products: [],
+          contributors: [],
+        },
+        {
+          slug: 'cocina',
+          name: 'Cocina',
+          products: [
+            {
+              slug: 'azulejos-guardados',
+            },
+          ],
+          contributors: [],
+        },
+      ]
+
+      const productsInRoom = [
+        {
+          slug: 'azulejos-guardados',
+          name: 'Azulejos Guardados',
+          contributor: {
+            slug: 'cocina-design',
+          },
+        },
+      ]
+
+      const productsInOtherRooms = [
+        {
+          slug: 'sofa-carlos',
+          name: 'Sofá Carlos V',
+          contributor: {
+            slug: 'muebles-arte',
+          },
+        },
+        {
+          slug: 'bacha-8080',
+          name: 'Bacha 8080',
+          contributor: null,
+        },
+      ]
+
+      const productsRepository = createProductsRepository({
+        products: [...productsInRoom, ...productsInOtherRooms],
+        rooms,
+        contributors: [],
+      })
+
+      const result = productsRepository.getProductsByRoom('cocina')
+      expect(result).toEqual(productsInRoom)
+    })
+  })
 })

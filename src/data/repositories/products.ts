@@ -14,5 +14,18 @@ export function createProductsRepository(data: DataSet) {
     getConcavoProducts(): ConcavoProduct[] {
       return data.products.filter(isConcavoProduct)
     },
+
+    /**
+     * This function returns all products that are in a certain room.
+     * @param roomSlug The slug of the room to retrieve its products.
+     * @returns The list of all products in the rooms.
+     */
+    getProductsByRoom(roomSlug: string) {
+      const room = data.rooms.find((room) => room.slug === roomSlug)
+
+      return data.products.filter((product) =>
+        room?.products.some((productInRoom) => productInRoom.slug === product.slug),
+      )
+    },
   }
 }

@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Room renders Room unchanged 1`] = `
+<div>
+  <main>
+    <h1>
+      Cocina
+    </h1>
+    <section>
+      <ul
+        aria-label="Lista de Ambientes"
+      >
+        <li>
+          <a
+            href="/productos/azulejos-guardados"
+          >
+            Azulejos Guardados
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+</div>
+`;
