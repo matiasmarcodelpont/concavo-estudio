@@ -8,7 +8,7 @@ exports[`Room renders Room unchanged 1`] = `
     </h1>
     <section>
       <ul
-        aria-label="Lista de Ambientes"
+        aria-label="Lista de Productos"
       >
         <li>
           <a
@@ -16,6 +16,31 @@ exports[`Room renders Room unchanged 1`] = `
           >
             Azulejos Guardados
           </a>
+        </li>
+        <li>
+          <a
+            href="/productos/luz-led"
+          >
+            Luz Led
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <ul
+        aria-label="Lista de los principales Colaboradores del Ambiente"
+      >
+        <li>
+          Luz Viva
+        </li>
+      </ul>
+    </section>
+    <section>
+      <ul
+        aria-label="Lista del resto de los Colaboradores  del Ambiente"
+      >
+        <li>
+          Cocina Design
         </li>
       </ul>
     </section>

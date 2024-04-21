@@ -147,4 +147,236 @@ describe('contributors repository', () => {
       expect(result).toEqual(standardContributors)
     })
   })
+
+  describe('getMainContributorsByRoom', () => {
+    it('returns main contributors by a room', () => {
+      const rooms = [
+        {
+          slug: 'living-comedor',
+          name: 'Living/Comedor',
+          products: [],
+          contributors: [],
+        },
+        {
+          slug: 'cocina',
+          name: 'Cocina',
+          products: [
+            {
+              slug: 'azulejos-guardados',
+            },
+            {
+              slug: 'luz-led',
+            },
+          ],
+          contributors: [],
+        },
+      ]
+
+      const products = [
+        {
+          slug: 'azulejos-guardados',
+          name: 'Azulejos Guardados',
+          contributor: {
+            slug: 'cocina-design',
+          },
+        },
+        {
+          slug: 'sofa-carlos',
+          name: 'Sofá Carlos V',
+          contributor: {
+            slug: 'muebles-arte',
+          },
+        },
+        {
+          slug: 'luz-led',
+          name: 'Luz Led',
+          contributor: {
+            slug: 'luz-viva',
+          },
+        },
+        {
+          slug: 'bacha-8080',
+          name: 'Bacha 8080',
+          contributor: null,
+        },
+      ]
+
+      const contributors: Contributors[] = [
+        {
+          slug: 'luz-viva',
+          name: 'Luz Viva',
+          website: 'www.luzviva.com',
+          isMain: true,
+          description:
+            'Líder en sistemas de iluminación innovadores y eficientes para hogares y negocios. Calidad, diseño y compromiso con la sostenibilidad nos distinguen.',
+          email: 'info@luzviva.com',
+          address: 'Calle de la Luz 456, Ciudad Brillante, México',
+        },
+        {
+          slug: 'cocina-design',
+          name: 'Cocina Design',
+          website: 'www.cocinadesign.com',
+          isMain: false,
+          description:
+            'Especialistas en diseño y equipamiento de cocinas de alta gama. Ofrecemos soluciones personalizadas para crear la cocina de tus sueños, combinando estilo, funcionalidad y calidad.',
+          email: null,
+          address: null,
+        },
+        {
+          slug: 'elegance',
+          name: 'Elegance',
+          website: 'www.pisoselegance.es',
+          isMain: true,
+          description:
+            'Líder en revestimientos de suelos elegantes y duraderos para hogares y negocios. Calidad, innovación y compromiso con la sostenibilidad nos distinguen.',
+          email: 'info@pisoselegance.com',
+          address: 'Avenida del Diseño 123, Ciudad Elegante, España',
+        },
+        {
+          slug: 'muebles-arte',
+          name: 'Muebles de Arte',
+          website: 'www.mueblesdearte.com',
+          isMain: false,
+          description: null,
+          email: null,
+          address: 'Calle del Diseño 789, Ciudad Creativa, Argentina',
+        },
+      ]
+
+      const mainContributorsInRoom: Omit<MainContributors, 'isMain'>[] = [
+        {
+          slug: 'luz-viva',
+          name: 'Luz Viva',
+          website: 'www.luzviva.com',
+          description:
+            'Líder en sistemas de iluminación innovadores y eficientes para hogares y negocios. Calidad, diseño y compromiso con la sostenibilidad nos distinguen.',
+          email: 'info@luzviva.com',
+          address: 'Calle de la Luz 456, Ciudad Brillante, México',
+        },
+      ]
+
+      const contributorsRepository = createContributorsRepository({
+        products,
+        rooms,
+        contributors,
+      })
+
+      const result = contributorsRepository.getMainContributorsByRoom('cocina')
+      expect(result).toEqual(mainContributorsInRoom)
+    })
+  })
+
+  describe('getStandardContributorsByRoom', () => {
+    it('returns standard contributors by a room', () => {
+      const rooms = [
+        {
+          slug: 'living-comedor',
+          name: 'Living/Comedor',
+          products: [],
+          contributors: [],
+        },
+        {
+          slug: 'cocina',
+          name: 'Cocina',
+          products: [
+            {
+              slug: 'azulejos-guardados',
+            },
+            {
+              slug: 'luz-led',
+            },
+          ],
+          contributors: [],
+        },
+      ]
+
+      const products = [
+        {
+          slug: 'azulejos-guardados',
+          name: 'Azulejos Guardados',
+          contributor: {
+            slug: 'cocina-design',
+          },
+        },
+        {
+          slug: 'sofa-carlos',
+          name: 'Sofá Carlos V',
+          contributor: {
+            slug: 'muebles-arte',
+          },
+        },
+        {
+          slug: 'luz-led',
+          name: 'Luz Led',
+          contributor: {
+            slug: 'luz-viva',
+          },
+        },
+        {
+          slug: 'bacha-8080',
+          name: 'Bacha 8080',
+          contributor: null,
+        },
+      ]
+
+      const contributors: Contributors[] = [
+        {
+          slug: 'luz-viva',
+          name: 'Luz Viva',
+          website: 'www.luzviva.com',
+          isMain: true,
+          description:
+            'Líder en sistemas de iluminación innovadores y eficientes para hogares y negocios. Calidad, diseño y compromiso con la sostenibilidad nos distinguen.',
+          email: 'info@luzviva.com',
+          address: 'Calle de la Luz 456, Ciudad Brillante, México',
+        },
+        {
+          slug: 'cocina-design',
+          name: 'Cocina Design',
+          website: 'www.cocinadesign.com',
+          isMain: false,
+          description:
+            'Especialistas en diseño y equipamiento de cocinas de alta gama. Ofrecemos soluciones personalizadas para crear la cocina de tus sueños, combinando estilo, funcionalidad y calidad.',
+          email: null,
+          address: null,
+        },
+        {
+          slug: 'elegance',
+          name: 'Elegance',
+          website: 'www.pisoselegance.es',
+          isMain: true,
+          description:
+            'Líder en revestimientos de suelos elegantes y duraderos para hogares y negocios. Calidad, innovación y compromiso con la sostenibilidad nos distinguen.',
+          email: 'info@pisoselegance.com',
+          address: 'Avenida del Diseño 123, Ciudad Elegante, España',
+        },
+        {
+          slug: 'muebles-arte',
+          name: 'Muebles de Arte',
+          website: 'www.mueblesdearte.com',
+          isMain: false,
+          description: null,
+          email: null,
+          address: 'Calle del Diseño 789, Ciudad Creativa, Argentina',
+        },
+      ]
+
+      const standardContributorsInRoom: Omit<StandardContributors, 'isMain' | 'description' | 'email' | 'address'>[] = [
+        {
+          slug: 'cocina-design',
+          name: 'Cocina Design',
+          website: 'www.cocinadesign.com',
+        },
+      ]
+
+      const contributorsRepository = createContributorsRepository({
+        products,
+        rooms,
+        contributors,
+      })
+
+      const result = contributorsRepository.getStandardContributorsByRoom('cocina')
+      expect(result).toEqual(standardContributorsInRoom)
+    })
+  })
 })

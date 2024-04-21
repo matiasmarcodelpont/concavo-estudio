@@ -35,19 +35,51 @@ export function createContributorsRepository(data: DataSet) {
     },
 
     /**
-     * This function returns all contributors of the products that are in a certain room.
-     * @returns The list of the contributors of the room.
+     * This function returns the main contributors of the products that are in a certain room.
+     * @returns The list of the main contributors of the room.
      */
-    getContributorsByRoom(roomSlug: string) {
+    getMainContributorsByRoom(roomSlug: string): Omit<MainContributors, 'isMain'>[] {
       const room = data.rooms.find((room) => room.slug === roomSlug)
 
       const productsInRoom = data.products.filter((product) =>
         room?.products.some((productInRoom) => productInRoom.slug === product.slug),
       )
 
-      return data.contributors.filter((contributor) =>
-        productsInRoom.some((productInRoom) => productInRoom.contributor?.slug === contributor.slug),
+      return data.contributors
+        .filter((contributor) =>
+          productsInRoom.some((productInRoom) => productInRoom.contributor?.slug === contributor.slug),
+        )
+        .filter(isMainContributor)
+        .map(({ slug, name, website, description, email, address }) => ({
+          slug,
+          name,
+          website,
+          description,
+          email,
+          address,
+        }))
+    },
+
+    /**
+     * This function returns the standard contributors of the products that are in a certain room.
+     * @returns The list of the standard contributors of the room.
+     */
+    getStandardContributorsByRoom(
+      roomSlug: string,
+    ): Omit<StandardContributors, 'isMain' | 'description' | 'email' | 'address'>[] {
+      const room = data.rooms.find((room) => room.slug === roomSlug)
+
+      const productsInRoom = data.products.filter((product) =>
+        room?.products.some((productInRoom) => productInRoom.slug === product.slug),
       )
+
+      return data.contributors
+        .filter(
+          (contributor) =>
+            productsInRoom.some((productInRoom) => productInRoom.contributor?.slug === contributor.slug) &&
+            !isMainContributor(contributor),
+        )
+        .map(({ slug, name, website }) => ({ slug, name, website }))
     },
   }
 }
