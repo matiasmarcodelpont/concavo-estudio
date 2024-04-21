@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nosotros renders nosotros unchanged 1`] = `
+<div>
+  <main>
+    <h1>
+      Nosotros
+    </h1>
+  </main>
+</div>
+`;
