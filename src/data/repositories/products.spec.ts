@@ -9,14 +9,14 @@ describe('products repository', () => {
         {
           slug: 'azulejos-los-mejores',
           name: 'Azulejos los mejores',
-          sponsor: {
+          contributor: {
             slug: 'mati',
           },
         },
         {
           slug: 'azulejos-los-peores',
           name: 'Azulejos los peores',
-          sponsor: {
+          contributor: {
             slug: 'facu',
           },
         },
@@ -26,16 +26,19 @@ describe('products repository', () => {
         {
           slug: 'azulejos-verdes',
           name: 'Azulejos verdes',
-          sponsor: null,
+          contributor: null,
         },
         {
           slug: 'azulejos-azules',
           name: 'Azulejos azules',
-          sponsor: null,
+          contributor: null,
         },
       ]
 
-      const productsRepository = createProductsRepository({ products: [...notConcavoProducts, ...concavoProducts] })
+      const productsRepository = createProductsRepository({
+        products: [...notConcavoProducts, ...concavoProducts],
+        rooms: [],
+      })
 
       const result = productsRepository.getConcavoProducts()
       expect(result).toEqual(concavoProducts)

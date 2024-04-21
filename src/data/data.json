@@ -1,28 +1,96 @@
 {
+  "rooms": [
+    {
+      "slug": "living-comedor",
+      "name": "Living/Comedor",
+      "products": [],
+      "contributors": []
+    },
+    {
+      "slug": "cocina",
+      "name": "Cocina",
+      "products": [],
+      "contributors": []
+    },
+    {
+      "slug": "lavadero",
+      "name": "Lavadero",
+      "products": [],
+      "contributors": []
+    },
+    {
+      "slug": "escritorio",
+      "name": "Escritorio",
+      "products": [],
+      "contributors": []
+    },
+    {
+      "slug": "toilet",
+      "name": "Toilet",
+      "products": [],
+      "contributors": []
+    },
+    {
+      "slug": "cuarto-alegra",
+      "name": "Cuarto Alegra",
+      "products": [],
+      "contributors": []
+    },
+    {
+      "slug": "baño-alegra",
+      "name": "Baño Alegra",
+      "products": [],
+      "contributors": []
+    },
+    {
+      "slug": "cuarto-principal",
+      "name": "Cuarto principal",
+      "products": [],
+      "contributors": []
+    },
+    {
+      "slug": "baño-principal",
+      "name": "Baño principal",
+      "products": [],
+      "contributors": []
+    },
+    {
+      "slug": "galeria",
+      "name": "Galería",
+      "products": [],
+      "contributors": []
+    },
+    {
+      "slug": "jardin",
+      "name": "Jardín",
+      "products": [],
+      "contributors": []
+    }
+  ],
   "products": [
     {
       "slug": "azulejos-los-peores",
       "name": "Azulejos los peores",
-      "sponsor": {
+      "contributor": {
         "slug": "facu"
       }
     },
     {
       "slug": "azulejos-los-mejores",
       "name": "Azulejos los mejores",
-      "sponsor": {
+      "contributor": {
         "slug": "mati"
       }
     },
     {
       "slug": "azulejos-verdes",
       "name": "Azulejos verdes",
-      "sponsor": null
+      "contributor": null
     },
     {
       "slug": "azulejos-azules",
       "name": "Azulejos azules",
-      "sponsor": null
+      "contributor": null
     }
   ]
 }

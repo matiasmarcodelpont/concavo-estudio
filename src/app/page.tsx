@@ -1,30 +1,17 @@
-import { useMemo } from 'react'
 import Link from 'next/link'
 
-import { createProductsRepository } from '@/data/repositories/products'
-import data from '@/data/data.json'
-
-function useConcavoProducts() {
-  const productsRepository = useMemo(() => {
-    return createProductsRepository(data)
-  }, [])
-
-  const concavoProducts = useMemo(() => {
-    return productsRepository.getConcavoProducts()
-  }, [productsRepository])
-
-  return concavoProducts
-}
+import { productsRepository } from '@/controllers'
 
 export default function Home() {
-  const concavoProducts = useConcavoProducts()
+  const products = productsRepository.getConcavoProducts()
 
   return (
     <main>
+      <h1>Cóncavo</h1>
       <ul>
-        {concavoProducts.map((product) => (
+        {products.map((product) => (
           <li key={product.slug}>
-            <Link href={`/products/${product.slug}`}>{product.name}</Link>
+            <Link href={`/productos/${product.slug}`}>{product.name}</Link>
           </li>
         ))}
       </ul>

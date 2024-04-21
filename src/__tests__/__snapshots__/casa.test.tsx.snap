@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
+<div>
+  <main>
+    <h1>
+      Casa Cóncavo
+    </h1>
+    <ul>
+      <li>
+        <a
+          href="/ambientes/cocina"
+        >
+          Cocina
+        </a>
+      </li>
+      <li>
+        <a
+          href="/ambientes/living-comedor"
+        >
+          Living/Comedor
+        </a>
+      </li>
+    </ul>
+  </main>
+</div>
+`;
