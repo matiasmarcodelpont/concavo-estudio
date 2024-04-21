@@ -3,7 +3,7 @@ import { ConcavoProduct, DataSet, isConcavoProduct } from '../types'
 /**
  * Creates and returns the products repository
  * @param data The application dataset
- * @returns The product repository with the data getters.
+ * @returns The products repository with the data getters.
  */
 export function createProductsRepository(data: DataSet) {
   return {
