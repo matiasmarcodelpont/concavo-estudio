@@ -1,7 +1,7 @@
 import { DataSet, MainContributors, StandardContributors, isMainContributor } from '../types'
 
 /**
- * Creates and returns the products repository
+ * Creates and returns the contributors repository
  * @param data The application dataset
  * @returns The contributor repository with the data getters.
  */
