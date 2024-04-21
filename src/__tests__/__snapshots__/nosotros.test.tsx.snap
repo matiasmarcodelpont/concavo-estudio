@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Equipo renders equipo unchanged 1`] = `
+exports[`Nosotros renders nosotros unchanged 1`] = `
 <div>
   <main>
     <h1>
-      Equipo
+      Nosotros
     </h1>
   </main>
 </div>

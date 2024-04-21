@@ -1,4 +1,4 @@
-export default function EquipoLayout({
+export default function NosotrosLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
