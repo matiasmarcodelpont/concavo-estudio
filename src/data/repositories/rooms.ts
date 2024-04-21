@@ -1,7 +1,7 @@
 import { DataSet, OmitReferences, Room } from '../types'
 
 /**
- * Creates and returns the products repository
+ * Creates and returns the rooms repository
  * @param data The application dataset
  * @returns The room repository with the data getters.
  */
