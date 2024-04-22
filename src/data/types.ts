@@ -26,7 +26,34 @@ export type Room = {
   products: Reference[]
 }
 
+type BaseContributors = {
+  name: string
+  slug: string
+  website: string
+}
+
+export type MainContributors = BaseContributors & {
+  isMain: true
+  description: string
+  email: string
+  address: string
+}
+
+export type StandardContributors = BaseContributors & {
+  isMain: false
+  description: string | null
+  email: string | null
+  address: string | null
+}
+
+export type Contributors = MainContributors | StandardContributors
+
+export function isMainContributor(contributor: Contributors): contributor is MainContributors {
+  return contributor.isMain === true
+}
+
 export type DataSet = {
   products: Product[]
   rooms: Room[]
+  contributors: Contributors[]
 }
