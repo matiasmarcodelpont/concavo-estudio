@@ -114,4 +114,36 @@ describe('Casa Cóncavo', () => {
     expect(standardContributors[1]).toBeInTheDocument()
     expect(standardContributors[1]).toHaveTextContent('Cocina Design')
   })
+
+  it('renders Casa Cóncavo main Contributors', () => {
+    render(<CasaConcavo />)
+
+    const mainContributorsList = screen.getByRole('list', { name: 'Lista de los principales Colaboradores' })
+    expect(mainContributorsList).toBeInTheDocument()
+
+    const mainContributors = within(mainContributorsList).getAllByRole('listitem')
+    expect(mainContributors).toHaveLength(2)
+
+    expect(mainContributors[0]).toBeInTheDocument()
+    expect(mainContributors[0]).toHaveTextContent('Elegance')
+
+    expect(mainContributors[1]).toBeInTheDocument()
+    expect(mainContributors[1]).toHaveTextContent('Luz Viva')
+  })
+
+  it('renders Casa Cóncavo standard Contributors', () => {
+    render(<CasaConcavo />)
+
+    const standardContributorsList = screen.getByRole('list', { name: 'Lista del resto de los Colaboradores' })
+    expect(standardContributorsList).toBeInTheDocument()
+
+    const standardContributors = within(standardContributorsList).getAllByRole('listitem')
+    expect(standardContributors).toHaveLength(2)
+
+    expect(standardContributors[0]).toBeInTheDocument()
+    expect(standardContributors[0]).toHaveTextContent('Muebles de Arte')
+
+    expect(standardContributors[1]).toBeInTheDocument()
+    expect(standardContributors[1]).toHaveTextContent('Cocina Design')
+  })
 })
