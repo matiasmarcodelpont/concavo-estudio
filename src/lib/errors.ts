@@ -6,5 +6,5 @@ class ErrorFactory extends Error {
 }
 
 export class DoesNotExistError extends ErrorFactory {
-  static code = 'not_exist'
+  static code = 'does_not_exist'
 }
