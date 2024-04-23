@@ -6,5 +6,5 @@ export function getProductsInRoom(products: DataSet['products'], rooms: DataSet[
 
   if (!room) throw new DoesNotExistError(`Room ${roomSlug} does not exist`)
 
-  return products.filter((product) => room?.products.some((productInRoom) => productInRoom.slug === product.slug))
+  return products.filter((product) => room.products.some((productInRoom) => productInRoom.slug === product.slug))
 }
