@@ -1,38 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
+exports[`Room renders Room unchanged 1`] = `
 <div>
   <main>
     <h1>
-      Casa Cóncavo
+      Cocina
     </h1>
     <section>
       <ul
-        aria-label="Lista de Ambientes"
+        aria-label="Lista de Productos"
       >
         <li>
           <a
-            href="/casa/cocina"
+            href="/productos/azulejos-guardados"
           >
-            Cocina
+            Azulejos Guardados
           </a>
         </li>
         <li>
           <a
-            href="/casa/living-comedor"
+            href="/productos/luz-led"
           >
-            Living/Comedor
+            Luz Led
           </a>
         </li>
       </ul>
     </section>
     <section>
       <ul
-        aria-label="Lista de los principales Colaboradores"
+        aria-label="Lista de los principales Colaboradores del Ambiente"
       >
-        <li>
-          Elegance
-        </li>
         <li>
           Luz Viva
         </li>
@@ -40,11 +37,8 @@ exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
     </section>
     <section>
       <ul
-        aria-label="Lista del resto de los Colaboradores"
+        aria-label="Lista del resto de los Colaboradores  del Ambiente"
       >
-        <li>
-          Muebles de Arte
-        </li>
         <li>
           Cocina Design
         </li>

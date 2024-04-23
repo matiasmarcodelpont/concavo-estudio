@@ -3,13 +3,21 @@
     {
       "slug": "living-comedor",
       "name": "Living/Comedor",
-      "products": [],
+      "products": [
+        {
+          "slug": "lampara-hierro"
+        }
+      ],
       "contributors": []
     },
     {
       "slug": "cocina",
       "name": "Cocina",
-      "products": [],
+      "products": [
+        {
+          "slug": "azulejos-guardados"
+        }
+      ],
       "contributors": []
     },
     {
@@ -69,27 +77,41 @@
   ],
   "products": [
     {
-      "slug": "azulejos-los-peores",
-      "name": "Azulejos los peores",
+      "slug": "piso-madera",
+      "name": "Piso simil Madera",
       "contributor": {
-        "slug": "facu"
+        "slug": "elegance"
       }
     },
     {
-      "slug": "azulejos-los-mejores",
-      "name": "Azulejos los mejores",
+      "slug": "lampara-hierro",
+      "name": "Lámpara de diseño con detalles de Hierro",
       "contributor": {
-        "slug": "mati"
+        "slug": "luz-viva"
       }
     },
     {
-      "slug": "azulejos-verdes",
-      "name": "Azulejos verdes",
+      "slug": "sofa-carlos",
+      "name": "Sofá Carlos V",
+      "contributor": {
+        "slug": "muebles-arte"
+      }
+    },
+    {
+      "slug": "azulejos-guardados",
+      "name": "Azulejos Guardados",
+      "contributor": {
+        "slug": "cocina-design"
+      }
+    },
+    {
+      "slug": "bacha-8080",
+      "name": "Bacha 8080",
       "contributor": null
     },
     {
-      "slug": "azulejos-azules",
-      "name": "Azulejos azules",
+      "slug": "bañadera-10001",
+      "name": "Bañadera 10001",
       "contributor": null
     }
   ],
