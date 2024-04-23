@@ -1,4 +1,5 @@
 import { ConcavoProduct, DataSet, isConcavoProduct } from '../types'
+import { getProductsInRoom } from './common'
 
 /**
  * Creates and returns the products repository
@@ -20,12 +21,8 @@ export function createProductsRepository(data: DataSet) {
      * @param roomSlug The slug of the room to retrieve its products.
      * @returns The list of all products in the rooms.
      */
-    getProductsByRoom(roomSlug: string) {
-      const room = data.rooms.find((room) => room.slug === roomSlug)
-
-      return data.products.filter((product) =>
-        room?.products.some((productInRoom) => productInRoom.slug === product.slug),
-      )
+    getProductsInRoom(roomSlug: string) {
+      return getProductsInRoom(data.products, data.rooms, roomSlug)
     },
   }
 }

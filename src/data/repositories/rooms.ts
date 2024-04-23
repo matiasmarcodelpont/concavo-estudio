@@ -18,15 +18,15 @@ export function createRoomsRepository(data: DataSet) {
     /**
      * The rooms are the different spaces of Casa Concavo.
      * @param roomSlug The slug of the room to retrieve its products.
-     * @returns A room withour references.
+     * @returns A room without references.
      */
-    getRoom(roomSlug: string): OmitReferences<Room> | undefined {
+    getRoom(roomSlug: string): OmitReferences<Room> | null | undefined {
       const room = data.rooms.find((room) => room.slug === roomSlug)
-      if (room) {
-        const { products, ...rest } = room
-        return rest
-      }
-      return undefined
+
+      if (!room) return null
+
+      const { products, ...rest } = room
+      return rest
     },
   }
 }

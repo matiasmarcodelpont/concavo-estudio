@@ -3,7 +3,11 @@
     {
       "slug": "living-comedor",
       "name": "Living/Comedor",
-      "products": [],
+      "products": [
+        {
+          "slug": "lampara-hierro"
+        }
+      ],
       "contributors": []
     },
     {

@@ -1,4 +1,5 @@
 import { DataSet, MainContributors, StandardContributors, isMainContributor } from '../types'
+import { getProductsInRoom } from './common'
 
 /**
  * Creates and returns the contributors repository
@@ -39,11 +40,7 @@ export function createContributorsRepository(data: DataSet) {
      * @returns The list of the main contributors of the room.
      */
     getMainContributorsByRoom(roomSlug: string): Omit<MainContributors, 'isMain'>[] {
-      const room = data.rooms.find((room) => room.slug === roomSlug)
-
-      const productsInRoom = data.products.filter((product) =>
-        room?.products.some((productInRoom) => productInRoom.slug === product.slug),
-      )
+      const productsInRoom = getProductsInRoom(data.products, data.rooms, roomSlug)
 
       return data.contributors
         .filter((contributor) =>
@@ -67,11 +64,7 @@ export function createContributorsRepository(data: DataSet) {
     getStandardContributorsByRoom(
       roomSlug: string,
     ): Omit<StandardContributors, 'isMain' | 'description' | 'email' | 'address'>[] {
-      const room = data.rooms.find((room) => room.slug === roomSlug)
-
-      const productsInRoom = data.products.filter((product) =>
-        room?.products.some((productInRoom) => productInRoom.slug === product.slug),
-      )
+      const productsInRoom = getProductsInRoom(data.products, data.rooms, roomSlug)
 
       return data.contributors
         .filter(

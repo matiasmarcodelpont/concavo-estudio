@@ -4,7 +4,7 @@ import { contributorsRepository, productsRepository, roomsRepository } from '@/c
 
 export default function Room({ params }: { params: { roomSlug: string } }) {
   const room = roomsRepository.getRoom(params.roomSlug)
-  const products = productsRepository.getProductsByRoom(params.roomSlug)
+  const products = productsRepository.getProductsInRoom(params.roomSlug)
   const mainContributors = contributorsRepository.getMainContributorsByRoom(params.roomSlug)
   const standardContributors = contributorsRepository.getStandardContributorsByRoom(params.roomSlug)
 

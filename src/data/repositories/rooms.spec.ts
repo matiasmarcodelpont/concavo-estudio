@@ -40,20 +40,20 @@ describe('rooms repository', () => {
   })
 
   describe('getRoom', () => {
-    it('returns a room from its slug, without its references', () => {
-      const rooms = [
-        {
-          slug: 'cocina',
-          name: 'Cocina',
-          products: [{ slug: 'heladera' }, { slug: 'azulejos' }],
-        },
-        {
-          slug: 'living-comedor',
-          name: 'Living/Comedor',
-          products: [{ slug: 'sillón' }, { slug: 'lámpara' }],
-        },
-      ]
+    const rooms = [
+      {
+        slug: 'cocina',
+        name: 'Cocina',
+        products: [{ slug: 'heladera' }, { slug: 'azulejos' }],
+      },
+      {
+        slug: 'living-comedor',
+        name: 'Living/Comedor',
+        products: [{ slug: 'sillón' }, { slug: 'lámpara' }],
+      },
+    ]
 
+    it('returns a room from its slug, without its references', () => {
       const roomWithoutReferences = {
         slug: 'cocina',
         name: 'Cocina',
@@ -67,6 +67,17 @@ describe('rooms repository', () => {
 
       const result = roomsRepository.getRoom('cocina')
       expect(result).toEqual(roomWithoutReferences)
+    })
+
+    it("returns null if the slug doesn't exist", () => {
+      const roomsRepository = createRoomsRepository({
+        products: [],
+        rooms,
+        contributors: [],
+      })
+
+      const result = roomsRepository.getRoom('baño')
+      expect(result).toBeNull()
     })
   })
 })
