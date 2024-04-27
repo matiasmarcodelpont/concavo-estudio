@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom'
 import { createContributorsRepository } from './contributors'
-import { Contributors, MainContributors, StandardContributors, isMainContributor } from '../types'
+import { Contributors, MainContributors, StandardContributors } from '../types'
 import { DoesNotExistError } from '@/lib/errors'
 
 describe('contributors repository', () => {

@@ -2,13 +2,15 @@ export type WithNullProp<T, K extends keyof T> = Omit<T, K> & {
   [P in K]: null
 }
 
-export type Reference = { slug: string }
-
-export type OmitReferences<T> = {
-  [K in keyof T as T[K] extends Reference | Array<Reference> ? never : K]: T[K]
+export interface Reference {
+  slug: string
 }
 
-export type Product = {
+export type OmitReferences<T> = {
+  [K in keyof T as T[K] extends Reference | Reference[] ? never : K]: T[K]
+}
+
+export interface Product {
   name: string
   slug: string
   contributor: Reference | null
@@ -20,13 +22,13 @@ export function isConcavoProduct(product: Product): product is ConcavoProduct {
   return product.contributor === null
 }
 
-export type Room = {
+export interface Room {
   name: string
   slug: string
   products: Reference[]
 }
 
-type BaseContributors = {
+interface BaseContributors {
   name: string
   slug: string
   website: string
@@ -49,10 +51,10 @@ export type StandardContributors = BaseContributors & {
 export type Contributors = MainContributors | StandardContributors
 
 export function isMainContributor(contributor: Contributors): contributor is MainContributors {
-  return contributor.isMain === true
+  return contributor.isMain
 }
 
-export type DataSet = {
+export interface DataSet {
   products: Product[]
   rooms: Room[]
   contributors: Contributors[]
