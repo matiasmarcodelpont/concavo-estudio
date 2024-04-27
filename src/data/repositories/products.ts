@@ -1,4 +1,4 @@
-import { ConcavoProduct, DataSet, Product, isConcavoProduct } from '../types'
+import { ConcavoProduct, DataSet, Product, Reference, isConcavoProduct } from '../types'
 import { getProductsInRoom } from './common'
 
 /**
@@ -46,6 +46,30 @@ export function createProductsRepository(data: DataSet) {
         ...product,
         contributor,
       }
+    },
+
+    getRelatedProducts(productSlug: string) {
+      const roomsWithProduct = data.rooms.filter((room) =>
+        room.products.some((product) => product.slug === productSlug),
+      )
+
+      const relatedProductsReferences = roomsWithProduct.flatMap((room) =>
+        room.products.filter((product) => product.slug !== productSlug),
+      )
+
+      const uniqueRelatedProductsReferences = relatedProductsReferences.reduce<Reference[]>(
+        (uniqueProducts, product) =>
+          uniqueProducts.some((uniqueProduct) => uniqueProduct.slug === product.slug)
+            ? uniqueProducts
+            : [...uniqueProducts, product],
+        [],
+      )
+
+      const relatedProducts = uniqueRelatedProductsReferences.map((productReference) =>
+        data.products.find((product) => product.slug === productReference.slug),
+      )
+
+      return relatedProducts.filter((product): product is Exclude<typeof product, undefined> => product !== undefined)
     },
   }
 }
