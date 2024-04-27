@@ -26,7 +26,7 @@ jobs:
         with:
           node-version: '20.x'
       - run: npm ci
-      - run: npx prettier .
+      - run: npx prettier --check .
 
   lint:
     name: Lint
