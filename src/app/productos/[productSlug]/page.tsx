@@ -4,7 +4,7 @@ import { productsRepository } from '@/controllers'
 import { notFound } from 'next/navigation'
 
 export default function Product({ params }: { params: { productSlug: string } }) {
-  const product = productsRepository.getProduct(decodeURI(params.productSlug))
+  const product = productsRepository.getProduct(decodeURIComponent(params.productSlug))
   if (!product) {
     notFound()
   }
