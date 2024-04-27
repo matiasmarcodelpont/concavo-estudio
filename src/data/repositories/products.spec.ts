@@ -2,6 +2,7 @@ import '@testing-library/jest-dom'
 
 import { createProductsRepository } from './products'
 import { DoesNotExistError } from '@/lib/errors'
+import { Contributor } from '../types'
 
 const exampleProducts = [
   {
@@ -135,6 +136,20 @@ describe('products repository', () => {
 
       const product = productsRepository.getProduct('unexistent-slug')
       expect(product).toBe(null)
+    })
+
+    it('includes contributor information is product has one', () => {
+      const productsRepository = createProductsRepository({
+        products: exampleProducts,
+        rooms: [],
+        contributors: [
+          { slug: 'other', name: 'Other contributor' } as Contributor,
+          { slug: 'mati', name: 'Mati contributor' } as Contributor,
+        ],
+      })
+
+      const product = productsRepository.getProduct('azulejos-los-mejores')
+      expect(product?.contributor?.name).toBe('Mati contributor')
     })
   })
 })

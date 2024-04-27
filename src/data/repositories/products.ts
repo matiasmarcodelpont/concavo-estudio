@@ -1,4 +1,4 @@
-import { ConcavoProduct, DataSet, isConcavoProduct } from '../types'
+import { ConcavoProduct, DataSet, Product, isConcavoProduct } from '../types'
 import { getProductsInRoom } from './common'
 
 /**
@@ -7,6 +7,15 @@ import { getProductsInRoom } from './common'
  * @returns The products repository with the data getters.
  */
 export function createProductsRepository(data: DataSet) {
+  function getProductContributor(product: Product) {
+    const productContributor = product.contributor
+    if (!productContributor) {
+      return null
+    }
+
+    return data.contributors.find((contributor) => contributor.slug === productContributor.slug) ?? null
+  }
+
   return {
     /**
      * Concavo products are products without contributors. This function returns all concavo products.
@@ -26,7 +35,17 @@ export function createProductsRepository(data: DataSet) {
     },
 
     getProduct(slug: string) {
-      return data.products.find((product) => product.slug === slug) ?? null
+      const product = data.products.find((product) => product.slug === slug)
+      if (product === undefined) {
+        return null
+      }
+
+      const contributor = getProductContributor(product)
+
+      return {
+        ...product,
+        contributor,
+      }
     },
   }
 }
