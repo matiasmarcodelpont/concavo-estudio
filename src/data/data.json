@@ -6,6 +6,9 @@
       "products": [
         {
           "slug": "lampara-hierro"
+        },
+        {
+          "slug": "piso-madera"
         }
       ],
       "contributors": []
@@ -29,7 +32,14 @@
     {
       "slug": "escritorio",
       "name": "Escritorio",
-      "products": [],
+      "products": [
+        {
+          "slug": "lampara-hierro"
+        },
+        {
+          "slug": "piso-madera"
+        }
+      ],
       "contributors": []
     },
     {
