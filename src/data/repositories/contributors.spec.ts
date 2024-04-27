@@ -1,12 +1,12 @@
 import '@testing-library/jest-dom'
 import { createContributorsRepository } from './contributors'
-import { Contributors, MainContributors, StandardContributors } from '../types'
+import { Contributor, MainContributor, StandardContributor } from '../types'
 import { DoesNotExistError } from '@/lib/errors'
 
 describe('contributors repository', () => {
   describe('getMainContributors', () => {
     it('returns main contributors', () => {
-      const contributors: Contributors[] = [
+      const contributors: Contributor[] = [
         {
           slug: 'elegance',
           name: 'Elegance',
@@ -48,7 +48,7 @@ describe('contributors repository', () => {
         },
       ]
 
-      const mainContributors: Omit<MainContributors, 'isMain'>[] = [
+      const mainContributors: Omit<MainContributor, 'isMain'>[] = [
         {
           slug: 'elegance',
           name: 'Elegance',
@@ -82,7 +82,7 @@ describe('contributors repository', () => {
 
   describe('getStandardContributors', () => {
     it('returns standard contributors', () => {
-      const contributors: Contributors[] = [
+      const contributors: Contributor[] = [
         {
           slug: 'elegance',
           name: 'Elegance',
@@ -124,7 +124,7 @@ describe('contributors repository', () => {
         },
       ]
 
-      const standardContributors: Omit<StandardContributors, 'isMain' | 'description' | 'email' | 'address'>[] = [
+      const standardContributors: Omit<StandardContributor, 'isMain' | 'description' | 'email' | 'address'>[] = [
         {
           slug: 'muebles-arte',
           name: 'Muebles de Arte',
@@ -200,7 +200,7 @@ describe('contributors repository', () => {
       },
     ]
 
-    const contributors: Contributors[] = [
+    const contributors: Contributor[] = [
       {
         slug: 'luz-viva',
         name: 'Luz Viva',
@@ -242,7 +242,7 @@ describe('contributors repository', () => {
       },
     ]
 
-    const mainContributorsInRoom: Omit<MainContributors, 'isMain'>[] = [
+    const mainContributorsInRoom: Omit<MainContributor, 'isMain'>[] = [
       {
         slug: 'luz-viva',
         name: 'Luz Viva',
@@ -330,7 +330,7 @@ describe('contributors repository', () => {
       },
     ]
 
-    const contributors: Contributors[] = [
+    const contributors: Contributor[] = [
       {
         slug: 'luz-viva',
         name: 'Luz Viva',
@@ -372,7 +372,7 @@ describe('contributors repository', () => {
       },
     ]
 
-    const standardContributorsInRoom: Omit<StandardContributors, 'isMain' | 'description' | 'email' | 'address'>[] = [
+    const standardContributorsInRoom: Omit<StandardContributor, 'isMain' | 'description' | 'email' | 'address'>[] = [
       {
         slug: 'cocina-design',
         name: 'Cocina Design',

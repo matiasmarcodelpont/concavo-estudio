@@ -28,34 +28,34 @@ export interface Room {
   products: Reference[]
 }
 
-interface BaseContributors {
+interface BaseContributor {
   name: string
   slug: string
   website: string
 }
 
-export type MainContributors = BaseContributors & {
+export type MainContributor = BaseContributor & {
   isMain: true
   description: string
   email: string
   address: string
 }
 
-export type StandardContributors = BaseContributors & {
+export type StandardContributor = BaseContributor & {
   isMain: false
   description: string | null
   email: string | null
   address: string | null
 }
 
-export type Contributors = MainContributors | StandardContributors
+export type Contributor = MainContributor | StandardContributor
 
-export function isMainContributor(contributor: Contributors): contributor is MainContributors {
+export function isMainContributor(contributor: Contributor): contributor is MainContributor {
   return contributor.isMain
 }
 
 export interface DataSet {
   products: Product[]
   rooms: Room[]
-  contributors: Contributors[]
+  contributors: Contributor[]
 }
