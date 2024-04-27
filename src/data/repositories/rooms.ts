@@ -12,6 +12,7 @@ export function createRoomsRepository(data: DataSet) {
      * @returns The list of all the rooms.
      */
     getRooms(): OmitReferences<Room>[] {
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       return data.rooms.map(({ products, ...rest }) => rest)
     },
 
@@ -25,6 +26,7 @@ export function createRoomsRepository(data: DataSet) {
 
       if (!room) return null
 
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       const { products, ...rest } = room
       return rest
     },

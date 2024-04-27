@@ -54,7 +54,7 @@ describe('Common functions', () => {
 
     it("throws an error if the product room doesn't exist", () => {
       expect(() => {
-        const result = getProductsInRoom([...productsInRoom, ...productsInOtherRooms], rooms, 'baño')
+        getProductsInRoom([...productsInRoom, ...productsInOtherRooms], rooms, 'baño')
       }).toThrow(DoesNotExistError)
     })
   })
