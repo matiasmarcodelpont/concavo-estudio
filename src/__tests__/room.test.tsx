@@ -188,4 +188,10 @@ describe('Room', () => {
     expect(roomStandardContributors[0]).toBeInTheDocument()
     expect(roomStandardContributors[0]).toHaveTextContent('Cocina Design')
   })
+
+  it('shows the 404 page if product is not found', () => {
+    expect(() => {
+      render(<Room params={{ roomSlug: 'cuarto-inexistente' }} />)
+    }).toThrow('NEXT_NOT_FOUND')
+  })
 })
