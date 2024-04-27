@@ -1,4 +1,4 @@
-import { DataSet, MainContributors, StandardContributors, isMainContributor } from '../types'
+import { DataSet, MainContributor, StandardContributor, isMainContributor } from '../types'
 import { getProductsInRoom } from './common'
 
 /**
@@ -12,7 +12,7 @@ export function createContributorsRepository(data: DataSet) {
      * The contributors are the different brands of the products in Casa Concavo.
      * @returns The list of the main contributors.
      */
-    getMainContributors(): Omit<MainContributors, 'isMain'>[] {
+    getMainContributors(): Omit<MainContributor, 'isMain'>[] {
       return data.contributors
         .filter(isMainContributor)
         .map(({ slug, name, website, description, email, address }) => ({
@@ -29,7 +29,7 @@ export function createContributorsRepository(data: DataSet) {
      * The contributors are the different brands of the products in Casa Concavo.
      * @returns The list of the standard contributors.
      */
-    getStandardContributors(): Omit<StandardContributors, 'isMain' | 'description' | 'email' | 'address'>[] {
+    getStandardContributors(): Omit<StandardContributor, 'isMain' | 'description' | 'email' | 'address'>[] {
       return data.contributors
         .filter((contributor) => !isMainContributor(contributor))
         .map(({ slug, name, website }) => ({ slug, name, website }))
@@ -39,7 +39,7 @@ export function createContributorsRepository(data: DataSet) {
      * This function returns the main contributors of the products that are in a certain room.
      * @returns The list of the main contributors of the room.
      */
-    getMainContributorsByRoom(roomSlug: string): Omit<MainContributors, 'isMain'>[] {
+    getMainContributorsByRoom(roomSlug: string): Omit<MainContributor, 'isMain'>[] {
       const productsInRoom = getProductsInRoom(data.products, data.rooms, roomSlug)
 
       return data.contributors
@@ -63,7 +63,7 @@ export function createContributorsRepository(data: DataSet) {
      */
     getStandardContributorsByRoom(
       roomSlug: string,
-    ): Omit<StandardContributors, 'isMain' | 'description' | 'email' | 'address'>[] {
+    ): Omit<StandardContributor, 'isMain' | 'description' | 'email' | 'address'>[] {
       const productsInRoom = getProductsInRoom(data.products, data.rooms, roomSlug)
 
       return data.contributors
