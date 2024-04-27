@@ -24,5 +24,9 @@ export function createProductsRepository(data: DataSet) {
     getProductsInRoom(roomSlug: string) {
       return getProductsInRoom(data.products, data.rooms, roomSlug)
     },
+
+    getProduct(slug: string) {
+      return data.products.find((product) => product.slug === slug) ?? null
+    },
   }
 }
