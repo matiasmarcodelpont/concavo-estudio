@@ -6,22 +6,31 @@ exports[`Home renders homepage unchanged 1`] = `
     <h1>
       Cóncavo
     </h1>
-    <ul>
-      <li>
-        <a
-          href="/productos/azulejos-verdes"
-        >
-          Azulejos verdes
-        </a>
-      </li>
-      <li>
-        <a
-          href="/productos/azulejos-azules"
-        >
-          Azulejos azules
-        </a>
-      </li>
-    </ul>
+    <section>
+      <h1
+        id="productos-concavo"
+      >
+        Productos Cóncavo
+      </h1>
+      <ul
+        aria-labelledby="productos-concavo"
+      >
+        <li>
+          <a
+            href="/productos/azulejos-verdes"
+          >
+            Azulejos verdes
+          </a>
+        </li>
+        <li>
+          <a
+            href="/productos/azulejos-azules"
+          >
+            Azulejos azules
+          </a>
+        </li>
+      </ul>
+    </section>
   </main>
 </div>
 `;

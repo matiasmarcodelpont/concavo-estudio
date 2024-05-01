@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBarLayour renders links to all pages and to each room 1`] = `
+<nav>
+  <ul>
+    <li
+      class="my-4"
+    >
+      <a
+        class="hover:underline"
+        href="/"
+      >
+        Cóncavo
+      </a>
+      <ul
+        class="ml-4"
+      >
+        <li
+          class="my-2"
+        >
+          <a
+            class="hover:underline"
+            href="/#productos_concavo"
+          >
+            Productos Cóncavo
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li
+      class="my-4"
+    >
+      <a
+        class="hover:underline"
+        href="/casa"
+      >
+        Casa Cóncavo
+      </a>
+      <ul
+        class="ml-4"
+      >
+        <li
+          class="my-2"
+        >
+          <a
+            class="hover:underline"
+            href="/casa/room-1"
+          >
+            Room 1
+          </a>
+        </li>
+        <li
+          class="my-2"
+        >
+          <a
+            class="hover:underline"
+            href="/casa/room-2"
+          >
+            Room 2
+          </a>
+        </li>
+        <li
+          class="my-2"
+        >
+          <a
+            class="hover:underline"
+            href="/casa/room-3"
+          >
+            Room 3
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li
+      class="my-4"
+    >
+      <a
+        class="hover:underline"
+        href="/nosotros"
+      >
+        Nosotros
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
