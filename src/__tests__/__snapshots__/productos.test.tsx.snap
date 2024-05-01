@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product renders product page unchanged 1`] = `
+<div>
+  <main>
+    <h1>
+      Lámpara de diseño con detalles de Hierro
+    </h1>
+    <section>
+      <ul
+        aria-label="Lista de productos relacionados"
+      >
+        <li>
+          <a
+            href="/productos/piso-madera"
+          >
+            Piso simil Madera
+          </a>
+        </li>
+        <li>
+          <a
+            href="/productos/sofa-carlos"
+          >
+            Sofá Carlos V
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+</div>
+`;

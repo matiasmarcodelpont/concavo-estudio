@@ -1,5 +1,6 @@
 import { DoesNotExistError } from '@/lib/errors'
-import { getProductsInRoom } from './common'
+import { getProductContributor, getProductsInRoom } from './common'
+import { Contributor } from '../types'
 
 describe('Common functions', () => {
   describe('getProductsByRoom', () => {
@@ -56,6 +57,28 @@ describe('Common functions', () => {
       expect(() => {
         getProductsInRoom([...productsInRoom, ...productsInOtherRooms], rooms, 'baño')
       }).toThrow(DoesNotExistError)
+    })
+  })
+
+  describe('getProductContributor', () => {
+    it("returns null if product doesn't have a contributor", () => {
+      const contributor = getProductContributor([], { name: 'Test product', slug: 'test-product', contributor: null })
+      expect(contributor).toBeNull()
+    })
+
+    it('returns the product contributor', () => {
+      const contributor = getProductContributor(
+        [
+          { slug: 'another-contributor', name: 'Another contributor' } as Contributor,
+          { slug: 'test-contributor', name: 'Test contributor' } as Contributor,
+        ],
+        {
+          name: 'Test product',
+          slug: 'test-product',
+          contributor: { slug: 'test-contributor' },
+        },
+      )
+      expect(contributor).toMatchObject({ slug: 'test-contributor', name: 'Test contributor' })
     })
   })
 })

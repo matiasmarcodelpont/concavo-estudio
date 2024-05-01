@@ -1,5 +1,5 @@
-import { ConcavoProduct, DataSet, isConcavoProduct } from '../types'
-import { getProductsInRoom } from './common'
+import { ConcavoProduct, Contributor, DataSet, OmitReferences, Product, Reference, isConcavoProduct } from '../types'
+import { getProductContributor, getProductsInRoom } from './common'
 
 /**
  * Creates and returns the products repository
@@ -23,6 +23,49 @@ export function createProductsRepository(data: DataSet) {
      */
     getProductsInRoom(roomSlug: string) {
       return getProductsInRoom(data.products, data.rooms, roomSlug)
+    },
+
+    getProduct(slug: string): (OmitReferences<Product> & { contributor: Contributor | null }) | null {
+      const product = data.products.find((product) => product.slug === slug)
+      if (product === undefined) {
+        return null
+      }
+
+      const contributor = getProductContributor(data.contributors, product)
+
+      return {
+        ...product,
+        contributor,
+      }
+    },
+
+    getRelatedProducts(productSlug: string): OmitReferences<Product>[] {
+      const roomsWithProduct = data.rooms.filter((room) =>
+        room.products.some((product) => product.slug === productSlug),
+      )
+
+      const relatedProductsReferences = roomsWithProduct.flatMap((room) =>
+        room.products.filter((product) => product.slug !== productSlug),
+      )
+
+      const uniqueRelatedProductsReferences = relatedProductsReferences.reduce<Reference[]>(
+        (uniqueProducts, product) =>
+          uniqueProducts.some((uniqueProduct) => uniqueProduct.slug === product.slug)
+            ? uniqueProducts
+            : [...uniqueProducts, product],
+        [],
+      )
+
+      const relatedProducts = uniqueRelatedProductsReferences.map((productReference) =>
+        data.products.find((product) => product.slug === productReference.slug),
+      )
+
+      return (
+        relatedProducts
+          .filter((product): product is Exclude<typeof product, undefined> => product !== undefined)
+          // eslint-disable-next-line @typescript-eslint/no-unused-vars
+          .map(({ contributor, ...rest }) => rest)
+      )
     },
   }
 }
