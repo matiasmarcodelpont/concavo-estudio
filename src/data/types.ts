@@ -7,7 +7,7 @@ export interface Reference {
 }
 
 export type OmitReferences<T> = {
-  [K in keyof T as T[K] extends Reference | Reference[] ? never : K]: T[K]
+  [K in keyof T as Exclude<T[K], null> extends Reference | Reference[] ? never : K]: T[K]
 }
 
 export interface Product {
