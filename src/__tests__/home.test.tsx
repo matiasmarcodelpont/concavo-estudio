@@ -41,7 +41,7 @@ describe('Home', () => {
   it('renders concavo products', () => {
     render(<Home />)
 
-    const productsList = screen.getByRole('list')
+    const productsList = screen.getByRole('list', { name: 'Productos Cóncavo' })
     expect(productsList).toBeInTheDocument()
 
     const products = within(productsList).getAllByRole('listitem')

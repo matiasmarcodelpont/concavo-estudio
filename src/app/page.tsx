@@ -8,13 +8,17 @@ export default function Home() {
   return (
     <main>
       <h1>Cóncavo</h1>
-      <ul>
-        {products.map((product) => (
-          <li key={product.slug}>
-            <Link href={`/productos/${product.slug}`}>{product.name}</Link>
-          </li>
-        ))}
-      </ul>
+
+      <section>
+        <h1 id='productos-concavo'>Productos Cóncavo</h1>
+        <ul aria-labelledby='productos-concavo'>
+          {products.map((product) => (
+            <li key={product.slug}>
+              <Link href={`/productos/${product.slug}`}>{product.name}</Link>
+            </li>
+          ))}
+        </ul>
+      </section>
     </main>
   )
 }
