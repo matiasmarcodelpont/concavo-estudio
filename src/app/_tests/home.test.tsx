@@ -41,7 +41,7 @@ describe('Home', () => {
   it('renders concavo productos', () => {
     render(<Home />)
 
-    const productosList = screen.getByRole('list', { name: 'Productoos Cóncavo' })
+    const productosList = screen.getByRole('list', { name: 'Productos Cóncavo' })
     expect(productosList).toBeInTheDocument()
 
     const productos = within(productosList).getAllByRole('listitem')
@@ -50,11 +50,11 @@ describe('Home', () => {
     expect(productos[0]).toBeInTheDocument()
     const link0 = within(productos[0]).getByRole<HTMLAnchorElement>('link', { name: 'Azulejos verdes' })
     expect(link0).toBeInTheDocument()
-    expect(link0.href).toMatch(/^https?:\/\/[^/]+\/productoos\/azulejos-verdes$/)
+    expect(link0.href).toMatch(/^https?:\/\/[^/]+\/productos\/azulejos-verdes$/)
 
     expect(productos[1]).toBeInTheDocument()
     const link1 = within(productos[1]).getByRole<HTMLAnchorElement>('link', { name: 'Azulejos azules' })
     expect(link1).toBeInTheDocument()
-    expect(link1.href).toMatch(/^https?:\/\/[^/]+\/productoos\/azulejos-azules$/)
+    expect(link1.href).toMatch(/^https?:\/\/[^/]+\/productos\/azulejos-azules$/)
   })
 })

@@ -87,7 +87,7 @@ describe('Producto', () => {
   it('renders related productos', () => {
     render(<Producto params={{ productoSlug: 'lampara-hierro' }} />)
 
-    const productosList = screen.getByRole('list', { name: 'Lista de productoos relacionados' })
+    const productosList = screen.getByRole('list', { name: 'Lista de productos relacionados' })
     expect(productosList).toBeInTheDocument()
 
     const productos = within(productosList).getAllByRole('listitem')
@@ -96,12 +96,12 @@ describe('Producto', () => {
     expect(productos[0]).toBeInTheDocument()
     const link0 = within(productos[0]).getByRole<HTMLAnchorElement>('link', { name: 'Piso simil Madera' })
     expect(link0).toBeInTheDocument()
-    expect(link0.href).toMatch(/^https?:\/\/[^/]+\/productoos\/piso-madera$/)
+    expect(link0.href).toMatch(/^https?:\/\/[^/]+\/productos\/piso-madera$/)
 
     expect(productos[1]).toBeInTheDocument()
     const link1 = within(productos[1]).getByRole<HTMLAnchorElement>('link', { name: 'Sofá Carlos V' })
     expect(link1).toBeInTheDocument()
-    expect(link1.href).toMatch(/^https?:\/\/[^/]+\/productoos\/sofa-carlos$/)
+    expect(link1.href).toMatch(/^https?:\/\/[^/]+\/productos\/sofa-carlos$/)
   })
 
   it('shows the 404 page if producto is not found', () => {

@@ -8,18 +8,18 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
     </h1>
     <section>
       <ul
-        aria-label="Lista de Productoos"
+        aria-label="Lista de Productos"
       >
         <li>
           <a
-            href="/productoos/azulejos-guardados"
+            href="/productos/azulejos-guardados"
           >
             Azulejos Guardados
           </a>
         </li>
         <li>
           <a
-            href="/productoos/luz-led"
+            href="/productos/luz-led"
           >
             Luz Led
           </a>

@@ -17,10 +17,10 @@ export default function Ambiente({ params }: { params: { ambienteSlug: string } 
     <main>
       <h1>{ambiente.name}</h1>
       <section>
-        <ul aria-label='Lista de Productoos'>
+        <ul aria-label='Lista de Productos'>
           {productos.map((producto) => (
             <li key={producto.slug}>
-              <Link href={`/productoos/${producto.slug}`}>{producto.name}</Link>
+              <Link href={`/productos/${producto.slug}`}>{producto.name}</Link>
             </li>
           ))}
         </ul>

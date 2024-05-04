@@ -130,7 +130,7 @@ describe('Ambiente', () => {
       />,
     )
 
-    const productosList = screen.getByRole('list', { name: 'Lista de Productoos' })
+    const productosList = screen.getByRole('list', { name: 'Lista de Productos' })
     expect(productosList).toBeInTheDocument()
 
     const productos = within(productosList).getAllByRole('listitem')
@@ -139,12 +139,12 @@ describe('Ambiente', () => {
     expect(productos[0]).toBeInTheDocument()
     const link0 = within(productos[0]).getByRole<HTMLAnchorElement>('link', { name: 'Azulejos Guardados' })
     expect(link0).toBeInTheDocument()
-    expect(link0.href).toMatch(/^https?:\/\/[^/]+\/productoos\/azulejos-guardados$/)
+    expect(link0.href).toMatch(/^https?:\/\/[^/]+\/productos\/azulejos-guardados$/)
 
     expect(productos[1]).toBeInTheDocument()
     const link1 = within(productos[1]).getByRole<HTMLAnchorElement>('link', { name: 'Luz Led' })
     expect(link1).toBeInTheDocument()
-    expect(link1.href).toMatch(/^https?:\/\/[^/]+\/productoos\/luz-led$/)
+    expect(link1.href).toMatch(/^https?:\/\/[^/]+\/productos\/luz-led$/)
   })
 
   it("renders ambiente's main Colaboradores", () => {

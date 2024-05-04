@@ -16,10 +16,10 @@ export default function Producto({ params }: { params: { productoSlug: string } 
       <h1>{producto.name}</h1>
 
       <section>
-        <ul aria-label='Lista de productoos relacionados'>
+        <ul aria-label='Lista de productos relacionados'>
           {relatedProductos.map((producto) => (
             <li key={producto.slug}>
-              <Link href={`/productoos/${producto.slug}`}>{producto.name}</Link>
+              <Link href={`/productos/${producto.slug}`}>{producto.name}</Link>
             </li>
           ))}
         </ul>

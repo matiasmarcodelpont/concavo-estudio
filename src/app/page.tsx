@@ -10,11 +10,11 @@ export default function Home() {
       <h1>Cóncavo</h1>
 
       <section>
-        <h1 id='productoos-concavo'>Productoos Cóncavo</h1>
-        <ul aria-labelledby='productoos-concavo'>
+        <h1 id='productos-concavo'>Productos Cóncavo</h1>
+        <ul aria-labelledby='productos-concavo'>
           {productos.map((producto) => (
             <li key={producto.slug}>
-              <Link href={`/productoos/${producto.slug}`}>{producto.name}</Link>
+              <Link href={`/productos/${producto.slug}`}>{producto.name}</Link>
             </li>
           ))}
         </ul>
