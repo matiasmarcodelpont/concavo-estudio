@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Room renders Room unchanged 1`] = `
+exports[`Ambiente renders Ambiente unchanged 1`] = `
 <div>
   <main>
     <h1>
@@ -8,18 +8,18 @@ exports[`Room renders Room unchanged 1`] = `
     </h1>
     <section>
       <ul
-        aria-label="Lista de Productos"
+        aria-label="Lista de Productoos"
       >
         <li>
           <a
-            href="/productos/azulejos-guardados"
+            href="/productoos/azulejos-guardados"
           >
             Azulejos Guardados
           </a>
         </li>
         <li>
           <a
-            href="/productos/luz-led"
+            href="/productoos/luz-led"
           >
             Luz Led
           </a>

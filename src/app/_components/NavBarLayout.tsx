@@ -1,16 +1,16 @@
 'use client'
 
 import { Drawer, DrawerContent } from '@/components/ui/drawer'
-import { OmitReferences, Room } from '@/data/types'
+import { OmitReferences, Ambiente } from '@/data/types'
 import Link from 'next/link'
 import { ReactNode, useCallback, useEffect, useState } from 'react'
 
 export const NavBarLayout = ({
-  rooms,
+  ambientes,
   children,
   opened = false,
 }: {
-  rooms: OmitReferences<Room>[]
+  ambientes: OmitReferences<Ambiente>[]
   children?: ReactNode
   opened?: boolean
 }) => {
@@ -27,12 +27,12 @@ export const NavBarLayout = ({
     {
       text: 'Cóncavo',
       href: '/',
-      links: [{ text: 'Productos Cóncavo', href: '/#productos_concavo' }],
+      links: [{ text: 'Productoos Cóncavo', href: '/#productoos_concavo' }],
     },
     {
       text: 'Casa Cóncavo',
       href: '/casa',
-      links: rooms.map(({ slug, name }) => ({ text: name, href: `/casa/${slug}` })),
+      links: ambientes.map(({ slug, name }) => ({ text: name, href: `/casa/${slug}` })),
     },
     {
       text: 'Nosotros',

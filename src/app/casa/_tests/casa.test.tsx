@@ -4,7 +4,7 @@ import { render, screen, within } from '@testing-library/react'
 import CasaConcavo from '@/app/casa/page'
 
 jest.mock('@/data/data.ts', () => ({
-  rooms: [
+  ambientes: [
     {
       slug: 'cocina',
       name: 'Cocina',
@@ -14,7 +14,7 @@ jest.mock('@/data/data.ts', () => ({
       name: 'Living/Comedor',
     },
   ],
-  contributors: [
+  colaboradores: [
     {
       slug: 'elegance',
       name: 'Elegance',
@@ -63,87 +63,87 @@ describe('Casa Cóncavo', () => {
     expect(container).toMatchSnapshot()
   })
 
-  it('renders Casa Cóncavo rooms', () => {
+  it('renders Casa Cóncavo ambientes', () => {
     render(<CasaConcavo />)
 
-    const roomsList = screen.getByRole('list', { name: 'Lista de Ambientes' })
-    expect(roomsList).toBeInTheDocument()
+    const ambientesList = screen.getByRole('list', { name: 'Lista de Ambientes' })
+    expect(ambientesList).toBeInTheDocument()
 
-    const rooms = within(roomsList).getAllByRole('listitem')
-    expect(rooms).toHaveLength(2)
+    const ambientes = within(ambientesList).getAllByRole('listitem')
+    expect(ambientes).toHaveLength(2)
 
-    expect(rooms[0]).toBeInTheDocument()
-    const link0 = within(rooms[0]).getByRole<HTMLAnchorElement>('link', { name: 'Cocina' })
+    expect(ambientes[0]).toBeInTheDocument()
+    const link0 = within(ambientes[0]).getByRole<HTMLAnchorElement>('link', { name: 'Cocina' })
     expect(link0).toBeInTheDocument()
     expect(link0.href).toMatch(/^https?:\/\/[^/]+\/casa\/cocina$/)
 
-    expect(rooms[1]).toBeInTheDocument()
-    const link1 = within(rooms[1]).getByRole<HTMLAnchorElement>('link', { name: 'Living/Comedor' })
+    expect(ambientes[1]).toBeInTheDocument()
+    const link1 = within(ambientes[1]).getByRole<HTMLAnchorElement>('link', { name: 'Living/Comedor' })
     expect(link1).toBeInTheDocument()
     expect(link1.href).toMatch(/^https?:\/\/[^/]+\/casa\/living-comedor$/)
   })
 
-  it('renders Casa Cóncavo main Contributors', () => {
+  it('renders Casa Cóncavo main Colaboradores', () => {
     render(<CasaConcavo />)
 
-    const mainContributorsList = screen.getByRole('list', { name: 'Lista de los principales Colaboradores' })
-    expect(mainContributorsList).toBeInTheDocument()
+    const mainColaboradoresList = screen.getByRole('list', { name: 'Lista de los principales Colaboradores' })
+    expect(mainColaboradoresList).toBeInTheDocument()
 
-    const mainContributors = within(mainContributorsList).getAllByRole('listitem')
-    expect(mainContributors).toHaveLength(2)
+    const mainColaboradores = within(mainColaboradoresList).getAllByRole('listitem')
+    expect(mainColaboradores).toHaveLength(2)
 
-    expect(mainContributors[0]).toBeInTheDocument()
-    expect(mainContributors[0]).toHaveTextContent('Elegance')
+    expect(mainColaboradores[0]).toBeInTheDocument()
+    expect(mainColaboradores[0]).toHaveTextContent('Elegance')
 
-    expect(mainContributors[1]).toBeInTheDocument()
-    expect(mainContributors[1]).toHaveTextContent('Luz Viva')
+    expect(mainColaboradores[1]).toBeInTheDocument()
+    expect(mainColaboradores[1]).toHaveTextContent('Luz Viva')
   })
 
-  it('renders Casa Cóncavo standard Contributors', () => {
+  it('renders Casa Cóncavo standard Colaboradores', () => {
     render(<CasaConcavo />)
 
-    const standardContributorsList = screen.getByRole('list', { name: 'Lista del resto de los Colaboradores' })
-    expect(standardContributorsList).toBeInTheDocument()
+    const standardColaboradoresList = screen.getByRole('list', { name: 'Lista del resto de los Colaboradores' })
+    expect(standardColaboradoresList).toBeInTheDocument()
 
-    const standardContributors = within(standardContributorsList).getAllByRole('listitem')
-    expect(standardContributors).toHaveLength(2)
+    const standardColaboradores = within(standardColaboradoresList).getAllByRole('listitem')
+    expect(standardColaboradores).toHaveLength(2)
 
-    expect(standardContributors[0]).toBeInTheDocument()
-    expect(standardContributors[0]).toHaveTextContent('Muebles de Arte')
+    expect(standardColaboradores[0]).toBeInTheDocument()
+    expect(standardColaboradores[0]).toHaveTextContent('Muebles de Arte')
 
-    expect(standardContributors[1]).toBeInTheDocument()
-    expect(standardContributors[1]).toHaveTextContent('Cocina Design')
+    expect(standardColaboradores[1]).toBeInTheDocument()
+    expect(standardColaboradores[1]).toHaveTextContent('Cocina Design')
   })
 
-  it('renders Casa Cóncavo main Contributors', () => {
+  it('renders Casa Cóncavo main Colaboradores', () => {
     render(<CasaConcavo />)
 
-    const mainContributorsList = screen.getByRole('list', { name: 'Lista de los principales Colaboradores' })
-    expect(mainContributorsList).toBeInTheDocument()
+    const mainColaboradoresList = screen.getByRole('list', { name: 'Lista de los principales Colaboradores' })
+    expect(mainColaboradoresList).toBeInTheDocument()
 
-    const mainContributors = within(mainContributorsList).getAllByRole('listitem')
-    expect(mainContributors).toHaveLength(2)
+    const mainColaboradores = within(mainColaboradoresList).getAllByRole('listitem')
+    expect(mainColaboradores).toHaveLength(2)
 
-    expect(mainContributors[0]).toBeInTheDocument()
-    expect(mainContributors[0]).toHaveTextContent('Elegance')
+    expect(mainColaboradores[0]).toBeInTheDocument()
+    expect(mainColaboradores[0]).toHaveTextContent('Elegance')
 
-    expect(mainContributors[1]).toBeInTheDocument()
-    expect(mainContributors[1]).toHaveTextContent('Luz Viva')
+    expect(mainColaboradores[1]).toBeInTheDocument()
+    expect(mainColaboradores[1]).toHaveTextContent('Luz Viva')
   })
 
-  it('renders Casa Cóncavo standard Contributors', () => {
+  it('renders Casa Cóncavo standard Colaboradores', () => {
     render(<CasaConcavo />)
 
-    const standardContributorsList = screen.getByRole('list', { name: 'Lista del resto de los Colaboradores' })
-    expect(standardContributorsList).toBeInTheDocument()
+    const standardColaboradoresList = screen.getByRole('list', { name: 'Lista del resto de los Colaboradores' })
+    expect(standardColaboradoresList).toBeInTheDocument()
 
-    const standardContributors = within(standardContributorsList).getAllByRole('listitem')
-    expect(standardContributors).toHaveLength(2)
+    const standardColaboradores = within(standardColaboradoresList).getAllByRole('listitem')
+    expect(standardColaboradores).toHaveLength(2)
 
-    expect(standardContributors[0]).toBeInTheDocument()
-    expect(standardContributors[0]).toHaveTextContent('Muebles de Arte')
+    expect(standardColaboradores[0]).toBeInTheDocument()
+    expect(standardColaboradores[0]).toHaveTextContent('Muebles de Arte')
 
-    expect(standardContributors[1]).toBeInTheDocument()
-    expect(standardContributors[1]).toHaveTextContent('Cocina Design')
+    expect(standardColaboradores[1]).toBeInTheDocument()
+    expect(standardColaboradores[1]).toHaveTextContent('Cocina Design')
   })
 })

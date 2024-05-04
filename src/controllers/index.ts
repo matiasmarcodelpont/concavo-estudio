@@ -1,11 +1,11 @@
 import data from '@/data/data'
 
-import { createProductsRepository } from '@/data/repositories/products'
-import { createRoomsRepository } from '@/data/repositories/rooms'
-import { createContributorsRepository } from '@/data/repositories/contributors'
+import { createProductosRepository } from '@/data/repositories/productos'
+import { createAmbientesRepository } from '@/data/repositories/ambientes'
+import { createColaboradoresRepository } from '@/data/repositories/colaboradores'
 
-export const productsRepository = createProductsRepository(data)
+export const productosRepository = createProductosRepository(data)
 
-export const roomsRepository = createRoomsRepository(data)
+export const ambientesRepository = createAmbientesRepository(data)
 
-export const contributorsRepository = createContributorsRepository(data)
+export const colaboradoresRepository = createColaboradoresRepository(data)

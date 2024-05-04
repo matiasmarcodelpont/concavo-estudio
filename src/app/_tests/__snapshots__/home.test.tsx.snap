@@ -8,23 +8,23 @@ exports[`Home renders homepage unchanged 1`] = `
     </h1>
     <section>
       <h1
-        id="productos-concavo"
+        id="productoos-concavo"
       >
-        Productos Cóncavo
+        Productoos Cóncavo
       </h1>
       <ul
-        aria-labelledby="productos-concavo"
+        aria-labelledby="productoos-concavo"
       >
         <li>
           <a
-            href="/productos/azulejos-verdes"
+            href="/productoos/azulejos-verdes"
           >
             Azulejos verdes
           </a>
         </li>
         <li>
           <a
-            href="/productos/azulejos-azules"
+            href="/productoos/azulejos-azules"
           >
             Azulejos azules
           </a>

@@ -2,14 +2,14 @@ import { render } from '@testing-library/react'
 import { NavBarLayout } from '@/app/_components/NavBarLayout'
 
 describe('NavBarLayour', () => {
-  it('renders links to all pages and to each room', () => {
+  it('renders links to all pages and to each ambiente', () => {
     const { getByRole } = render(
       <NavBarLayout
         opened
-        rooms={[
-          { name: 'Room 1', slug: 'room-1' },
-          { name: 'Room 2', slug: 'room-2' },
-          { name: 'Room 3', slug: 'room-3' },
+        ambientes={[
+          { name: 'Ambiente 1', slug: 'ambiente-1' },
+          { name: 'Ambiente 2', slug: 'ambiente-2' },
+          { name: 'Ambiente 3', slug: 'ambiente-3' },
         ]}
       />,
     )
@@ -19,20 +19,20 @@ describe('NavBarLayour', () => {
     const homeLink = getByRole('link', { name: 'Cóncavo' }) as HTMLAnchorElement
     expect(homeLink.href).toMatch(/^https?:\/\/[^/]+\/$/)
 
-    const concavoProductsLink = getByRole('link', { name: 'Productos Cóncavo' }) as HTMLAnchorElement
-    expect(concavoProductsLink.href).toMatch(/^https?:\/\/[^/]+\/#productos_concavo$/)
+    const concavoProductosLink = getByRole('link', { name: 'Productoos Cóncavo' }) as HTMLAnchorElement
+    expect(concavoProductosLink.href).toMatch(/^https?:\/\/[^/]+\/#productoos_concavo$/)
 
     const concavoHomeLink = getByRole('link', { name: 'Casa Cóncavo' }) as HTMLAnchorElement
     expect(concavoHomeLink.href).toMatch(/^https?:\/\/[^/]+\/casa$/)
 
-    const room1Link = getByRole('link', { name: 'Room 1' }) as HTMLAnchorElement
-    expect(room1Link.href).toMatch(/^https?:\/\/[^/]+\/casa\/room-1$/)
+    const ambiente1Link = getByRole('link', { name: 'Ambiente 1' }) as HTMLAnchorElement
+    expect(ambiente1Link.href).toMatch(/^https?:\/\/[^/]+\/casa\/ambiente-1$/)
 
-    const room2Link = getByRole('link', { name: 'Room 2' }) as HTMLAnchorElement
-    expect(room2Link.href).toMatch(/^https?:\/\/[^/]+\/casa\/room-2$/)
+    const ambiente2Link = getByRole('link', { name: 'Ambiente 2' }) as HTMLAnchorElement
+    expect(ambiente2Link.href).toMatch(/^https?:\/\/[^/]+\/casa\/ambiente-2$/)
 
-    const room3Link = getByRole('link', { name: 'Room 3' }) as HTMLAnchorElement
-    expect(room3Link.href).toMatch(/^https?:\/\/[^/]+\/casa\/room-3$/)
+    const ambiente3Link = getByRole('link', { name: 'Ambiente 3' }) as HTMLAnchorElement
+    expect(ambiente3Link.href).toMatch(/^https?:\/\/[^/]+\/casa\/ambiente-3$/)
 
     const aboutLink = getByRole('link', { name: 'Nosotros' }) as HTMLAnchorElement
     expect(aboutLink.href).toMatch(/^https?:\/\/[^/]+\/nosotros$/)

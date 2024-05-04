@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Product renders product page unchanged 1`] = `
+exports[`Producto renders producto page unchanged 1`] = `
 <div>
   <main>
     <h1>
@@ -8,18 +8,18 @@ exports[`Product renders product page unchanged 1`] = `
     </h1>
     <section>
       <ul
-        aria-label="Lista de productos relacionados"
+        aria-label="Lista de productoos relacionados"
       >
         <li>
           <a
-            href="/productos/piso-madera"
+            href="/productoos/piso-madera"
           >
             Piso simil Madera
           </a>
         </li>
         <li>
           <a
-            href="/productos/sofa-carlos"
+            href="/productoos/sofa-carlos"
           >
             Sofá Carlos V
           </a>
