@@ -1,9 +1,9 @@
 import '@testing-library/jest-dom'
 import { render, screen, within } from '@testing-library/react'
 
-import Home from '../app/page'
+import Home from '../page'
 
-jest.mock('../data/data.json', () => ({
+jest.mock('@/data/data.ts', () => ({
   products: [
     {
       slug: 'azulejos-los-peores',

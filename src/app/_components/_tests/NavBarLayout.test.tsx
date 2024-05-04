@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react'
-import { NavBarLayout } from '@/components/NavBarLayout'
+import { NavBarLayout } from '@/app/_components/NavBarLayout'
 
 describe('NavBarLayour', () => {
   it('renders links to all pages and to each room', () => {

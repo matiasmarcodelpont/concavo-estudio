@@ -3,7 +3,7 @@ import { render, screen, within } from '@testing-library/react'
 
 import Room from '@/app/casa/[roomSlug]/page'
 
-jest.mock('../data/data.json', () => ({
+jest.mock('@/data/data.ts', () => ({
   rooms: [
     {
       slug: 'living-comedor',

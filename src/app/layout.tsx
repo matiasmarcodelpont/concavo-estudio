@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 
 import { roomsRepository } from '@/controllers'
-import { NavBarLayout } from '../components/NavBarLayout'
+import { NavBarLayout } from './_components/NavBarLayout'
 import { DrawerTrigger } from '@/components/ui/drawer'
 import { Button } from '@/components/ui/button'
 import { Menu } from 'lucide-react'
