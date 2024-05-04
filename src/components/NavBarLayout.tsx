@@ -42,7 +42,7 @@ export const NavBarLayout = ({
 
   return (
     <Drawer direction='left' open={drawerOpen} onOpenChange={setDrawerOpen}>
-      <DrawerContent className='pl-6 pr-7 uppercase'>
+      <DrawerContent className='pl-6 pr-7 uppercase overflow-y-auto'>
         <header className='border-black border-b mb-4'>
           <h1 className='my-4 font-bold text-xl'>Cóncavo</h1>
         </header>
