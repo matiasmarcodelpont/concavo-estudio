@@ -26,7 +26,7 @@ export default function RootLayout({
 
   return (
     <html lang='es'>
-      <body className={cn(inter.className, 'bg-hueso')}>
+      <body className={cn(inter.className, 'bg-bone')}>
         <NavBarLayout ambientes={ambientes}>
           <header className='p-6'>
             <DrawerTrigger asChild>
