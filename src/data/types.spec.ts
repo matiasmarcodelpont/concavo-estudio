@@ -17,8 +17,9 @@ describe('isConcavoProducto', () => {
 describe('isMainColaborador', () => {
   it('returns true if the colaborador has the key isMain as true', () => {
     const result = isMainColaborador({
-      name: 'Test colaborador',
       slug: 'colaborador',
+      name: 'Test colaborador',
+      imageUrl: '/path/to/image',
       website: '',
       isMain: true,
       description: 'test description',
@@ -31,8 +32,9 @@ describe('isMainColaborador', () => {
 
   it('returns false if the colaborador has the key isMain as false', () => {
     const result = isMainColaborador({
-      name: 'Test colaborador',
       slug: 'colaborador',
+      name: 'Test colaborador',
+      imageUrl: '/path/to/image',
       website: '',
       isMain: false,
       description: 'test description',
