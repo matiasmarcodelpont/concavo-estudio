@@ -37,7 +37,7 @@ export const MainColaborador = ({ className, ...colaborador }: MainColaboradorPr
       <p className='text-xs text-center text-darkGray'>{colaborador.description}</p>
       <div className='flex flex-col gap-1'>
         <p className='text-xs text-center font-semibold text-darkGray'>{colaborador.address}</p>
-        <div className='text-center flex justify-center gap-3'>
+        <div className='text-center flex justify-center gap-2'>
           <a
             className='text-xs text-center font-semibold text-blue hover:underline'
             href={`mailto:${colaborador.email}`}
