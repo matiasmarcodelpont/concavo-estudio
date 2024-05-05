@@ -120,6 +120,7 @@ const data: DataSet = {
     {
       slug: 'elegance',
       name: 'Elegance',
+      imageUrl: '/colaboradores/elegance.png',
       website: 'www.pisoselegance.es',
       isMain: true,
       description:
@@ -130,6 +131,7 @@ const data: DataSet = {
     {
       slug: 'luz-viva',
       name: 'Luz Viva',
+      imageUrl: '/colaboradores/elegance.png',
       website: 'www.luzviva.com',
       isMain: true,
       description:
@@ -140,6 +142,7 @@ const data: DataSet = {
     {
       slug: 'muebles-arte',
       name: 'Muebles de Arte',
+      imageUrl: '/colaboradores/elegance.png',
       website: 'www.mueblesdearte.com',
       isMain: false,
       description: null,
@@ -149,6 +152,7 @@ const data: DataSet = {
     {
       slug: 'cocina-design',
       name: 'Cocina Design',
+      imageUrl: '/colaboradores/elegance.png',
       website: 'www.cocinadesign.com',
       isMain: false,
       description:

@@ -10,6 +10,7 @@ describe('colaboradores repository', () => {
         {
           slug: 'elegance',
           name: 'Elegance',
+          imageUrl: '/fale/path/to/image',
           website: 'www.pisoselegance.es',
           isMain: true,
           description:
@@ -20,6 +21,7 @@ describe('colaboradores repository', () => {
         {
           slug: 'luz-viva',
           name: 'Luz Viva',
+          imageUrl: '/fale/path/to/image',
           website: 'www.luzviva.com',
           isMain: true,
           description:
@@ -30,6 +32,7 @@ describe('colaboradores repository', () => {
         {
           slug: 'muebles-arte',
           name: 'Muebles de Arte',
+          imageUrl: '/fale/path/to/image',
           website: 'www.mueblesdearte.com',
           isMain: false,
           description: null,
@@ -39,6 +42,7 @@ describe('colaboradores repository', () => {
         {
           slug: 'cocina-design',
           name: 'Cocina Design',
+          imageUrl: '/fale/path/to/image',
           website: 'www.cocinadesign.com',
           isMain: false,
           description:
@@ -52,6 +56,7 @@ describe('colaboradores repository', () => {
         {
           slug: 'elegance',
           name: 'Elegance',
+          imageUrl: '/fale/path/to/image',
           website: 'www.pisoselegance.es',
           description:
             'Líder en revestimientos de suelos elegantes y duraderos para hogares y negocios. Calidad, innovación y compromiso con la sostenibilidad nos distinguen.',
@@ -61,6 +66,7 @@ describe('colaboradores repository', () => {
         {
           slug: 'luz-viva',
           name: 'Luz Viva',
+          imageUrl: '/fale/path/to/image',
           website: 'www.luzviva.com',
           description:
             'Líder en sistemas de iluminación innovadores y eficientes para hogares y negocios. Calidad, diseño y compromiso con la sostenibilidad nos distinguen.',
@@ -86,6 +92,7 @@ describe('colaboradores repository', () => {
         {
           slug: 'elegance',
           name: 'Elegance',
+          imageUrl: '/fale/path/to/image',
           website: 'www.pisoselegance.es',
           isMain: true,
           description:
@@ -96,6 +103,7 @@ describe('colaboradores repository', () => {
         {
           slug: 'luz-viva',
           name: 'Luz Viva',
+          imageUrl: '/fale/path/to/image',
           website: 'www.luzviva.com',
           isMain: true,
           description:
@@ -106,6 +114,7 @@ describe('colaboradores repository', () => {
         {
           slug: 'muebles-arte',
           name: 'Muebles de Arte',
+          imageUrl: '/fale/path/to/image',
           website: 'www.mueblesdearte.com',
           isMain: false,
           description: null,
@@ -115,6 +124,7 @@ describe('colaboradores repository', () => {
         {
           slug: 'cocina-design',
           name: 'Cocina Design',
+          imageUrl: '/fale/path/to/image',
           website: 'www.cocinadesign.com',
           isMain: false,
           description:
@@ -128,11 +138,13 @@ describe('colaboradores repository', () => {
         {
           slug: 'muebles-arte',
           name: 'Muebles de Arte',
+          imageUrl: '/fale/path/to/image',
           website: 'www.mueblesdearte.com',
         },
         {
           slug: 'cocina-design',
           name: 'Cocina Design',
+          imageUrl: '/fale/path/to/image',
           website: 'www.cocinadesign.com',
         },
       ]
@@ -204,6 +216,7 @@ describe('colaboradores repository', () => {
       {
         slug: 'luz-viva',
         name: 'Luz Viva',
+        imageUrl: '/fale/path/to/image',
         website: 'www.luzviva.com',
         isMain: true,
         description:
@@ -214,6 +227,7 @@ describe('colaboradores repository', () => {
       {
         slug: 'cocina-design',
         name: 'Cocina Design',
+        imageUrl: '/fale/path/to/image',
         website: 'www.cocinadesign.com',
         isMain: false,
         description:
@@ -224,6 +238,7 @@ describe('colaboradores repository', () => {
       {
         slug: 'elegance',
         name: 'Elegance',
+        imageUrl: '/fale/path/to/image',
         website: 'www.pisoselegance.es',
         isMain: true,
         description:
@@ -234,6 +249,7 @@ describe('colaboradores repository', () => {
       {
         slug: 'muebles-arte',
         name: 'Muebles de Arte',
+        imageUrl: '/fale/path/to/image',
         website: 'www.mueblesdearte.com',
         isMain: false,
         description: null,
@@ -246,6 +262,7 @@ describe('colaboradores repository', () => {
       {
         slug: 'luz-viva',
         name: 'Luz Viva',
+        imageUrl: '/fale/path/to/image',
         website: 'www.luzviva.com',
         description:
           'Líder en sistemas de iluminación innovadores y eficientes para hogares y negocios. Calidad, diseño y compromiso con la sostenibilidad nos distinguen.',
@@ -334,6 +351,7 @@ describe('colaboradores repository', () => {
       {
         slug: 'luz-viva',
         name: 'Luz Viva',
+        imageUrl: '/fale/path/to/image',
         website: 'www.luzviva.com',
         isMain: true,
         description:
@@ -344,6 +362,7 @@ describe('colaboradores repository', () => {
       {
         slug: 'cocina-design',
         name: 'Cocina Design',
+        imageUrl: '/fale/path/to/image',
         website: 'www.cocinadesign.com',
         isMain: false,
         description:
@@ -354,6 +373,7 @@ describe('colaboradores repository', () => {
       {
         slug: 'elegance',
         name: 'Elegance',
+        imageUrl: '/fale/path/to/image',
         website: 'www.pisoselegance.es',
         isMain: true,
         description:
@@ -364,6 +384,7 @@ describe('colaboradores repository', () => {
       {
         slug: 'muebles-arte',
         name: 'Muebles de Arte',
+        imageUrl: '/fale/path/to/image',
         website: 'www.mueblesdearte.com',
         isMain: false,
         description: null,
@@ -377,6 +398,7 @@ describe('colaboradores repository', () => {
         {
           slug: 'cocina-design',
           name: 'Cocina Design',
+          imageUrl: '/fale/path/to/image',
           website: 'www.cocinadesign.com',
         },
       ]

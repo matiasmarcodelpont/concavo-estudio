@@ -1,11 +1,12 @@
 import { cn } from '@/lib/utils'
+import { ClassValue } from 'clsx'
 import { ReactNode } from 'react'
 
-interface GridFluidColumnsProps {
+interface Fluid {
   children: ReactNode
-  className?: string
+  className?: ClassValue
 }
 
-export const Fluid = ({ children, className }: GridFluidColumnsProps) => (
-  <div className={cn('flex flex-wrap', className)}>{children}</div>
-)
+const Fluid = ({ children, className }: Fluid) => <div className={cn('flex flex-wrap m-12', className)}>{children}</div>
+
+export default Fluid

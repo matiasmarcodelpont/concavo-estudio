@@ -5,6 +5,9 @@ const config = {
   content: ['./pages/**/*.{ts,tsx}', './components/**/*.{ts,tsx}', './app/**/*.{ts,tsx}', './src/**/*.{ts,tsx}'],
   prefix: '',
   theme: {
+    colors: {
+      hueso: '#EBE5DF',
+    },
     container: {
       center: true,
       padding: '2rem',

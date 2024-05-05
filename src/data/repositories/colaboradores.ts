@@ -15,9 +15,10 @@ export function createColaboradoresRepository(data: DataSet) {
     getMainColaboradores(): Omit<MainColaborador, 'isMain'>[] {
       return data.colaboradores
         .filter(isMainColaborador)
-        .map(({ slug, name, website, description, email, address }) => ({
+        .map(({ slug, name, imageUrl, website, description, email, address }) => ({
           slug,
           name,
+          imageUrl,
           website,
           description,
           email,
@@ -32,7 +33,7 @@ export function createColaboradoresRepository(data: DataSet) {
     getStandardColaboradores(): Omit<StandardColaborador, 'isMain' | 'description' | 'email' | 'address'>[] {
       return data.colaboradores
         .filter((colaborador) => !isMainColaborador(colaborador))
-        .map(({ slug, name, website }) => ({ slug, name, website }))
+        .map(({ slug, name, imageUrl, website }) => ({ slug, name, imageUrl, website }))
     },
 
     /**
@@ -47,9 +48,10 @@ export function createColaboradoresRepository(data: DataSet) {
           productosInAmbiente.some((productoInAmbiente) => productoInAmbiente.colaborador?.slug === colaborador.slug),
         )
         .filter(isMainColaborador)
-        .map(({ slug, name, website, description, email, address }) => ({
+        .map(({ slug, name, imageUrl, website, description, email, address }) => ({
           slug,
           name,
+          imageUrl,
           website,
           description,
           email,
@@ -73,7 +75,7 @@ export function createColaboradoresRepository(data: DataSet) {
               (productoInAmbiente) => productoInAmbiente.colaborador?.slug === colaborador.slug,
             ) && !isMainColaborador(colaborador),
         )
-        .map(({ slug, name, website }) => ({ slug, name, website }))
+        .map(({ slug, name, imageUrl, website }) => ({ slug, name, imageUrl, website }))
     },
   }
 }

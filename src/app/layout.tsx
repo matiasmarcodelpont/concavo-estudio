@@ -8,6 +8,7 @@ import { NavBarLayout } from './_components/NavBarLayout'
 import { DrawerTrigger } from '@/components/ui/drawer'
 import { Button } from '@/components/ui/button'
 import { Menu } from 'lucide-react'
+import { cn } from '@/lib/utils'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,7 +26,7 @@ export default function RootLayout({
 
   return (
     <html lang='es'>
-      <body className={inter.className}>
+      <body className={cn(inter.className, 'bg-hueso')}>
         <NavBarLayout ambientes={ambientes}>
           <header className='p-6'>
             <DrawerTrigger asChild>
