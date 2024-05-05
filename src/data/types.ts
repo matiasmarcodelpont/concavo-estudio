@@ -31,7 +31,6 @@ export interface Ambiente {
 interface BaseColaborador {
   name: string
   slug: string
-  imageUrl: string
   website: string
 }
 
