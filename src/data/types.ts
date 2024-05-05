@@ -32,11 +32,11 @@ interface BaseColaborador {
   name: string
   slug: string
   imageUrl: string
-  website: string
 }
 
 export type MainColaborador = BaseColaborador & {
   isMain: true
+  website: string
   description: string
   email: string
   address: string
@@ -44,6 +44,7 @@ export type MainColaborador = BaseColaborador & {
 
 export type StandardColaborador = BaseColaborador & {
   isMain: false
+  website: string | null
   description: string | null
   email: string | null
   address: string | null

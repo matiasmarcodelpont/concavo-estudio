@@ -106,7 +106,7 @@ describe('Producto', () => {
 
   it('shows the 404 page if producto is not found', () => {
     expect(() => {
-      render(<Producto params={{ productoSlug: 'productoo-inexistente' }} />)
+      render(<Producto params={{ productoSlug: 'producto-inexistente' }} />)
     }).toThrow('NEXT_NOT_FOUND')
   })
 })

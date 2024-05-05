@@ -131,7 +131,7 @@ const data: DataSet = {
     {
       slug: 'luz-viva',
       name: 'Luz Viva',
-      imageUrl: '/colaboradores/elegance.png',
+      imageUrl: '/colaboradores/luz_viva.png',
       website: 'https://www.luzviva.com',
       isMain: true,
       description:
@@ -142,7 +142,7 @@ const data: DataSet = {
     {
       slug: 'muebles-arte',
       name: 'Muebles de Arte',
-      imageUrl: '/colaboradores/elegance.png',
+      imageUrl: '/colaboradores/muebles_arte.png',
       website: 'https://www.mueblesdearte.com',
       isMain: false,
       description: null,
@@ -152,7 +152,7 @@ const data: DataSet = {
     {
       slug: 'cocina-design',
       name: 'Cocina Design',
-      imageUrl: '/colaboradores/elegance.png',
+      imageUrl: '/colaboradores/cocina_design.png',
       website: 'https://www.cocinadesign.com',
       isMain: false,
       description:

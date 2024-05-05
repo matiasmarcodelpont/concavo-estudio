@@ -10,7 +10,7 @@ const config = {
       black: '#2D1A18',
       bone: '#EBE5DF',
       mustard: '#D1A24C',
-      darkGray: '#005850',
+      darkGray: '#464242',
       lightGray: '#005850',
       blackGreen: '#1B2722',
       brown1: '#664B30',

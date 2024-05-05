@@ -1,31 +1,60 @@
+'use client'
+
 import { MainColaborador as MainColaboradorType, StandardColaborador as StandardColaboradorType } from '@/data/types'
 import removeHttps from '@/lib/removeHttps'
 import { cn } from '@/lib/utils'
+import { Separator } from '@radix-ui/react-separator'
 import Image from 'next/image'
 
 interface ColaboradorBaseProps {
-  width?: number
-  height?: number
+  className?: string
 }
 
-type StandardColaboradorProps = Omit<StandardColaboradorType, 'isMain' | 'description' | 'email' | 'address'> &
-  ColaboradorBaseProps
+type StandardColaboradorProps = ColaboradorBaseProps &
+  Omit<StandardColaboradorType, 'isMain' | 'description' | 'email' | 'address'>
 
-export const StandardColaborador = ({ width = 300, height = 300, ...colaborador }: StandardColaboradorProps) => {
-  return <Image width={width} height={height} src={colaborador.imageUrl} alt={colaborador.name} />
-}
-
-type MainColaboradorProps = Omit<MainColaboradorType, 'isMain'> & ColaboradorBaseProps
-
-export const MainColaborador = ({ width = 300, height = 300, ...colaborador }: MainColaboradorProps) => {
+export const StandardColaborador = (colaborador: StandardColaboradorProps) => {
   return (
-    <div className={cn('flex flex-col gap-2', `w-[${width.toString()}px]`)}>
-      <StandardColaborador width={width} height={height} {...colaborador} />
-      <p className='text-xs text-center text-gray'>{colaborador.description}</p>
-      <p className='text-xs text-center font-semibold text-gray'>{colaborador.address}</p>
-      <a className='text-xs text-center font-semibold' href={colaborador.website} target='_blank'>
-        {removeHttps(colaborador.website)}
-      </a>
+    <div className='w-[300px] h-[150px] relative'>
+      <Image
+        fill
+        sizes='(max-width: 768px) 100vw, 33vw'
+        style={{ objectFit: 'contain' }}
+        src={colaborador.imageUrl}
+        alt={colaborador.name}
+        className='max-w-[300px] max-h-[150px] grayscale' // TODO: Remove grayscale when real logos are onboarded?
+      />
+    </div>
+  )
+}
+
+type MainColaboradorProps = ColaboradorBaseProps & Omit<MainColaboradorType, 'isMain'>
+
+export const MainColaborador = ({ className, ...colaborador }: MainColaboradorProps) => {
+  return (
+    <div className={cn('flex flex-col gap-3', className)}>
+      <StandardColaborador {...colaborador} />
+      <p className='text-xs text-center text-darkGray'>{colaborador.description}</p>
+      <div className='flex flex-col gap-1'>
+        <p className='text-xs text-center font-semibold text-darkGray'>{colaborador.address}</p>
+        <div className='text-center flex justify-center gap-3'>
+          <a
+            className='text-xs text-center font-semibold text-blue hover:underline'
+            href={`mailto:${colaborador.email}`}
+            target='_blank'
+          >
+            {colaborador.email}
+          </a>
+          <Separator orientation='vertical' className='w-[1px] bg-darkGray' />
+          <a
+            className='text-xs text-center font-semibold text-blue hover:underline'
+            href={colaborador.website}
+            target='_blank'
+          >
+            {removeHttps(colaborador.website)}
+          </a>
+        </div>
+      </div>
     </div>
   )
 }
