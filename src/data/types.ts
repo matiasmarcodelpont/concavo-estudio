@@ -16,9 +16,9 @@ export interface Producto {
   colaborador: Reference | null
 }
 
-export type ConcavoProducto = WithNullProp<Producto, 'colaborador'>
+export type ProductoConcavo = WithNullProp<Producto, 'colaborador'>
 
-export function isConcavoProducto(producto: Producto): producto is ConcavoProducto {
+export function isProductoConcavo(producto: Producto): producto is ProductoConcavo {
   return producto.colaborador === null
 }
 

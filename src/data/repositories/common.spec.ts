@@ -1,5 +1,5 @@
 import { DoesNotExistError } from '@/lib/errors'
-import { getProductoColaborador, getProductosInAmbiente } from './common'
+import { getColaboradorFromProducto, getProductosInAmbiente } from './common'
 import { Colaborador } from '../types'
 
 describe('Common functions', () => {
@@ -60,9 +60,9 @@ describe('Common functions', () => {
     })
   })
 
-  describe('getProductoColaborador', () => {
+  describe('getColaboradorFromProducto', () => {
     it("returns null if producto doesn't have a colaborador", () => {
-      const colaborador = getProductoColaborador([], {
+      const colaborador = getColaboradorFromProducto([], {
         name: 'Test producto',
         slug: 'test-producto',
         colaborador: null,
@@ -71,7 +71,7 @@ describe('Common functions', () => {
     })
 
     it('returns the producto colaborador', () => {
-      const colaborador = getProductoColaborador(
+      const colaborador = getColaboradorFromProducto(
         [
           { slug: 'another-colaborador', name: 'Another colaborador' } as Colaborador,
           { slug: 'test-colaborador', name: 'Test colaborador' } as Colaborador,
