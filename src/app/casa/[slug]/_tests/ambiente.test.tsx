@@ -1,20 +1,20 @@
 import '@testing-library/jest-dom'
 import { render, screen, within } from '@testing-library/react'
 
-import Room from '@/app/casa/[roomSlug]/page'
+import Ambiente from '@/app/casa/[slug]/page'
 
 jest.mock('@/data/data.ts', () => ({
-  rooms: [
+  ambientes: [
     {
       slug: 'living-comedor',
       name: 'Living/Comedor',
-      products: [],
-      contributors: [],
+      productos: [],
+      colaboradores: [],
     },
     {
       slug: 'cocina',
       name: 'Cocina',
-      products: [
+      productos: [
         {
           slug: 'azulejos-guardados',
         },
@@ -22,38 +22,38 @@ jest.mock('@/data/data.ts', () => ({
           slug: 'luz-led',
         },
       ],
-      contributors: [],
+      colaboradores: [],
     },
   ],
-  products: [
+  productos: [
     {
       slug: 'azulejos-guardados',
       name: 'Azulejos Guardados',
-      contributor: {
+      colaborador: {
         slug: 'cocina-design',
       },
     },
     {
       slug: 'sofa-carlos',
       name: 'Sofá Carlos V',
-      contributor: {
+      colaborador: {
         slug: 'muebles-arte',
       },
     },
     {
       slug: 'luz-led',
       name: 'Luz Led',
-      contributor: {
+      colaborador: {
         slug: 'luz-viva',
       },
     },
     {
       slug: 'bacha-8080',
       name: 'Bacha 8080',
-      contributor: null,
+      colaborador: null,
     },
   ],
-  contributors: [
+  colaboradores: [
     {
       slug: 'luz-viva',
       name: 'Luz Viva',
@@ -96,23 +96,23 @@ jest.mock('@/data/data.ts', () => ({
   ],
 }))
 
-describe('Room', () => {
-  it('renders Room unchanged', () => {
+describe('Ambiente', () => {
+  it('renders Ambiente unchanged', () => {
     const { container } = render(
-      <Room
+      <Ambiente
         params={{
-          roomSlug: 'cocina',
+          ambienteSlug: 'cocina',
         }}
       />,
     )
     expect(container).toMatchSnapshot()
   })
 
-  it('renders Room name', () => {
+  it('renders Ambiente name', () => {
     render(
-      <Room
+      <Ambiente
         params={{
-          roomSlug: 'cocina',
+          ambienteSlug: 'cocina',
         }}
       />,
     )
@@ -121,77 +121,77 @@ describe('Room', () => {
     expect(heading).toBeInTheDocument()
   })
 
-  it('renders Room products', () => {
+  it('renders Ambiente productos', () => {
     render(
-      <Room
+      <Ambiente
         params={{
-          roomSlug: 'cocina',
+          ambienteSlug: 'cocina',
         }}
       />,
     )
 
-    const productsList = screen.getByRole('list', { name: 'Lista de Productos' })
-    expect(productsList).toBeInTheDocument()
+    const productosList = screen.getByRole('list', { name: 'Lista de Productos' })
+    expect(productosList).toBeInTheDocument()
 
-    const products = within(productsList).getAllByRole('listitem')
-    expect(products).toHaveLength(2)
+    const productos = within(productosList).getAllByRole('listitem')
+    expect(productos).toHaveLength(2)
 
-    expect(products[0]).toBeInTheDocument()
-    const link0 = within(products[0]).getByRole<HTMLAnchorElement>('link', { name: 'Azulejos Guardados' })
+    expect(productos[0]).toBeInTheDocument()
+    const link0 = within(productos[0]).getByRole<HTMLAnchorElement>('link', { name: 'Azulejos Guardados' })
     expect(link0).toBeInTheDocument()
     expect(link0.href).toMatch(/^https?:\/\/[^/]+\/productos\/azulejos-guardados$/)
 
-    expect(products[1]).toBeInTheDocument()
-    const link1 = within(products[1]).getByRole<HTMLAnchorElement>('link', { name: 'Luz Led' })
+    expect(productos[1]).toBeInTheDocument()
+    const link1 = within(productos[1]).getByRole<HTMLAnchorElement>('link', { name: 'Luz Led' })
     expect(link1).toBeInTheDocument()
     expect(link1.href).toMatch(/^https?:\/\/[^/]+\/productos\/luz-led$/)
   })
 
-  it("renders room's main Contributors", () => {
+  it("renders ambiente's main Colaboradores", () => {
     render(
-      <Room
+      <Ambiente
         params={{
-          roomSlug: 'cocina',
+          ambienteSlug: 'cocina',
         }}
       />,
     )
 
-    const roomMainContributorsList = screen.getByRole('list', {
+    const ambienteMainColaboradoresList = screen.getByRole('list', {
       name: 'Lista de los principales Colaboradores del Ambiente',
     })
-    expect(roomMainContributorsList).toBeInTheDocument()
+    expect(ambienteMainColaboradoresList).toBeInTheDocument()
 
-    const roomMainContributors = within(roomMainContributorsList).getAllByRole('listitem')
-    expect(roomMainContributors).toHaveLength(1)
+    const ambienteMainColaboradores = within(ambienteMainColaboradoresList).getAllByRole('listitem')
+    expect(ambienteMainColaboradores).toHaveLength(1)
 
-    expect(roomMainContributors[0]).toBeInTheDocument()
-    expect(roomMainContributors[0]).toHaveTextContent('Luz Viva')
+    expect(ambienteMainColaboradores[0]).toBeInTheDocument()
+    expect(ambienteMainColaboradores[0]).toHaveTextContent('Luz Viva')
   })
 
-  it("renders room's standard Contributors", () => {
+  it("renders ambiente's standard Colaboradores", () => {
     render(
-      <Room
+      <Ambiente
         params={{
-          roomSlug: 'cocina',
+          ambienteSlug: 'cocina',
         }}
       />,
     )
 
-    const roomStandardContributorsList = screen.getByRole('list', {
+    const ambienteStandardColaboradoresList = screen.getByRole('list', {
       name: 'Lista del resto de los Colaboradores del Ambiente',
     })
-    expect(roomStandardContributorsList).toBeInTheDocument()
+    expect(ambienteStandardColaboradoresList).toBeInTheDocument()
 
-    const roomStandardContributors = within(roomStandardContributorsList).getAllByRole('listitem')
-    expect(roomStandardContributors).toHaveLength(1)
+    const ambienteStandardColaboradores = within(ambienteStandardColaboradoresList).getAllByRole('listitem')
+    expect(ambienteStandardColaboradores).toHaveLength(1)
 
-    expect(roomStandardContributors[0]).toBeInTheDocument()
-    expect(roomStandardContributors[0]).toHaveTextContent('Cocina Design')
+    expect(ambienteStandardColaboradores[0]).toBeInTheDocument()
+    expect(ambienteStandardColaboradores[0]).toHaveTextContent('Cocina Design')
   })
 
-  it('shows the 404 page if product is not found', () => {
+  it('shows the 404 page if producto is not found', () => {
     expect(() => {
-      render(<Room params={{ roomSlug: 'cuarto-inexistente' }} />)
+      render(<Ambiente params={{ ambienteSlug: 'cuarto-inexistente' }} />)
     }).toThrow('NEXT_NOT_FOUND')
   })
 })

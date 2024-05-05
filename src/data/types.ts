@@ -10,52 +10,52 @@ export type OmitReferences<T> = {
   [K in keyof T as Exclude<T[K], null> extends Reference | Reference[] ? never : K]: T[K]
 }
 
-export interface Product {
+export interface Producto {
   name: string
   slug: string
-  contributor: Reference | null
+  colaborador: Reference | null
 }
 
-export type ConcavoProduct = WithNullProp<Product, 'contributor'>
+export type ConcavoProducto = WithNullProp<Producto, 'colaborador'>
 
-export function isConcavoProduct(product: Product): product is ConcavoProduct {
-  return product.contributor === null
+export function isConcavoProducto(producto: Producto): producto is ConcavoProducto {
+  return producto.colaborador === null
 }
 
-export interface Room {
+export interface Ambiente {
   name: string
   slug: string
-  products: Reference[]
+  productos: Reference[]
 }
 
-interface BaseContributor {
+interface BaseColaborador {
   name: string
   slug: string
   website: string
 }
 
-export type MainContributor = BaseContributor & {
+export type MainColaborador = BaseColaborador & {
   isMain: true
   description: string
   email: string
   address: string
 }
 
-export type StandardContributor = BaseContributor & {
+export type StandardColaborador = BaseColaborador & {
   isMain: false
   description: string | null
   email: string | null
   address: string | null
 }
 
-export type Contributor = MainContributor | StandardContributor
+export type Colaborador = MainColaborador | StandardColaborador
 
-export function isMainContributor(contributor: Contributor): contributor is MainContributor {
-  return contributor.isMain
+export function isMainColaborador(colaborador: Colaborador): colaborador is MainColaborador {
+  return colaborador.isMain
 }
 
 export interface DataSet {
-  products: Product[]
-  rooms: Room[]
-  contributors: Contributor[]
+  productos: Producto[]
+  ambientes: Ambiente[]
+  colaboradores: Colaborador[]
 }

@@ -1,84 +1,88 @@
 import { DoesNotExistError } from '@/lib/errors'
-import { getProductContributor, getProductsInRoom } from './common'
-import { Contributor } from '../types'
+import { getProductoColaborador, getProductosInAmbiente } from './common'
+import { Colaborador } from '../types'
 
 describe('Common functions', () => {
-  describe('getProductsByRoom', () => {
-    const rooms = [
+  describe('getProductosByAmbiente', () => {
+    const ambientes = [
       {
         slug: 'living-comedor',
         name: 'Living/Comedor',
-        products: [],
-        contributors: [],
+        productos: [],
+        colaboradores: [],
       },
       {
         slug: 'cocina',
         name: 'Cocina',
-        products: [
+        productos: [
           {
             slug: 'azulejos-guardados',
           },
         ],
-        contributors: [],
+        colaboradores: [],
       },
     ]
 
-    const productsInRoom = [
+    const productosInAmbiente = [
       {
         slug: 'azulejos-guardados',
         name: 'Azulejos Guardados',
-        contributor: {
+        colaborador: {
           slug: 'cocina-design',
         },
       },
     ]
 
-    const productsInOtherRooms = [
+    const productosInOtherAmbientes = [
       {
         slug: 'sofa-carlos',
         name: 'Sofá Carlos V',
-        contributor: {
+        colaborador: {
           slug: 'muebles-arte',
         },
       },
       {
         slug: 'bacha-8080',
         name: 'Bacha 8080',
-        contributor: null,
+        colaborador: null,
       },
     ]
 
-    it('returns the products of a certain room', () => {
-      const result = getProductsInRoom([...productsInRoom, ...productsInOtherRooms], rooms, 'cocina')
-      expect(result).toEqual(productsInRoom)
+    it('returns the productos of a certain ambiente', () => {
+      const result = getProductosInAmbiente([...productosInAmbiente, ...productosInOtherAmbientes], ambientes, 'cocina')
+      expect(result).toEqual(productosInAmbiente)
     })
 
-    it("throws an error if the product room doesn't exist", () => {
+    it("throws an error if the producto ambiente doesn't exist", () => {
       expect(() => {
-        getProductsInRoom([...productsInRoom, ...productsInOtherRooms], rooms, 'baño')
+        getProductosInAmbiente([...productosInAmbiente, ...productosInOtherAmbientes], ambientes, 'baño')
       }).toThrow(DoesNotExistError)
     })
   })
 
-  describe('getProductContributor', () => {
-    it("returns null if product doesn't have a contributor", () => {
-      const contributor = getProductContributor([], { name: 'Test product', slug: 'test-product', contributor: null })
-      expect(contributor).toBeNull()
+  describe('getProductoColaborador', () => {
+    it("returns null if producto doesn't have a colaborador", () => {
+      const colaborador = getProductoColaborador([], {
+        name: 'Test producto',
+        slug: 'test-producto',
+        colaborador: null,
+      })
+      expect(colaborador).toBeNull()
     })
 
-    it('returns the product contributor', () => {
-      const contributor = getProductContributor(
+    it('returns the producto colaborador', () => {
+      const colaborador = getProductoColaborador(
         [
-          { slug: 'another-contributor', name: 'Another contributor' } as Contributor,
-          { slug: 'test-contributor', name: 'Test contributor' } as Contributor,
+          { slug: 'another-colaborador', name: 'Another colaborador' } as Colaborador,
+          { slug: 'test-colaborador', name: 'Test colaborador' } as Colaborador,
         ],
         {
-          name: 'Test product',
-          slug: 'test-product',
-          contributor: { slug: 'test-contributor' },
+          name: 'Test producto',
+          slug: 'test-producto',
+          colaborador: { slug: 'test-colaborador' },
         },
       )
-      expect(contributor).toMatchObject({ slug: 'test-contributor', name: 'Test contributor' })
+      expect(colaborador).toMatchObject({ slug: 'test-colaborador', name: 'Test colaborador' })
     })
   })
 })

@@ -4,30 +4,30 @@ import { render, screen, within } from '@testing-library/react'
 import Home from '../page'
 
 jest.mock('@/data/data.ts', () => ({
-  products: [
+  productos: [
     {
       slug: 'azulejos-los-peores',
       name: 'Azulejos los peores',
-      contributor: {
+      colaborador: {
         slug: 'facu',
       },
     },
     {
       slug: 'azulejos-verdes',
       name: 'Azulejos verdes',
-      contributor: null,
+      colaborador: null,
     },
     {
       slug: 'azulejos-los-mejores',
       name: 'Azulejos los mejores',
-      contributor: {
+      colaborador: {
         slug: 'mati',
       },
     },
     {
       slug: 'azulejos-azules',
       name: 'Azulejos azules',
-      contributor: null,
+      colaborador: null,
     },
   ],
 }))
@@ -38,22 +38,22 @@ describe('Home', () => {
     expect(container).toMatchSnapshot()
   })
 
-  it('renders concavo products', () => {
+  it('renders concavo productos', () => {
     render(<Home />)
 
-    const productsList = screen.getByRole('list', { name: 'Productos Cóncavo' })
-    expect(productsList).toBeInTheDocument()
+    const productosList = screen.getByRole('list', { name: 'Productos Cóncavo' })
+    expect(productosList).toBeInTheDocument()
 
-    const products = within(productsList).getAllByRole('listitem')
-    expect(products).toHaveLength(2)
+    const productos = within(productosList).getAllByRole('listitem')
+    expect(productos).toHaveLength(2)
 
-    expect(products[0]).toBeInTheDocument()
-    const link0 = within(products[0]).getByRole<HTMLAnchorElement>('link', { name: 'Azulejos verdes' })
+    expect(productos[0]).toBeInTheDocument()
+    const link0 = within(productos[0]).getByRole<HTMLAnchorElement>('link', { name: 'Azulejos verdes' })
     expect(link0).toBeInTheDocument()
     expect(link0.href).toMatch(/^https?:\/\/[^/]+\/productos\/azulejos-verdes$/)
 
-    expect(products[1]).toBeInTheDocument()
-    const link1 = within(products[1]).getByRole<HTMLAnchorElement>('link', { name: 'Azulejos azules' })
+    expect(productos[1]).toBeInTheDocument()
+    const link1 = within(productos[1]).getByRole<HTMLAnchorElement>('link', { name: 'Azulejos azules' })
     expect(link1).toBeInTheDocument()
     expect(link1.href).toMatch(/^https?:\/\/[^/]+\/productos\/azulejos-azules$/)
   })

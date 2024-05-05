@@ -1,11 +1,11 @@
 import { DataSet } from './types'
 
 const data: DataSet = {
-  rooms: [
+  ambientes: [
     {
       slug: 'living-comedor',
       name: 'Living/Comedor',
-      products: [
+      productos: [
         {
           slug: 'lampara-hierro',
         },
@@ -17,7 +17,7 @@ const data: DataSet = {
     {
       slug: 'cocina',
       name: 'Cocina',
-      products: [
+      productos: [
         {
           slug: 'azulejos-guardados',
         },
@@ -26,12 +26,12 @@ const data: DataSet = {
     {
       slug: 'lavadero',
       name: 'Lavadero',
-      products: [],
+      productos: [],
     },
     {
       slug: 'escritorio',
       name: 'Escritorio',
-      products: [
+      productos: [
         {
           slug: 'lampara-hierro',
         },
@@ -43,80 +43,80 @@ const data: DataSet = {
     {
       slug: 'toilet',
       name: 'Toilet',
-      products: [],
+      productos: [],
     },
     {
       slug: 'cuarto-alegra',
       name: 'Cuarto Alegra',
-      products: [],
+      productos: [],
     },
     {
       slug: 'baño-alegra',
       name: 'Baño Alegra',
-      products: [],
+      productos: [],
     },
     {
       slug: 'cuarto-principal',
       name: 'Cuarto principal',
-      products: [],
+      productos: [],
     },
     {
       slug: 'baño-principal',
       name: 'Baño principal',
-      products: [],
+      productos: [],
     },
     {
       slug: 'galeria',
       name: 'Galería',
-      products: [],
+      productos: [],
     },
     {
       slug: 'jardin',
       name: 'Jardín',
-      products: [],
+      productos: [],
     },
   ],
-  products: [
+  productos: [
     {
       slug: 'piso-madera',
       name: 'Piso simil Madera',
-      contributor: {
+      colaborador: {
         slug: 'elegance',
       },
     },
     {
       slug: 'lampara-hierro',
       name: 'Lámpara de diseño con detalles de Hierro',
-      contributor: {
+      colaborador: {
         slug: 'luz-viva',
       },
     },
     {
       slug: 'sofa-carlos',
       name: 'Sofá Carlos V',
-      contributor: {
+      colaborador: {
         slug: 'muebles-arte',
       },
     },
     {
       slug: 'azulejos-guardados',
       name: 'Azulejos Guardados',
-      contributor: {
+      colaborador: {
         slug: 'cocina-design',
       },
     },
     {
       slug: 'bacha-8080',
       name: 'Bacha 8080',
-      contributor: null,
+      colaborador: null,
     },
     {
       slug: 'bañadera-10001',
       name: 'Bañadera 10001',
-      contributor: null,
+      colaborador: null,
     },
   ],
-  contributors: [
+  colaboradores: [
     {
       slug: 'elegance',
       name: 'Elegance',
