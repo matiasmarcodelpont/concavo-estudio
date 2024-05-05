@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NavBarLayour renders links to all pages and to each room 1`] = `
+exports[`NavBarLayour renders links to all pages and to each ambiente 1`] = `
 <nav>
   <ul>
     <li
@@ -44,9 +44,9 @@ exports[`NavBarLayour renders links to all pages and to each room 1`] = `
         >
           <a
             class="hover:underline"
-            href="/casa/room-1"
+            href="/casa/ambiente-1"
           >
-            Room 1
+            Ambiente 1
           </a>
         </li>
         <li
@@ -54,9 +54,9 @@ exports[`NavBarLayour renders links to all pages and to each room 1`] = `
         >
           <a
             class="hover:underline"
-            href="/casa/room-2"
+            href="/casa/ambiente-2"
           >
-            Room 2
+            Ambiente 2
           </a>
         </li>
         <li
@@ -64,9 +64,9 @@ exports[`NavBarLayour renders links to all pages and to each room 1`] = `
         >
           <a
             class="hover:underline"
-            href="/casa/room-3"
+            href="/casa/ambiente-3"
           >
-            Room 3
+            Ambiente 3
           </a>
         </li>
       </ul>

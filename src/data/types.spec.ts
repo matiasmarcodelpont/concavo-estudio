@@ -1,24 +1,24 @@
 import '@testing-library/jest-dom'
 
-import { isConcavoProduct, isMainContributor } from './types'
+import { isConcavoProducto, isMainColaborador } from './types'
 
-describe('isConcavoProduct', () => {
-  it('returns true if product has no contributor', () => {
-    const result = isConcavoProduct({ name: 'Test product', slug: 'test', contributor: null })
+describe('isConcavoProducto', () => {
+  it('returns true if producto has no colaborador', () => {
+    const result = isConcavoProducto({ name: 'Test producto', slug: 'test', colaborador: null })
     expect(result).toBe(true)
   })
 
-  it('returns false if product has a contributor', () => {
-    const result = isConcavoProduct({ name: 'Test product', slug: 'test', contributor: { slug: 'test-contributor' } })
+  it('returns false if producto has a colaborador', () => {
+    const result = isConcavoProducto({ name: 'Test producto', slug: 'test', colaborador: { slug: 'test-colaborador' } })
     expect(result).toBe(false)
   })
 })
 
-describe('isMainContributor', () => {
-  it('returns true if the contributor has the key isMain as true', () => {
-    const result = isMainContributor({
-      name: 'Test contributor',
-      slug: 'contributor',
+describe('isMainColaborador', () => {
+  it('returns true if the colaborador has the key isMain as true', () => {
+    const result = isMainColaborador({
+      name: 'Test colaborador',
+      slug: 'colaborador',
       website: '',
       isMain: true,
       description: 'test description',
@@ -29,10 +29,10 @@ describe('isMainContributor', () => {
     expect(result).toBe(true)
   })
 
-  it('returns false if the contributor has the key isMain as false', () => {
-    const result = isMainContributor({
-      name: 'Test contributor',
-      slug: 'contributor',
+  it('returns false if the colaborador has the key isMain as false', () => {
+    const result = isMainColaborador({
+      name: 'Test colaborador',
+      slug: 'colaborador',
       website: '',
       isMain: false,
       description: 'test description',

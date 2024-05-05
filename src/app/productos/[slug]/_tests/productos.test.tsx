@@ -1,14 +1,14 @@
 import '@testing-library/jest-dom'
 import { render, screen, within } from '@testing-library/react'
 
-import Product from '@/app/productos/[productSlug]/page'
+import Producto from '../page'
 
-jest.mock('../data/data.json', () => ({
-  rooms: [
+jest.mock('@/data/data.ts', () => ({
+  ambientes: [
     {
       slug: 'living-comedor',
       name: 'Living/Comedor',
-      products: [
+      productos: [
         {
           slug: 'lampara-hierro',
         },
@@ -16,12 +16,12 @@ jest.mock('../data/data.json', () => ({
           slug: 'piso-madera',
         },
       ],
-      contributors: [],
+      colaboradores: [],
     },
     {
       slug: 'escritorio',
       name: 'Escritorio',
-      products: [
+      productos: [
         {
           slug: 'lampara-hierro',
         },
@@ -29,12 +29,12 @@ jest.mock('../data/data.json', () => ({
           slug: 'piso-madera',
         },
       ],
-      contributors: [],
+      colaboradores: [],
     },
     {
       slug: 'cuarto-principal',
       name: 'Cuarto principal',
-      products: [
+      productos: [
         {
           slug: 'lampara-hierro',
         },
@@ -42,71 +42,71 @@ jest.mock('../data/data.json', () => ({
           slug: 'sofa-carlos',
         },
       ],
-      contributors: [],
+      colaboradores: [],
     },
   ],
-  products: [
+  productos: [
     {
       slug: 'piso-madera',
       name: 'Piso simil Madera',
-      contributor: {
+      colaborador: {
         slug: 'elegance',
       },
     },
     {
       slug: 'lampara-hierro',
       name: 'Lámpara de diseño con detalles de Hierro',
-      contributor: {
+      colaborador: {
         slug: 'luz-viva',
       },
     },
     {
       slug: 'sofa-carlos',
       name: 'Sofá Carlos V',
-      contributor: {
+      colaborador: {
         slug: 'muebles-arte',
       },
     },
   ],
-  contributors: [],
+  colaboradores: [],
 }))
 
-describe('Product', () => {
-  it('renders product page unchanged', () => {
-    const { container } = render(<Product params={{ productSlug: 'lampara-hierro' }} />)
+describe('Producto', () => {
+  it('renders producto page unchanged', () => {
+    const { container } = render(<Producto params={{ productoSlug: 'lampara-hierro' }} />)
     expect(container).toMatchSnapshot()
   })
 
-  it('renders Product name', () => {
-    render(<Product params={{ productSlug: 'lampara-hierro' }} />)
+  it('renders Producto name', () => {
+    render(<Producto params={{ productoSlug: 'lampara-hierro' }} />)
 
     const heading = screen.getByRole('heading', { level: 1, name: 'Lámpara de diseño con detalles de Hierro' })
     expect(heading).toBeInTheDocument()
   })
 
-  it('renders related products', () => {
-    render(<Product params={{ productSlug: 'lampara-hierro' }} />)
+  it('renders related productos', () => {
+    render(<Producto params={{ productoSlug: 'lampara-hierro' }} />)
 
-    const productsList = screen.getByRole('list', { name: 'Lista de productos relacionados' })
-    expect(productsList).toBeInTheDocument()
+    const productosList = screen.getByRole('list', { name: 'Lista de productos relacionados' })
+    expect(productosList).toBeInTheDocument()
 
-    const products = within(productsList).getAllByRole('listitem')
-    expect(products).toHaveLength(2)
+    const productos = within(productosList).getAllByRole('listitem')
+    expect(productos).toHaveLength(2)
 
-    expect(products[0]).toBeInTheDocument()
-    const link0 = within(products[0]).getByRole<HTMLAnchorElement>('link', { name: 'Piso simil Madera' })
+    expect(productos[0]).toBeInTheDocument()
+    const link0 = within(productos[0]).getByRole<HTMLAnchorElement>('link', { name: 'Piso simil Madera' })
     expect(link0).toBeInTheDocument()
     expect(link0.href).toMatch(/^https?:\/\/[^/]+\/productos\/piso-madera$/)
 
-    expect(products[1]).toBeInTheDocument()
-    const link1 = within(products[1]).getByRole<HTMLAnchorElement>('link', { name: 'Sofá Carlos V' })
+    expect(productos[1]).toBeInTheDocument()
+    const link1 = within(productos[1]).getByRole<HTMLAnchorElement>('link', { name: 'Sofá Carlos V' })
     expect(link1).toBeInTheDocument()
     expect(link1.href).toMatch(/^https?:\/\/[^/]+\/productos\/sofa-carlos$/)
   })
 
-  it('shows the 404 page if product is not found', () => {
+  it('shows the 404 page if producto is not found', () => {
     expect(() => {
-      render(<Product params={{ productSlug: 'producto-inexistente' }} />)
+      render(<Producto params={{ productoSlug: 'productoo-inexistente' }} />)
     }).toThrow('NEXT_NOT_FOUND')
   })
 })

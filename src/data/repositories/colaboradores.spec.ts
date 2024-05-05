@@ -1,12 +1,12 @@
 import '@testing-library/jest-dom'
-import { createContributorsRepository } from './contributors'
-import { Contributor, MainContributor, StandardContributor } from '../types'
+import { createColaboradoresRepository } from './colaboradores'
+import { Colaborador, MainColaborador, StandardColaborador } from '../types'
 import { DoesNotExistError } from '@/lib/errors'
 
-describe('contributors repository', () => {
-  describe('getMainContributors', () => {
-    it('returns main contributors', () => {
-      const contributors: Contributor[] = [
+describe('colaboradores repository', () => {
+  describe('getMainColaboradores', () => {
+    it('returns main colaboradores', () => {
+      const colaboradores: Colaborador[] = [
         {
           slug: 'elegance',
           name: 'Elegance',
@@ -48,7 +48,7 @@ describe('contributors repository', () => {
         },
       ]
 
-      const mainContributors: Omit<MainContributor, 'isMain'>[] = [
+      const mainColaboradores: Omit<MainColaborador, 'isMain'>[] = [
         {
           slug: 'elegance',
           name: 'Elegance',
@@ -69,20 +69,20 @@ describe('contributors repository', () => {
         },
       ]
 
-      const contributorsRepository = createContributorsRepository({
-        products: [],
-        rooms: [],
-        contributors,
+      const colaboradoresRepository = createColaboradoresRepository({
+        productos: [],
+        ambientes: [],
+        colaboradores,
       })
 
-      const result = contributorsRepository.getMainContributors()
-      expect(result).toEqual(mainContributors)
+      const result = colaboradoresRepository.getMainColaboradores()
+      expect(result).toEqual(mainColaboradores)
     })
   })
 
-  describe('getStandardContributors', () => {
-    it('returns standard contributors', () => {
-      const contributors: Contributor[] = [
+  describe('getStandardColaboradores', () => {
+    it('returns standard colaboradores', () => {
+      const colaboradores: Colaborador[] = [
         {
           slug: 'elegance',
           name: 'Elegance',
@@ -124,7 +124,7 @@ describe('contributors repository', () => {
         },
       ]
 
-      const standardContributors: Omit<StandardContributor, 'isMain' | 'description' | 'email' | 'address'>[] = [
+      const standardColaboradores: Omit<StandardColaborador, 'isMain' | 'description' | 'email' | 'address'>[] = [
         {
           slug: 'muebles-arte',
           name: 'Muebles de Arte',
@@ -137,29 +137,29 @@ describe('contributors repository', () => {
         },
       ]
 
-      const contributorsRepository = createContributorsRepository({
-        products: [],
-        rooms: [],
-        contributors,
+      const colaboradoresRepository = createColaboradoresRepository({
+        productos: [],
+        ambientes: [],
+        colaboradores,
       })
 
-      const result = contributorsRepository.getStandardContributors()
-      expect(result).toEqual(standardContributors)
+      const result = colaboradoresRepository.getStandardColaboradores()
+      expect(result).toEqual(standardColaboradores)
     })
   })
 
-  describe('getMainContributorsByRoom', () => {
-    const rooms = [
+  describe('getMainColaboradoresByAmbiente', () => {
+    const ambientes = [
       {
         slug: 'living-comedor',
         name: 'Living/Comedor',
-        products: [],
-        contributors: [],
+        productos: [],
+        colaboradores: [],
       },
       {
         slug: 'cocina',
         name: 'Cocina',
-        products: [
+        productos: [
           {
             slug: 'azulejos-guardados',
           },
@@ -167,40 +167,40 @@ describe('contributors repository', () => {
             slug: 'luz-led',
           },
         ],
-        contributors: [],
+        colaboradores: [],
       },
     ]
 
-    const products = [
+    const productos = [
       {
         slug: 'azulejos-guardados',
         name: 'Azulejos Guardados',
-        contributor: {
+        colaborador: {
           slug: 'cocina-design',
         },
       },
       {
         slug: 'sofa-carlos',
         name: 'Sofá Carlos V',
-        contributor: {
+        colaborador: {
           slug: 'muebles-arte',
         },
       },
       {
         slug: 'luz-led',
         name: 'Luz Led',
-        contributor: {
+        colaborador: {
           slug: 'luz-viva',
         },
       },
       {
         slug: 'bacha-8080',
         name: 'Bacha 8080',
-        contributor: null,
+        colaborador: null,
       },
     ]
 
-    const contributors: Contributor[] = [
+    const colaboradores: Colaborador[] = [
       {
         slug: 'luz-viva',
         name: 'Luz Viva',
@@ -242,7 +242,7 @@ describe('contributors repository', () => {
       },
     ]
 
-    const mainContributorsInRoom: Omit<MainContributor, 'isMain'>[] = [
+    const mainColaboradoresInAmbiente: Omit<MainColaborador, 'isMain'>[] = [
       {
         slug: 'luz-viva',
         name: 'Luz Viva',
@@ -254,42 +254,42 @@ describe('contributors repository', () => {
       },
     ]
 
-    it('returns main contributors by a room', () => {
-      const contributorsRepository = createContributorsRepository({
-        products,
-        rooms,
-        contributors,
+    it('returns main colaboradores by a ambiente', () => {
+      const colaboradoresRepository = createColaboradoresRepository({
+        productos,
+        ambientes,
+        colaboradores,
       })
 
-      const result = contributorsRepository.getMainContributorsByRoom('cocina')
-      expect(result).toEqual(mainContributorsInRoom)
+      const result = colaboradoresRepository.getMainColaboradoresByAmbiente('cocina')
+      expect(result).toEqual(mainColaboradoresInAmbiente)
     })
 
-    it("thows an error if the room doesn't exist", () => {
-      const contributorsRepository = createContributorsRepository({
-        products,
-        rooms,
-        contributors,
+    it("thows an error if the ambiente doesn't exist", () => {
+      const colaboradoresRepository = createColaboradoresRepository({
+        productos,
+        ambientes,
+        colaboradores,
       })
 
       expect(() => {
-        contributorsRepository.getMainContributorsByRoom('baño')
+        colaboradoresRepository.getMainColaboradoresByAmbiente('baño')
       }).toThrow(DoesNotExistError)
     })
   })
 
-  describe('getStandardContributorsByRoom', () => {
-    const rooms = [
+  describe('getStandardColaboradoresByAmbiente', () => {
+    const ambientes = [
       {
         slug: 'living-comedor',
         name: 'Living/Comedor',
-        products: [],
-        contributors: [],
+        productos: [],
+        colaboradores: [],
       },
       {
         slug: 'cocina',
         name: 'Cocina',
-        products: [
+        productos: [
           {
             slug: 'azulejos-guardados',
           },
@@ -297,40 +297,40 @@ describe('contributors repository', () => {
             slug: 'luz-led',
           },
         ],
-        contributors: [],
+        colaboradores: [],
       },
     ]
 
-    const products = [
+    const productos = [
       {
         slug: 'azulejos-guardados',
         name: 'Azulejos Guardados',
-        contributor: {
+        colaborador: {
           slug: 'cocina-design',
         },
       },
       {
         slug: 'sofa-carlos',
         name: 'Sofá Carlos V',
-        contributor: {
+        colaborador: {
           slug: 'muebles-arte',
         },
       },
       {
         slug: 'luz-led',
         name: 'Luz Led',
-        contributor: {
+        colaborador: {
           slug: 'luz-viva',
         },
       },
       {
         slug: 'bacha-8080',
         name: 'Bacha 8080',
-        contributor: null,
+        colaborador: null,
       },
     ]
 
-    const contributors: Contributor[] = [
+    const colaboradores: Colaborador[] = [
       {
         slug: 'luz-viva',
         name: 'Luz Viva',
@@ -372,34 +372,35 @@ describe('contributors repository', () => {
       },
     ]
 
-    const standardContributorsInRoom: Omit<StandardContributor, 'isMain' | 'description' | 'email' | 'address'>[] = [
-      {
-        slug: 'cocina-design',
-        name: 'Cocina Design',
-        website: 'www.cocinadesign.com',
-      },
-    ]
+    const standardColaboradoresInAmbiente: Omit<StandardColaborador, 'isMain' | 'description' | 'email' | 'address'>[] =
+      [
+        {
+          slug: 'cocina-design',
+          name: 'Cocina Design',
+          website: 'www.cocinadesign.com',
+        },
+      ]
 
-    it('returns standard contributors by a room', () => {
-      const contributorsRepository = createContributorsRepository({
-        products,
-        rooms,
-        contributors,
+    it('returns standard colaboradores by a ambiente', () => {
+      const colaboradoresRepository = createColaboradoresRepository({
+        productos,
+        ambientes,
+        colaboradores,
       })
 
-      const result = contributorsRepository.getStandardContributorsByRoom('cocina')
-      expect(result).toEqual(standardContributorsInRoom)
+      const result = colaboradoresRepository.getStandardColaboradoresByAmbiente('cocina')
+      expect(result).toEqual(standardColaboradoresInAmbiente)
     })
 
-    it("thows an error if the room doesn't exist", () => {
-      const contributorsRepository = createContributorsRepository({
-        products,
-        rooms,
-        contributors,
+    it("thows an error if the ambiente doesn't exist", () => {
+      const colaboradoresRepository = createColaboradoresRepository({
+        productos,
+        ambientes,
+        colaboradores,
       })
 
       expect(() => {
-        contributorsRepository.getStandardContributorsByRoom('baño')
+        colaboradoresRepository.getStandardColaboradoresByAmbiente('baño')
       }).toThrow(DoesNotExistError)
     })
   })

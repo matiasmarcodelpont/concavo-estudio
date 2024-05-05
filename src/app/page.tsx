@@ -1,9 +1,9 @@
 import Link from 'next/link'
 
-import { productsRepository } from '@/controllers'
+import { productosRepository } from '@/controllers'
 
 export default function Home() {
-  const products = productsRepository.getConcavoProducts()
+  const productos = productosRepository.getConcavoProductos()
 
   return (
     <main>
@@ -12,9 +12,9 @@ export default function Home() {
       <section>
         <h1 id='productos-concavo'>Productos Cóncavo</h1>
         <ul aria-labelledby='productos-concavo'>
-          {products.map((product) => (
-            <li key={product.slug}>
-              <Link href={`/productos/${product.slug}`}>{product.name}</Link>
+          {productos.map((producto) => (
+            <li key={producto.slug}>
+              <Link href={`/productos/${producto.slug}`}>{producto.name}</Link>
             </li>
           ))}
         </ul>

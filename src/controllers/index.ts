@@ -1,13 +1,11 @@
-import data from '@/data/data.json'
+import data from '@/data/data'
 
-import { DataSet } from '@/data/types'
+import { createProductosRepository } from '@/data/repositories/productos'
+import { createAmbientesRepository } from '@/data/repositories/ambientes'
+import { createColaboradoresRepository } from '@/data/repositories/colaboradores'
 
-import { createProductsRepository } from '@/data/repositories/products'
-import { createRoomsRepository } from '@/data/repositories/rooms'
-import { createContributorsRepository } from '@/data/repositories/contributors'
+export const productosRepository = createProductosRepository(data)
 
-export const productsRepository = createProductsRepository(data as DataSet)
+export const ambientesRepository = createAmbientesRepository(data)
 
-export const roomsRepository = createRoomsRepository(data as DataSet)
-
-export const contributorsRepository = createContributorsRepository(data as DataSet)
+export const colaboradoresRepository = createColaboradoresRepository(data)

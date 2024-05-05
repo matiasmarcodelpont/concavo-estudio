@@ -1,19 +1,25 @@
 import { DoesNotExistError } from '@/lib/errors'
-import { DataSet, Product } from '../types'
+import { DataSet, Producto } from '../types'
 
-export function getProductsInRoom(products: DataSet['products'], rooms: DataSet['rooms'], roomSlug: string) {
-  const room = rooms.find((room) => room.slug === roomSlug)
+export function getProductosInAmbiente(
+  productos: DataSet['productos'],
+  ambientes: DataSet['ambientes'],
+  ambienteSlug: string,
+) {
+  const ambiente = ambientes.find((ambiente) => ambiente.slug === ambienteSlug)
 
-  if (!room) throw new DoesNotExistError(`Room ${roomSlug} does not exist`)
+  if (!ambiente) throw new DoesNotExistError(`Ambiente ${ambienteSlug} does not exist`)
 
-  return products.filter((product) => room.products.some((productInRoom) => productInRoom.slug === product.slug))
+  return productos.filter((producto) =>
+    ambiente.productos.some((productoInAmbiente) => productoInAmbiente.slug === producto.slug),
+  )
 }
 
-export function getProductContributor(contributors: DataSet['contributors'], product: Product) {
-  const productContributor = product.contributor
-  if (!productContributor) {
+export function getProductoColaborador(colaboradores: DataSet['colaboradores'], producto: Producto) {
+  const productoColaborador = producto.colaborador
+  if (!productoColaborador) {
     return null
   }
 
-  return contributors.find((contributor) => contributor.slug === productContributor.slug) ?? null
+  return colaboradores.find((colaborador) => colaborador.slug === productoColaborador.slug) ?? null
 }

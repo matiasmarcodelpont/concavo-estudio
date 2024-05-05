@@ -3,8 +3,8 @@ import { Inter } from 'next/font/google'
 
 import './globals.css'
 
-import { roomsRepository } from '@/controllers'
-import { NavBarLayout } from '../components/NavBarLayout'
+import { ambientesRepository } from '@/controllers'
+import { NavBarLayout } from './_components/NavBarLayout'
 import { DrawerTrigger } from '@/components/ui/drawer'
 import { Button } from '@/components/ui/button'
 import { Menu } from 'lucide-react'
@@ -21,12 +21,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const rooms = roomsRepository.getRooms()
+  const ambientes = ambientesRepository.getAmbientes()
 
   return (
     <html lang='es'>
       <body className={inter.className}>
-        <NavBarLayout rooms={rooms}>
+        <NavBarLayout ambientes={ambientes}>
           <header className='p-6'>
             <DrawerTrigger asChild>
               <Button variant='ghost' size='icon' aria-label='Open navigation menu'>
