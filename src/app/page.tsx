@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { productosRepository } from '@/controllers'
 
 export default function Home() {
-  const productos = productosRepository.getConcavoProductos()
+  const productos = productosRepository.getProductosConcavo()
 
   return (
     <main>

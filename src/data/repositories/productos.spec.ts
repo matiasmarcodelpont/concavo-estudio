@@ -45,7 +45,7 @@ describe('productos repository', () => {
         colaboradores: [],
       })
 
-      const result = productosRepository.getConcavoProductos()
+      const result = productosRepository.getProductosConcavo()
       expect(result).toEqual(concavoProductos)
     })
   })

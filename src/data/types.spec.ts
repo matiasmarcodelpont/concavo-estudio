@@ -1,15 +1,15 @@
 import '@testing-library/jest-dom'
 
-import { isConcavoProducto, isMainColaborador } from './types'
+import { isProductoConcavo, isMainColaborador } from './types'
 
 describe('isConcavoProducto', () => {
   it('returns true if producto has no colaborador', () => {
-    const result = isConcavoProducto({ name: 'Test producto', slug: 'test', colaborador: null })
+    const result = isProductoConcavo({ name: 'Test producto', slug: 'test', colaborador: null })
     expect(result).toBe(true)
   })
 
   it('returns false if producto has a colaborador', () => {
-    const result = isConcavoProducto({ name: 'Test producto', slug: 'test', colaborador: { slug: 'test-colaborador' } })
+    const result = isProductoConcavo({ name: 'Test producto', slug: 'test', colaborador: { slug: 'test-colaborador' } })
     expect(result).toBe(false)
   })
 })

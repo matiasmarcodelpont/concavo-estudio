@@ -1,5 +1,5 @@
-import { ConcavoProducto, Colaborador, DataSet, OmitReferences, Producto, Reference, isConcavoProducto } from '../types'
-import { getProductoColaborador, getProductosInAmbiente } from './common'
+import { ProductoConcavo, Colaborador, DataSet, OmitReferences, Producto, Reference, isProductoConcavo } from '../types'
+import { getColaboradorFromProducto, getProductosInAmbiente } from './common'
 
 /**
  * Creates and returns the productos repository
@@ -12,8 +12,8 @@ export function createProductosRepository(data: DataSet) {
      * Concavo productos are productos without colaboradores. This function returns all concavo productos.
      * @returns The list of all concavo productos.
      */
-    getConcavoProductos(): ConcavoProducto[] {
-      return data.productos.filter(isConcavoProducto)
+    getProductosConcavo(): ProductoConcavo[] {
+      return data.productos.filter(isProductoConcavo)
     },
 
     /**
@@ -31,7 +31,7 @@ export function createProductosRepository(data: DataSet) {
         return null
       }
 
-      const colaborador = getProductoColaborador(data.colaboradores, producto)
+      const colaborador = getColaboradorFromProducto(data.colaboradores, producto)
 
       return {
         ...producto,

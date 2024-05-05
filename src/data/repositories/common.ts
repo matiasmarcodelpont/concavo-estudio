@@ -15,7 +15,7 @@ export function getProductosInAmbiente(
   )
 }
 
-export function getProductoColaborador(colaboradores: DataSet['colaboradores'], producto: Producto) {
+export function getColaboradorFromProducto(colaboradores: DataSet['colaboradores'], producto: Producto) {
   const productoColaborador = producto.colaborador
   if (!productoColaborador) {
     return null
