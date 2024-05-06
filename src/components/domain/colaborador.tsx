@@ -20,7 +20,7 @@ export const StandardColaborador = (colaborador: StandardColaboradorProps) => {
         fill
         sizes='(max-width: 768px) 100vw, 33vw'
         style={{ objectFit: 'contain' }}
-        src={colaborador.imageUrl}
+        src={`/colaboradores/${colaborador.slug}.png`}
         alt={colaborador.name}
         className='max-w-[300px] max-h-[150px] grayscale' // TODO: Remove grayscale when real logos are onboarded?
       />

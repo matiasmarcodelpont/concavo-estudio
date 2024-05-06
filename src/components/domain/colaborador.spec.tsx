@@ -6,7 +6,6 @@ import { MainColaborador, StandardColaborador } from './colaborador'
 const mainColaborador = {
   slug: 'elegance',
   name: 'Elegancee',
-  imageUrl: '/colaboradores/elegance.png',
   website: 'https://www.pisoselegance.es',
   isMain: true,
   description:
@@ -56,7 +55,6 @@ describe('MainColaborador', () => {
 const standardColaborador = {
   slug: 'muebles-arte',
   name: 'Muebles de Arte',
-  imageUrl: '/colaboradores/muebles_arte.png',
   website: 'https://www.mueblesdearte.com',
 }
 
