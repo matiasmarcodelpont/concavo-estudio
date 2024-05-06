@@ -11,6 +11,6 @@ h6 {
   font-family: var(--editorial-new);
 }
 
-* {
+body {
   font-family: var(--tt-norms);
 }
