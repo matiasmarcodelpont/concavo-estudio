@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 
 import './globals.css'
 
@@ -9,8 +8,7 @@ import { DrawerTrigger } from '@/components/ui/drawer'
 import { Button } from '@/components/ui/button'
 import { Menu } from 'lucide-react'
 import { cn } from '@/lib/utils'
-
-const inter = Inter({ subsets: ['latin'] })
+import { editorialNew, ttNorms } from '@/lib/fonts'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -26,7 +24,7 @@ export default function RootLayout({
 
   return (
     <html lang='es'>
-      <body className={cn(inter.className, 'bg-bone')}>
+      <body className={cn(editorialNew.variable, ttNorms.variable, 'bg-bone')}>
         <NavBarLayout ambientes={ambientes}>
           <header className='p-6'>
             <DrawerTrigger asChild>
