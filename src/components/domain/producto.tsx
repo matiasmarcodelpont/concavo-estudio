@@ -4,26 +4,26 @@ import Image from 'next/image'
 
 interface ProductoProps extends ProductoType {
   className?: string
+  concavo?: boolean
 }
 
-export const Producto = ({ className, ...producto }: ProductoProps) => {
+export const Producto = ({ className, concavo = false, ...producto }: ProductoProps) => {
   return (
-    <div
-      className={cn(
-        'flex flex-col gap-2 cursor-pointer text-dark-gray transition-colors hover:text-light-gray',
-        className,
-      )}
-    >
-      <div className='w-[200px] h-[250px] relative '>
+    <div className={cn('flex flex-col gap-2 cursor-pointer text-dark-gray group', className)}>
+      <div className='w-[200px] h-[250px] relative overflow-hidden'>
         <Image
           fill
           sizes='(max-width: 768px) 100vw, 33vw'
           style={{ objectFit: 'cover' }}
           src={`/productos/${producto.slug}.jpg`}
           alt={producto.name}
+          className='group-hover:scale-105 transition-transform duration-1000'
         />
       </div>
-      <h3 className='text-sm text-center uppercase mb-4'>{producto.name}</h3>
+      <div className='mb-4 group-hover:text-light-gray transition-colors duration-500 space-y-1'>
+        <h3 className='text-md text-center uppercase'>{producto.name}</h3>
+        {concavo && <p className='text-xs text-center'>AAA x LLL x PPP</p>}
+      </div>
     </div>
   )
 }

@@ -36,7 +36,7 @@ export default function Home() {
         <h1 className='text-center'>Productos Cóncavo</h1>
         <Fluid className='gap-4 justify-center'>
           {productosConcavo.map((producto) => (
-            <Producto key={producto.slug} {...producto} />
+            <Producto key={producto.slug} {...producto} concavo />
           ))}
         </Fluid>
       </div>

@@ -21,7 +21,7 @@ exports[`MainColaborador matches snapshot 1`] = `
       />
     </div>
     <p
-      class="text-xs text-center text-darkGray"
+      class="text-xs text-center text-dark-gray"
     >
       Líder en revestimientos de suelos elegantes y duraderos para hogares y negocios. Calidad, innovación y compromiso con la sostenibilidad nos distinguen.
     </p>
@@ -29,7 +29,7 @@ exports[`MainColaborador matches snapshot 1`] = `
       class="flex flex-col gap-1"
     >
       <p
-        class="text-xs text-center font-semibold text-darkGray"
+        class="text-xs text-center font-semibold text-dark-gray"
       >
         Avenida del Diseño 123, Ciudad Elegante, España
       </p>
@@ -45,7 +45,7 @@ exports[`MainColaborador matches snapshot 1`] = `
         </a>
         <div
           aria-orientation="vertical"
-          class="w-[1px] bg-darkGray"
+          class="w-[1px] bg-dark-gray"
           data-orientation="vertical"
           role="separator"
         />
