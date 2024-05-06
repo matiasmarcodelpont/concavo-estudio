@@ -19,7 +19,6 @@ describe('isMainColaborador', () => {
     const result = isMainColaborador({
       slug: 'colaborador',
       name: 'Test colaborador',
-      imageUrl: '/path/to/image',
       website: '',
       isMain: true,
       description: 'test description',
@@ -34,7 +33,6 @@ describe('isMainColaborador', () => {
     const result = isMainColaborador({
       slug: 'colaborador',
       name: 'Test colaborador',
-      imageUrl: '/path/to/image',
       website: '',
       isMain: false,
       description: 'test description',
