@@ -14,7 +14,7 @@ export const Producto = ({ className, ...producto }: ProductoProps) => {
           fill
           sizes='(max-width: 768px) 100vw, 33vw'
           style={{ objectFit: 'contain' }}
-          // src={producto.imageUrl}
+          src={`/productos/${producto.slug}.jpg`}
           alt={producto.name}
           className='max-w-[300px] max-h-[150px]'
         />
