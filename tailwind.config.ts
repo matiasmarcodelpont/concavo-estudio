@@ -10,7 +10,7 @@ const config = {
       black: '#2D1A18',
       bone: '#EBE5DF',
       mustard: '#D1A24C',
-      darkGray: '#005850',
+      darkGray: '#464242',
       lightGray: '#005850',
       blackGreen: '#1B2722',
       brown1: '#664B30',
@@ -29,6 +29,12 @@ const config = {
       },
     },
     extend: {
+      /* https://befonts.com/editorial-new-font-family.html */
+      /* https://befonts.com/tt-norms-pro-serif-font.html */
+      fontFamily: {
+        'editorial-new': ['var(--editorial-new)'],
+        'tt-norms': ['var(--tt-norms)'],
+      },
       keyframes: {
         'accordion-down': {
           from: { height: '0' },
