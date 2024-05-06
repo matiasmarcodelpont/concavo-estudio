@@ -34,9 +34,9 @@ export const MainColaborador = ({ className, ...colaborador }: MainColaboradorPr
   return (
     <div className={cn('flex flex-col gap-3', className)}>
       <StandardColaborador {...colaborador} />
-      <p className='text-xs text-center text-darkGray'>{colaborador.description}</p>
+      <p className='text-xs text-center text-dark-gray'>{colaborador.description}</p>
       <div className='flex flex-col gap-1'>
-        <p className='text-xs text-center font-semibold text-darkGray'>{colaborador.address}</p>
+        <p className='text-xs text-center font-semibold text-dark-gray'>{colaborador.address}</p>
         <div className='text-center flex justify-center gap-2'>
           <a
             className='text-xs text-center font-semibold text-blue hover:underline'
@@ -45,7 +45,7 @@ export const MainColaborador = ({ className, ...colaborador }: MainColaboradorPr
           >
             {colaborador.email}
           </a>
-          <Separator orientation='vertical' className='w-[1px] bg-darkGray' />
+          <Separator orientation='vertical' className='w-[1px] bg-dark-gray' />
           <a
             className='text-xs text-center font-semibold text-blue hover:underline'
             href={colaborador.website}

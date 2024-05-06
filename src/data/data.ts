@@ -86,7 +86,7 @@ const data: DataSet = {
     },
     {
       slug: 'lampara-hierro',
-      name: 'Lámpara de diseño con detalles de Hierro',
+      name: 'Lámpara de Hierro',
       colaborador: {
         slug: 'luz-viva',
       },

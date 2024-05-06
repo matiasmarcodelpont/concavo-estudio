@@ -1,4 +1,5 @@
 import { MainColaborador, StandardColaborador } from '@/components/domain/colaborador'
+import { Producto } from '@/components/domain/producto'
 import Fluid from '@/components/layouts/fluid'
 import { ambientesRepository, colaboradoresRepository, productosRepository } from '@/controllers'
 import { redirect } from 'next/navigation'
@@ -33,17 +34,17 @@ export default function Home() {
       </div>
       <div>
         <h1 className='text-center'>Productos Cóncavo</h1>
-        <Fluid className='gap-12 justify-center'>
+        <Fluid className='gap-4 justify-center'>
           {productosConcavo.map((producto) => (
-            <div key={producto.slug}>{producto.name}</div>
+            <Producto key={producto.slug} {...producto} />
           ))}
         </Fluid>
       </div>
       <div>
         <h1 className='text-center'>Productos</h1>
-        <Fluid className='gap-12 justify-center'>
+        <Fluid className='gap-4 justify-center'>
           {productos.map((producto) => (
-            <div key={producto.slug}>{producto.name}</div>
+            <Producto key={producto.slug} {...producto} />
           ))}
         </Fluid>
       </div>
