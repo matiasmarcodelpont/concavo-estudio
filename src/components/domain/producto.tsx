@@ -1,8 +1,8 @@
-import { Producto as ProductoType } from '@/data/types'
+import { OmitReferences, Producto as ProductoType } from '@/data/types'
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
 
-interface ProductoProps extends ProductoType {
+interface ProductoProps extends OmitReferences<ProductoType> {
   className?: string
   concavo?: boolean
 }
@@ -22,7 +22,11 @@ export const Producto = ({ className, concavo = false, ...producto }: ProductoPr
       </div>
       <div className='mb-4 group-hover:text-light-gray transition-colors duration-500 space-y-1'>
         <p className='text-md text-center uppercase'>{producto.name}</p>
-        {concavo && <p className='text-xs text-center'>AAA x LLL x PPP</p>}
+        {concavo && (
+          <p className='text-xs text-center' role='dimensions'>
+            AAA x LLL x PPP
+          </p>
+        )}
       </div>
     </div>
   )
