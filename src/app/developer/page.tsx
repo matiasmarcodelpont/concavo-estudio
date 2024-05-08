@@ -1,6 +1,6 @@
 import { MainColaborador, StandardColaborador } from '@/components/domain/colaborador'
 import { Producto } from '@/components/domain/producto'
-import { FlexWrap } from '@/components/layouts/fluid'
+import { FlexWrap, GridFluid } from '@/components/layouts/fluid'
 import { ambientesRepository, colaboradoresRepository, productosRepository } from '@/controllers'
 import { redirect } from 'next/navigation'
 
@@ -16,38 +16,38 @@ export default function Home() {
 
   return (
     <div className='flex flex-col gap-4'>
-      <div>
+      <span>
         <h1 className='text-center'>Main Colaboradores</h1>
         <FlexWrap className='gap-12 justify-center'>
           {mainColaboradores.map((colaborador) => (
             <MainColaborador key={colaborador.slug} {...colaborador} className='w-[300px]' />
           ))}
         </FlexWrap>
-      </div>
-      <div>
+      </span>
+      <span>
         <h1 className='text-center'>Standard Colaboradores</h1>
         <FlexWrap className='gap-12 justify-center'>
           {standardColaboradores.map((colaborador) => (
             <StandardColaborador key={colaborador.slug} {...colaborador} className='w-[300px]' />
           ))}
         </FlexWrap>
-      </div>
-      <div>
+      </span>
+      <span className='mx-12'>
         <h1 className='text-center'>Productos Cóncavo</h1>
-        <FlexWrap className='gap-4 justify-center'>
+        <GridFluid className='gap-4 justify-center'>
           {productosConcavo.map((producto) => (
             <Producto key={producto.slug} {...producto} concavo />
           ))}
-        </FlexWrap>
-      </div>
-      <div>
+        </GridFluid>
+      </span>
+      <span className='mx-12'>
         <h1 className='text-center'>Productos</h1>
-        <FlexWrap className='gap-4 justify-center'>
+        <GridFluid className='gap-4 justify-center'>
           {productos.map((producto) => (
             <Producto key={producto.slug} {...producto} />
           ))}
-        </FlexWrap>
-      </div>
+        </GridFluid>
+      </span>
     </div>
   )
 }
