@@ -11,8 +11,8 @@ export type OmitReferences<T> = {
 }
 
 export interface Producto {
-  name: string
   slug: string
+  name: string
   colaborador: Reference | null
 }
 
@@ -23,8 +23,8 @@ export function isProductoConcavo(producto: Producto): producto is ProductoConca
 }
 
 export interface Ambiente {
-  name: string
   slug: string
+  name: string
   productos: Reference[]
 }
 
