@@ -3,8 +3,8 @@ import { notFound } from 'next/navigation'
 
 import { colaboradoresRepository, productosRepository, ambientesRepository } from '@/controllers'
 
-export default function Ambiente({ params }: { params: { ambienteSlug: string } }) {
-  const ambiente = ambientesRepository.getAmbiente(decodeURIComponent(params.ambienteSlug))
+export default function Ambiente({ params }: { params: { slug: string } }) {
+  const ambiente = ambientesRepository.getAmbiente(decodeURIComponent(params.slug))
   if (!ambiente) {
     notFound()
   }
