@@ -120,7 +120,7 @@ const data: DataSet = {
     {
       slug: 'elegance',
       name: 'Elegance',
-      website: 'www.pisoselegance.es',
+      website: 'https://www.pisoselegance.es',
       isMain: true,
       description:
         'Líder en revestimientos de suelos elegantes y duraderos para hogares y negocios. Calidad, innovación y compromiso con la sostenibilidad nos distinguen.',
@@ -130,7 +130,7 @@ const data: DataSet = {
     {
       slug: 'luz-viva',
       name: 'Luz Viva',
-      website: 'www.luzviva.com',
+      website: 'https://www.luzviva.com',
       isMain: true,
       description:
         'Líder en sistemas de iluminación innovadores y eficientes para hogares y negocios. Calidad, diseño y compromiso con la sostenibilidad nos distinguen.',
@@ -140,7 +140,7 @@ const data: DataSet = {
     {
       slug: 'muebles-arte',
       name: 'Muebles de Arte',
-      website: 'www.mueblesdearte.com',
+      website: 'https://www.mueblesdearte.com',
       isMain: false,
       description: null,
       email: null,
@@ -149,7 +149,7 @@ const data: DataSet = {
     {
       slug: 'cocina-design',
       name: 'Cocina Design',
-      website: 'www.cocinadesign.com',
+      website: 'https://www.cocinadesign.com',
       isMain: false,
       description:
         'Especialistas en diseño y equipamiento de cocinas de alta gama. Ofrecemos soluciones personalizadas para crear la cocina de tus sueños, combinando estilo, funcionalidad y calidad.',
