@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Ambiente matches snapshot 1`] = `
+<div>
+  <a
+    class="bg-center flex flex-column justify-between items-center relative w-full h-[61.8dvw] max-h-[494px] max-w-[800px] pl-4"
+    href="/casa/elegance"
+  >
+    <p
+      class="text-xl text-white"
+    >
+      Elegancee
+    </p>
+    <svg
+      class="lucide lucide-chevron-right "
+      fill="none"
+      height="50px"
+      stroke="white"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      viewBox="0 0 24 24"
+      width="50px"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="m9 18 6-6-6-6"
+      />
+    </svg>
+  </a>
+</div>
+`;

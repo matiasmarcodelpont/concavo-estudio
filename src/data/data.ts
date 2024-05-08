@@ -28,53 +28,53 @@ const data: DataSet = {
       name: 'Lavadero',
       productos: [],
     },
-    {
-      slug: 'escritorio',
-      name: 'Escritorio',
-      productos: [
-        {
-          slug: 'lampara-hierro',
-        },
-        {
-          slug: 'piso-madera',
-        },
-      ],
-    },
-    {
-      slug: 'toilet',
-      name: 'Toilet',
-      productos: [],
-    },
-    {
-      slug: 'cuarto-alegra',
-      name: 'Cuarto Alegra',
-      productos: [],
-    },
-    {
-      slug: 'baño-alegra',
-      name: 'Baño Alegra',
-      productos: [],
-    },
-    {
-      slug: 'cuarto-principal',
-      name: 'Cuarto principal',
-      productos: [],
-    },
-    {
-      slug: 'baño-principal',
-      name: 'Baño principal',
-      productos: [],
-    },
-    {
-      slug: 'galeria',
-      name: 'Galería',
-      productos: [],
-    },
-    {
-      slug: 'jardin',
-      name: 'Jardín',
-      productos: [],
-    },
+    // {
+    //   slug: 'escritorio',
+    //   name: 'Escritorio',
+    //   productos: [
+    //     {
+    //       slug: 'lampara-hierro',
+    //     },
+    //     {
+    //       slug: 'piso-madera',
+    //     },
+    //   ],
+    // },
+    // {
+    //   slug: 'toilet',
+    //   name: 'Toilet',
+    //   productos: [],
+    // },
+    // {
+    //   slug: 'cuarto-alegra',
+    //   name: 'Cuarto Alegra',
+    //   productos: [],
+    // },
+    // {
+    //   slug: 'baño-alegra',
+    //   name: 'Baño Alegra',
+    //   productos: [],
+    // },
+    // {
+    //   slug: 'cuarto-principal',
+    //   name: 'Cuarto principal',
+    //   productos: [],
+    // },
+    // {
+    //   slug: 'baño-principal',
+    //   name: 'Baño principal',
+    //   productos: [],
+    // },
+    // {
+    //   slug: 'galeria',
+    //   name: 'Galería',
+    //   productos: [],
+    // },
+    // {
+    //   slug: 'jardin',
+    //   name: 'Jardín',
+    //   productos: [],
+    // },
   ],
   productos: [
     {
