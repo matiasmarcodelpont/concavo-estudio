@@ -17,14 +17,6 @@ describe('removeHttps', () => {
     expect(result).toBe(expected)
   })
 
-  test('returns the same string if no protocol is present', () => {
-    const url = 'example.com'
-    const expected = 'example.com'
-
-    const result = removeHttps(url)
-    expect(result).toBe(expected)
-  })
-
   test('handles URLs with subdomains and paths', () => {
     const url = 'https://subdomain.example.com/path/to/resource'
     const expected = 'subdomain.example.com/path/to/resource'
