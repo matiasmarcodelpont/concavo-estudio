@@ -101,7 +101,7 @@ describe('Ambiente', () => {
     const { container } = render(
       <Ambiente
         params={{
-          ambienteSlug: 'cocina',
+          slug: 'cocina',
         }}
       />,
     )
@@ -112,7 +112,7 @@ describe('Ambiente', () => {
     render(
       <Ambiente
         params={{
-          ambienteSlug: 'cocina',
+          slug: 'cocina',
         }}
       />,
     )
@@ -125,7 +125,7 @@ describe('Ambiente', () => {
     render(
       <Ambiente
         params={{
-          ambienteSlug: 'cocina',
+          slug: 'cocina',
         }}
       />,
     )
@@ -151,7 +151,7 @@ describe('Ambiente', () => {
     render(
       <Ambiente
         params={{
-          ambienteSlug: 'cocina',
+          slug: 'cocina',
         }}
       />,
     )
@@ -172,7 +172,7 @@ describe('Ambiente', () => {
     render(
       <Ambiente
         params={{
-          ambienteSlug: 'cocina',
+          slug: 'cocina',
         }}
       />,
     )
@@ -191,7 +191,7 @@ describe('Ambiente', () => {
 
   it('shows the 404 page if producto is not found', () => {
     expect(() => {
-      render(<Ambiente params={{ ambienteSlug: 'cuarto-inexistente' }} />)
+      render(<Ambiente params={{ slug: 'cuarto-inexistente' }} />)
     }).toThrow('NEXT_NOT_FOUND')
   })
 })
