@@ -21,7 +21,7 @@ export const Producto = ({ className, concavo = false, ...producto }: ProductoPr
         />
       </div>
       <div className='mb-4 group-hover:text-light-gray transition-colors duration-500 space-y-1'>
-        <h3 className='text-md text-center uppercase'>{producto.name}</h3>
+        <p className='text-md text-center uppercase'>{producto.name}</p>
         {concavo && <p className='text-xs text-center'>AAA x LLL x PPP</p>}
       </div>
     </div>
