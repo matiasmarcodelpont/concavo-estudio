@@ -26,13 +26,15 @@ describe('Producto', () => {
 
   it('should not render the dimensions if the producto is from concavo', () => {
     const component = render(<Producto {...producto} />)
-    const dimensions = component.queryByRole('dimensions')
+    const dimensions = component.queryByLabelText('dimensions')
 
-    expect(dimensions).toBeInTheDocument()
+    expect(dimensions).not.toBeInTheDocument()
   })
 
   it('should render the dimensions if the producto is from concavo', () => {
     const component = render(<Producto {...producto} concavo />)
-    component.getByRole('dimensions')
+    const dimensions = component.queryByLabelText('dimensions')
+
+    expect(dimensions).toBeInTheDocument()
   })
 })
