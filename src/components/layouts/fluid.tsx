@@ -1,12 +1,18 @@
 import { cn } from '@/lib/utils'
-import { ClassValue } from 'clsx'
-import { ReactNode } from 'react'
+import { HTMLAttributes, ReactNode } from 'react'
 
 interface Fluid {
   children: ReactNode
-  className?: ClassValue
 }
 
-const Fluid = ({ children, className }: Fluid) => <div className={cn('flex flex-wrap m-12', className)}>{children}</div>
+export const FlexWrap = ({ children, ...UListProps }: Fluid & HTMLAttributes<HTMLUListElement>) => (
+  <ul {...UListProps} className={cn('flex flex-wrap', UListProps.className)}>
+    {children}
+  </ul>
+)
 
-export default Fluid
+export const GridFluid = ({ children, ...UListProps }: Fluid & HTMLAttributes<HTMLUListElement>) => (
+  <ul {...UListProps} className={cn(`grid grid-cols-auto-fill-300`, UListProps.className)}>
+    {children}
+  </ul>
+)

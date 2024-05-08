@@ -10,10 +10,9 @@ interface ProductoProps extends OmitReferences<ProductoType> {
 export const Producto = ({ className, concavo = false, ...producto }: ProductoProps) => {
   return (
     <div className={cn('flex flex-col gap-2 cursor-pointer text-dark-gray group', className)}>
-      <div className='w-[200px] h-[250px] relative overflow-hidden'>
+      <div className='h-[450px] relative overflow-hidden'>
         <Image
           fill
-          sizes='(max-width: 768px) 100vw, 33vw'
           style={{ objectFit: 'cover' }}
           src={`/productos/${producto.slug}.jpg`}
           alt={producto.name}
