@@ -24,7 +24,7 @@ export default function RootLayout({
 
   return (
     <html lang='es'>
-      <body className={cn(editorialNew.variable, ttNorms.variable, 'bg-bone')}>
+      <body className={cn(editorialNew.variable, ttNorms.variable, 'bg-bone text-black')}>
         <NavBarLayout ambientes={ambientes}>
           <header className='p-6'>
             <DrawerTrigger asChild>
