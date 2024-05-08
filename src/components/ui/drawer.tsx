@@ -32,7 +32,7 @@ const DrawerContent = React.forwardRef<
     <DrawerOverlay />
     <DrawerPrimitive.Content
       ref={ref}
-      className={cn('fixed inset-y-0 start-0 z-50 bg-white', className)}
+      className={cn('fixed inset-y-0 start-0 z-50 bg-bone', className)}
       asChild
       {...props}
     >
