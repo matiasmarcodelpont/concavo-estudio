@@ -1,3 +1,4 @@
+import { Ambiente } from '@/components/domain/ambiente'
 import { MainColaborador, StandardColaborador } from '@/components/domain/colaborador'
 import { Producto } from '@/components/domain/producto'
 import { FlexWrap, GridFluid } from '@/components/layouts/fluid'
@@ -24,6 +25,7 @@ export default function Home() {
           ))}
         </FlexWrap>
       </span>
+
       <span>
         <h1 className='text-center'>Standard Colaboradores</h1>
         <FlexWrap className='gap-12 justify-center'>
@@ -32,6 +34,7 @@ export default function Home() {
           ))}
         </FlexWrap>
       </span>
+
       <span className='mx-12'>
         <h1 className='text-center'>Productos Cóncavo</h1>
         <GridFluid className='gap-4 justify-center'>
@@ -40,6 +43,7 @@ export default function Home() {
           ))}
         </GridFluid>
       </span>
+
       <span className='mx-12'>
         <h1 className='text-center'>Productos</h1>
         <GridFluid className='gap-4 justify-center'>
@@ -47,6 +51,13 @@ export default function Home() {
             <Producto key={producto.slug} {...producto} />
           ))}
         </GridFluid>
+      </span>
+
+      <span>
+        <h1>Ambientes</h1>
+        {ambientes.map((ambiente) => (
+          <Ambiente key={ambiente.slug} {...ambiente} className='mb-4 mx-auto' />
+        ))}
       </span>
     </div>
   )
