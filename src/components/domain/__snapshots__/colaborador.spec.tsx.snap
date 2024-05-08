@@ -2,11 +2,9 @@
 
 exports[`MainColaborador matches snapshot 1`] = `
 <div>
-  <div
-    class="flex flex-col gap-3"
-  >
+  <div>
     <div
-      class="w-[300px] h-[150px] relative"
+      class="mb-3 w-[300px] h-[150px] relative"
     >
       <img
         alt="Elegancee"
@@ -21,42 +19,38 @@ exports[`MainColaborador matches snapshot 1`] = `
       />
     </div>
     <p
-      class="text-xs text-center text-darkGray"
+      class="text-xs text-center text-darkGray mb-3"
     >
       Líder en revestimientos de suelos elegantes y duraderos para hogares y negocios. Calidad, innovación y compromiso con la sostenibilidad nos distinguen.
     </p>
-    <div
-      class="flex flex-col gap-1"
+    <p
+      class="text-xs text-center font-semibold text-darkGray mb-1"
     >
-      <p
-        class="text-xs text-center font-semibold text-darkGray"
+      Avenida del Diseño 123, Ciudad Elegante, España
+    </p>
+    <div
+      class="text-center flex justify-center gap-2"
+    >
+      <a
+        class="text-xs text-center font-semibold text-blue hover:underline"
+        href="mailto:info@pisoselegance.com"
+        target="_blank"
       >
-        Avenida del Diseño 123, Ciudad Elegante, España
-      </p>
+        info@pisoselegance.com
+      </a>
       <div
-        class="text-center flex justify-center gap-2"
+        aria-orientation="vertical"
+        class="w-[1px] bg-darkGray"
+        data-orientation="vertical"
+        role="separator"
+      />
+      <a
+        class="text-xs text-center font-semibold text-blue hover:underline"
+        href="https://www.pisoselegance.es"
+        target="_blank"
       >
-        <a
-          class="text-xs text-center font-semibold text-blue hover:underline"
-          href="mailto:info@pisoselegance.com"
-          target="_blank"
-        >
-          info@pisoselegance.com
-        </a>
-        <div
-          aria-orientation="vertical"
-          class="w-[1px] bg-darkGray"
-          data-orientation="vertical"
-          role="separator"
-        />
-        <a
-          class="text-xs text-center font-semibold text-blue hover:underline"
-          href="https://www.pisoselegance.es"
-          target="_blank"
-        >
-          www.pisoselegance.es
-        </a>
-      </div>
+        www.pisoselegance.es
+      </a>
     </div>
   </div>
 </div>
