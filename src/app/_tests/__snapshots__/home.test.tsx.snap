@@ -23,6 +23,7 @@ exports[`Home renders homepage unchanged 1`] = `
       >
         <li>
           <a
+            aria-label="Azulejos verdes"
             class="flex flex-col gap-2 cursor-pointer text-dark-gray group"
             href="/productos/azulejos-verdes"
           >
@@ -54,6 +55,7 @@ exports[`Home renders homepage unchanged 1`] = `
         </li>
         <li>
           <a
+            aria-label="Azulejos azules"
             class="flex flex-col gap-2 cursor-pointer text-dark-gray group"
             href="/productos/azulejos-azules"
           >

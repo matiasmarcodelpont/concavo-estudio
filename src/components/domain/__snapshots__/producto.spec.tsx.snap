@@ -3,6 +3,7 @@
 exports[`Producto matches snapshot 1`] = `
 <div>
   <a
+    aria-label="Piso simil Madera"
     class="flex flex-col gap-2 cursor-pointer text-dark-gray group"
     href="/productos/piso-madera"
   >
