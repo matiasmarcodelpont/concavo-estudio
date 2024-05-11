@@ -33,23 +33,6 @@ describe('MainColaborador', () => {
     const descriptionElement = getByText(mainColaborador.description)
     expect(descriptionElement).toBeInTheDocument()
   })
-
-  it('should render the colaborador address', () => {
-    const { getByText } = render(<MainColaborador {...mainColaborador} />)
-
-    const addressElement = getByText(mainColaborador.address)
-    expect(addressElement).toBeInTheDocument()
-  })
-
-  it('should render the colaborador email and website links', () => {
-    const { getByRole } = render(<MainColaborador {...mainColaborador} />)
-
-    const emailLink = getByRole('link', { name: mainColaborador.email })
-    expect(emailLink).toHaveAttribute('href', `mailto:${mainColaborador.email}`)
-
-    const websiteLink = getByRole('link', { name: 'www.pisoselegance.es' })
-    expect(websiteLink).toHaveAttribute('href', mainColaborador.website)
-  })
 })
 
 const standardColaborador = {

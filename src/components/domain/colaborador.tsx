@@ -1,9 +1,5 @@
-'use client'
-
 import { MainColaborador as MainColaboradorType, StandardColaborador as StandardColaboradorType } from '@/data/types'
-import removeHttps from '@/lib/removeHttps'
 import { cn } from '@/lib/utils'
-import { Separator } from '@radix-ui/react-separator'
 import Image from 'next/image'
 
 interface ColaboradorBaseProps {
@@ -15,10 +11,9 @@ type StandardColaboradorProps = ColaboradorBaseProps &
 
 export const StandardColaborador = ({ slug, name, className }: StandardColaboradorProps) => {
   return (
-    <div className={cn(className, 'w-[300px] h-[150px] relative')}>
+    <div className={cn(className, 'w-[300px] h-[100px] relative')}>
       <Image
         fill
-        sizes='(max-width: 768px) 100vw, 33vw'
         style={{ objectFit: 'contain' }}
         src={`/colaboradores/${slug}.png`}
         alt={name}
@@ -28,31 +23,13 @@ export const StandardColaborador = ({ slug, name, className }: StandardColaborad
   )
 }
 
-type MainColaboradorProps = ColaboradorBaseProps & Omit<MainColaboradorType, 'isMain'>
+type MainColaboradorProps = ColaboradorBaseProps & Omit<MainColaboradorType, 'isMain' | 'email' | 'address'>
 
 export const MainColaborador = ({ className, ...colaborador }: MainColaboradorProps) => {
   return (
     <div className={className}>
       <StandardColaborador {...colaborador} className='mb-3' />
-      <p className='text-xs text-center text-darkGray mb-3'>{colaborador.description}</p>
-      <p className='text-xs text-center font-semibold text-darkGray mb-1'>{colaborador.address}</p>
-      <div className='text-center flex justify-center gap-2'>
-        <a
-          className='text-xs text-center font-semibold text-blue hover:underline'
-          href={`mailto:${colaborador.email}`}
-          target='_blank'
-        >
-          {colaborador.email}
-        </a>
-        <Separator orientation='vertical' className='w-[1px] bg-darkGray' />
-        <a
-          className='text-xs text-center font-semibold text-blue hover:underline'
-          href={colaborador.website}
-          target='_blank'
-        >
-          {removeHttps(colaborador.website)}
-        </a>
-      </div>
+      <p className='text-xs text-darkGray mb-3'>{colaborador.description}</p>
     </div>
   )
 }

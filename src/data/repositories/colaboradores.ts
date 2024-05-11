@@ -12,17 +12,13 @@ export function createColaboradoresRepository(data: DataSet) {
      * The colaboradores are the different brands of the productos in Casa Concavo.
      * @returns The list of the main colaboradores.
      */
-    getMainColaboradores(): Omit<MainColaborador, 'isMain'>[] {
-      return data.colaboradores
-        .filter(isMainColaborador)
-        .map(({ slug, name, website, description, email, address }) => ({
-          slug,
-          name,
-          website,
-          description,
-          email,
-          address,
-        }))
+    getMainColaboradores(): Omit<MainColaborador, 'isMain' | 'email' | 'address'>[] {
+      return data.colaboradores.filter(isMainColaborador).map(({ slug, name, website, description }) => ({
+        slug,
+        name,
+        website,
+        description,
+      }))
     },
 
     /**
@@ -39,7 +35,7 @@ export function createColaboradoresRepository(data: DataSet) {
      * This function returns the main colaboradores of the productos that are in a certain ambiente.
      * @returns The list of the main colaboradores of the ambiente.
      */
-    getMainColaboradoresByAmbiente(ambienteSlug: string): Omit<MainColaborador, 'isMain'>[] {
+    getMainColaboradoresByAmbiente(ambienteSlug: string): Omit<MainColaborador, 'isMain' | 'email' | 'address'>[] {
       const productosInAmbiente = getProductosInAmbiente(data.productos, data.ambientes, ambienteSlug)
 
       return data.colaboradores
@@ -47,13 +43,11 @@ export function createColaboradoresRepository(data: DataSet) {
           productosInAmbiente.some((productoInAmbiente) => productoInAmbiente.colaborador?.slug === colaborador.slug),
         )
         .filter(isMainColaborador)
-        .map(({ slug, name, website, description, email, address }) => ({
+        .map(({ slug, name, website, description }) => ({
           slug,
           name,
           website,
           description,
-          email,
-          address,
         }))
     },
 

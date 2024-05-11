@@ -4,7 +4,7 @@ exports[`MainColaborador matches snapshot 1`] = `
 <div>
   <div>
     <div
-      class="mb-3 w-[300px] h-[150px] relative"
+      class="mb-3 w-[300px] h-[100px] relative"
     >
       <img
         alt="Elegancee"
@@ -12,46 +12,17 @@ exports[`MainColaborador matches snapshot 1`] = `
         data-nimg="fill"
         decoding="async"
         loading="lazy"
-        sizes="(max-width: 768px) 100vw, 33vw"
+        sizes="100vw"
         src="/_next/image?url=%2Fcolaboradores%2Felegance.png&w=3840&q=75"
-        srcset="/_next/image?url=%2Fcolaboradores%2Felegance.png&w=256&q=75 256w, /_next/image?url=%2Fcolaboradores%2Felegance.png&w=384&q=75 384w, /_next/image?url=%2Fcolaboradores%2Felegance.png&w=640&q=75 640w, /_next/image?url=%2Fcolaboradores%2Felegance.png&w=750&q=75 750w, /_next/image?url=%2Fcolaboradores%2Felegance.png&w=828&q=75 828w, /_next/image?url=%2Fcolaboradores%2Felegance.png&w=1080&q=75 1080w, /_next/image?url=%2Fcolaboradores%2Felegance.png&w=1200&q=75 1200w, /_next/image?url=%2Fcolaboradores%2Felegance.png&w=1920&q=75 1920w, /_next/image?url=%2Fcolaboradores%2Felegance.png&w=2048&q=75 2048w, /_next/image?url=%2Fcolaboradores%2Felegance.png&w=3840&q=75 3840w"
+        srcset="/_next/image?url=%2Fcolaboradores%2Felegance.png&w=640&q=75 640w, /_next/image?url=%2Fcolaboradores%2Felegance.png&w=750&q=75 750w, /_next/image?url=%2Fcolaboradores%2Felegance.png&w=828&q=75 828w, /_next/image?url=%2Fcolaboradores%2Felegance.png&w=1080&q=75 1080w, /_next/image?url=%2Fcolaboradores%2Felegance.png&w=1200&q=75 1200w, /_next/image?url=%2Fcolaboradores%2Felegance.png&w=1920&q=75 1920w, /_next/image?url=%2Fcolaboradores%2Felegance.png&w=2048&q=75 2048w, /_next/image?url=%2Fcolaboradores%2Felegance.png&w=3840&q=75 3840w"
         style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: contain; color: transparent;"
       />
     </div>
     <p
-      class="text-xs text-center text-darkGray mb-3"
+      class="text-xs text-darkGray mb-3"
     >
       Líder en revestimientos de suelos elegantes y duraderos para hogares y negocios. Calidad, innovación y compromiso con la sostenibilidad nos distinguen.
     </p>
-    <p
-      class="text-xs text-center font-semibold text-darkGray mb-1"
-    >
-      Avenida del Diseño 123, Ciudad Elegante, España
-    </p>
-    <div
-      class="text-center flex justify-center gap-2"
-    >
-      <a
-        class="text-xs text-center font-semibold text-blue hover:underline"
-        href="mailto:info@pisoselegance.com"
-        target="_blank"
-      >
-        info@pisoselegance.com
-      </a>
-      <div
-        aria-orientation="vertical"
-        class="w-[1px] bg-darkGray"
-        data-orientation="vertical"
-        role="separator"
-      />
-      <a
-        class="text-xs text-center font-semibold text-blue hover:underline"
-        href="https://www.pisoselegance.es"
-        target="_blank"
-      >
-        www.pisoselegance.es
-      </a>
-    </div>
   </div>
 </div>
 `;
@@ -59,7 +30,7 @@ exports[`MainColaborador matches snapshot 1`] = `
 exports[`StandardColaborador matches snapshot 1`] = `
 <div>
   <div
-    class="w-[300px] h-[150px] relative"
+    class="w-[300px] h-[100px] relative"
   >
     <img
       alt="Muebles de Arte"
@@ -67,9 +38,9 @@ exports[`StandardColaborador matches snapshot 1`] = `
       data-nimg="fill"
       decoding="async"
       loading="lazy"
-      sizes="(max-width: 768px) 100vw, 33vw"
+      sizes="100vw"
       src="/_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=3840&q=75"
-      srcset="/_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=256&q=75 256w, /_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=384&q=75 384w, /_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=640&q=75 640w, /_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=750&q=75 750w, /_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=828&q=75 828w, /_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=1080&q=75 1080w, /_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=1200&q=75 1200w, /_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=1920&q=75 1920w, /_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=2048&q=75 2048w, /_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=3840&q=75 3840w"
+      srcset="/_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=640&q=75 640w, /_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=750&q=75 750w, /_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=828&q=75 828w, /_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=1080&q=75 1080w, /_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=1200&q=75 1200w, /_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=1920&q=75 1920w, /_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=2048&q=75 2048w, /_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=3840&q=75 3840w"
       style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: contain; color: transparent;"
     />
   </div>
