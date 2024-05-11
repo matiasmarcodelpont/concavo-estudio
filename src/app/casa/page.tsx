@@ -1,7 +1,7 @@
 import { colaboradoresRepository, ambientesRepository } from '@/controllers'
 import { Ambiente } from '@/components/domain/ambiente'
 import { MainColaborador, StandardColaborador } from '@/components/domain/colaborador'
-import Fluid from '@/components/layouts/fluid'
+import { FlexWrap } from '@/components/layouts/fluid'
 
 export default function CasaConcavo() {
   const ambientes = ambientesRepository.getAmbientes()
@@ -23,23 +23,23 @@ export default function CasaConcavo() {
       </section>
 
       <section className='mx-12'>
-        <Fluid aria-label='Lista de los principales Colaboradores' className='gap-12 justify-center'>
+        <FlexWrap aria-label='Lista de los principales Colaboradores' className='gap-12 justify-center'>
           {mainColaboradores.map((mainColaborador) => (
             <li key={mainColaborador.slug} className='w-[300px] list-none'>
               <MainColaborador {...mainColaborador} />
             </li>
           ))}
-        </Fluid>
+        </FlexWrap>
       </section>
 
       <section className='mx-12'>
-        <Fluid aria-label='Lista del resto de los Colaboradores' className='gap-12 justify-center'>
+        <FlexWrap aria-label='Lista del resto de los Colaboradores' className='gap-12 justify-center'>
           {standardColaboradores.map((standardColaborador) => (
             <li key={standardColaborador.slug} className='w-[300px] list-none'>
               <StandardColaborador {...standardColaborador} />
             </li>
           ))}
-        </Fluid>
+        </FlexWrap>
       </section>
     </main>
   )
