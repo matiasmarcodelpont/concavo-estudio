@@ -2,7 +2,9 @@ import { Ambiente } from '@/components/domain/ambiente'
 import { MainColaborador, StandardColaborador } from '@/components/domain/colaborador'
 import { Producto } from '@/components/domain/producto'
 import { FlexWrap, GridFluid } from '@/components/layouts/fluid'
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
 import { ambientesRepository, colaboradoresRepository, productosRepository } from '@/controllers'
+import Image from 'next/image'
 import { redirect } from 'next/navigation'
 
 export default function Home() {
@@ -16,49 +18,59 @@ export default function Home() {
   const productos = ambientes.flatMap((ambiente) => productosRepository.getProductosInAmbiente(ambiente.slug))
 
   return (
-    <div className='flex flex-col gap-4'>
-      <span>
-        <h1 className='text-center'>Main Colaboradores</h1>
-        <FlexWrap className='gap-12 justify-center'>
-          {mainColaboradores.map((colaborador) => (
-            <MainColaborador key={colaborador.slug} {...colaborador} className='w-[300px]' />
-          ))}
-        </FlexWrap>
-      </span>
-
-      <span>
-        <h1 className='text-center'>Standard Colaboradores</h1>
-        <FlexWrap className='gap-12 justify-center'>
-          {standardColaboradores.map((colaborador) => (
-            <StandardColaborador key={colaborador.slug} {...colaborador} className='w-[300px]' />
-          ))}
-        </FlexWrap>
-      </span>
-
-      <span className='mx-12'>
-        <h1 className='text-center'>Productos Cóncavo</h1>
-        <GridFluid className='gap-4 justify-center'>
-          {productosConcavo.map((producto) => (
-            <Producto key={producto.slug} {...producto} concavo />
-          ))}
-        </GridFluid>
-      </span>
-
-      <span className='mx-12'>
-        <h1 className='text-center'>Productos</h1>
-        <GridFluid className='gap-4 justify-center'>
-          {productos.map((producto) => (
-            <Producto key={producto.slug} {...producto} />
-          ))}
-        </GridFluid>
-      </span>
-
-      <span>
-        <h1>Ambientes</h1>
-        {ambientes.map((ambiente) => (
-          <Ambiente key={ambiente.slug} {...ambiente} className='mb-4 mx-auto' />
+    <main className='max-w-[1024px] mx-auto mb-8'>
+      <h2 className='text-center'>Main Colaboradores</h2>
+      <FlexWrap className='gap-12 justify-center mb-16'>
+        {mainColaboradores.map((colaborador) => (
+          <MainColaborador key={colaborador.slug} {...colaborador} className='w-[300px]' />
         ))}
-      </span>
-    </div>
+      </FlexWrap>
+
+      <h2 className='text-center'>Standard Colaboradores</h2>
+      <FlexWrap className='gap-12 justify-center mb-16'>
+        {standardColaboradores.map((colaborador) => (
+          <StandardColaborador key={colaborador.slug} {...colaborador} className='w-[300px]' />
+        ))}
+      </FlexWrap>
+
+      <h2 className='text-center'>Productos Cóncavo</h2>
+      <GridFluid className='gap-4 justify-center mb-16'>
+        {productosConcavo.map((producto) => (
+          <Producto key={producto.slug} {...producto} concavo />
+        ))}
+      </GridFluid>
+
+      <h2 className='text-center'>Productos</h2>
+      <GridFluid className='gap-4 justify-center mx-auto mb-16'>
+        {productos.map((producto) => (
+          <Producto key={producto.slug} {...producto} />
+        ))}
+      </GridFluid>
+
+      <h2 className='text-center'>Ambientes</h2>
+      {ambientes.map((ambiente) => (
+        <Ambiente key={ambiente.slug} {...ambiente} className='mb-4 mx-auto' />
+      ))}
+
+      <h2 className='text-center mt-16'>Carousel</h2>
+      <Carousel>
+        <CarouselContent>
+          <CarouselItem className='relative'>
+            <Image src='/ambientes/cocina.jpeg' alt='Cocina' fill className='object-cover' />
+          </CarouselItem>
+
+          <CarouselItem className='relative'>
+            <Image src='/ambientes/lavadero.jpeg' alt='Lavadero' fill className='object-cover' />
+          </CarouselItem>
+
+          <CarouselItem className='relative'>
+            <Image src='/ambientes/living-comedor.jpeg' alt='Living/Comedor' fill className='object-cover' />
+          </CarouselItem>
+        </CarouselContent>
+
+        <CarouselPrevious />
+        <CarouselNext />
+      </Carousel>
+    </main>
   )
 }
