@@ -7,6 +7,7 @@ const config = {
   theme: {
     /* https://drive.google.com/drive/folders/19bB4pKolAMLZXp2lQSfvys5W3QaJYBOa */
     colors: {
+      white: '#FFFFFF',
       black: '#2D1A18',
       bone: '#EBE5DF',
       mustard: '#D1A24C',
