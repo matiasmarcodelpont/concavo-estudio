@@ -11,7 +11,7 @@ export const Ambiente = ({ className, slug, name }: { className?: string; slug: 
       }}
       className={cn(
         className,
-        'bg-center flex flex-column justify-between items-center relative w-full h-[61.8dvw] max-h-[494px] max-w-[800px] pl-4',
+        'bg-center flex flex-column justify-between items-center relative w-full h-[61.8dvw] max-h-[494px] max-w-[1024px] pl-4',
       )}
     >
       <p className='text-xl text-white'>{name}</p>
