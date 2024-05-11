@@ -1,3 +1,4 @@
+import { Ambiente } from '@/components/domain/ambiente'
 import { MainColaborador, StandardColaborador } from '@/components/domain/colaborador'
 import { Producto } from '@/components/domain/producto'
 import Fluid from '@/components/layouts/fluid'
@@ -24,6 +25,7 @@ export default function Home() {
           ))}
         </Fluid>
       </div>
+
       <div>
         <h1 className='text-center'>Standard Colaboradores</h1>
         <Fluid className='gap-12 justify-center'>
@@ -32,6 +34,7 @@ export default function Home() {
           ))}
         </Fluid>
       </div>
+
       <div>
         <h1 className='text-center'>Productos Cóncavo</h1>
         <Fluid className='gap-4 justify-center'>
@@ -40,6 +43,7 @@ export default function Home() {
           ))}
         </Fluid>
       </div>
+
       <div>
         <h1 className='text-center'>Productos</h1>
         <Fluid className='gap-4 justify-center'>
@@ -47,6 +51,13 @@ export default function Home() {
             <Producto key={producto.slug} {...producto} />
           ))}
         </Fluid>
+
+        <div>
+          <h1>Ambientes</h1>
+          {ambientes.map((ambiente) => (
+            <Ambiente key={ambiente.slug} {...ambiente} className='mb-4 mx-auto' />
+          ))}
+        </div>
       </div>
     </div>
   )
