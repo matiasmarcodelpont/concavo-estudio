@@ -46,15 +46,5 @@ describe('Home', () => {
 
     const productos = within(productosList).getAllByRole('listitem')
     expect(productos).toHaveLength(2)
-
-    expect(productos[0]).toBeInTheDocument()
-    const link0 = within(productos[0]).getByRole<HTMLAnchorElement>('link')
-    expect(link0).toBeInTheDocument()
-    expect(link0.href).toMatch(/^https?:\/\/[^/]+\/productos\/azulejos-verdes$/)
-
-    expect(productos[1]).toBeInTheDocument()
-    const link1 = within(productos[1]).getByRole<HTMLAnchorElement>('link')
-    expect(link1).toBeInTheDocument()
-    expect(link1.href).toMatch(/^https?:\/\/[^/]+\/productos\/azulejos-azules$/)
   })
 })

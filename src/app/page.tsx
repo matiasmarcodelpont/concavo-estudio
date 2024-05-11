@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 import { productosRepository } from '@/controllers'
 import { Producto } from '@/components/domain/producto'
 import { GridFluid } from '@/components/layouts/fluid'
@@ -15,12 +13,10 @@ export default function Home() {
         <h1 className='text-center' id='productos-concavo'>
           Productos Cóncavo
         </h1>
-        <GridFluid className='gap-4' role='list' aria-labelledby='productos-concavo'>
+        <GridFluid className='gap-4' aria-labelledby='productos-concavo'>
           {productos.map((producto) => (
             <li key={producto.slug}>
-              <Link href={`/productos/${producto.slug}`}>
-                <Producto {...producto} />
-              </Link>
+              <Producto {...producto} />
             </li>
           ))}
         </GridFluid>

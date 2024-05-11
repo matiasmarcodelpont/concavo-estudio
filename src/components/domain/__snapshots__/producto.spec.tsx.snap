@@ -2,8 +2,9 @@
 
 exports[`Producto matches snapshot 1`] = `
 <div>
-  <div
+  <a
     class="flex flex-col gap-2 cursor-pointer text-dark-gray group"
+    href="/productos/piso-madera"
   >
     <div
       class="h-[450px] relative overflow-hidden"
@@ -29,6 +30,6 @@ exports[`Producto matches snapshot 1`] = `
         Piso simil Madera
       </p>
     </div>
-  </div>
+  </a>
 </div>
 `;

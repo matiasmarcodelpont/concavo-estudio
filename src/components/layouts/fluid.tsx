@@ -5,14 +5,14 @@ interface Fluid {
   children: ReactNode
 }
 
-export const FlexWrap = ({ children, ...UListProps }: Fluid & HTMLAttributes<HTMLUListElement>) => (
-  <ul {...UListProps} className={cn('flex flex-wrap', UListProps.className)}>
+export const FlexWrap = ({ children, ...ulistProps }: Fluid & HTMLAttributes<HTMLUListElement>) => (
+  <ul {...ulistProps} className={cn('flex flex-wrap', ulistProps.className)}>
     {children}
   </ul>
 )
 
-export const GridFluid = ({ children, ...UListProps }: Fluid & HTMLAttributes<HTMLUListElement>) => (
-  <ul {...UListProps} className={cn(`grid grid-cols-auto-fill-300`, UListProps.className)}>
+export const GridFluid = ({ children, ...ulistProps }: Fluid & HTMLAttributes<HTMLUListElement>) => (
+  <ul {...ulistProps} className={cn(`grid grid-cols-auto-fill-300`, ulistProps.className)}>
     {children}
   </ul>
 )
