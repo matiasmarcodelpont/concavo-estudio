@@ -9,11 +9,11 @@ export default function CasaConcavo() {
   const standardColaboradores = colaboradoresRepository.getStandardColaboradores()
 
   return (
-    <main className='text-center'>
-      <h1>Casa Cóncavo</h1>
+    <main className='text-center m-12'>
+      <section>
+        <h1>Casa Cóncavo</h1>
 
-      <section className='mx-12'>
-        <ul aria-label='Lista de Ambientes' className='space-y-8'>
+        <ul aria-label='Lista de Ambientes' className='space-y-4'>
           {ambientes.map((ambiente) => (
             <li key={ambiente.slug}>
               <Ambiente {...ambiente} />
@@ -22,7 +22,9 @@ export default function CasaConcavo() {
         </ul>
       </section>
 
-      <section className='mx-12'>
+      <section className='m-12'>
+        <h1>Nuestros Colaboradores</h1>
+
         <FlexWrap aria-label='Lista de los principales Colaboradores' className='gap-12 justify-center'>
           {mainColaboradores.map((mainColaborador) => (
             <li key={mainColaborador.slug} className='w-[300px] list-none'>
@@ -30,9 +32,7 @@ export default function CasaConcavo() {
             </li>
           ))}
         </FlexWrap>
-      </section>
 
-      <section className='mx-12'>
         <FlexWrap aria-label='Lista del resto de los Colaboradores' className='gap-12 justify-center'>
           {standardColaboradores.map((standardColaborador) => (
             <li key={standardColaborador.slug} className='w-[300px] list-none'>

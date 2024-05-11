@@ -3,17 +3,15 @@
 exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
 <div>
   <main
-    class="text-center"
+    class="text-center m-12"
   >
-    <h1>
-      Casa Cóncavo
-    </h1>
-    <section
-      class="mx-12"
-    >
+    <section>
+      <h1>
+        Casa Cóncavo
+      </h1>
       <ul
         aria-label="Lista de Ambientes"
-        class="space-y-8"
+        class="space-y-4"
       >
         <li>
           <a
@@ -74,10 +72,14 @@ exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
       </ul>
     </section>
     <section
-      class="mx-12"
+      class="m-12"
     >
-      <div
-        class="flex flex-wrap m-12 gap-12 justify-center"
+      <h1>
+        Nuestros Colaboradores
+      </h1>
+      <ul
+        aria-label="Lista de los principales Colaboradores"
+        class="flex flex-wrap gap-12 justify-center"
       >
         <li
           class="w-[300px] list-none"
@@ -131,13 +133,10 @@ exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
             </p>
           </div>
         </li>
-      </div>
-    </section>
-    <section
-      class="mx-12"
-    >
-      <div
-        class="flex flex-wrap m-12 gap-12 justify-center"
+      </ul>
+      <ul
+        aria-label="Lista del resto de los Colaboradores"
+        class="flex flex-wrap gap-12 justify-center"
       >
         <li
           class="w-[300px] list-none"
@@ -177,7 +176,7 @@ exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
             />
           </div>
         </li>
-      </div>
+      </ul>
     </section>
   </main>
 </div>
