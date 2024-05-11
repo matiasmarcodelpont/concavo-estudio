@@ -19,6 +19,12 @@ describe('Producto', () => {
     component.getByAltText(producto.name)
   })
 
+  it('should render the product as a link to the product page', () => {
+    const component = render(<Producto {...producto} />)
+    const link = component.getByRole('link')
+    expect(link).toHaveAttribute('href', `/productos/${producto.slug}`)
+  })
+
   it('should render the producto name', () => {
     const component = render(<Producto {...producto} />)
     component.getByText(producto.name)
