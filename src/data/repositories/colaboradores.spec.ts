@@ -48,15 +48,13 @@ describe('colaboradores repository', () => {
         },
       ]
 
-      const mainColaboradores: Omit<MainColaborador, 'isMain'>[] = [
+      const mainColaboradores: Omit<MainColaborador, 'isMain' | 'email' | 'address'>[] = [
         {
           slug: 'elegance',
           name: 'Elegance',
           website: 'www.pisoselegance.es',
           description:
             'Líder en revestimientos de suelos elegantes y duraderos para hogares y negocios. Calidad, innovación y compromiso con la sostenibilidad nos distinguen.',
-          email: 'info@pisoselegance.com',
-          address: 'Avenida del Diseño 123, Ciudad Elegante, España',
         },
         {
           slug: 'luz-viva',
@@ -64,8 +62,6 @@ describe('colaboradores repository', () => {
           website: 'www.luzviva.com',
           description:
             'Líder en sistemas de iluminación innovadores y eficientes para hogares y negocios. Calidad, diseño y compromiso con la sostenibilidad nos distinguen.',
-          email: 'info@luzviva.com',
-          address: 'Calle de la Luz 456, Ciudad Brillante, México',
         },
       ]
 
@@ -242,15 +238,13 @@ describe('colaboradores repository', () => {
       },
     ]
 
-    const mainColaboradoresInAmbiente: Omit<MainColaborador, 'isMain'>[] = [
+    const mainColaboradoresInAmbiente: Omit<MainColaborador, 'isMain' | 'email' | 'address'>[] = [
       {
         slug: 'luz-viva',
         name: 'Luz Viva',
         website: 'www.luzviva.com',
         description:
           'Líder en sistemas de iluminación innovadores y eficientes para hogares y negocios. Calidad, diseño y compromiso con la sostenibilidad nos distinguen.',
-        email: 'info@luzviva.com',
-        address: 'Calle de la Luz 456, Ciudad Brillante, México',
       },
     ]
 

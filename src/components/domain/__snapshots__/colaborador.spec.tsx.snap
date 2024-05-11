@@ -19,39 +19,10 @@ exports[`MainColaborador matches snapshot 1`] = `
       />
     </div>
     <p
-      class="text-xs text-center text-darkGray mb-3"
+      class="text-xs text-darkGray mb-3"
     >
       Líder en revestimientos de suelos elegantes y duraderos para hogares y negocios. Calidad, innovación y compromiso con la sostenibilidad nos distinguen.
     </p>
-    <p
-      class="text-xs text-center font-semibold text-darkGray mb-1"
-    >
-      Avenida del Diseño 123, Ciudad Elegante, España
-    </p>
-    <div
-      class="text-center flex justify-center gap-2"
-    >
-      <a
-        class="text-xs text-center font-semibold text-blue hover:underline"
-        href="mailto:info@pisoselegance.com"
-        target="_blank"
-      >
-        info@pisoselegance.com
-      </a>
-      <div
-        aria-orientation="vertical"
-        class="w-[1px] bg-darkGray"
-        data-orientation="vertical"
-        role="separator"
-      />
-      <a
-        class="text-xs text-center font-semibold text-blue hover:underline"
-        href="https://www.pisoselegance.es"
-        target="_blank"
-      >
-        www.pisoselegance.es
-      </a>
-    </div>
   </div>
 </div>
 `;
