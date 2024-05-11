@@ -1,6 +1,7 @@
-import Link from 'next/link'
-
 import { colaboradoresRepository, ambientesRepository } from '@/controllers'
+import { Ambiente } from '@/components/domain/ambiente'
+import { MainColaborador, StandardColaborador } from '@/components/domain/colaborador'
+import Fluid from '@/components/layouts/fluid'
 
 export default function CasaConcavo() {
   const ambientes = ambientesRepository.getAmbientes()
@@ -8,30 +9,37 @@ export default function CasaConcavo() {
   const standardColaboradores = colaboradoresRepository.getStandardColaboradores()
 
   return (
-    <main>
+    <main className='text-center'>
       <h1>Casa Cóncavo</h1>
-      <section>
-        <ul aria-label='Lista de Ambientes'>
+
+      <section className='mx-12'>
+        <ul aria-label='Lista de Ambientes' className='space-y-8'>
           {ambientes.map((ambiente) => (
             <li key={ambiente.slug}>
-              <Link href={`/casa/${ambiente.slug}`}>{ambiente.name}</Link>
+              <Ambiente {...ambiente} />
             </li>
           ))}
         </ul>
       </section>
-      <section>
-        <ul aria-label='Lista de los principales Colaboradores'>
+
+      <section className='mx-12'>
+        <Fluid aria-label='Lista de los principales Colaboradores' className='gap-12 justify-center'>
           {mainColaboradores.map((mainColaborador) => (
-            <li key={mainColaborador.slug}>{mainColaborador.name}</li>
+            <li key={mainColaborador.slug} className='w-[300px] list-none'>
+              <MainColaborador {...mainColaborador} />
+            </li>
           ))}
-        </ul>
+        </Fluid>
       </section>
-      <section>
-        <ul aria-label='Lista del resto de los Colaboradores'>
+
+      <section className='mx-12'>
+        <Fluid aria-label='Lista del resto de los Colaboradores' className='gap-12 justify-center'>
           {standardColaboradores.map((standardColaborador) => (
-            <li key={standardColaborador.slug}>{standardColaborador.name}</li>
+            <li key={standardColaborador.slug} className='w-[300px] list-none'>
+              <StandardColaborador {...standardColaborador} />
+            </li>
           ))}
-        </ul>
+        </Fluid>
       </section>
     </main>
   )

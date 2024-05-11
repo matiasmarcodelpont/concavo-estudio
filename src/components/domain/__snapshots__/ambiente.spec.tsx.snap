@@ -3,7 +3,7 @@
 exports[`Ambiente matches snapshot 1`] = `
 <div>
   <a
-    class="bg-center flex flex-column justify-between items-center relative w-full h-[61.8dvw] max-h-[494px] max-w-[800px] pl-4"
+    class="bg-center flex flex-column justify-between items-center relative w-full h-[61.8dvw] max-h-[494px] pl-4"
     href="/casa/elegance"
   >
     <p

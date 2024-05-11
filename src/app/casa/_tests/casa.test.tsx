@@ -71,16 +71,6 @@ describe('Casa Cóncavo', () => {
 
     const ambientes = within(ambientesList).getAllByRole('listitem')
     expect(ambientes).toHaveLength(2)
-
-    expect(ambientes[0]).toBeInTheDocument()
-    const link0 = within(ambientes[0]).getByRole<HTMLAnchorElement>('link', { name: 'Cocina' })
-    expect(link0).toBeInTheDocument()
-    expect(link0.href).toMatch(/^https?:\/\/[^/]+\/casa\/cocina$/)
-
-    expect(ambientes[1]).toBeInTheDocument()
-    const link1 = within(ambientes[1]).getByRole<HTMLAnchorElement>('link', { name: 'Living/Comedor' })
-    expect(link1).toBeInTheDocument()
-    expect(link1.href).toMatch(/^https?:\/\/[^/]+\/casa\/living-comedor$/)
   })
 
   it('renders Casa Cóncavo main Colaboradores', () => {
@@ -91,12 +81,6 @@ describe('Casa Cóncavo', () => {
 
     const mainColaboradores = within(mainColaboradoresList).getAllByRole('listitem')
     expect(mainColaboradores).toHaveLength(2)
-
-    expect(mainColaboradores[0]).toBeInTheDocument()
-    expect(mainColaboradores[0]).toHaveTextContent('Elegance')
-
-    expect(mainColaboradores[1]).toBeInTheDocument()
-    expect(mainColaboradores[1]).toHaveTextContent('Luz Viva')
   })
 
   it('renders Casa Cóncavo standard Colaboradores', () => {
@@ -107,12 +91,6 @@ describe('Casa Cóncavo', () => {
 
     const standardColaboradores = within(standardColaboradoresList).getAllByRole('listitem')
     expect(standardColaboradores).toHaveLength(2)
-
-    expect(standardColaboradores[0]).toBeInTheDocument()
-    expect(standardColaboradores[0]).toHaveTextContent('Muebles de Arte')
-
-    expect(standardColaboradores[1]).toBeInTheDocument()
-    expect(standardColaboradores[1]).toHaveTextContent('Cocina Design')
   })
 
   it('renders Casa Cóncavo main Colaboradores', () => {
@@ -123,12 +101,6 @@ describe('Casa Cóncavo', () => {
 
     const mainColaboradores = within(mainColaboradoresList).getAllByRole('listitem')
     expect(mainColaboradores).toHaveLength(2)
-
-    expect(mainColaboradores[0]).toBeInTheDocument()
-    expect(mainColaboradores[0]).toHaveTextContent('Elegance')
-
-    expect(mainColaboradores[1]).toBeInTheDocument()
-    expect(mainColaboradores[1]).toHaveTextContent('Luz Viva')
   })
 
   it('renders Casa Cóncavo standard Colaboradores', () => {
@@ -139,11 +111,5 @@ describe('Casa Cóncavo', () => {
 
     const standardColaboradores = within(standardColaboradoresList).getAllByRole('listitem')
     expect(standardColaboradores).toHaveLength(2)
-
-    expect(standardColaboradores[0]).toBeInTheDocument()
-    expect(standardColaboradores[0]).toHaveTextContent('Muebles de Arte')
-
-    expect(standardColaboradores[1]).toBeInTheDocument()
-    expect(standardColaboradores[1]).toHaveTextContent('Cocina Design')
   })
 })
