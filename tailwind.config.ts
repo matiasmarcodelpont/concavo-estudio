@@ -35,6 +35,9 @@ const config = {
         'editorial-new': ['var(--editorial-new)'],
         'tt-norms': ['var(--tt-norms)'],
       },
+      gridTemplateColumns: {
+        'auto-fill-300': 'repeat(auto-fill, minmax(300px, 1fr))',
+      },
       keyframes: {
         'accordion-down': {
           from: { height: '0' },
