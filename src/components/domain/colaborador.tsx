@@ -23,7 +23,7 @@ export const StandardColaborador = ({ slug, name, className }: StandardColaborad
   )
 }
 
-type MainColaboradorProps = ColaboradorBaseProps & Omit<MainColaboradorType, 'isMain'>
+type MainColaboradorProps = ColaboradorBaseProps & Omit<MainColaboradorType, 'isMain' | 'email' | 'address'>
 
 export const MainColaborador = ({ className, ...colaborador }: MainColaboradorProps) => {
   return (
