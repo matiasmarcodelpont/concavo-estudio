@@ -28,7 +28,7 @@ exports[`Home renders homepage unchanged 1`] = `
           class="absolute inset-0 flex flex-col z-30"
         >
           <h2
-            class="text-white text-6xl uppercase m-auto"
+            class="text-white text-6xl uppercase m-auto cursor-default pointer-events-none"
           >
             Casa Cóncavo
           </h2>
@@ -51,6 +51,7 @@ exports[`Home renders homepage unchanged 1`] = `
                 d="m9 18 6-6-6-6"
               />
             </svg>
+             
           </a>
         </div>
       </div>
