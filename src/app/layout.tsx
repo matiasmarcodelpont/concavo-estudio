@@ -4,11 +4,9 @@ import './globals.css'
 
 import { ambientesRepository } from '@/controllers'
 import { NavBarLayout } from './_components/NavBarLayout'
-import { DrawerTrigger } from '@/components/ui/drawer'
-import { Button } from '@/components/ui/button'
-import { Menu } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { editorialNew, ttNorms } from '@/lib/fonts'
+import { Header } from './_components/Header'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -26,14 +24,7 @@ export default function RootLayout({
     <html lang='es'>
       <body className={cn(editorialNew.variable, ttNorms.variable, 'bg-bone text-black')}>
         <NavBarLayout ambientes={ambientes}>
-          <header className='p-6'>
-            <DrawerTrigger asChild>
-              <Button variant='ghost' size='icon' aria-label='Open navigation menu'>
-                <Menu className='h-6 w-6' />
-              </Button>
-            </DrawerTrigger>
-          </header>
-
+          <Header />
           {children}
         </NavBarLayout>
       </body>
