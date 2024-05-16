@@ -1,6 +1,7 @@
-import Link from 'next/link'
-
 import { colaboradoresRepository, ambientesRepository } from '@/controllers'
+import { Ambiente } from '@/components/domain/ambiente'
+import { MainColaborador, StandardColaborador } from '@/components/domain/colaborador'
+import { FlexWrap } from '@/components/layouts/fluid'
 
 export default function CasaConcavo() {
   const ambientes = ambientesRepository.getAmbientes()
@@ -8,30 +9,37 @@ export default function CasaConcavo() {
   const standardColaboradores = colaboradoresRepository.getStandardColaboradores()
 
   return (
-    <main>
-      <h1>Casa Cóncavo</h1>
+    <main className='text-center m-12'>
       <section>
-        <ul aria-label='Lista de Ambientes'>
+        <h1>Casa Cóncavo</h1>
+
+        <ul aria-label='Lista de Ambientes' className='space-y-4'>
           {ambientes.map((ambiente) => (
             <li key={ambiente.slug}>
-              <Link href={`/casa/${ambiente.slug}`}>{ambiente.name}</Link>
+              <Ambiente {...ambiente} />
             </li>
           ))}
         </ul>
       </section>
-      <section>
-        <ul aria-label='Lista de los principales Colaboradores'>
+
+      <section className='m-12'>
+        <h1>Nuestros Colaboradores</h1>
+
+        <FlexWrap aria-label='Lista de los principales Colaboradores' className='gap-12 justify-center'>
           {mainColaboradores.map((mainColaborador) => (
-            <li key={mainColaborador.slug}>{mainColaborador.name}</li>
+            <li key={mainColaborador.slug} className='w-[300px] list-none'>
+              <MainColaborador {...mainColaborador} />
+            </li>
           ))}
-        </ul>
-      </section>
-      <section>
-        <ul aria-label='Lista del resto de los Colaboradores'>
+        </FlexWrap>
+
+        <FlexWrap aria-label='Lista del resto de los Colaboradores' className='gap-12 justify-center'>
           {standardColaboradores.map((standardColaborador) => (
-            <li key={standardColaborador.slug}>{standardColaborador.name}</li>
+            <li key={standardColaborador.slug} className='w-[300px] list-none'>
+              <StandardColaborador {...standardColaborador} />
+            </li>
           ))}
-        </ul>
+        </FlexWrap>
       </section>
     </main>
   )

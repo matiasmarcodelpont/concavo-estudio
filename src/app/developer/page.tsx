@@ -53,7 +53,7 @@ export default function Home() {
         </GridFluid>
       </span>
 
-      <span>
+      <span className='mx-12'>
         <h1>Ambientes</h1>
         {ambientes.map((ambiente) => (
           <Ambiente key={ambiente.slug} {...ambiente} className='mb-4 mx-auto' />

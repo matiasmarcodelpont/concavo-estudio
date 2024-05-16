@@ -2,51 +2,179 @@
 
 exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
 <div>
-  <main>
-    <h1>
-      Casa Cóncavo
-    </h1>
+  <main
+    class="text-center m-12"
+  >
     <section>
+      <h1>
+        Casa Cóncavo
+      </h1>
       <ul
         aria-label="Lista de Ambientes"
+        class="space-y-4"
       >
         <li>
           <a
+            class="bg-center flex flex-column justify-between items-center relative w-full h-[61.8dvw] max-h-[494px] max-w-[800px] pl-4"
             href="/casa/cocina"
           >
-            Cocina
+            <p
+              class="text-xl text-white"
+            >
+              Cocina
+            </p>
+            <svg
+              class="lucide lucide-chevron-right "
+              fill="none"
+              height="50px"
+              stroke="white"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="50px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m9 18 6-6-6-6"
+              />
+            </svg>
           </a>
         </li>
         <li>
           <a
+            class="bg-center flex flex-column justify-between items-center relative w-full h-[61.8dvw] max-h-[494px] max-w-[800px] pl-4"
             href="/casa/living-comedor"
           >
-            Living/Comedor
+            <p
+              class="text-xl text-white"
+            >
+              Living/Comedor
+            </p>
+            <svg
+              class="lucide lucide-chevron-right "
+              fill="none"
+              height="50px"
+              stroke="white"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="50px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m9 18 6-6-6-6"
+              />
+            </svg>
           </a>
         </li>
       </ul>
     </section>
-    <section>
+    <section
+      class="m-12"
+    >
+      <h1>
+        Nuestros Colaboradores
+      </h1>
       <ul
         aria-label="Lista de los principales Colaboradores"
+        class="flex flex-wrap gap-12 justify-center"
       >
-        <li>
-          Elegance
+        <li
+          class="w-[300px] list-none"
+        >
+          <div>
+            <div
+              class="mb-3 w-[300px] h-[100px] relative"
+            >
+              <img
+                alt="Elegance"
+                class="max-w-[300px] max-h-[150px] grayscale"
+                data-nimg="fill"
+                decoding="async"
+                loading="lazy"
+                sizes="100vw"
+                src="/_next/image?url=%2Fcolaboradores%2Felegance.png&w=3840&q=75"
+                srcset="/_next/image?url=%2Fcolaboradores%2Felegance.png&w=640&q=75 640w, /_next/image?url=%2Fcolaboradores%2Felegance.png&w=750&q=75 750w, /_next/image?url=%2Fcolaboradores%2Felegance.png&w=828&q=75 828w, /_next/image?url=%2Fcolaboradores%2Felegance.png&w=1080&q=75 1080w, /_next/image?url=%2Fcolaboradores%2Felegance.png&w=1200&q=75 1200w, /_next/image?url=%2Fcolaboradores%2Felegance.png&w=1920&q=75 1920w, /_next/image?url=%2Fcolaboradores%2Felegance.png&w=2048&q=75 2048w, /_next/image?url=%2Fcolaboradores%2Felegance.png&w=3840&q=75 3840w"
+                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: contain; color: transparent;"
+              />
+            </div>
+            <p
+              class="text-xs text-darkGray mb-3"
+            >
+              Líder en revestimientos de suelos elegantes y duraderos para hogares y negocios. Calidad, innovación y compromiso con la sostenibilidad nos distinguen.
+            </p>
+          </div>
         </li>
-        <li>
-          Luz Viva
+        <li
+          class="w-[300px] list-none"
+        >
+          <div>
+            <div
+              class="mb-3 w-[300px] h-[100px] relative"
+            >
+              <img
+                alt="Luz Viva"
+                class="max-w-[300px] max-h-[150px] grayscale"
+                data-nimg="fill"
+                decoding="async"
+                loading="lazy"
+                sizes="100vw"
+                src="/_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=3840&q=75"
+                srcset="/_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=640&q=75 640w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=750&q=75 750w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=828&q=75 828w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=1080&q=75 1080w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=1200&q=75 1200w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=1920&q=75 1920w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=2048&q=75 2048w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=3840&q=75 3840w"
+                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: contain; color: transparent;"
+              />
+            </div>
+            <p
+              class="text-xs text-darkGray mb-3"
+            >
+              Líder en sistemas de iluminación innovadores y eficientes para hogares y negocios. Calidad, diseño y compromiso con la sostenibilidad nos distinguen.
+            </p>
+          </div>
         </li>
       </ul>
-    </section>
-    <section>
       <ul
         aria-label="Lista del resto de los Colaboradores"
+        class="flex flex-wrap gap-12 justify-center"
       >
-        <li>
-          Muebles de Arte
+        <li
+          class="w-[300px] list-none"
+        >
+          <div
+            class="w-[300px] h-[100px] relative"
+          >
+            <img
+              alt="Muebles de Arte"
+              class="max-w-[300px] max-h-[150px] grayscale"
+              data-nimg="fill"
+              decoding="async"
+              loading="lazy"
+              sizes="100vw"
+              src="/_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=3840&q=75"
+              srcset="/_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=640&q=75 640w, /_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=750&q=75 750w, /_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=828&q=75 828w, /_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=1080&q=75 1080w, /_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=1200&q=75 1200w, /_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=1920&q=75 1920w, /_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=2048&q=75 2048w, /_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=3840&q=75 3840w"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: contain; color: transparent;"
+            />
+          </div>
         </li>
-        <li>
-          Cocina Design
+        <li
+          class="w-[300px] list-none"
+        >
+          <div
+            class="w-[300px] h-[100px] relative"
+          >
+            <img
+              alt="Cocina Design"
+              class="max-w-[300px] max-h-[150px] grayscale"
+              data-nimg="fill"
+              decoding="async"
+              loading="lazy"
+              sizes="100vw"
+              src="/_next/image?url=%2Fcolaboradores%2Fcocina-design.png&w=3840&q=75"
+              srcset="/_next/image?url=%2Fcolaboradores%2Fcocina-design.png&w=640&q=75 640w, /_next/image?url=%2Fcolaboradores%2Fcocina-design.png&w=750&q=75 750w, /_next/image?url=%2Fcolaboradores%2Fcocina-design.png&w=828&q=75 828w, /_next/image?url=%2Fcolaboradores%2Fcocina-design.png&w=1080&q=75 1080w, /_next/image?url=%2Fcolaboradores%2Fcocina-design.png&w=1200&q=75 1200w, /_next/image?url=%2Fcolaboradores%2Fcocina-design.png&w=1920&q=75 1920w, /_next/image?url=%2Fcolaboradores%2Fcocina-design.png&w=2048&q=75 2048w, /_next/image?url=%2Fcolaboradores%2Fcocina-design.png&w=3840&q=75 3840w"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: contain; color: transparent;"
+            />
+          </div>
         </li>
       </ul>
     </section>
