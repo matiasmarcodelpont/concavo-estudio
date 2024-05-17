@@ -7,7 +7,7 @@ export const Ambiente = ({ className, slug, name }: { className?: string; slug: 
     <Link
       href={`/casa/${slug}`}
       style={{
-        backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/ambientes/${slug}.jpeg")`,
+        backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/ambientes/${slug}/0.jpeg")`,
       }}
       className={cn(
         className,
