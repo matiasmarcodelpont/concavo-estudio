@@ -13,6 +13,7 @@ export const Producto = ({ concavo = false, className, ...producto }: ProductoPr
     <Link
       href={`/productos/${producto.slug}`}
       className={cn('flex flex-col gap-2 cursor-pointer text-dark-gray group', className)}
+      aria-label={producto.name}
     >
       <div className='h-[450px] relative overflow-hidden'>
         <Image

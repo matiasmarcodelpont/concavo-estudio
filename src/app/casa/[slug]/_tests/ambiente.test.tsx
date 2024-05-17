@@ -3,6 +3,36 @@ import { render, screen, within } from '@testing-library/react'
 
 import Ambiente from '@/app/casa/[slug]/page'
 
+// Mocks needed for carousel component not to fail.
+// See https://github.com/shadcn-ui/ui/issues/2823
+
+Object.defineProperty(window, 'IntersectionObserver', {
+  writable: true,
+  value: jest.fn().mockImplementation(() => ({
+    observe: jest.fn(),
+    unobserve: jest.fn(),
+    disconnect: jest.fn(),
+  })),
+})
+
+Object.defineProperty(window, 'matchMedia', {
+  writable: true,
+  value: jest.fn().mockImplementation(() => ({
+    matches: jest.fn(),
+    addEventListener: jest.fn(),
+    removeEventListener: jest.fn(),
+  })),
+})
+
+Object.defineProperty(window, 'ResizeObserver', {
+  writable: true,
+  value: jest.fn().mockImplementation(() => ({
+    observe: jest.fn(),
+    unobserve: jest.fn(),
+    disconnect: jest.fn(),
+  })),
+})
+
 jest.mock('@/data/data.ts', () => ({
   ambientes: [
     {
@@ -130,7 +160,7 @@ describe('Ambiente', () => {
       />,
     )
 
-    const productosList = screen.getByRole('list', { name: 'Lista de Productos' })
+    const productosList = screen.getByRole('list', { name: 'Productos' })
     expect(productosList).toBeInTheDocument()
 
     const productos = within(productosList).getAllByRole('listitem')
@@ -157,7 +187,7 @@ describe('Ambiente', () => {
     )
 
     const ambienteMainColaboradoresList = screen.getByRole('list', {
-      name: 'Lista de los principales Colaboradores del Ambiente',
+      name: 'Colaboradores principales',
     })
     expect(ambienteMainColaboradoresList).toBeInTheDocument()
 
@@ -165,7 +195,10 @@ describe('Ambiente', () => {
     expect(ambienteMainColaboradores).toHaveLength(1)
 
     expect(ambienteMainColaboradores[0]).toBeInTheDocument()
-    expect(ambienteMainColaboradores[0]).toHaveTextContent('Luz Viva')
+    within(ambienteMainColaboradores[0]).getByRole('img', { name: 'Luz Viva' })
+    expect(ambienteMainColaboradores[0]).toHaveTextContent(
+      'Líder en sistemas de iluminación innovadores y eficientes para hogares y negocios. Calidad, diseño y compromiso con la sostenibilidad nos distinguen.',
+    )
   })
 
   it("renders ambiente's standard Colaboradores", () => {
@@ -178,7 +211,7 @@ describe('Ambiente', () => {
     )
 
     const ambienteStandardColaboradoresList = screen.getByRole('list', {
-      name: 'Lista del resto de los Colaboradores del Ambiente',
+      name: 'Colaboradores secundarios',
     })
     expect(ambienteStandardColaboradoresList).toBeInTheDocument()
 
@@ -186,7 +219,7 @@ describe('Ambiente', () => {
     expect(ambienteStandardColaboradores).toHaveLength(1)
 
     expect(ambienteStandardColaboradores[0]).toBeInTheDocument()
-    expect(ambienteStandardColaboradores[0]).toHaveTextContent('Cocina Design')
+    within(ambienteStandardColaboradores[0]).getByRole('img', { name: 'Cocina Design' })
   })
 
   it('shows the 404 page if producto is not found', () => {
