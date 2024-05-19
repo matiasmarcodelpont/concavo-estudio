@@ -43,16 +43,14 @@ describe('Home', () => {
     const video = component.getByTitle('Casa Cóncavo')
 
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-    const videoContainer = video.parentElement!
-
-    const link = within(videoContainer).getByRole('link')
+    const link = video.parentElement!
     expect(link).toHaveAttribute('href', '/casa')
   })
 
   it('renders concavo productos', () => {
     render(<Home />)
 
-    const productosList = screen.getByRole('list', { name: 'Productos Cóncavo' })
+    const productosList = screen.getByRole('list', { name: 'Nuestros Productos' })
     expect(productosList).toBeInTheDocument()
 
     const productos = within(productosList).getAllByRole('listitem')

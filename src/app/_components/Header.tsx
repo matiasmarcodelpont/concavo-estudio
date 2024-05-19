@@ -1,17 +1,28 @@
+'use client'
+
+import Heading from '@/components/domain/Heading'
 import { Button } from '@/components/ui/button'
 import { DrawerTrigger } from '@/components/ui/drawer'
-import { Menu } from 'lucide-react'
+import { Equal } from 'lucide-react'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 export const Header = () => {
+  const pathname = usePathname()
+
   return (
-    <header className='p-6 flex items-center gap-8'>
+    <header className='px-4 flex items-center gap-2 sticky top-0 z-40 bg-bone shadow'>
       <DrawerTrigger asChild>
         <Button variant='ghost' size='icon' aria-label='Open navigation menu'>
-          <Menu className='h-6 w-6' />
+          <Equal className='size-6 sm:size-9' />
         </Button>
       </DrawerTrigger>
-
-      <h1 className='uppercase text-2xl font-bold -mb-[5px]'>Concavo estudio</h1>
+      <Link href='/' className='block grow'>
+        <Heading className='text-2xl my-6 text-center sm:text-3xl md:text-4xl'>
+          {pathname.includes('casa') ? 'Casa Cóncavo' : 'Concavo Estudio'}
+        </Heading>
+      </Link>
+      <div className='flex-shrink-0 w-[40px] h-[10px] bg-mustard sm:size-9 invisible' />
     </header>
   )
 }
