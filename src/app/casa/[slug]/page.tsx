@@ -3,10 +3,10 @@ import { notFound } from 'next/navigation'
 import { colaboradoresRepository, productosRepository, ambientesRepository } from '@/controllers'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
 import Image from 'next/image'
-import { FlexWrap, GridFluid } from '@/components/layouts/Fluidd'
-import { Producto } from '@/components/domain/Productoo'
-import { MainColaborador, StandardColaborador } from '@/components/domain/Colaboradorr'
-import Heading from '@/components/domain/Headingg'
+import { FlexWrap, GridFluid } from '@/components/layouts/Fluid'
+import { Producto } from '@/components/domain/Producto'
+import { MainColaborador, StandardColaborador } from '@/components/domain/Colaborador'
+import Heading from '@/components/domain/Heading'
 
 export default function Ambiente({ params }: { params: { slug: string } }) {
   const ambiente = ambientesRepository.getAmbiente(decodeURIComponent(params.slug))

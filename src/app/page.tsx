@@ -1,8 +1,8 @@
 import { productosRepository } from '@/controllers'
-import { Producto } from '@/components/domain/Productoo'
-import { GridFluid } from '@/components/layouts/Fluidd'
-import { Video } from '@/components/domain/Videoo'
-import Heading from '@/components/domain/Headingg'
+import { Producto } from '@/components/domain/Producto'
+import { Video } from '@/components/domain/Video'
+import Heading from '@/components/domain/Heading'
+import { GridFluid } from '@/components/layouts/Fluid'
 
 export default function Home() {
   const productos = productosRepository.getProductosConcavo()

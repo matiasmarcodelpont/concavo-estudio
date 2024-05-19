@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom'
 import { render } from '@testing-library/react'
 
-import { Video } from './Videoo'
+import { Video } from './Video'
 
 describe('Video component', () => {
   const videoProps = {
