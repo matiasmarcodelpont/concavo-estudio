@@ -1,17 +1,17 @@
 import { Button } from '@/components/ui/button'
 import { DrawerTrigger } from '@/components/ui/drawer'
-import { Menu } from 'lucide-react'
+import { Equal } from 'lucide-react'
 
 export const Header = () => {
   return (
-    <header className='p-6 flex items-center gap-8'>
-      <DrawerTrigger asChild>
+    <header className='px-6 flex items-center justify-center gap-8 sticky top-0 z-40 bg-bone shadow'>
+      <DrawerTrigger asChild className='absolute left-6'>
         <Button variant='ghost' size='icon' aria-label='Open navigation menu'>
-          <Menu className='h-6 w-6' />
+          <Equal className='size-9' />
         </Button>
       </DrawerTrigger>
 
-      <h1 className='uppercase text-2xl font-bold -mb-[5px]'>Concavo estudio</h1>
+      <h1 className='uppercase text-4xl font-bold tracking-widest my-8'>Concavo estudio</h1>
     </header>
   )
 }
