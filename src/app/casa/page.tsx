@@ -1,8 +1,8 @@
 import { colaboradoresRepository, ambientesRepository } from '@/controllers'
-import { Ambiente } from '@/components/domain/Ambiente'
-import { MainColaborador, StandardColaborador } from '@/components/domain/Colaborador'
-import { FlexWrap } from '@/components/layouts/Fluid'
-import Heading from '@/components/domain/Heading'
+import { Ambiente } from '@/components/domain/Ambientee'
+import { MainColaborador, StandardColaborador } from '@/components/domain/Colaboradorr'
+import { FlexWrap } from '@/components/layouts/Fluidd'
+import Heading from '@/components/domain/Headingg'
 
 export default function CasaConcavo() {
   const ambientes = ambientesRepository.getAmbientes()

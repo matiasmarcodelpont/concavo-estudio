@@ -1,6 +1,6 @@
 'use client'
 
-import Heading from '@/components/domain/Heading'
+import Heading from '@/components/domain/Headingg'
 import { Button } from '@/components/ui/button'
 import { DrawerTrigger } from '@/components/ui/drawer'
 import { Equal } from 'lucide-react'
