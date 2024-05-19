@@ -1,7 +1,8 @@
 import { colaboradoresRepository, ambientesRepository } from '@/controllers'
-import { Ambiente } from '@/components/domain/ambiente'
-import { MainColaborador, StandardColaborador } from '@/components/domain/colaborador'
-import { FlexWrap } from '@/components/layouts/fluid'
+import { Ambiente } from '@/components/domain/Ambiente'
+import { MainColaborador, StandardColaborador } from '@/components/domain/Colaborador'
+import { FlexWrap } from '@/components/layouts/Fluid'
+import Heading from '@/components/domain/Heading'
 
 export default function CasaConcavo() {
   const ambientes = ambientesRepository.getAmbientes()
@@ -9,9 +10,9 @@ export default function CasaConcavo() {
   const standardColaboradores = colaboradoresRepository.getStandardColaboradores()
 
   return (
-    <main className='text-center m-12'>
-      <section>
-        <h1>Casa Cóncavo</h1>
+    <main className='text-center'>
+      <section className='mb-12'>
+        <Heading className='text-xl sm:text-2xl md:text-3xl hidden'>Casa Cóncavo</Heading>
 
         <ul aria-label='Lista de Ambientes' className='space-y-4'>
           {ambientes.map((ambiente) => (
@@ -22,20 +23,26 @@ export default function CasaConcavo() {
         </ul>
       </section>
 
-      <section className='m-12'>
-        <h1>Nuestros Colaboradores</h1>
+      <section className='mb-12 mx-6 sm:mx-12'>
+        <Heading className='text-xl sm:text-2xl md:text-3xl'>Nuestros Colaboradores</Heading>
 
-        <FlexWrap aria-label='Lista de los principales Colaboradores' className='gap-12 justify-center'>
+        <FlexWrap
+          aria-label='Lista de los principales Colaboradores'
+          className='gap-6 sm:gap-8 md:gap-10 lg:gap-12 justify-center mb-6 sm:mb-8 md:mb-10 lg:mb-12'
+        >
           {mainColaboradores.map((mainColaborador) => (
-            <li key={mainColaborador.slug} className='w-[300px] list-none'>
+            <li key={mainColaborador.slug} className='list-none'>
               <MainColaborador {...mainColaborador} />
             </li>
           ))}
         </FlexWrap>
 
-        <FlexWrap aria-label='Lista del resto de los Colaboradores' className='gap-12 justify-center'>
+        <FlexWrap
+          aria-label='Lista del resto de los Colaboradores'
+          className='gap-6 sm:gap-8 md:gap-10 lg:gap-12 justify-center'
+        >
           {standardColaboradores.map((standardColaborador) => (
-            <li key={standardColaborador.slug} className='w-[300px] list-none'>
+            <li key={standardColaborador.slug} className='list-none'>
               <StandardColaborador {...standardColaborador} />
             </li>
           ))}

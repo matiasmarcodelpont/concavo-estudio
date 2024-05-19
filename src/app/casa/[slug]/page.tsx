@@ -3,9 +3,10 @@ import { notFound } from 'next/navigation'
 import { colaboradoresRepository, productosRepository, ambientesRepository } from '@/controllers'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
 import Image from 'next/image'
-import { FlexWrap, GridFluid } from '@/components/layouts/fluid'
-import { Producto } from '@/components/domain/producto'
-import { MainColaborador, StandardColaborador } from '@/components/domain/colaborador'
+import { FlexWrap, GridFluid } from '@/components/layouts/Fluid'
+import { Producto } from '@/components/domain/Producto'
+import { MainColaborador, StandardColaborador } from '@/components/domain/Colaborador'
+import Heading from '@/components/domain/Heading'
 
 export default function Ambiente({ params }: { params: { slug: string } }) {
   const ambiente = ambientesRepository.getAmbiente(decodeURIComponent(params.slug))
@@ -18,33 +19,39 @@ export default function Ambiente({ params }: { params: { slug: string } }) {
   const standardColaboradores = colaboradoresRepository.getStandardColaboradoresByAmbiente(ambiente.slug)
 
   return (
-    <main className='max-w-[1024px] mx-auto'>
-      <h1 className='mx-4 mb-4 text-xl font-bold underline'>{ambiente.name}</h1>
+    <main className='mx-auto text-center'>
+      <Heading className='text-xl sm:text-2xl md:text-3xl mx-12 text-left'>{ambiente.name}</Heading>
 
-      <Carousel>
-        <CarouselContent>
-          {[0, 1, 2].map((i) => (
-            <CarouselItem className='relative' key={i}>
-              <Image
-                src={`/ambientes/${ambiente.slug}/${i.toString()}.jpeg`}
-                alt={ambiente.name}
-                fill
-                className='object-cover'
-              />
-            </CarouselItem>
-          ))}
-        </CarouselContent>
+      <section className='mb-12'>
+        <Carousel
+          opts={{
+            loop: true,
+          }}
+        >
+          <CarouselContent>
+            {[0, 1, 2].map((i) => (
+              <CarouselItem className='relative' key={i}>
+                <Image
+                  src={`/ambientes/${ambiente.slug}/${i.toString()}.jpeg`}
+                  alt={ambiente.name}
+                  fill
+                  className='object-cover'
+                />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
 
-        <CarouselPrevious />
-        <CarouselNext />
-      </Carousel>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
+      </section>
 
-      <section aria-labelledby='productos-heading'>
-        <h1 id='productos-heading' className='mx-4 mt-12 mb-4 text-xl font-bold underline'>
+      <section aria-labelledby='productos-heading' className='mx-12 mb-12'>
+        <Heading className='text-xl sm:text-2xl md:text-3xl' id='productos-heading'>
           Productos
-        </h1>
+        </Heading>
 
-        <GridFluid className='gap-4  mx-4' aria-label='Productos'>
+        <GridFluid className='gap-4' aria-label='Productos'>
           {productos.map((producto) => (
             <li key={producto.slug}>
               <Producto {...producto} />
@@ -53,22 +60,25 @@ export default function Ambiente({ params }: { params: { slug: string } }) {
         </GridFluid>
       </section>
 
-      <section aria-labelledby='colaboradores-heading'>
-        <h1 id='colaboradores-heading' className='mx-4 mt-12  mt-12 mb-4 text-xl font-bold underline'>
+      <section aria-labelledby='colaboradores-heading' className='mx-12 mb-12'>
+        <Heading className='text-xl sm:text-2xl md:text-3xl' id='colaboradores-heading'>
           Colaboradores
-        </h1>
+        </Heading>
 
-        <FlexWrap aria-label='Colaboradores principales' className='gap-12 justify-center mx-4'>
+        <FlexWrap
+          aria-label='Colaboradores principales'
+          className='gap-6 sm:gap-8 md:gap-10 lg:gap-12 justify-center mb-6 sm:mb-8 md:mb-10 lg:mb-12'
+        >
           {mainColaboradores.map((colaborador) => (
-            <li key={colaborador.slug}>
+            <li key={colaborador.slug} className='list-none'>
               <MainColaborador {...colaborador} />
             </li>
           ))}
         </FlexWrap>
 
-        <FlexWrap aria-label='Colaboradores secundarios' className='gap-12 justify-center mx-4'>
+        <FlexWrap aria-label='Colaboradores secundarios' className='gap-6 sm:gap-8 md:gap-10 lg:gap-12 justify-center'>
           {standardColaboradores.map((colaborador) => (
-            <li key={colaborador.slug}>
+            <li key={colaborador.slug} className='list-none'>
               <StandardColaborador {...colaborador} />
             </li>
           ))}

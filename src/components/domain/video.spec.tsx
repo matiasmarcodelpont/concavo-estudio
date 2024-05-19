@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom'
 import { render } from '@testing-library/react'
 
-import { Video } from './video'
+import { Video } from './Video'
 
 describe('Video component', () => {
   const videoProps = {
@@ -15,12 +15,15 @@ describe('Video component', () => {
     expect(container).toMatchSnapshot()
   })
 
-  it('renders an iframe with the correct src', () => {
+  it('renders an video with the correct src', () => {
     const component = render(<Video {...videoProps} />)
 
-    const iframe = component.getByTitle('cuchuflito')
-    expect(iframe).toHaveAttribute('src', videoProps.src)
-    expect(iframe).toHaveAttribute('allow', 'autoplay; fullscreen; picture-in-picture; clipboard-write')
+    const video = component.getByTitle('cuchuflito')
+
+    expect(video).toHaveAttribute('src', videoProps.src)
+    expect(video).toHaveAttribute('autoPlay')
+    // expect(video).toHaveAttribute('muted')
+    expect(video).toHaveAttribute('loop')
   })
 
   it('renders a link if a href prop is passed', () => {

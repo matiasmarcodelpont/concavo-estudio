@@ -7,6 +7,7 @@ import { NavBarLayout } from './_components/NavBarLayout'
 import { cn } from '@/lib/utils'
 import { editorialNew, ttNorms } from '@/lib/fonts'
 import { Header } from './_components/Header'
+import { Footer } from './_components/Footer'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -26,6 +27,7 @@ export default function RootLayout({
         <NavBarLayout ambientes={ambientes}>
           <Header />
           {children}
+          <Footer />
         </NavBarLayout>
       </body>
     </html>

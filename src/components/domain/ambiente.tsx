@@ -1,22 +1,26 @@
 import { cn } from '@/lib/utils'
 import { ChevronRight } from 'lucide-react'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export const Ambiente = ({ className, slug, name }: { className?: string; slug: string; name: string }) => {
   return (
     <Link
       href={`/casa/${slug}`}
-      style={{
-        backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/ambientes/${slug}/0.jpeg")`,
-      }}
-      className={cn(
-        className,
-        'bg-center flex flex-column justify-between items-center relative w-full h-[61.8dvw] max-h-[494px] max-w-[1024px] pl-4',
-      )}
+      className={cn(className, 'relative w-full h-[61.8dvw] max-h-[494px] pl-4 flex justify-center items-center')}
+      aria-label={name}
     >
-      <p className='text-xl text-white'>{name}</p>
-
-      <ChevronRight size='50px' color='white' />
+      <Image
+        src={`/ambientes/${slug}/0.jpeg`}
+        alt={name}
+        fill
+        className='absolute inset-0 w-full h-full object-cover'
+      />
+      <div className='absolute inset-0 bg-black opacity-30 z-20' />
+      <div className='relative max-w-[1600px] flex justify-between grow z-30'>
+        <p className='text-xl sm:text-2xl md:text-3xl text-white'>{name}</p>
+        <ChevronRight color='white' className='size-[30px] sm:size-[40px] md:size-[40px]' />
+      </div>
     </Link>
   )
 }

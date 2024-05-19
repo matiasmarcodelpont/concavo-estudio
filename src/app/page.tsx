@@ -1,25 +1,25 @@
 import { productosRepository } from '@/controllers'
-import { Producto } from '@/components/domain/producto'
-import { GridFluid } from '@/components/layouts/fluid'
-import { Video } from '@/components/domain/video'
+import { Producto } from '@/components/domain/Producto'
+import { GridFluid } from '@/components/layouts/Fluid'
+import { Video } from '@/components/domain/Video'
+import Heading from '@/components/domain/Heading'
 
 export default function Home() {
   const productos = productosRepository.getProductosConcavo()
 
   return (
     <main className='text-center'>
-      <h1>Cóncavo</h1>
+      <h1 className='hidden'>Cóncavo</h1>
 
-      <section className='mx-12'>
-        <Video
-          src='https://player.vimeo.com/video/941087021?muted=1&amp;autoplay=1&amp;loop=1&amp;background=1&amp;app_id=122963'
-          title='Casa Cóncavo'
-          href='/casa'
-        />
+      <section className='mb-12'>
+        <Video src='/casa.mp4' title='Casa Cóncavo' href='/casa' />
+      </section>
 
-        <h1 className='text-center' id='productos-concavo'>
-          Productos Cóncavo
-        </h1>
+      <section className='mx-6 sm:mx-8 md:mx-12 mb-12'>
+        <Heading id='productos-concavo' className='text-xl sm:text-2xl md:text-3xl'>
+          Nuestros Productos
+        </Heading>
+
         <GridFluid className='gap-4' aria-labelledby='productos-concavo'>
           {productos.map((producto) => (
             <li key={producto.slug}>

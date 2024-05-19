@@ -3,10 +3,14 @@
 exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
 <div>
   <main
-    class="text-center m-12"
+    class="text-center"
   >
-    <section>
-      <h1>
+    <section
+      class="mb-12"
+    >
+      <h1
+        class="uppercase font-bold tracking-widest my-8 text-xl sm:text-2xl md:text-3xl hidden"
+      >
         Casa Cóncavo
       </h1>
       <ul
@@ -15,82 +19,124 @@ exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
       >
         <li>
           <a
-            class="bg-center flex flex-column justify-between items-center relative w-full h-[61.8dvw] max-h-[494px] max-w-[1024px] pl-4"
+            aria-label="Cocina"
+            class="relative w-full h-[61.8dvw] max-h-[494px] pl-4 flex justify-center items-center"
             href="/casa/cocina"
           >
-            <p
-              class="text-xl text-white"
+            <img
+              alt="Cocina"
+              class="absolute inset-0 w-full h-full object-cover"
+              data-nimg="fill"
+              decoding="async"
+              loading="lazy"
+              sizes="100vw"
+              src="/_next/image?url=%2Fambientes%2Fcocina%2F0.jpeg&w=3840&q=75"
+              srcset="/_next/image?url=%2Fambientes%2Fcocina%2F0.jpeg&w=640&q=75 640w, /_next/image?url=%2Fambientes%2Fcocina%2F0.jpeg&w=750&q=75 750w, /_next/image?url=%2Fambientes%2Fcocina%2F0.jpeg&w=828&q=75 828w, /_next/image?url=%2Fambientes%2Fcocina%2F0.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fambientes%2Fcocina%2F0.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fambientes%2Fcocina%2F0.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fambientes%2Fcocina%2F0.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fambientes%2Fcocina%2F0.jpeg&w=3840&q=75 3840w"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+            />
+            <div
+              class="absolute inset-0 bg-black opacity-30 z-20"
+            />
+            <div
+              class="relative max-w-[1600px] flex justify-between grow z-30"
             >
-              Cocina
-            </p>
-            <svg
-              class="lucide lucide-chevron-right "
-              fill="none"
-              height="50px"
-              stroke="white"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              width="50px"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m9 18 6-6-6-6"
-              />
-            </svg>
+              <p
+                class="text-xl sm:text-2xl md:text-3xl text-white"
+              >
+                Cocina
+              </p>
+              <svg
+                class="lucide lucide-chevron-right size-[30px] sm:size-[40px] md:size-[40px]"
+                fill="none"
+                height="24"
+                stroke="white"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m9 18 6-6-6-6"
+                />
+              </svg>
+            </div>
           </a>
         </li>
         <li>
           <a
-            class="bg-center flex flex-column justify-between items-center relative w-full h-[61.8dvw] max-h-[494px] max-w-[1024px] pl-4"
+            aria-label="Living/Comedor"
+            class="relative w-full h-[61.8dvw] max-h-[494px] pl-4 flex justify-center items-center"
             href="/casa/living-comedor"
           >
-            <p
-              class="text-xl text-white"
+            <img
+              alt="Living/Comedor"
+              class="absolute inset-0 w-full h-full object-cover"
+              data-nimg="fill"
+              decoding="async"
+              loading="lazy"
+              sizes="100vw"
+              src="/_next/image?url=%2Fambientes%2Fliving-comedor%2F0.jpeg&w=3840&q=75"
+              srcset="/_next/image?url=%2Fambientes%2Fliving-comedor%2F0.jpeg&w=640&q=75 640w, /_next/image?url=%2Fambientes%2Fliving-comedor%2F0.jpeg&w=750&q=75 750w, /_next/image?url=%2Fambientes%2Fliving-comedor%2F0.jpeg&w=828&q=75 828w, /_next/image?url=%2Fambientes%2Fliving-comedor%2F0.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fambientes%2Fliving-comedor%2F0.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fambientes%2Fliving-comedor%2F0.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fambientes%2Fliving-comedor%2F0.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fambientes%2Fliving-comedor%2F0.jpeg&w=3840&q=75 3840w"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+            />
+            <div
+              class="absolute inset-0 bg-black opacity-30 z-20"
+            />
+            <div
+              class="relative max-w-[1600px] flex justify-between grow z-30"
             >
-              Living/Comedor
-            </p>
-            <svg
-              class="lucide lucide-chevron-right "
-              fill="none"
-              height="50px"
-              stroke="white"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              width="50px"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m9 18 6-6-6-6"
-              />
-            </svg>
+              <p
+                class="text-xl sm:text-2xl md:text-3xl text-white"
+              >
+                Living/Comedor
+              </p>
+              <svg
+                class="lucide lucide-chevron-right size-[30px] sm:size-[40px] md:size-[40px]"
+                fill="none"
+                height="24"
+                stroke="white"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m9 18 6-6-6-6"
+                />
+              </svg>
+            </div>
           </a>
         </li>
       </ul>
     </section>
     <section
-      class="m-12"
+      class="mb-12 mx-6 sm:mx-12"
     >
-      <h1>
+      <h1
+        class="uppercase font-bold tracking-widest my-8 text-xl sm:text-2xl md:text-3xl"
+      >
         Nuestros Colaboradores
       </h1>
       <ul
         aria-label="Lista de los principales Colaboradores"
-        class="flex flex-wrap gap-12 justify-center"
+        class="flex flex-wrap gap-6 sm:gap-8 md:gap-10 lg:gap-12 justify-center mb-6 sm:mb-8 md:mb-10 lg:mb-12"
       >
         <li
-          class="w-[300px] list-none"
+          class="list-none"
         >
-          <div>
+          <div
+            class="w-[200px] sm:w-[300px] flex flex-col items-center"
+          >
             <div
-              class="mb-3 w-[300px] h-[100px] relative"
+              class="w-[150px] sm:w-[300px] h-[100px] relative mb-3"
             >
               <img
                 alt="Elegance"
-                class="max-w-[300px] max-h-[150px] grayscale"
+                class="max-w-[150px] sm:max-w-[300px] max-h-[150px] grayscale"
                 data-nimg="fill"
                 decoding="async"
                 loading="lazy"
@@ -108,15 +154,17 @@ exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
           </div>
         </li>
         <li
-          class="w-[300px] list-none"
+          class="list-none"
         >
-          <div>
+          <div
+            class="w-[200px] sm:w-[300px] flex flex-col items-center"
+          >
             <div
-              class="mb-3 w-[300px] h-[100px] relative"
+              class="w-[150px] sm:w-[300px] h-[100px] relative mb-3"
             >
               <img
                 alt="Luz Viva"
-                class="max-w-[300px] max-h-[150px] grayscale"
+                class="max-w-[150px] sm:max-w-[300px] max-h-[150px] grayscale"
                 data-nimg="fill"
                 decoding="async"
                 loading="lazy"
@@ -136,17 +184,17 @@ exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
       </ul>
       <ul
         aria-label="Lista del resto de los Colaboradores"
-        class="flex flex-wrap gap-12 justify-center"
+        class="flex flex-wrap gap-6 sm:gap-8 md:gap-10 lg:gap-12 justify-center"
       >
         <li
-          class="w-[300px] list-none"
+          class="list-none"
         >
           <div
-            class="w-[300px] h-[100px] relative"
+            class="w-[150px] sm:w-[300px] h-[100px] relative mb-3"
           >
             <img
               alt="Muebles de Arte"
-              class="max-w-[300px] max-h-[150px] grayscale"
+              class="max-w-[150px] sm:max-w-[300px] max-h-[150px] grayscale"
               data-nimg="fill"
               decoding="async"
               loading="lazy"
@@ -158,14 +206,14 @@ exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
           </div>
         </li>
         <li
-          class="w-[300px] list-none"
+          class="list-none"
         >
           <div
-            class="w-[300px] h-[100px] relative"
+            class="w-[150px] sm:w-[300px] h-[100px] relative mb-3"
           >
             <img
               alt="Cocina Design"
-              class="max-w-[300px] max-h-[150px] grayscale"
+              class="max-w-[150px] sm:max-w-[300px] max-h-[150px] grayscale"
               data-nimg="fill"
               decoding="async"
               loading="lazy"

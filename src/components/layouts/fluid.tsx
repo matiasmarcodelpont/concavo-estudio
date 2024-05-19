@@ -12,7 +12,7 @@ export const FlexWrap = ({ children, ...ulistProps }: Fluid & HTMLAttributes<HTM
 )
 
 export const GridFluid = ({ children, ...ulistProps }: Fluid & HTMLAttributes<HTMLUListElement>) => (
-  <ul {...ulistProps} className={cn(`grid grid-cols-auto-fill-300`, ulistProps.className)}>
+  <ul {...ulistProps} className={cn(`grid grid-cols-auto-fill-200 sm:grid-cols-auto-fill-300`, ulistProps.className)}>
     {children}
   </ul>
 )

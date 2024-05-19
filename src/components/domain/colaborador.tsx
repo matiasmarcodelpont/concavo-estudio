@@ -1,34 +1,28 @@
 import { MainColaborador as MainColaboradorType, StandardColaborador as StandardColaboradorType } from '@/data/types'
-import { cn } from '@/lib/utils'
 import Image from 'next/image'
 
-interface ColaboradorBaseProps {
-  className?: string
-}
+type StandardColaboradorProps = Omit<StandardColaboradorType, 'isMain' | 'description' | 'email' | 'address'>
 
-type StandardColaboradorProps = ColaboradorBaseProps &
-  Omit<StandardColaboradorType, 'isMain' | 'description' | 'email' | 'address'>
-
-export const StandardColaborador = ({ slug, name, className }: StandardColaboradorProps) => {
+export const StandardColaborador = ({ slug, name }: StandardColaboradorProps) => {
   return (
-    <div className={cn(className, 'w-[300px] h-[100px] relative')}>
+    <div className='w-[150px] sm:w-[300px] h-[100px] relative mb-3'>
       <Image
         fill
         style={{ objectFit: 'contain' }}
         src={`/colaboradores/${slug}.png`}
         alt={name}
-        className='max-w-[300px] max-h-[150px] grayscale' // TODO: Remove grayscale when real logos are onboarded?
+        className='max-w-[150px] sm:max-w-[300px] max-h-[150px] grayscale' // TODO: Remove grayscale when real logos are onboarded?
       />
     </div>
   )
 }
 
-type MainColaboradorProps = ColaboradorBaseProps & Omit<MainColaboradorType, 'isMain' | 'email' | 'address'>
+type MainColaboradorProps = Omit<MainColaboradorType, 'isMain' | 'email' | 'address'>
 
-export const MainColaborador = ({ className, ...colaborador }: MainColaboradorProps) => {
+export const MainColaborador = ({ ...colaborador }: MainColaboradorProps) => {
   return (
-    <div className={className}>
-      <StandardColaborador {...colaborador} className='mb-3' />
+    <div className='w-[200px] sm:w-[300px] flex flex-col items-center'>
+      <StandardColaborador {...colaborador} />
       <p className='text-xs text-darkGray mb-3'>{colaborador.description}</p>
     </div>
   )
