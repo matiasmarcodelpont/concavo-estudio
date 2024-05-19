@@ -38,6 +38,17 @@ describe('Home', () => {
     expect(container).toMatchSnapshot()
   })
 
+  it('renders a video with a link', () => {
+    const component = render(<Home />)
+    const video = component.getByTitle('Casa Cóncavo')
+
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    const videoContainer = video.parentElement!
+
+    const link = within(videoContainer).getByRole('link')
+    expect(link).toHaveAttribute('href', '/casa')
+  })
+
   it('renders concavo productos', () => {
     render(<Home />)
 
