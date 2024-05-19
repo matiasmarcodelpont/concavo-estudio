@@ -7,11 +7,11 @@ describe('Video component', () => {
   const videoProps = {
     src: 'https://www.example.com/video',
     title: 'cuchuflito',
+    href: 'fake-link',
   }
-  const href = 'fake-link'
 
   it('matches snapshot', () => {
-    const { container } = render(<Video {...videoProps} href={href} />)
+    const { container } = render(<Video {...videoProps} />)
     expect(container).toMatchSnapshot()
   })
 
@@ -24,9 +24,9 @@ describe('Video component', () => {
   })
 
   it('renders a link if a href prop is passed', () => {
-    const component = render(<Video {...videoProps} href={href} />)
+    const component = render(<Video {...videoProps} />)
 
     const link = component.getByRole('link')
-    expect(link).toHaveAttribute('href', href)
+    expect(link).toHaveAttribute('href', videoProps.href)
   })
 })
