@@ -1,6 +1,6 @@
 import { ChevronRight } from 'lucide-react'
 import Link from 'next/link'
-import Heading from './Heading'
+import Heading from './Headingg'
 
 interface VideoProps {
   src: string

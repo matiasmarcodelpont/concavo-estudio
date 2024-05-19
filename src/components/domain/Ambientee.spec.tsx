@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom'
 import { render } from '@testing-library/react'
-import { Ambiente } from './Ambiente'
+import { Ambiente } from './Ambientee'
 
 const ambiente = {
   slug: 'elegance',

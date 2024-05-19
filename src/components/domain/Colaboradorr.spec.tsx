@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom'
 import { render } from '@testing-library/react'
 
-import { MainColaborador, StandardColaborador } from './Colaborador'
+import { MainColaborador, StandardColaborador } from './Colaboradorr'
 
 const mainColaborador = {
   slug: 'elegance',

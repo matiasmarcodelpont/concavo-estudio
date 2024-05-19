@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom'
 import { render } from '@testing-library/react'
 
-import { Producto } from './Producto'
+import { Producto } from './Productoo'
 
 const producto = {
   slug: 'piso-madera',
