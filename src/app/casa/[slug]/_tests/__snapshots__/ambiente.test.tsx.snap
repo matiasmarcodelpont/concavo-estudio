@@ -246,7 +246,7 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
               />
             </div>
             <p
-              class="text-xs text-darkGray mb-3"
+              class="text-xs text-darkGray mb-3 text-left"
             >
               Líder en sistemas de iluminación innovadores y eficientes para hogares y negocios. Calidad, diseño y compromiso con la sostenibilidad nos distinguen.
             </p>

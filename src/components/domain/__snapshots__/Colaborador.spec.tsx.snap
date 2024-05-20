@@ -21,7 +21,7 @@ exports[`MainColaborador matches snapshot 1`] = `
       />
     </div>
     <p
-      class="text-xs text-darkGray mb-3"
+      class="text-xs text-darkGray mb-3 text-left"
     >
       Líder en revestimientos de suelos elegantes y duraderos para hogares y negocios. Calidad, innovación y compromiso con la sostenibilidad nos distinguen.
     </p>

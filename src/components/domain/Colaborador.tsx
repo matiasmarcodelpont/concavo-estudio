@@ -23,7 +23,7 @@ export const MainColaborador = ({ ...colaborador }: MainColaboradorProps) => {
   return (
     <div className='w-[200px] sm:w-[300px] flex flex-col items-center'>
       <StandardColaborador {...colaborador} />
-      <p className='text-xs text-darkGray mb-3'>{colaborador.description}</p>
+      <p className='text-xs text-darkGray mb-3 text-left'>{colaborador.description}</p>
     </div>
   )
 }
