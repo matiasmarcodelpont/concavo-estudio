@@ -1,13 +1,14 @@
 'use client'
 
-import { Drawer, DrawerContent } from '@/components/ui/drawer'
+import { Button } from '@/components/ui/button'
+import { Drawer, DrawerContent, DrawerTrigger } from '@/components/ui/drawer'
 import { OmitReferences, Ambiente } from '@/data/types'
+import { Equal } from 'lucide-react'
 import Link from 'next/link'
 import { ReactNode, useCallback, useEffect, useState } from 'react'
 
 export const NavBarLayout = ({
   ambientes,
-  children,
   opened = false,
 }: {
   ambientes: OmitReferences<Ambiente>[]
@@ -42,6 +43,11 @@ export const NavBarLayout = ({
 
   return (
     <Drawer direction='left' open={drawerOpen} onOpenChange={setDrawerOpen}>
+      <DrawerTrigger asChild>
+        <Button variant='ghost' size='icon' aria-label='Open navigation menu'>
+          <Equal className='size-6 sm:size-9' />
+        </Button>
+      </DrawerTrigger>
       <DrawerContent className='pl-6 pr-7 uppercase overflow-y-auto'>
         <header className='border-black border-b mb-4'>
           <h1 className='my-4 font-bold text-xl'>Cóncavo</h1>
@@ -71,8 +77,6 @@ export const NavBarLayout = ({
           </ul>
         </nav>
       </DrawerContent>
-
-      {children}
     </Drawer>
   )
 }
