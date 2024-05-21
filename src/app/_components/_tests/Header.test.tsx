@@ -1,11 +1,12 @@
 import { render, within } from '@testing-library/react'
 
+import { usePathname } from 'next/navigation'
+import { Header } from '../Header'
+
 jest.mock('next/navigation', () => ({
   usePathname: jest.fn(),
 }))
 
-import { usePathname } from 'next/navigation'
-import { Header } from '../Header'
 const mockedUsePathname = usePathname as jest.Mock
 
 describe('Header', () => {
