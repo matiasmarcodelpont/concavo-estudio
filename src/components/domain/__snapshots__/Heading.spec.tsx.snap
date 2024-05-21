@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading matches snapshot 1`] = `
+<h1
+  class="uppercase text-4xl font-bold tracking-widest my-8"
+>
+  Título
+</h1>
+`;

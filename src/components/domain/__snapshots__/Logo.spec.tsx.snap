@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logo matches snapshot 1`] = `
+<img
+  alt="Logo Cóncavo"
+  height="66.66666666666667"
+  src="/logos/concavo_black.png"
+  width="200"
+/>
+`;

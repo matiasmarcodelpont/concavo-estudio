@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NavBarLayour renders links to all pages and to each ambiente 1`] = `
+exports[`NavBarLayout renders links to all pages and to each ambiente 1`] = `
 <nav>
   <ul>
     <li
