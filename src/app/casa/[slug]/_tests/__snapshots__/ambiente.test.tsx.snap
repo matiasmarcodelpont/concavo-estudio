@@ -155,14 +155,14 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
             >
               <img
                 alt="Azulejos Guardados"
-                class="group-hover:scale-105 transition-transform duration-1000"
+                class="object-cover group-hover:scale-105 transition-transform duration-1000"
                 data-nimg="fill"
                 decoding="async"
                 loading="lazy"
                 sizes="100vw"
                 src="/_next/image?url=%2Fproductos%2Fazulejos-guardados.jpg&w=3840&q=75"
                 srcset="/_next/image?url=%2Fproductos%2Fazulejos-guardados.jpg&w=640&q=75 640w, /_next/image?url=%2Fproductos%2Fazulejos-guardados.jpg&w=750&q=75 750w, /_next/image?url=%2Fproductos%2Fazulejos-guardados.jpg&w=828&q=75 828w, /_next/image?url=%2Fproductos%2Fazulejos-guardados.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fproductos%2Fazulejos-guardados.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fproductos%2Fazulejos-guardados.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fproductos%2Fazulejos-guardados.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fproductos%2Fazulejos-guardados.jpg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
               />
             </div>
             <div
@@ -187,14 +187,14 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
             >
               <img
                 alt="Luz Led"
-                class="group-hover:scale-105 transition-transform duration-1000"
+                class="object-cover group-hover:scale-105 transition-transform duration-1000"
                 data-nimg="fill"
                 decoding="async"
                 loading="lazy"
                 sizes="100vw"
                 src="/_next/image?url=%2Fproductos%2Fluz-led.jpg&w=3840&q=75"
                 srcset="/_next/image?url=%2Fproductos%2Fluz-led.jpg&w=640&q=75 640w, /_next/image?url=%2Fproductos%2Fluz-led.jpg&w=750&q=75 750w, /_next/image?url=%2Fproductos%2Fluz-led.jpg&w=828&q=75 828w, /_next/image?url=%2Fproductos%2Fluz-led.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fproductos%2Fluz-led.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fproductos%2Fluz-led.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fproductos%2Fluz-led.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fproductos%2Fluz-led.jpg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
               />
             </div>
             <div
@@ -235,14 +235,14 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
             >
               <img
                 alt="Luz Viva"
-                class="max-w-[150px] sm:max-w-[300px] max-h-[150px] grayscale"
+                class="object-contain max-w-[150px] sm:max-w-[300px] max-h-[150px] grayscale"
                 data-nimg="fill"
                 decoding="async"
                 loading="lazy"
                 sizes="100vw"
                 src="/_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=3840&q=75"
                 srcset="/_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=640&q=75 640w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=750&q=75 750w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=828&q=75 828w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=1080&q=75 1080w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=1200&q=75 1200w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=1920&q=75 1920w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=2048&q=75 2048w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: contain; color: transparent;"
+                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
               />
             </div>
             <p
@@ -265,14 +265,14 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
           >
             <img
               alt="Cocina Design"
-              class="max-w-[150px] sm:max-w-[300px] max-h-[150px] grayscale"
+              class="object-contain max-w-[150px] sm:max-w-[300px] max-h-[150px] grayscale"
               data-nimg="fill"
               decoding="async"
               loading="lazy"
               sizes="100vw"
               src="/_next/image?url=%2Fcolaboradores%2Fcocina-design.png&w=3840&q=75"
               srcset="/_next/image?url=%2Fcolaboradores%2Fcocina-design.png&w=640&q=75 640w, /_next/image?url=%2Fcolaboradores%2Fcocina-design.png&w=750&q=75 750w, /_next/image?url=%2Fcolaboradores%2Fcocina-design.png&w=828&q=75 828w, /_next/image?url=%2Fcolaboradores%2Fcocina-design.png&w=1080&q=75 1080w, /_next/image?url=%2Fcolaboradores%2Fcocina-design.png&w=1200&q=75 1200w, /_next/image?url=%2Fcolaboradores%2Fcocina-design.png&w=1920&q=75 1920w, /_next/image?url=%2Fcolaboradores%2Fcocina-design.png&w=2048&q=75 2048w, /_next/image?url=%2Fcolaboradores%2Fcocina-design.png&w=3840&q=75 3840w"
-              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: contain; color: transparent;"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
             />
           </div>
         </li>

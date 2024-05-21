@@ -8,10 +8,9 @@ export const StandardColaborador = ({ slug, name }: StandardColaboradorProps) =>
     <div className='w-[150px] sm:w-[300px] h-[100px] relative mb-3'>
       <Image
         fill
-        style={{ objectFit: 'contain' }}
         src={`/colaboradores/${slug}.png`}
         alt={name}
-        className='max-w-[150px] sm:max-w-[300px] max-h-[150px] grayscale' // TODO: Remove grayscale when real logos are onboarded?
+        className='object-contain max-w-[150px] sm:max-w-[300px] max-h-[150px] grayscale' // TODO: Remove grayscale when real logos are onboarded?
       />
     </div>
   )

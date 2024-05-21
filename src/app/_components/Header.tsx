@@ -20,11 +20,11 @@ export const Header = () => {
           </Button>
         </DrawerTrigger>
       </Dialog>
-      <Link href='/' className='grow uppercase text-lg my-6 text-center flex flex-col items-center'>
+      <Link href='/' className='uppercase text-lg text-center flex flex-col items-center m-auto p-4 md:p-6'>
         {/* TODO: "CASA" y "ESTUDIO" deberían ser parte del logo */}
-        <p className='mb-[-10px]'>{pathname.includes('casa') && 'Casa'}</p>
+        {pathname.includes('casa') && <p className='mb-[-10px] text-sm md:text-xl'>Casa</p>}
         <Logo />
-        <p>{!pathname.includes('casa') && 'Estudio'}</p>
+        {!pathname.includes('casa') && <p className='mb-[-10px] text-sm md:text-xl'>Estudio</p>}
       </Link>
       <div className='flex-shrink-0 w-[40px] h-[10px] bg-mustard sm:size-9 invisible' />
     </header>

@@ -40,24 +40,27 @@ exports[`Header matches snapshot 1`] = `
     </svg>
   </button>
   <a
-    class="grow uppercase text-lg my-6 text-center flex flex-col items-center"
+    class="uppercase text-lg text-center flex flex-col items-center m-auto p-4 md:p-6"
     href="/"
   >
+    <div
+      class="w-[150px] h-[50px] sm:w-[201px] sm:h-[67px] relative"
+    >
+      <img
+        alt="Logo Cóncavo"
+        class="object-contain"
+        data-nimg="fill"
+        decoding="async"
+        loading="lazy"
+        sizes="100vw"
+        src="/_next/image?url=%2Flogos%2Fconcavo_black.png&w=3840&q=75"
+        srcset="/_next/image?url=%2Flogos%2Fconcavo_black.png&w=640&q=75 640w, /_next/image?url=%2Flogos%2Fconcavo_black.png&w=750&q=75 750w, /_next/image?url=%2Flogos%2Fconcavo_black.png&w=828&q=75 828w, /_next/image?url=%2Flogos%2Fconcavo_black.png&w=1080&q=75 1080w, /_next/image?url=%2Flogos%2Fconcavo_black.png&w=1200&q=75 1200w, /_next/image?url=%2Flogos%2Fconcavo_black.png&w=1920&q=75 1920w, /_next/image?url=%2Flogos%2Fconcavo_black.png&w=2048&q=75 2048w, /_next/image?url=%2Flogos%2Fconcavo_black.png&w=3840&q=75 3840w"
+        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+      />
+    </div>
     <p
-      class="mb-[-10px]"
-    />
-    <img
-      alt="Logo Cóncavo"
-      data-nimg="1"
-      decoding="async"
-      height="66.66666666666667"
-      loading="lazy"
-      src="/_next/image?url=%2Flogos%2Fconcavo_black.png&w=640&q=75"
-      srcset="/_next/image?url=%2Flogos%2Fconcavo_black.png&w=256&q=75 1x, /_next/image?url=%2Flogos%2Fconcavo_black.png&w=640&q=75 2x"
-      style="color: transparent;"
-      width="200"
-    />
-    <p>
+      class="mb-[-10px] text-sm md:text-xl"
+    >
       Estudio
     </p>
   </a>
