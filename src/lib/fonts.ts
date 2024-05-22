@@ -33,6 +33,11 @@ export const ttNorms = localFont({
       style: 'normal',
       weight: 'normal',
     },
+    {
+      path: '../../public/fonts/ttNorms/Fontspring-DEMO-tt_norms_pro_light.otf',
+      style: 'normal',
+      weight: '200',
+    },
   ],
   variable: '--tt-norms',
 })

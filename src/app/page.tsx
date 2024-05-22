@@ -17,9 +17,11 @@ export default function Home() {
           title='Casa Cóncavo'
           href='/casa'
           copy={
-            <p className='text-white text-base sm:text-lg md:text-xl max-w-[600px] max-h-[200px] m-auto p-6 sm:p-8 md:p-12'>
-              CÓNCAVO nace de la experimentación.&#10;Es un camino de disfrute y creación. De imaginar un espacio
-              relajado, armónico y luminoso. De crear sensaciones de calma.
+            <p className='text-white text-base sm:text-lg md:text-xl font-extralight max-w-[600px] max-h-[200px] m-auto p-6 sm:p-8 md:p-12'>
+              CÓNCAVO nace de la experimentación.
+              <br />
+              Es un camino de disfrute y creación. De imaginar un espacio relajado, armónico y luminoso. De crear
+              sensaciones de calma.
             </p>
           }
         />
