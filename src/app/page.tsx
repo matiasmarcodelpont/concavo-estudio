@@ -15,7 +15,7 @@ export default function Home() {
         <Video src='/casa.mp4' title='Casa Cóncavo' href='/casa' />
       </section>
 
-      <section className='mx-6 sm:mx-8 md:mx-12 mb-12'>
+      <section className='mx-4 sm:mx-6 md:mx-8 mb-12'>
         <Heading id='productos-concavo' className='text-xl sm:text-2xl md:text-3xl'>
           Nuestros Productos
         </Heading>

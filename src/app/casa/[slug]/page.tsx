@@ -20,7 +20,7 @@ export default function Ambiente({ params }: { params: { slug: string } }) {
 
   return (
     <main className='mx-auto text-center'>
-      <Heading className='text-xl sm:text-2xl md:text-3xl mx-12 text-left'>{ambiente.name}</Heading>
+      <Heading className='text-xl sm:text-2xl md:text-3xl text-center'>{ambiente.name}</Heading>
 
       <section className='mb-12'>
         <Carousel
@@ -46,7 +46,7 @@ export default function Ambiente({ params }: { params: { slug: string } }) {
         </Carousel>
       </section>
 
-      <section aria-labelledby='productos-heading' className='mx-12 mb-12'>
+      <section aria-labelledby='productos-heading' className='mx-4 sm:mx-6 md:mx-8 mb-12'>
         <Heading className='text-xl sm:text-2xl md:text-3xl' id='productos-heading'>
           Productos
         </Heading>
@@ -60,23 +60,28 @@ export default function Ambiente({ params }: { params: { slug: string } }) {
         </GridFluid>
       </section>
 
-      <section aria-labelledby='colaboradores-heading' className='mx-12 mb-12'>
+      <section aria-labelledby='colaboradores-heading' className='mx-4 sm:mx-6 md:mx-8 mb-12'>
         <Heading className='text-xl sm:text-2xl md:text-3xl' id='colaboradores-heading'>
           Colaboradores
         </Heading>
 
-        <FlexWrap
-          aria-label='Colaboradores principales'
-          className='gap-6 sm:gap-8 md:gap-10 lg:gap-12 justify-center mb-6 sm:mb-8 md:mb-10 lg:mb-12'
-        >
-          {mainColaboradores.map((colaborador) => (
-            <li key={colaborador.slug} className='list-none'>
-              <MainColaborador {...colaborador} />
-            </li>
-          ))}
-        </FlexWrap>
+        {mainColaboradores.length > 0 && (
+          <FlexWrap
+            aria-label='Colaboradores principales'
+            className='gap-10 sm:gap-12 md:gap-14 lg:gap-16 mb-10 sm:mb-12 md:mb-14 lg:mb-16'
+          >
+            {mainColaboradores.map((colaborador) => (
+              <li key={colaborador.slug} className='list-none'>
+                <MainColaborador {...colaborador} />
+              </li>
+            ))}
+          </FlexWrap>
+        )}
 
-        <FlexWrap aria-label='Colaboradores secundarios' className='gap-6 sm:gap-8 md:gap-10 lg:gap-12 justify-center'>
+        <FlexWrap
+          aria-label='Colaboradores secundarios'
+          className='gap-10 sm:gap-12 md:gap-14 lg:gap-16 justify-center'
+        >
           {standardColaboradores.map((colaborador) => (
             <li key={colaborador.slug} className='list-none'>
               <StandardColaborador {...colaborador} />
