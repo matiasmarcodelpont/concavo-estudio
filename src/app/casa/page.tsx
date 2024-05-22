@@ -28,7 +28,7 @@ export default function CasaConcavo() {
 
         <FlexWrap
           aria-label='Lista de los principales Colaboradores'
-          className='gap-10 sm:gap-12 md:gap-14 lg:gap-16 mb-10 sm:mb-12 md:mb-14 lg:mb-16'
+          className='gap-10 sm:gap-12 md:gap-14 lg:gap-16 mb-10 justify-center sm:mb-12 md:mb-14 lg:mb-16'
         >
           {mainColaboradores.map((mainColaborador) => (
             <li key={mainColaborador.slug} className='list-none'>
