@@ -4,7 +4,7 @@ const data: DataSet = {
   ambientes: [
     {
       slug: 'living-comedor',
-      name: 'Living/Comedor',
+      name: 'Living Comedor',
       productos: [
         {
           slug: 'lampara-hierro',
