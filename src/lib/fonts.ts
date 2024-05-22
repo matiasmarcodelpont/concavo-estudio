@@ -5,12 +5,12 @@ export const editorialNew = localFont({
     {
       path: '../../public/fonts/editorialNew/PPEditorialNew-Ultralight-BF644b21500d0c0.otf',
       style: 'normal',
-      weight: 'normal',
+      weight: '200',
     },
     {
       path: '../../public/fonts/editorialNew/PPEditorialNew-UltralightItalic-BF644b214ff1e9b.otf',
       style: 'italic',
-      weight: 'normal',
+      weight: '200',
     },
   ],
   variable: '--editorial-new',

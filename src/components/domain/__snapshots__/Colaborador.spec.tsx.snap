@@ -3,14 +3,14 @@
 exports[`MainColaborador matches snapshot 1`] = `
 <div>
   <div
-    class="w-[200px] sm:w-[300px] flex flex-col items-center"
+    class="flex flex-col items-center w-[200px] sm:w-[300px]"
   >
     <div
-      class="w-[150px] sm:w-[300px] h-[100px] relative mb-3"
+      class="w-[200px] sm:w-[300px] h-[100px] m-auto relative mb-3"
     >
       <img
         alt="Elegancee"
-        class="object-contain max-w-[150px] sm:max-w-[300px] max-h-[150px] grayscale"
+        class="object-contain grayscale"
         data-nimg="fill"
         decoding="async"
         loading="lazy"
@@ -32,11 +32,11 @@ exports[`MainColaborador matches snapshot 1`] = `
 exports[`StandardColaborador matches snapshot 1`] = `
 <div>
   <div
-    class="w-[150px] sm:w-[300px] h-[100px] relative mb-3"
+    class="w-[200px] sm:w-[300px] h-[100px] m-auto relative mb-3"
   >
     <img
       alt="Muebles de Arte"
-      class="object-contain max-w-[150px] sm:max-w-[300px] max-h-[150px] grayscale"
+      class="object-contain grayscale"
       data-nimg="fill"
       decoding="async"
       loading="lazy"

@@ -106,13 +106,13 @@ const data: DataSet = {
       },
     },
     {
-      slug: 'bacha-8080',
-      name: 'Bacha 8080',
+      slug: 'bacha-costa',
+      name: 'Bacha Costa',
       colaborador: null,
     },
     {
-      slug: 'bañadera-10001',
-      name: 'Bañadera 10001',
+      slug: 'bañadera-kahlo',
+      name: 'Bañadera Kahlo',
       colaborador: null,
     },
   ],

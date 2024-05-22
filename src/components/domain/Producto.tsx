@@ -2,6 +2,7 @@ import { OmitReferences, Producto as ProductoType } from '@/data/types'
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import Link from 'next/link'
+import Heading from './Heading'
 
 interface ProductoProps extends OmitReferences<ProductoType> {
   concavo?: boolean
@@ -23,8 +24,8 @@ export const Producto = ({ concavo = false, className, ...producto }: ProductoPr
           className='object-cover group-hover:scale-105 transition-transform duration-1000'
         />
       </div>
-      <div className='mb-4 group-hover:text-light-gray transition-colors duration-500 space-y-1'>
-        <p className='text-md text-center uppercase'>{producto.name}</p>
+      <div className='mb-4 group-hover:text-light-gray transition-colors duration-500'>
+        <Heading className='text-lg m-0'>{producto.name}</Heading>
         {concavo && (
           <p className='text-xs text-center' aria-label='dimensions'>
             AAA x LLL x PPP

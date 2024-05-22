@@ -28,7 +28,7 @@ export const NavBarLayout = ({
     {
       text: 'Cóncavo',
       href: '/',
-      links: [{ text: 'Productos Cóncavo', href: '/#productos_concavo' }],
+      links: [{ text: 'Productos', href: '/#productos_concavo' }],
     },
     {
       text: 'Casa Cóncavo',

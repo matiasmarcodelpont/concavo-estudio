@@ -20,7 +20,7 @@ type MainColaboradorProps = Omit<MainColaboradorType, 'isMain' | 'email' | 'addr
 
 export const MainColaborador = ({ ...colaborador }: MainColaboradorProps) => {
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col items-center w-[200px] sm:w-[300px]'>
       <StandardColaborador {...colaborador} />
       <p className='text-xs text-darkGray mb-3 text-left'>{colaborador.description}</p>
     </div>

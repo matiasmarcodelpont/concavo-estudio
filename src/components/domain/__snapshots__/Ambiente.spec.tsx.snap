@@ -4,7 +4,7 @@ exports[`Ambiente matches snapshot 1`] = `
 <div>
   <a
     aria-label="Elegancee"
-    class="relative w-full h-[61.8dvw] max-h-[494px] pl-4 flex justify-center items-center"
+    class="relative w-full h-[61.8vw] max-h-[494px] pl-4 flex justify-center items-center"
     href="/casa/elegance"
   >
     <img

@@ -9,7 +9,7 @@ exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
       class="mb-12"
     >
       <h1
-        class="uppercase font-bold tracking-widest my-8 text-xl sm:text-2xl md:text-3xl hidden"
+        class="uppercase font-bold tracking-widest mt-12 mb-6 text-xl sm:text-2xl md:text-3xl hidden"
       >
         Casa Cóncavo
       </h1>
@@ -20,7 +20,7 @@ exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
         <li>
           <a
             aria-label="Cocina"
-            class="relative w-full h-[61.8dvw] max-h-[494px] pl-4 flex justify-center items-center"
+            class="relative w-full h-[61.8vw] max-h-[494px] pl-4 flex justify-center items-center"
             href="/casa/cocina"
           >
             <img
@@ -67,7 +67,7 @@ exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
         <li>
           <a
             aria-label="Living/Comedor"
-            class="relative w-full h-[61.8dvw] max-h-[494px] pl-4 flex justify-center items-center"
+            class="relative w-full h-[61.8vw] max-h-[494px] pl-4 flex justify-center items-center"
             href="/casa/living-comedor"
           >
             <img
@@ -114,29 +114,29 @@ exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
       </ul>
     </section>
     <section
-      class="mb-12 mx-6 sm:mx-12"
+      class="mx-4 sm:mx-6 md:mx-8 mb-12"
     >
       <h1
-        class="uppercase font-bold tracking-widest my-8 text-xl sm:text-2xl md:text-3xl"
+        class="uppercase font-bold tracking-widest mt-12 mb-6 text-xl sm:text-2xl md:text-3xl"
       >
         Nuestros Colaboradores
       </h1>
       <ul
         aria-label="Lista de los principales Colaboradores"
-        class="flex flex-wrap gap-6 sm:gap-8 md:gap-10 lg:gap-12 justify-center mb-6 sm:mb-8 md:mb-10 lg:mb-12"
+        class="flex flex-wrap gap-10 sm:gap-12 md:gap-14 lg:gap-16 mb-10 sm:mb-12 md:mb-14 lg:mb-16"
       >
         <li
           class="list-none"
         >
           <div
-            class="w-[200px] sm:w-[300px] flex flex-col items-center"
+            class="flex flex-col items-center w-[200px] sm:w-[300px]"
           >
             <div
-              class="w-[150px] sm:w-[300px] h-[100px] relative mb-3"
+              class="w-[200px] sm:w-[300px] h-[100px] m-auto relative mb-3"
             >
               <img
                 alt="Elegance"
-                class="object-contain max-w-[150px] sm:max-w-[300px] max-h-[150px] grayscale"
+                class="object-contain grayscale"
                 data-nimg="fill"
                 decoding="async"
                 loading="lazy"
@@ -157,14 +157,14 @@ exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
           class="list-none"
         >
           <div
-            class="w-[200px] sm:w-[300px] flex flex-col items-center"
+            class="flex flex-col items-center w-[200px] sm:w-[300px]"
           >
             <div
-              class="w-[150px] sm:w-[300px] h-[100px] relative mb-3"
+              class="w-[200px] sm:w-[300px] h-[100px] m-auto relative mb-3"
             >
               <img
                 alt="Luz Viva"
-                class="object-contain max-w-[150px] sm:max-w-[300px] max-h-[150px] grayscale"
+                class="object-contain grayscale"
                 data-nimg="fill"
                 decoding="async"
                 loading="lazy"
@@ -184,17 +184,17 @@ exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
       </ul>
       <ul
         aria-label="Lista del resto de los Colaboradores"
-        class="flex flex-wrap gap-6 sm:gap-8 md:gap-10 lg:gap-12 justify-center"
+        class="flex flex-wrap gap-10 sm:gap-12 md:gap-14 lg:gap-16 justify-center"
       >
         <li
           class="list-none"
         >
           <div
-            class="w-[150px] sm:w-[300px] h-[100px] relative mb-3"
+            class="w-[200px] sm:w-[300px] h-[100px] m-auto relative mb-3"
           >
             <img
               alt="Muebles de Arte"
-              class="object-contain max-w-[150px] sm:max-w-[300px] max-h-[150px] grayscale"
+              class="object-contain grayscale"
               data-nimg="fill"
               decoding="async"
               loading="lazy"
@@ -209,11 +209,11 @@ exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
           class="list-none"
         >
           <div
-            class="w-[150px] sm:w-[300px] h-[100px] relative mb-3"
+            class="w-[200px] sm:w-[300px] h-[100px] m-auto relative mb-3"
           >
             <img
               alt="Cocina Design"
-              class="object-contain max-w-[150px] sm:max-w-[300px] max-h-[150px] grayscale"
+              class="object-contain grayscale"
               data-nimg="fill"
               decoding="async"
               loading="lazy"
