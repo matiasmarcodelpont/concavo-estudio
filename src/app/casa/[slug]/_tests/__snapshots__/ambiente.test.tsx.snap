@@ -6,7 +6,7 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
     class="mx-auto text-center"
   >
     <h1
-      class="uppercase font-bold tracking-widest my-8 text-xl sm:text-2xl md:text-3xl mx-12 text-left"
+      class="uppercase mt-12 mb-6 tracking-tight italic text-xl sm:text-2xl md:text-3xl text-center"
     >
       Cocina
     </h1>
@@ -15,7 +15,7 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
     >
       <div
         aria-roledescription="carousel"
-        class="relative mx-auto h-[61.8dvw] max-h-[494px]"
+        class="relative mx-auto h-[61.8vw] max-h-[494px]"
         role="region"
       >
         <div
@@ -132,10 +132,10 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
     </section>
     <section
       aria-labelledby="productos-heading"
-      class="mx-12 mb-12"
+      class="mx-4 sm:mx-6 md:mx-8 mb-12"
     >
       <h1
-        class="uppercase font-bold tracking-widest my-8 text-xl sm:text-2xl md:text-3xl"
+        class="uppercase mt-12 mb-6 tracking-tight italic text-xl sm:text-2xl md:text-3xl"
         id="productos-heading"
       >
         Productos
@@ -166,13 +166,13 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
               />
             </div>
             <div
-              class="mb-4 group-hover:text-light-gray transition-colors duration-500 space-y-1"
+              class="mb-4 group-hover:text-light-gray transition-colors duration-500"
             >
-              <p
-                class="text-md text-center uppercase"
+              <h1
+                class="uppercase tracking-tight italic text-lg m-0"
               >
                 Azulejos Guardados
-              </p>
+              </h1>
             </div>
           </a>
         </li>
@@ -198,13 +198,13 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
               />
             </div>
             <div
-              class="mb-4 group-hover:text-light-gray transition-colors duration-500 space-y-1"
+              class="mb-4 group-hover:text-light-gray transition-colors duration-500"
             >
-              <p
-                class="text-md text-center uppercase"
+              <h1
+                class="uppercase tracking-tight italic text-lg m-0"
               >
                 Luz Led
-              </p>
+              </h1>
             </div>
           </a>
         </li>
@@ -212,30 +212,30 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
     </section>
     <section
       aria-labelledby="colaboradores-heading"
-      class="mx-12 mb-12"
+      class="mx-4 sm:mx-6 md:mx-8 mb-12"
     >
       <h1
-        class="uppercase font-bold tracking-widest my-8 text-xl sm:text-2xl md:text-3xl"
+        class="uppercase mt-12 mb-6 tracking-tight italic text-xl sm:text-2xl md:text-3xl"
         id="colaboradores-heading"
       >
         Colaboradores
       </h1>
       <ul
         aria-label="Colaboradores principales"
-        class="flex flex-wrap gap-6 sm:gap-8 md:gap-10 lg:gap-12 justify-center mb-6 sm:mb-8 md:mb-10 lg:mb-12"
+        class="flex flex-wrap gap-10 sm:gap-12 md:gap-14 lg:gap-16 mb-10 sm:mb-12 md:mb-14 lg:mb-16"
       >
         <li
           class="list-none"
         >
           <div
-            class="w-[200px] sm:w-[300px] flex flex-col items-center"
+            class="flex flex-col items-center w-[200px] sm:w-[300px]"
           >
             <div
-              class="w-[150px] sm:w-[300px] h-[100px] relative mb-3"
+              class="w-[200px] sm:w-[300px] h-[100px] m-auto relative mb-3"
             >
               <img
                 alt="Luz Viva"
-                class="object-contain max-w-[150px] sm:max-w-[300px] max-h-[150px] grayscale"
+                class="object-contain grayscale"
                 data-nimg="fill"
                 decoding="async"
                 loading="lazy"
@@ -255,17 +255,17 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
       </ul>
       <ul
         aria-label="Colaboradores secundarios"
-        class="flex flex-wrap gap-6 sm:gap-8 md:gap-10 lg:gap-12 justify-center"
+        class="flex flex-wrap gap-10 sm:gap-12 md:gap-14 lg:gap-16 justify-center"
       >
         <li
           class="list-none"
         >
           <div
-            class="w-[150px] sm:w-[300px] h-[100px] relative mb-3"
+            class="w-[200px] sm:w-[300px] h-[100px] m-auto relative mb-3"
           >
             <img
               alt="Cocina Design"
-              class="object-contain max-w-[150px] sm:max-w-[300px] max-h-[150px] grayscale"
+              class="object-contain grayscale"
               data-nimg="fill"
               decoding="async"
               loading="lazy"

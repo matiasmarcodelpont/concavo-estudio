@@ -9,6 +9,7 @@ h4,
 h5,
 h6 {
   font-family: var(--editorial-new);
+  font-weight: 200;
 }
 
 body {

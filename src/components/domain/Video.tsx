@@ -1,14 +1,14 @@
-import { ChevronRight } from 'lucide-react'
+import { ChevronDown } from 'lucide-react'
 import Link from 'next/link'
-import Heading from './Heading'
 
 interface VideoProps {
   src: string
   title: string
   href: string
+  copy: React.ReactNode
 }
 
-export const Video = ({ src, title, href }: VideoProps) => {
+export const Video = ({ src, title, href, copy }: VideoProps) => {
   return (
     <Link href={href} className='block relative w-full h-[80vh] overflow-hidden'>
       <video
@@ -21,16 +21,12 @@ export const Video = ({ src, title, href }: VideoProps) => {
         loop
       />
       <div className='absolute inset-0 bg-black opacity-50 z-20' />
-      <div className='absolute inset-0 flex flex-col z-30 justify-center'>
-        <Heading className='text-white uppercase mb-0 text-3xl md:text-4xl'>{title}</Heading>
-        <p className='text-white text-lg md:text-2xl'>Lorem ipsum dolor sit.</p>
-        {href && (
-          <ChevronRight
-            className='absolute top-1/2 right-2 p-4 rounded-full translate-y-[-50%] hidden md:block'
-            size='84px'
-            color='white'
-          />
-        )}
+      <div className='absolute inset-0 flex flex-col z-30 justify-center items-center'>
+        {copy}
+        <div className='absolute bottom-0 right-1/2 p-2 md:p-4 translate-x-[50%] flex flex-col items-center gap-2 text-white text-base md:text-lg'>
+          COMENZAR
+          <ChevronDown size='30px' color='white' />
+        </div>
       </div>
     </Link>
   )

@@ -58,11 +58,6 @@ exports[`Header matches snapshot 1`] = `
         style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
       />
     </div>
-    <p
-      class="mb-[-10px] text-sm md:text-xl"
-    >
-      Estudio
-    </p>
   </a>
   <div
     class="flex-shrink-0 w-[40px] h-[10px] bg-mustard sm:size-9 invisible"

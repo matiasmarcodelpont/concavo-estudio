@@ -23,12 +23,12 @@ export default function CasaConcavo() {
         </ul>
       </section>
 
-      <section className='mb-12 mx-6 sm:mx-12'>
+      <section className='mx-4 sm:mx-6 md:mx-8 mb-12'>
         <Heading className='text-xl sm:text-2xl md:text-3xl'>Nuestros Colaboradores</Heading>
 
         <FlexWrap
           aria-label='Lista de los principales Colaboradores'
-          className='gap-6 sm:gap-8 md:gap-10 lg:gap-12 justify-center mb-6 sm:mb-8 md:mb-10 lg:mb-12'
+          className='gap-10 sm:gap-12 md:gap-14 lg:gap-16 mb-10 sm:mb-12 md:mb-14 lg:mb-16'
         >
           {mainColaboradores.map((mainColaborador) => (
             <li key={mainColaborador.slug} className='list-none'>
@@ -39,7 +39,7 @@ export default function CasaConcavo() {
 
         <FlexWrap
           aria-label='Lista del resto de los Colaboradores'
-          className='gap-6 sm:gap-8 md:gap-10 lg:gap-12 justify-center'
+          className='gap-10 sm:gap-12 md:gap-14 lg:gap-16 justify-center'
         >
           {standardColaboradores.map((standardColaborador) => (
             <li key={standardColaborador.slug} className='list-none'>

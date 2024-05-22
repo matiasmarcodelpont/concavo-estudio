@@ -12,10 +12,20 @@ export default function Home() {
       <h1 className='hidden'>Cóncavo</h1>
 
       <section className='mb-12'>
-        <Video src='/casa.mp4' title='Casa Cóncavo' href='/casa' />
+        <Video
+          src='/casa.mp4'
+          title='Casa Cóncavo'
+          href='/casa'
+          copy={
+            <p className='text-white text-base sm:text-lg md:text-xl max-w-[600px] max-h-[200px] m-auto p-6 sm:p-8 md:p-12'>
+              CÓNCAVO nace de la experimentación.&#10;Es un camino de disfrute y creación. De imaginar un espacio
+              relajado, armónico y luminoso. De crear sensaciones de calma.
+            </p>
+          }
+        />
       </section>
 
-      <section className='mx-6 sm:mx-8 md:mx-12 mb-12'>
+      <section className='mx-4 sm:mx-6 md:mx-8 mb-12'>
         <Heading id='productos-concavo' className='text-xl sm:text-2xl md:text-3xl'>
           Nuestros Productos
         </Heading>
@@ -23,7 +33,7 @@ export default function Home() {
         <GridFluid className='gap-4' aria-labelledby='productos-concavo'>
           {productos.map((producto) => (
             <li key={producto.slug}>
-              <Producto {...producto} />
+              <Producto {...producto} concavo />
             </li>
           ))}
         </GridFluid>

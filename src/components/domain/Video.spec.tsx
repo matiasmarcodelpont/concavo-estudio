@@ -8,6 +8,7 @@ describe('Video component', () => {
     src: 'https://www.example.com/video',
     title: 'cuchuflito',
     href: 'fake-link',
+    copy: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit',
   }
 
   it('matches snapshot', () => {

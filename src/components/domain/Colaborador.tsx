@@ -5,12 +5,12 @@ type StandardColaboradorProps = Omit<StandardColaboradorType, 'isMain' | 'descri
 
 export const StandardColaborador = ({ slug, name }: StandardColaboradorProps) => {
   return (
-    <div className='w-[150px] sm:w-[300px] h-[100px] relative mb-3'>
+    <div className='w-[200px] sm:w-[300px] h-[100px] m-auto relative mb-3'>
       <Image
         fill
         src={`/colaboradores/${slug}.png`}
         alt={name}
-        className='object-contain max-w-[150px] sm:max-w-[300px] max-h-[150px] grayscale' // TODO: Remove grayscale when real logos are onboarded?
+        className='object-contain grayscale' // TODO: Remove grayscale when real logos are onboarded?
       />
     </div>
   )
@@ -20,7 +20,7 @@ type MainColaboradorProps = Omit<MainColaboradorType, 'isMain' | 'email' | 'addr
 
 export const MainColaborador = ({ ...colaborador }: MainColaboradorProps) => {
   return (
-    <div className='w-[200px] sm:w-[300px] flex flex-col items-center'>
+    <div className='flex flex-col items-center w-[200px] sm:w-[300px]'>
       <StandardColaborador {...colaborador} />
       <p className='text-xs text-darkGray mb-3 text-left'>{colaborador.description}</p>
     </div>

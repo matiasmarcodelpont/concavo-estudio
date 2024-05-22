@@ -19,7 +19,7 @@ describe('NavBarLayout', () => {
     const homeLink = getByRole('link', { name: 'Cóncavo' }) as HTMLAnchorElement
     expect(homeLink.href).toMatch(/^https?:\/\/[^/]+\/$/)
 
-    const concavoProductosLink = getByRole('link', { name: 'Productos Cóncavo' }) as HTMLAnchorElement
+    const concavoProductosLink = getByRole('link', { name: 'Productos' }) as HTMLAnchorElement
     expect(concavoProductosLink.href).toMatch(/^https?:\/\/[^/]+\/#productos_concavo$/)
 
     const concavoHomeLink = getByRole('link', { name: 'Casa Cóncavo' }) as HTMLAnchorElement
