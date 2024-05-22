@@ -22,7 +22,7 @@ exports[`NavBarLayout renders links to all pages and to each ambiente 1`] = `
             class="hover:underline"
             href="/#productos_concavo"
           >
-            Productos Cóncavo
+            Productos
           </a>
         </li>
       </ul>

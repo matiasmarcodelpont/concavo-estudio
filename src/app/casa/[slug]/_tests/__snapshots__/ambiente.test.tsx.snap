@@ -6,7 +6,7 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
     class="mx-auto text-center"
   >
     <h1
-      class="uppercase font-bold tracking-widest mt-12 mb-6 text-xl sm:text-2xl md:text-3xl text-center"
+      class="uppercase mt-12 mb-6 tracking-tight italic text-xl sm:text-2xl md:text-3xl text-center"
     >
       Cocina
     </h1>
@@ -135,7 +135,7 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
       class="mx-4 sm:mx-6 md:mx-8 mb-12"
     >
       <h1
-        class="uppercase font-bold tracking-widest mt-12 mb-6 text-xl sm:text-2xl md:text-3xl"
+        class="uppercase mt-12 mb-6 tracking-tight italic text-xl sm:text-2xl md:text-3xl"
         id="productos-heading"
       >
         Productos
@@ -166,13 +166,13 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
               />
             </div>
             <div
-              class="mb-4 group-hover:text-light-gray transition-colors duration-500 space-y-1"
+              class="mb-4 group-hover:text-light-gray transition-colors duration-500"
             >
-              <p
-                class="text-base text-center uppercase"
+              <h1
+                class="uppercase tracking-tight italic text-lg m-0"
               >
                 Azulejos Guardados
-              </p>
+              </h1>
             </div>
           </a>
         </li>
@@ -198,13 +198,13 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
               />
             </div>
             <div
-              class="mb-4 group-hover:text-light-gray transition-colors duration-500 space-y-1"
+              class="mb-4 group-hover:text-light-gray transition-colors duration-500"
             >
-              <p
-                class="text-base text-center uppercase"
+              <h1
+                class="uppercase tracking-tight italic text-lg m-0"
               >
                 Luz Led
-              </p>
+              </h1>
             </div>
           </a>
         </li>
@@ -215,7 +215,7 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
       class="mx-4 sm:mx-6 md:mx-8 mb-12"
     >
       <h1
-        class="uppercase font-bold tracking-widest mt-12 mb-6 text-xl sm:text-2xl md:text-3xl"
+        class="uppercase mt-12 mb-6 tracking-tight italic text-xl sm:text-2xl md:text-3xl"
         id="colaboradores-heading"
       >
         Colaboradores

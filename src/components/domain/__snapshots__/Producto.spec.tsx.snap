@@ -23,13 +23,13 @@ exports[`Producto matches snapshot 1`] = `
       />
     </div>
     <div
-      class="mb-4 group-hover:text-light-gray transition-colors duration-500 space-y-1"
+      class="mb-4 group-hover:text-light-gray transition-colors duration-500"
     >
-      <p
-        class="text-base text-center uppercase"
+      <h1
+        class="uppercase tracking-tight italic text-lg m-0"
       >
         Piso simil Madera
-      </p>
+      </h1>
     </div>
   </a>
 </div>
