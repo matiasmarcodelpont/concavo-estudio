@@ -19,17 +19,17 @@ export const editorialNew = localFont({
 export const ttNorms = localFont({
   src: [
     {
-      path: '../../public/fonts/ttNorms/TT-Norms-Pro-Serif-Trial-Bold-BF64a61d0d42644.ttf',
+      path: '../../public/fonts/ttNorms/Fontspring-DEMO-tt_norms_pro_bold.otf',
       style: 'normal',
       weight: 'bold',
     },
     {
-      path: '../../public/fonts/ttNorms/TT-Norms-Pro-Serif-Trial-Medium-BF64a61d0d4a7d5.ttf',
+      path: '../../public/fonts/ttNorms/Fontspring-DEMO-tt_norms_pro_medium.otf',
       style: 'normal',
       weight: '500',
     },
     {
-      path: '../../public/fonts/ttNorms/TT-Norms-Pro-Serif-Trial-Regular-BF64a61d0d482a0.ttf',
+      path: '../../public/fonts/ttNorms/Fontspring-DEMO-tt_norms_pro_regular.otf',
       style: 'normal',
       weight: 'normal',
     },

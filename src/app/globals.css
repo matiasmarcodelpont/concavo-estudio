@@ -10,8 +10,10 @@ h5,
 h6 {
   font-family: var(--editorial-new);
   font-weight: 200;
+  letter-spacing: -0.05em;
 }
 
 body {
   font-family: var(--tt-norms);
+  letter-spacing: 0.05em;
 }
