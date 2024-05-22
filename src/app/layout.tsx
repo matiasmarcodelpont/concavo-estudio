@@ -2,8 +2,6 @@ import type { Metadata } from 'next'
 
 import './globals.css'
 
-import { ambientesRepository } from '@/controllers'
-import { NavBarLayout } from './_components/NavBarLayout'
 import { cn } from '@/lib/utils'
 import { editorialNew, ttNorms } from '@/lib/fonts'
 import { Header } from './_components/Header'
@@ -19,16 +17,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const ambientes = ambientesRepository.getAmbientes()
-
   return (
     <html lang='es'>
       <body className={cn(editorialNew.variable, ttNorms.variable, 'bg-bone text-black')}>
-        <NavBarLayout ambientes={ambientes}>
-          <Header />
-          {children}
-          <Footer />
-        </NavBarLayout>
+        <Header />
+        {children}
+        <Footer />
       </body>
     </html>
   )

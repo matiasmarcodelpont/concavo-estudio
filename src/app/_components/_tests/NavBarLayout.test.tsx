@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react'
 import { NavBarLayout } from '@/app/_components/NavBarLayout'
 
-describe('NavBarLayour', () => {
+describe('NavBarLayout', () => {
   it('renders links to all pages and to each ambiente', () => {
     const { getByRole } = render(
       <NavBarLayout

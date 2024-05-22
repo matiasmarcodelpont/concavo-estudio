@@ -1,7 +1,7 @@
 import { cn } from '@/lib/utils'
 
 interface HeadingProps {
-  children: React.ReactNode
+  children: string
 }
 
 const Heading = ({ children, ...headingProps }: HeadingProps & React.HTMLAttributes<HTMLHeadingElement>) => {

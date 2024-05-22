@@ -18,10 +18,9 @@ export const Producto = ({ concavo = false, className, ...producto }: ProductoPr
       <div className='h-[450px] relative overflow-hidden'>
         <Image
           fill
-          style={{ objectFit: 'cover' }}
           src={`/productos/${producto.slug}.jpg`}
           alt={producto.name}
-          className='group-hover:scale-105 transition-transform duration-1000'
+          className='object-cover group-hover:scale-105 transition-transform duration-1000'
         />
       </div>
       <div className='mb-4 group-hover:text-light-gray transition-colors duration-500 space-y-1'>
