@@ -80,6 +80,9 @@ const data: DataSet = {
     {
       slug: 'piso-madera',
       name: 'Piso simil Madera',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptas explicabo aliquam tenetur. Eligendi deleniti ratione doloribus dolores dolorum, reprehenderit maiores odit itaque quos tenetur, architecto earum est, iste accusantium.',
+      link: 'https://example.com',
       colaborador: {
         slug: 'elegance',
       },
@@ -87,6 +90,9 @@ const data: DataSet = {
     {
       slug: 'lampara-hierro',
       name: 'Lámpara de Hierro',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptas explicabo aliquam tenetur. Eligendi deleniti ratione doloribus dolores dolorum, reprehenderit maiores odit itaque quos tenetur, architecto earum est, iste accusantium.',
+      link: 'https://example.com',
       colaborador: {
         slug: 'luz-viva',
       },
@@ -94,6 +100,9 @@ const data: DataSet = {
     {
       slug: 'sofa-carlos',
       name: 'Sofá Carlos V',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptas explicabo aliquam tenetur. Eligendi deleniti ratione doloribus dolores dolorum, reprehenderit maiores odit itaque quos tenetur, architecto earum est, iste accusantium.',
+      link: 'https://example.com',
       colaborador: {
         slug: 'muebles-arte',
       },
@@ -101,6 +110,10 @@ const data: DataSet = {
     {
       slug: 'azulejos-guardados',
       name: 'Azulejos Guardados',
+      link: 'https://example.com',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptas explicabo aliquam tenetur. Eligendi deleniti ratione doloribus dolores dolorum, reprehenderit maiores odit itaque quos tenetur, architecto earum est, iste accusantium.',
+
       colaborador: {
         slug: 'cocina-design',
       },
@@ -108,11 +121,17 @@ const data: DataSet = {
     {
       slug: 'bacha-costa',
       name: 'Bacha Costa',
+      link: 'https://example.com',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptas explicabo aliquam tenetur. Eligendi deleniti ratione doloribus dolores dolorum, reprehenderit maiores odit itaque quos tenetur, architecto earum est, iste accusantium.',
       colaborador: null,
     },
     {
       slug: 'bañadera-kahlo',
       name: 'Bañadera Kahlo',
+      link: 'https://example.com',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptas explicabo aliquam tenetur. Eligendi deleniti ratione doloribus dolores dolorum, reprehenderit maiores odit itaque quos tenetur, architecto earum est, iste accusantium.',
       colaborador: null,
     },
   ],
@@ -120,6 +139,7 @@ const data: DataSet = {
     {
       slug: 'elegance',
       name: 'Elegance',
+      contact: 'Contacto: 5473-1862',
       website: 'https://www.pisoselegance.es',
       isMain: true,
       description:
@@ -130,6 +150,7 @@ const data: DataSet = {
     {
       slug: 'luz-viva',
       name: 'Luz Viva',
+      contact: 'Contacto: 5473-1862',
       website: 'https://www.luzviva.com',
       isMain: true,
       description:
@@ -140,6 +161,7 @@ const data: DataSet = {
     {
       slug: 'muebles-arte',
       name: 'Muebles de Arte',
+      contact: 'Contacto: 5473-1862',
       website: 'https://www.mueblesdearte.com',
       isMain: false,
       description: null,
@@ -149,6 +171,7 @@ const data: DataSet = {
     {
       slug: 'cocina-design',
       name: 'Cocina Design',
+      contact: 'Contacto: 5473-1862',
       website: 'https://www.cocinadesign.com',
       isMain: false,
       description:

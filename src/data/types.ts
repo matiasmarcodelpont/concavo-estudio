@@ -13,10 +13,12 @@ export type OmitReferences<T> = {
 export interface Producto {
   slug: string
   name: string
+  description: string
+  link: string | null
   colaborador: Reference | null
 }
 
-export type ProductoConcavo = WithNullProp<Producto, 'colaborador'>
+export type ProductoConcavo = WithNullProp<Producto, 'colaborador' | 'link'>
 
 export function isProductoConcavo(producto: Producto): producto is ProductoConcavo {
   return producto.colaborador === null
@@ -31,6 +33,7 @@ export interface Ambiente {
 interface BaseColaborador {
   name: string
   slug: string
+  contact: string
 }
 
 export type MainColaborador = BaseColaborador & {
