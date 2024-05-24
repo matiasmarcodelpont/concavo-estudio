@@ -8,6 +8,8 @@ const exampleProductos = [
   {
     slug: 'azulejos-los-mejores',
     name: 'Azulejos los mejores',
+    link: null,
+    description: '',
     colaborador: {
       slug: 'mati',
     },
@@ -15,6 +17,8 @@ const exampleProductos = [
   {
     slug: 'azulejos-los-peores',
     name: 'Azulejos los peores',
+    link: null,
+    description: '',
     colaborador: {
       slug: 'facu',
     },
@@ -30,11 +34,15 @@ describe('productos repository', () => {
         {
           slug: 'azulejos-verdes',
           name: 'Azulejos verdes',
+          link: null,
+          description: '',
           colaborador: null,
         },
         {
           slug: 'azulejos-azules',
           name: 'Azulejos azules',
+          link: null,
+          description: '',
           colaborador: null,
         },
       ]
@@ -78,6 +86,8 @@ describe('productos repository', () => {
       {
         slug: 'azulejos-guardados',
         name: 'Azulejos Guardados',
+        link: null,
+        description: '',
         colaborador: {
           slug: 'cocina-design',
         },
@@ -88,6 +98,8 @@ describe('productos repository', () => {
       {
         slug: 'sofa-carlos',
         name: 'Sofá Carlos V',
+        link: null,
+        description: '',
         colaborador: {
           slug: 'muebles-arte',
         },
@@ -95,6 +107,8 @@ describe('productos repository', () => {
       {
         slug: 'bacha-8080',
         name: 'Bacha 8080',
+        link: null,
+        description: '',
         colaborador: null,
       },
     ]

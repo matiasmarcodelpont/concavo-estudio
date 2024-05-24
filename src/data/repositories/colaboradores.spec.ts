@@ -10,6 +10,7 @@ describe('colaboradores repository', () => {
         {
           slug: 'elegance',
           name: 'Elegance',
+          contact: '',
           website: 'www.pisoselegance.es',
           isMain: true,
           description:
@@ -20,6 +21,7 @@ describe('colaboradores repository', () => {
         {
           slug: 'luz-viva',
           name: 'Luz Viva',
+          contact: '',
           website: 'www.luzviva.com',
           isMain: true,
           description:
@@ -30,6 +32,7 @@ describe('colaboradores repository', () => {
         {
           slug: 'muebles-arte',
           name: 'Muebles de Arte',
+          contact: '',
           website: 'www.mueblesdearte.com',
           isMain: false,
           description: null,
@@ -39,6 +42,7 @@ describe('colaboradores repository', () => {
         {
           slug: 'cocina-design',
           name: 'Cocina Design',
+          contact: '',
           website: 'www.cocinadesign.com',
           isMain: false,
           description:
@@ -52,6 +56,7 @@ describe('colaboradores repository', () => {
         {
           slug: 'elegance',
           name: 'Elegance',
+          contact: '',
           website: 'www.pisoselegance.es',
           description:
             'Líder en revestimientos de suelos elegantes y duraderos para hogares y negocios. Calidad, innovación y compromiso con la sostenibilidad nos distinguen.',
@@ -59,6 +64,7 @@ describe('colaboradores repository', () => {
         {
           slug: 'luz-viva',
           name: 'Luz Viva',
+          contact: '',
           website: 'www.luzviva.com',
           description:
             'Líder en sistemas de iluminación innovadores y eficientes para hogares y negocios. Calidad, diseño y compromiso con la sostenibilidad nos distinguen.',
@@ -82,6 +88,7 @@ describe('colaboradores repository', () => {
         {
           slug: 'elegance',
           name: 'Elegance',
+          contact: '',
           website: 'www.pisoselegance.es',
           isMain: true,
           description:
@@ -92,6 +99,7 @@ describe('colaboradores repository', () => {
         {
           slug: 'luz-viva',
           name: 'Luz Viva',
+          contact: '',
           website: 'www.luzviva.com',
           isMain: true,
           description:
@@ -102,6 +110,7 @@ describe('colaboradores repository', () => {
         {
           slug: 'muebles-arte',
           name: 'Muebles de Arte',
+          contact: '',
           website: 'www.mueblesdearte.com',
           isMain: false,
           description: null,
@@ -111,6 +120,7 @@ describe('colaboradores repository', () => {
         {
           slug: 'cocina-design',
           name: 'Cocina Design',
+          contact: '',
           website: 'www.cocinadesign.com',
           isMain: false,
           description:
@@ -124,11 +134,13 @@ describe('colaboradores repository', () => {
         {
           slug: 'muebles-arte',
           name: 'Muebles de Arte',
+          contact: '',
           website: 'www.mueblesdearte.com',
         },
         {
           slug: 'cocina-design',
           name: 'Cocina Design',
+          contact: '',
           website: 'www.cocinadesign.com',
         },
       ]
@@ -171,6 +183,8 @@ describe('colaboradores repository', () => {
       {
         slug: 'azulejos-guardados',
         name: 'Azulejos Guardados',
+        description: '',
+        link: null,
         colaborador: {
           slug: 'cocina-design',
         },
@@ -178,6 +192,8 @@ describe('colaboradores repository', () => {
       {
         slug: 'sofa-carlos',
         name: 'Sofá Carlos V',
+        description: '',
+        link: null,
         colaborador: {
           slug: 'muebles-arte',
         },
@@ -185,6 +201,8 @@ describe('colaboradores repository', () => {
       {
         slug: 'luz-led',
         name: 'Luz Led',
+        description: '',
+        link: null,
         colaborador: {
           slug: 'luz-viva',
         },
@@ -192,6 +210,8 @@ describe('colaboradores repository', () => {
       {
         slug: 'bacha-8080',
         name: 'Bacha 8080',
+        description: '',
+        link: null,
         colaborador: null,
       },
     ]
@@ -200,6 +220,7 @@ describe('colaboradores repository', () => {
       {
         slug: 'luz-viva',
         name: 'Luz Viva',
+        contact: '',
         website: 'www.luzviva.com',
         isMain: true,
         description:
@@ -210,6 +231,7 @@ describe('colaboradores repository', () => {
       {
         slug: 'cocina-design',
         name: 'Cocina Design',
+        contact: '',
         website: 'www.cocinadesign.com',
         isMain: false,
         description:
@@ -220,6 +242,7 @@ describe('colaboradores repository', () => {
       {
         slug: 'elegance',
         name: 'Elegance',
+        contact: '',
         website: 'www.pisoselegance.es',
         isMain: true,
         description:
@@ -230,6 +253,7 @@ describe('colaboradores repository', () => {
       {
         slug: 'muebles-arte',
         name: 'Muebles de Arte',
+        contact: '',
         website: 'www.mueblesdearte.com',
         isMain: false,
         description: null,
@@ -242,6 +266,7 @@ describe('colaboradores repository', () => {
       {
         slug: 'luz-viva',
         name: 'Luz Viva',
+        contact: '',
         website: 'www.luzviva.com',
         description:
           'Líder en sistemas de iluminación innovadores y eficientes para hogares y negocios. Calidad, diseño y compromiso con la sostenibilidad nos distinguen.',
@@ -299,6 +324,8 @@ describe('colaboradores repository', () => {
       {
         slug: 'azulejos-guardados',
         name: 'Azulejos Guardados',
+        link: null,
+        description: '',
         colaborador: {
           slug: 'cocina-design',
         },
@@ -306,6 +333,8 @@ describe('colaboradores repository', () => {
       {
         slug: 'sofa-carlos',
         name: 'Sofá Carlos V',
+        link: null,
+        description: '',
         colaborador: {
           slug: 'muebles-arte',
         },
@@ -313,6 +342,8 @@ describe('colaboradores repository', () => {
       {
         slug: 'luz-led',
         name: 'Luz Led',
+        link: null,
+        description: '',
         colaborador: {
           slug: 'luz-viva',
         },
@@ -320,6 +351,8 @@ describe('colaboradores repository', () => {
       {
         slug: 'bacha-8080',
         name: 'Bacha 8080',
+        link: null,
+        description: '',
         colaborador: null,
       },
     ]
@@ -328,6 +361,7 @@ describe('colaboradores repository', () => {
       {
         slug: 'luz-viva',
         name: 'Luz Viva',
+        contact: '',
         website: 'www.luzviva.com',
         isMain: true,
         description:
@@ -338,6 +372,7 @@ describe('colaboradores repository', () => {
       {
         slug: 'cocina-design',
         name: 'Cocina Design',
+        contact: '',
         website: 'www.cocinadesign.com',
         isMain: false,
         description:
@@ -348,6 +383,7 @@ describe('colaboradores repository', () => {
       {
         slug: 'elegance',
         name: 'Elegance',
+        contact: '',
         website: 'www.pisoselegance.es',
         isMain: true,
         description:
@@ -358,6 +394,7 @@ describe('colaboradores repository', () => {
       {
         slug: 'muebles-arte',
         name: 'Muebles de Arte',
+        contact: '',
         website: 'www.mueblesdearte.com',
         isMain: false,
         description: null,
@@ -371,6 +408,7 @@ describe('colaboradores repository', () => {
         {
           slug: 'cocina-design',
           name: 'Cocina Design',
+          contact: '',
           website: 'www.cocinadesign.com',
         },
       ]
