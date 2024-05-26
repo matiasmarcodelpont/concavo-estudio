@@ -1,0 +1,203 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer matches snapshot 1`] = `
+<footer
+  class="bg-black text-bone flex gap-6 sm:gap-8 px-4 sm:px-6 md:px-8 py-6 justify-evenly sm:justify-normal flex-wrap"
+>
+  <section>
+    <h1
+      class="font-tt-norms uppercase text-2xl mb-2"
+    >
+      Home
+    </h1>
+    <ul
+      class="text-sm space-y-2"
+    >
+      <li>
+        <a
+          href="/"
+        >
+          Cóncavo
+        </a>
+      </li>
+      <li>
+        <a
+          href="/#productos-concavo"
+        >
+          Productos Cóncavo
+        </a>
+      </li>
+      <li>
+        <a
+          href="/casa"
+        >
+          Casa Cóncavo
+        </a>
+      </li>
+    </ul>
+  </section>
+  <section>
+    <h1
+      class="font-tt-norms uppercase text-2xl mb-2"
+    >
+      Ambientes
+    </h1>
+    <ul
+      class="text-sm space-y-2"
+    >
+      <li>
+        <a
+          href="/casa/ambiente-1"
+        >
+          Ambiente 1
+        </a>
+      </li>
+      <li>
+        <a
+          href="/casa/ambiente-2"
+        >
+          Ambiente 2
+        </a>
+      </li>
+    </ul>
+  </section>
+  <section>
+    <h1
+      class="font-tt-norms uppercase text-2xl mb-2"
+    >
+      Productos
+    </h1>
+    <ul
+      class="text-sm space-y-2"
+    >
+      <li>
+        <a
+          href="/productos/producto-1-ambiente-1"
+        >
+          Producto 1 in ambiente-1
+        </a>
+      </li>
+      <li>
+        <a
+          href="/productos/producto-2-ambiente-1"
+        >
+          Producto 2 in ambiente-1
+        </a>
+      </li>
+      <li>
+        <a
+          href="/productos/producto-1-ambiente-2"
+        >
+          Producto 1 in ambiente-2
+        </a>
+      </li>
+      <li>
+        <a
+          href="/productos/producto-2-ambiente-2"
+        >
+          Producto 2 in ambiente-2
+        </a>
+      </li>
+    </ul>
+  </section>
+  <section
+    class="flex gap-6 sm:gap-12 m-auto"
+  >
+    <div
+      class="flex flex-col items-center gap-2"
+    >
+      <div
+        class="relative w-[150px] h-[50px] sm:w-[150px] sm:h-[50px]"
+      >
+        <img
+          alt="Logo Cóncavo"
+          class="object-contain"
+          data-nimg="fill"
+          decoding="async"
+          loading="lazy"
+          sizes="100vw"
+          src="/_next/image?url=%2Flogos%2Fconcavo_white.png&w=3840&q=75"
+          srcset="/_next/image?url=%2Flogos%2Fconcavo_white.png&w=640&q=75 640w, /_next/image?url=%2Flogos%2Fconcavo_white.png&w=750&q=75 750w, /_next/image?url=%2Flogos%2Fconcavo_white.png&w=828&q=75 828w, /_next/image?url=%2Flogos%2Fconcavo_white.png&w=1080&q=75 1080w, /_next/image?url=%2Flogos%2Fconcavo_white.png&w=1200&q=75 1200w, /_next/image?url=%2Flogos%2Fconcavo_white.png&w=1920&q=75 1920w, /_next/image?url=%2Flogos%2Fconcavo_white.png&w=2048&q=75 2048w, /_next/image?url=%2Flogos%2Fconcavo_white.png&w=3840&q=75 3840w"
+          style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+        />
+      </div>
+      <div
+        class="flex gap-2"
+      >
+        <a
+          aria-label="instagram"
+          class="rounded-full transition-all border-black hover:border-bone border-[1px] p-2"
+          href="https://www.instagram.com/concavoestudio/"
+          target="_blank"
+        >
+          <svg
+            class="lucide lucide-instagram "
+            fill="none"
+            height="20"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              height="20"
+              rx="5"
+              ry="5"
+              width="20"
+              x="2"
+              y="2"
+            />
+            <path
+              d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+            />
+            <line
+              x1="17.5"
+              x2="17.51"
+              y1="6.5"
+              y2="6.5"
+            />
+          </svg>
+        </a>
+        <a
+          aria-label="email"
+          class="rounded-full transition-all border-black hover:border-bone border-[1px] p-2"
+          href="mailto:ventas@concavoestudio.com"
+          target="_blank"
+        >
+          <svg
+            class="lucide lucide-mail "
+            fill="none"
+            height="20"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              height="16"
+              rx="2"
+              width="20"
+              x="2"
+              y="4"
+            />
+            <path
+              d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div
+      class="h-24 w-24 bg-bone text-black mt-2 flex-shrink-0 grid place-content-center"
+    >
+      QR
+    </div>
+  </section>
+</footer>
+`;

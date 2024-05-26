@@ -123,7 +123,7 @@ exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
       </h1>
       <ul
         aria-label="Lista de los principales Colaboradores"
-        class="flex flex-wrap gap-10 sm:gap-12 md:gap-14 lg:gap-16 mb-10 sm:mb-12 md:mb-14 lg:mb-16"
+        class="flex flex-wrap gap-10 sm:gap-12 md:gap-14 lg:gap-16 mb-10 justify-center sm:mb-12 md:mb-14 lg:mb-16"
       >
         <li
           class="list-none"

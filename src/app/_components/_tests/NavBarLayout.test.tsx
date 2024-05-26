@@ -1,6 +1,22 @@
 import { render } from '@testing-library/react'
 import { NavBarLayout } from '@/app/_components/NavBarLayout'
 
+beforeAll(() => {
+  Object.defineProperty(window, 'matchMedia', {
+    writable: true,
+    value: (query: string) => ({
+      matches: false,
+      media: query,
+      onchange: null,
+      addListener: jest.fn(),
+      removeListener: jest.fn(),
+      addEventListener: jest.fn(),
+      removeEventListener: jest.fn(),
+      dispatchEvent: jest.fn(),
+    }),
+  })
+})
+
 describe('NavBarLayout', () => {
   it('renders links to all pages and to each ambiente', () => {
     const { getByRole } = render(
