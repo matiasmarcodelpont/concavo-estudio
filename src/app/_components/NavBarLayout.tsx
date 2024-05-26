@@ -16,19 +16,42 @@ export const NavBarLayout = ({
   opened?: boolean
 }) => {
   const [drawerOpen, setDrawerOpen] = useState(opened)
-  useEffect(() => {
-    setDrawerOpen(opened)
-  }, [opened])
 
   const closeDrawer = useCallback(() => {
     setDrawerOpen(false)
   }, [])
 
+  const handleNavigation = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    const { hash } = new URL(e.currentTarget.href)
+
+    if (hash) {
+      setTimeout(() => {
+        const targetElement = document.querySelector(hash)
+
+        if (targetElement) {
+          const { top } = targetElement.getBoundingClientRect()
+
+          const NAVBAR_HEIGHT = 82
+          const SECTION_MARGIN = 36
+          const CUSTOM_OFFSET = 10
+
+          scrollTo({ top: top + scrollY - NAVBAR_HEIGHT - SECTION_MARGIN - CUSTOM_OFFSET, behavior: 'smooth' })
+        }
+      }, 400)
+    }
+
+    closeDrawer()
+  }
+
+  useEffect(() => {
+    setDrawerOpen(opened)
+  }, [opened])
+
   const links = [
     {
       text: 'Cóncavo',
       href: '/',
-      links: [{ text: 'Productos', href: '/#productos_concavo' }],
+      links: [{ text: 'Productos', href: '/#productos-concavo' }],
     },
     {
       text: 'Casa Cóncavo',
@@ -57,7 +80,7 @@ export const NavBarLayout = ({
           <ul>
             {links.map(({ text, href, links }) => (
               <li key={href} className='my-4'>
-                <Link href={href} onClick={closeDrawer} className='hover:underline'>
+                <Link href={href} onClick={handleNavigation} className='hover:underline' scroll={false}>
                   {text}
                 </Link>
 
@@ -65,7 +88,7 @@ export const NavBarLayout = ({
                   <ul className='ml-4'>
                     {links.map(({ text, href }) => (
                       <li key={href} className='my-2'>
-                        <Link href={href} onClick={closeDrawer} className='hover:underline'>
+                        <Link href={href} onClick={handleNavigation} className='hover:underline' scroll={false}>
                           {text}
                         </Link>
                       </li>
