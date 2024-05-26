@@ -50,9 +50,9 @@ export const Footer = ({ ambientes }: FooterProps) => {
       {siteMap.map(({ name, links }, index) => (
         <section key={`sitemap-${index.toString()}-${name}`}>
           <h1 className='font-tt-norms uppercase text-2xl mb-2'>{name}</h1>
-          <ul className='text-sm space-y-2'>
+          <ul className='text-sm space-y-2 '>
             {links.map(({ name, slug, href }) => (
-              <li key={slug}>
+              <li key={slug} className='hover:underline'>
                 <a href={href}>{name}</a>
               </li>
             ))}

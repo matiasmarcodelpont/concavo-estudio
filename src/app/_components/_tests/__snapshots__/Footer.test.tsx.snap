@@ -11,23 +11,29 @@ exports[`Footer matches snapshot 1`] = `
       Home
     </h1>
     <ul
-      class="text-sm space-y-2"
+      class="text-sm space-y-2 "
     >
-      <li>
+      <li
+        class="hover:underline"
+      >
         <a
           href="/"
         >
           Cóncavo
         </a>
       </li>
-      <li>
+      <li
+        class="hover:underline"
+      >
         <a
           href="/#productos-concavo"
         >
           Productos Cóncavo
         </a>
       </li>
-      <li>
+      <li
+        class="hover:underline"
+      >
         <a
           href="/casa"
         >
@@ -43,16 +49,20 @@ exports[`Footer matches snapshot 1`] = `
       Ambientes
     </h1>
     <ul
-      class="text-sm space-y-2"
+      class="text-sm space-y-2 "
     >
-      <li>
+      <li
+        class="hover:underline"
+      >
         <a
           href="/casa/ambiente-1"
         >
           Ambiente 1
         </a>
       </li>
-      <li>
+      <li
+        class="hover:underline"
+      >
         <a
           href="/casa/ambiente-2"
         >
@@ -68,30 +78,38 @@ exports[`Footer matches snapshot 1`] = `
       Productos
     </h1>
     <ul
-      class="text-sm space-y-2"
+      class="text-sm space-y-2 "
     >
-      <li>
+      <li
+        class="hover:underline"
+      >
         <a
           href="/productos/producto-1-ambiente-1"
         >
           Producto 1 in ambiente-1
         </a>
       </li>
-      <li>
+      <li
+        class="hover:underline"
+      >
         <a
           href="/productos/producto-2-ambiente-1"
         >
           Producto 2 in ambiente-1
         </a>
       </li>
-      <li>
+      <li
+        class="hover:underline"
+      >
         <a
           href="/productos/producto-1-ambiente-2"
         >
           Producto 1 in ambiente-2
         </a>
       </li>
-      <li>
+      <li
+        class="hover:underline"
+      >
         <a
           href="/productos/producto-2-ambiente-2"
         >
