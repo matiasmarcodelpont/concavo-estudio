@@ -27,12 +27,10 @@ export default function Home() {
         />
       </section>
 
-      <section className='mx-4 sm:mx-6 md:mx-8 mb-12'>
-        <Heading id='productos-concavo' className='text-xl sm:text-2xl md:text-3xl'>
-          Nuestros Productos
-        </Heading>
+      <section id='productos_concavo' className='mx-4 sm:mx-6 md:mx-8 mb-12'>
+        <Heading className='text-xl sm:text-2xl md:text-3xl'>Nuestros Productos</Heading>
 
-        <GridFluid className='gap-4' aria-labelledby='productos-concavo'>
+        <GridFluid className='gap-4' aria-label='Nuestros Productos'>
           {productos.map((producto) => (
             <li key={producto.slug}>
               <Producto {...producto} concavo />

@@ -5,7 +5,8 @@ import { Drawer, DrawerContent, DrawerTrigger } from '@/components/ui/drawer'
 import { OmitReferences, Ambiente } from '@/data/types'
 import { Equal } from 'lucide-react'
 import Link from 'next/link'
-import { ReactNode, useCallback, useEffect, useState } from 'react'
+import { usePathname } from 'next/navigation'
+import { MouseEvent, ReactNode, useCallback, useEffect, useState } from 'react'
 
 export const NavBarLayout = ({
   ambientes,
@@ -23,17 +24,51 @@ export const NavBarLayout = ({
   const closeDrawer = useCallback(() => {
     setDrawerOpen(false)
   }, [])
+  const pathname = usePathname()
+  const [scrollLocation, setScrollLocation] = useState<{ pathname: string; hash: string }>()
+
+  const onFragmentNavigation = (event: MouseEvent<HTMLAnchorElement>) => {
+    const { pathname, hash } = new URL(event.currentTarget.href)
+
+    if (hash) {
+      setScrollLocation({ pathname, hash })
+    }
+  }
+
+  useEffect(() => {
+    if (scrollLocation === undefined) {
+      return
+    }
+    if (pathname !== scrollLocation.pathname) {
+      return
+    }
+
+    const element = document.getElementById(scrollLocation.hash.substring(1))
+    if (element === null) {
+      return
+    }
+
+    const { top } = element.getBoundingClientRect()
+    scrollTo({ top: top + scrollY - 82 - 36, behavior: 'smooth' })
+
+    setScrollLocation(undefined)
+  }, [pathname, scrollLocation])
 
   const links = [
     {
       text: 'Cóncavo',
       href: '/',
-      links: [{ text: 'Productos', href: '/#productos_concavo' }],
+      links: [{ text: 'Productos', href: '/#productos_concavo', scroll: false, onClick: onFragmentNavigation }],
     },
     {
       text: 'Casa Cóncavo',
       href: '/casa',
-      links: ambientes.map(({ slug, name }) => ({ text: name, href: `/casa/${slug}` })),
+      links: ambientes.map(({ slug, name }) => ({
+        text: name,
+        href: `/casa/${slug}`,
+        scroll: undefined,
+        onClick: undefined,
+      })),
     },
     {
       text: 'Nosotros',
@@ -63,9 +98,17 @@ export const NavBarLayout = ({
 
                 {links && (
                   <ul className='ml-4'>
-                    {links.map(({ text, href }) => (
+                    {links.map(({ text, href, onClick, scroll }) => (
                       <li key={href} className='my-2'>
-                        <Link href={href} onClick={closeDrawer} className='hover:underline'>
+                        <Link
+                          href={href}
+                          onClick={(event) => {
+                            closeDrawer()
+                            onClick?.(event)
+                          }}
+                          scroll={scroll}
+                          className='hover:underline'
+                        >
                           {text}
                         </Link>
                       </li>
