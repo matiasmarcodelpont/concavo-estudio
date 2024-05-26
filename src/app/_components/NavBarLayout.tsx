@@ -49,7 +49,11 @@ export const NavBarLayout = ({
     }
 
     const { top } = element.getBoundingClientRect()
-    scrollTo({ top: top + scrollY - 82 - 36, behavior: 'smooth' })
+
+    const NAVBAR_HEIGHT = 82
+    const SECTION_MARGIN = 36
+
+    scrollTo({ top: top + scrollY - NAVBAR_HEIGHT - SECTION_MARGIN, behavior: 'smooth' })
 
     setScrollLocation(undefined)
   }, [pathname, scrollLocation])
