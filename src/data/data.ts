@@ -13,6 +13,7 @@ const data: DataSet = {
           slug: 'piso-madera',
         },
       ],
+      images: [],
     },
     {
       slug: 'cocina',
@@ -22,11 +23,13 @@ const data: DataSet = {
           slug: 'azulejos-guardados',
         },
       ],
+      images: [],
     },
     {
       slug: 'lavadero',
       name: 'Lavadero',
       productos: [],
+      images: [],
     },
     // {
     //   slug: 'escritorio',

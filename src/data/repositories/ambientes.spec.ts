@@ -9,11 +9,13 @@ describe('ambientes repository', () => {
           slug: 'cocina',
           name: 'Cocina',
           productos: [{ slug: 'heladera' }, { slug: 'azulejos' }],
+          images: [],
         },
         {
           slug: 'living-comedor',
           name: 'Living/Comedor',
           productos: [{ slug: 'sillón' }, { slug: 'lámpara' }],
+          images: [],
         },
       ]
 
@@ -45,11 +47,13 @@ describe('ambientes repository', () => {
         slug: 'cocina',
         name: 'Cocina',
         productos: [{ slug: 'heladera' }, { slug: 'azulejos' }],
+        images: [],
       },
       {
         slug: 'living-comedor',
         name: 'Living/Comedor',
         productos: [{ slug: 'sillón' }, { slug: 'lámpara' }],
+        images: [],
       },
     ]
 
@@ -57,6 +61,7 @@ describe('ambientes repository', () => {
       const ambienteWithoutReferences = {
         slug: 'cocina',
         name: 'Cocina',
+        images: [],
       }
 
       const ambientesRepository = createAmbientesRepository({
@@ -78,6 +83,83 @@ describe('ambientes repository', () => {
 
       const result = ambientesRepository.getAmbiente('baño')
       expect(result).toBeNull()
+    })
+
+    it("returns the ambiente with it's images with their resolved references to the productos", () => {
+      const ambientesRepository = createAmbientesRepository({
+        ambientes: [
+          {
+            slug: 'test-ambiente-1',
+            name: 'Test ambiente 1',
+            productos: [],
+            images: [
+              {
+                src: '0.jpeg',
+                width: 800,
+                height: 600,
+                puntitos: [
+                  { productoSlug: 'test-producto-1', coordinates: { x: 0, y: 0 } },
+                  { productoSlug: 'test-producto-2', coordinates: { x: 0, y: 0 } },
+                ],
+              },
+              {
+                src: '1.jpeg',
+                width: 800,
+                height: 600,
+                puntitos: [
+                  { productoSlug: 'test-producto-3', coordinates: { x: 0, y: 0 } },
+                  { productoSlug: 'test-producto-4', coordinates: { x: 0, y: 0 } },
+                ],
+              },
+            ],
+          },
+        ],
+        productos: [
+          { slug: 'test-producto-1', name: 'Test producto 1', colaborador: null },
+          { slug: 'test-producto-2', name: 'Test producto 2', colaborador: null },
+          { slug: 'test-producto-3', name: 'Test producto 3', colaborador: null },
+          { slug: 'test-producto-4', name: 'Test producto 4', colaborador: null },
+        ],
+        colaboradores: [],
+      })
+
+      const result = ambientesRepository.getAmbiente('test-ambiente-1')
+      expect(result).toEqual({
+        slug: 'test-ambiente-1',
+        name: 'Test ambiente 1',
+        images: [
+          {
+            src: '0.jpeg',
+            width: 800,
+            height: 600,
+            puntitos: [
+              {
+                producto: { slug: 'test-producto-1', name: 'Test producto 1', colaborador: null },
+                coordinates: { x: 0, y: 0 },
+              },
+              {
+                producto: { slug: 'test-producto-2', name: 'Test producto 2', colaborador: null },
+                coordinates: { x: 0, y: 0 },
+              },
+            ],
+          },
+          {
+            src: '1.jpeg',
+            width: 800,
+            height: 600,
+            puntitos: [
+              {
+                producto: { slug: 'test-producto-3', name: 'Test producto 3', colaborador: null },
+                coordinates: { x: 0, y: 0 },
+              },
+              {
+                producto: { slug: 'test-producto-4', name: 'Test producto 4', colaborador: null },
+                coordinates: { x: 0, y: 0 },
+              },
+            ],
+          },
+        ],
+      })
     })
   })
 })

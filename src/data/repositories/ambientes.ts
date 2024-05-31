@@ -1,4 +1,10 @@
-import { DataSet, OmitReferences, Ambiente } from '../types'
+import { DataSet, OmitReferences, Ambiente, AmbienteImage, Puntito, Producto } from '../types'
+
+export type AmbienteWithResolvedPuntitos = Omit<Ambiente, 'images'> & {
+  images: (Omit<AmbienteImage, 'puntitos'> & {
+    puntitos: (Omit<Puntito, 'productoSlug'> & { producto: Producto })[]
+  })[]
+}
 
 /**
  * Creates and returns the ambientes repository
@@ -11,9 +17,9 @@ export function createAmbientesRepository(data: DataSet) {
      * The ambientes are the different spaces of Casa Concavo.
      * @returns The list of all the ambientes.
      */
-    getAmbientes(): OmitReferences<Ambiente>[] {
+    getAmbientes(): OmitReferences<Omit<Ambiente, 'images'>>[] {
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      return data.ambientes.map(({ productos, ...rest }) => rest)
+      return data.ambientes.map(({ productos, images, ...rest }) => rest)
     },
 
     /**
@@ -21,14 +27,30 @@ export function createAmbientesRepository(data: DataSet) {
      * @param ambienteSlug The slug of the ambiente to retrieve its productos.
      * @returns A ambiente without references.
      */
-    getAmbiente(ambienteSlug: string): OmitReferences<Ambiente> | null | undefined {
+    getAmbiente(ambienteSlug: string): OmitReferences<AmbienteWithResolvedPuntitos> | null | undefined {
       const ambiente = data.ambientes.find((ambiente) => ambiente.slug === ambienteSlug)
 
       if (!ambiente) return null
 
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      const { productos, ...rest } = ambiente
-      return rest
+      const { productos, images, ...rest } = ambiente
+
+      const imagesWithResolvedReferences = images.map((image) => ({
+        ...image,
+        puntitos: image.puntitos.map(({ productoSlug, ...puntito }) => {
+          const producto = data.productos.find((producto) => producto.slug === productoSlug)
+          if (!producto) {
+            throw new Error(`Producto with slug ${productoSlug} found in ambiente ${ambiente.slug} doesn't exist.`)
+          }
+
+          return {
+            ...puntito,
+            producto,
+          }
+        }),
+      }))
+
+      return { ...rest, images: imagesWithResolvedReferences }
     },
   }
 }

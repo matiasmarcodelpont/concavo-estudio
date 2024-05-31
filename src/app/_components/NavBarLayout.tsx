@@ -11,7 +11,7 @@ export const NavBarLayout = ({
   ambientes,
   opened = false,
 }: {
-  ambientes: OmitReferences<Ambiente>[]
+  ambientes: OmitReferences<Omit<Ambiente, 'images'>>[]
   children?: ReactNode
   opened?: boolean
 }) => {

@@ -69,6 +69,7 @@ describe('productos repository', () => {
           },
         ],
         colaboradores: [],
+        images: [],
       },
       {
         slug: 'cocina',
@@ -79,6 +80,7 @@ describe('productos repository', () => {
           },
         ],
         colaboradores: [],
+        images: [],
       },
     ]
 
