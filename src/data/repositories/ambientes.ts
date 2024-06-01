@@ -1,9 +1,13 @@
 import { DataSet, OmitReferences, Ambiente, AmbienteImage, Puntito, Producto } from '../types'
 
+export type ResolvedPuntito = Omit<Puntito, 'productoSlug'> & { producto: Producto }
+
+export type ImageWithResolvedPuntitos = Omit<AmbienteImage, 'puntitos'> & {
+  puntitos: ResolvedPuntito[]
+}
+
 export type AmbienteWithResolvedPuntitos = Omit<Ambiente, 'images'> & {
-  images: (Omit<AmbienteImage, 'puntitos'> & {
-    puntitos: (Omit<Puntito, 'productoSlug'> & { producto: Producto })[]
-  })[]
+  images: ImageWithResolvedPuntitos[]
 }
 
 /**

@@ -13,7 +13,16 @@ const data: DataSet = {
           slug: 'piso-madera',
         },
       ],
-      images: [],
+      images: [
+        {
+          src: '0.jpeg',
+          width: 1500,
+          height: 1080,
+          puntitos: [{ productoSlug: 'azulejos-guardados', coordinates: { x: 760, y: 430 } }],
+        },
+        { src: '1.jpeg', width: 1500, height: 2000, puntitos: [] },
+        { src: '2.jpeg', width: 1500, height: 1080, puntitos: [] },
+      ],
     },
     {
       slug: 'cocina',
@@ -23,13 +32,21 @@ const data: DataSet = {
           slug: 'azulejos-guardados',
         },
       ],
-      images: [],
+      images: [
+        { src: '0.jpeg', width: 1500, height: 1080, puntitos: [] },
+        { src: '1.jpeg', width: 1500, height: 2000, puntitos: [] },
+        { src: '2.jpeg', width: 1500, height: 1080, puntitos: [] },
+      ],
     },
     {
       slug: 'lavadero',
       name: 'Lavadero',
       productos: [],
-      images: [],
+      images: [
+        { src: '0.jpeg', width: 1500, height: 2000, puntitos: [] },
+        { src: '1.jpeg', width: 1500, height: 1080, puntitos: [] },
+        { src: '2.jpeg', width: 1500, height: 1080, puntitos: [] },
+      ],
     },
     // {
     //   slug: 'escritorio',
