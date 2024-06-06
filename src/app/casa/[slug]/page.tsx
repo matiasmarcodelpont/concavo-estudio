@@ -46,12 +46,12 @@ export default function Ambiente({ params }: { params: { slug: string } }) {
         </Carousel>
       </section>
 
-      <section aria-labelledby='productos-heading' className='mx-4 sm:mx-6 md:mx-8 mb-12'>
+      <section aria-labelledby='productos-heading' className='mx-6 sm:mx-10 md:mx-12 mb-12'>
         <Heading className='text-xl sm:text-2xl md:text-3xl' id='productos-heading'>
           Productos
         </Heading>
 
-        <GridFluid className='gap-4' aria-label='Productos'>
+        <GridFluid className='gap-12' aria-label='Productos'>
           {productos.map((producto) => (
             <li key={producto.slug}>
               <Producto {...producto} />
@@ -60,7 +60,7 @@ export default function Ambiente({ params }: { params: { slug: string } }) {
         </GridFluid>
       </section>
 
-      <section aria-labelledby='colaboradores-heading' className='mx-4 sm:mx-6 md:mx-8 mb-12'>
+      <section aria-labelledby='colaboradores-heading' className='mx-6 sm:mx-10 md:mx-12 mb-12'>
         <Heading className='text-xl sm:text-2xl md:text-3xl' id='colaboradores-heading'>
           Colaboradores
         </Heading>

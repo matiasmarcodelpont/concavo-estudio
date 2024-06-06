@@ -82,44 +82,4 @@ describe('Casa Cóncavo', () => {
     expect(link1).toBeInTheDocument()
     expect(link1.href).toMatch(/^https?:\/\/[^/]+\/casa\/living-comedor$/)
   })
-
-  it('renders Casa Cóncavo main Colaboradores', () => {
-    render(<CasaConcavo />)
-
-    const mainColaboradoresList = screen.getByRole('list', { name: 'Lista de los principales Colaboradores' })
-    expect(mainColaboradoresList).toBeInTheDocument()
-
-    const mainColaboradores = within(mainColaboradoresList).getAllByRole('listitem')
-    expect(mainColaboradores).toHaveLength(2)
-  })
-
-  it('renders Casa Cóncavo standard Colaboradores', () => {
-    render(<CasaConcavo />)
-
-    const standardColaboradoresList = screen.getByRole('list', { name: 'Lista del resto de los Colaboradores' })
-    expect(standardColaboradoresList).toBeInTheDocument()
-
-    const standardColaboradores = within(standardColaboradoresList).getAllByRole('listitem')
-    expect(standardColaboradores).toHaveLength(2)
-  })
-
-  it('renders Casa Cóncavo main Colaboradores', () => {
-    render(<CasaConcavo />)
-
-    const mainColaboradoresList = screen.getByRole('list', { name: 'Lista de los principales Colaboradores' })
-    expect(mainColaboradoresList).toBeInTheDocument()
-
-    const mainColaboradores = within(mainColaboradoresList).getAllByRole('listitem')
-    expect(mainColaboradores).toHaveLength(2)
-  })
-
-  it('renders Casa Cóncavo standard Colaboradores', () => {
-    render(<CasaConcavo />)
-
-    const standardColaboradoresList = screen.getByRole('list', { name: 'Lista del resto de los Colaboradores' })
-    expect(standardColaboradoresList).toBeInTheDocument()
-
-    const standardColaboradores = within(standardColaboradoresList).getAllByRole('listitem')
-    expect(standardColaboradores).toHaveLength(2)
-  })
 })

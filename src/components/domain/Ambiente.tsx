@@ -18,7 +18,7 @@ export const Ambiente = ({ className, slug, name }: { className?: string; slug: 
       />
       <div className='absolute inset-0 bg-black opacity-30 z-20' />
       <div className='relative max-w-[1600px] flex justify-between grow z-30'>
-        <p className='text-xl sm:text-2xl md:text-3xl text-white'>{name}</p>
+        <p className='text-xl sm:text-2xl md:text-3xl text-bone'>{name}</p>
         <ChevronRight color='white' className='size-[30px] sm:size-[40px] md:size-[40px]' />
       </div>
     </Link>

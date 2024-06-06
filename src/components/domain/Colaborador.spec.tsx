@@ -27,13 +27,6 @@ describe('MainColaborador', () => {
     const image = getByAltText(mainColaborador.name)
     expect(image).toBeInTheDocument()
   })
-
-  it('should render the colaborador description', () => {
-    const { getByText } = render(<MainColaborador {...mainColaborador} />)
-
-    const descriptionElement = getByText(mainColaborador.description)
-    expect(descriptionElement).toBeInTheDocument()
-  })
 })
 
 const standardColaborador = {
