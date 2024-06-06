@@ -115,10 +115,10 @@ describe('ambientes repository', () => {
           },
         ],
         productos: [
-          { slug: 'test-producto-1', name: 'Test producto 1', colaborador: null },
-          { slug: 'test-producto-2', name: 'Test producto 2', colaborador: null },
-          { slug: 'test-producto-3', name: 'Test producto 3', colaborador: null },
-          { slug: 'test-producto-4', name: 'Test producto 4', colaborador: null },
+          { slug: 'test-producto-1', name: 'Test producto 1', colaborador: null, description: '', link: '' },
+          { slug: 'test-producto-2', name: 'Test producto 2', colaborador: null, description: '', link: '' },
+          { slug: 'test-producto-3', name: 'Test producto 3', colaborador: null, description: '', link: '' },
+          { slug: 'test-producto-4', name: 'Test producto 4', colaborador: null, description: '', link: '' },
         ],
         colaboradores: [],
       })
