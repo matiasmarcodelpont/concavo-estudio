@@ -1,11 +1,14 @@
 import { MainColaborador as MainColaboradorType, StandardColaborador as StandardColaboradorType } from '@/data/types'
+import { cn } from '@/lib/utils'
 import Image from 'next/image'
 
-type StandardColaboradorProps = Omit<StandardColaboradorType, 'isMain' | 'description' | 'email' | 'address'>
+type StandardColaboradorProps = Omit<StandardColaboradorType, 'isMain' | 'description' | 'email' | 'address'> & {
+  className?: string
+}
 
-export const StandardColaborador = ({ slug, name }: StandardColaboradorProps) => {
+export const StandardColaborador = ({ slug, name, className }: StandardColaboradorProps) => {
   return (
-    <div className='w-[200px] sm:w-[300px] h-[100px] m-auto relative mb-3'>
+    <div className={cn('w-[200px] sm:w-[300px] h-[100px] m-auto relative mb-3', className)}>
       <Image
         fill
         src={`/colaboradores/${slug}.png`}

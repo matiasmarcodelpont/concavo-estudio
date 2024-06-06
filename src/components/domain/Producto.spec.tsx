@@ -6,6 +6,8 @@ import { Producto } from './Producto'
 const producto = {
   slug: 'piso-madera',
   name: 'Piso simil Madera',
+  description: '',
+  link: null,
 }
 
 describe('Producto', () => {

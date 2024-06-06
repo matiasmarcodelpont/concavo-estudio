@@ -27,6 +27,8 @@ describe('Common functions', () => {
       {
         slug: 'azulejos-guardados',
         name: 'Azulejos Guardados',
+        link: null,
+        description: '',
         colaborador: {
           slug: 'cocina-design',
         },
@@ -37,6 +39,8 @@ describe('Common functions', () => {
       {
         slug: 'sofa-carlos',
         name: 'Sofá Carlos V',
+        link: null,
+        description: '',
         colaborador: {
           slug: 'muebles-arte',
         },
@@ -44,6 +48,8 @@ describe('Common functions', () => {
       {
         slug: 'bacha-8080',
         name: 'Bacha 8080',
+        link: null,
+        description: '',
         colaborador: null,
       },
     ]
@@ -65,6 +71,8 @@ describe('Common functions', () => {
       const colaborador = getColaboradorFromProducto([], {
         name: 'Test producto',
         slug: 'test-producto',
+        link: null,
+        description: '',
         colaborador: null,
       })
       expect(colaborador).toBeNull()
@@ -79,6 +87,8 @@ describe('Common functions', () => {
         {
           name: 'Test producto',
           slug: 'test-producto',
+          link: null,
+          description: '',
           colaborador: { slug: 'test-colaborador' },
         },
       )

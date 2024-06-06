@@ -71,23 +71,53 @@ jest.mock('@/data/data.ts', () => ({
   colaboradores: [],
 }))
 
+// Mocks needed for carousel component not to fail.
+// See https://github.com/shadcn-ui/ui/issues/2823
+
+Object.defineProperty(window, 'IntersectionObserver', {
+  writable: true,
+  value: jest.fn().mockImplementation(() => ({
+    observe: jest.fn(),
+    unobserve: jest.fn(),
+    disconnect: jest.fn(),
+  })),
+})
+
+Object.defineProperty(window, 'matchMedia', {
+  writable: true,
+  value: jest.fn().mockImplementation(() => ({
+    matches: jest.fn(),
+    addEventListener: jest.fn(),
+    removeEventListener: jest.fn(),
+  })),
+})
+
+Object.defineProperty(window, 'ResizeObserver', {
+  writable: true,
+  value: jest.fn().mockImplementation(() => ({
+    observe: jest.fn(),
+    unobserve: jest.fn(),
+    disconnect: jest.fn(),
+  })),
+})
+
 describe('Producto', () => {
   it('renders producto page unchanged', () => {
-    const { container } = render(<Producto params={{ productoSlug: 'lampara-hierro' }} />)
+    const { container } = render(<Producto params={{ slug: 'lampara-hierro' }} />)
     expect(container).toMatchSnapshot()
   })
 
   it('renders Producto name', () => {
-    render(<Producto params={{ productoSlug: 'lampara-hierro' }} />)
+    render(<Producto params={{ slug: 'lampara-hierro' }} />)
 
-    const heading = screen.getByRole('heading', { level: 1, name: 'Lámpara de diseño con detalles de Hierro' })
-    expect(heading).toBeInTheDocument()
+    const heading = screen.getAllByRole('heading', { level: 1, name: 'Lámpara de diseño con detalles de Hierro' })
+    expect(heading[0]).toBeInTheDocument()
   })
 
   it('renders related productos', () => {
-    render(<Producto params={{ productoSlug: 'lampara-hierro' }} />)
+    render(<Producto params={{ slug: 'lampara-hierro' }} />)
 
-    const productosList = screen.getByRole('list', { name: 'Lista de productos relacionados' })
+    const productosList = screen.getByRole('list', { name: 'Productos relacionados' })
     expect(productosList).toBeInTheDocument()
 
     const productos = within(productosList).getAllByRole('listitem')
@@ -106,7 +136,7 @@ describe('Producto', () => {
 
   it('shows the 404 page if producto is not found', () => {
     expect(() => {
-      render(<Producto params={{ productoSlug: 'producto-inexistente' }} />)
+      render(<Producto params={{ slug: 'producto-inexistente' }} />)
     }).toThrow('NEXT_NOT_FOUND')
   })
 })

@@ -6,6 +6,7 @@ import { MainColaborador, StandardColaborador } from './Colaborador'
 const mainColaborador = {
   slug: 'elegance',
   name: 'Elegancee',
+  contact: '',
   website: 'https://www.pisoselegance.es',
   isMain: true,
   description:
@@ -38,6 +39,7 @@ describe('MainColaborador', () => {
 const standardColaborador = {
   slug: 'muebles-arte',
   name: 'Muebles de Arte',
+  contact: '',
   website: 'https://www.mueblesdearte.com',
 }
 
