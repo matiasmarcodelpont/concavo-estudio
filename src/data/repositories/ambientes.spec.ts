@@ -134,11 +134,23 @@ describe('ambientes repository', () => {
             height: 600,
             puntitos: [
               {
-                producto: { slug: 'test-producto-1', name: 'Test producto 1', colaborador: null },
+                producto: {
+                  slug: 'test-producto-1',
+                  name: 'Test producto 1',
+                  colaborador: null,
+                  description: '',
+                  link: '',
+                },
                 coordinates: { x: 0, y: 0 },
               },
               {
-                producto: { slug: 'test-producto-2', name: 'Test producto 2', colaborador: null },
+                producto: {
+                  slug: 'test-producto-2',
+                  name: 'Test producto 2',
+                  colaborador: null,
+                  description: '',
+                  link: '',
+                },
                 coordinates: { x: 0, y: 0 },
               },
             ],
@@ -149,11 +161,23 @@ describe('ambientes repository', () => {
             height: 600,
             puntitos: [
               {
-                producto: { slug: 'test-producto-3', name: 'Test producto 3', colaborador: null },
+                producto: {
+                  slug: 'test-producto-3',
+                  name: 'Test producto 3',
+                  colaborador: null,
+                  description: '',
+                  link: '',
+                },
                 coordinates: { x: 0, y: 0 },
               },
               {
-                producto: { slug: 'test-producto-4', name: 'Test producto 4', colaborador: null },
+                producto: {
+                  slug: 'test-producto-4',
+                  name: 'Test producto 4',
+                  colaborador: null,
+                  description: '',
+                  link: '',
+                },
                 coordinates: { x: 0, y: 0 },
               },
             ],
