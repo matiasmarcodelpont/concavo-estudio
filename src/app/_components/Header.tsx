@@ -1,11 +1,13 @@
 import Logo from '@/components/domain/Logo'
 import Link from 'next/link'
 import { NavBarLayout } from './NavBarLayout'
-import { ambientesRepository } from '@/controllers'
+import { Ambiente, OmitReferences } from '@/data/types'
 
-export const Header = () => {
-  const ambientes = ambientesRepository.getAmbientes()
+interface HeaderProps {
+  ambientes: OmitReferences<Ambiente>[]
+}
 
+export const Header = ({ ambientes }: HeaderProps) => {
   return (
     <header className='px-4 flex items-center gap-2 sticky top-0 z-40 bg-bone shadow'>
       <NavBarLayout ambientes={ambientes}></NavBarLayout>

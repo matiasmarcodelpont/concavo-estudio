@@ -1,10 +1,15 @@
+import { cn } from '@/lib/utils'
 import Image from 'next/image'
-import React from 'react'
 
-const Logo = () => {
+interface LogoProps {
+  variant?: 'black' | 'white'
+  className?: string
+}
+
+const Logo = ({ variant = 'black', className }: LogoProps) => {
   return (
-    <div className='w-[150px] h-[50px] sm:w-[201px] sm:h-[67px] relative'>
-      <Image fill src='/logos/concavo_black.png' alt='Logo Cóncavo' className='object-contain' />
+    <div className={cn('w-[150px] h-[50px] sm:w-[201px] sm:h-[67px] relative', className)}>
+      <Image fill src={`/logos/concavo_${variant}.png`} alt='Logo Cóncavo' className='object-contain' />
     </div>
   )
 }

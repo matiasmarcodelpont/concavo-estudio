@@ -6,6 +6,7 @@ import { cn } from '@/lib/utils'
 import { editorialNew, ttNorms } from '@/lib/fonts'
 import { Header } from './_components/Header'
 import { Footer } from './_components/Footer'
+import { ambientesRepository } from '@/controllers'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -17,12 +18,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const ambientes = ambientesRepository.getAmbientes()
+
   return (
     <html lang='es'>
       <body className={cn(editorialNew.variable, ttNorms.variable, 'bg-bone text-black')}>
-        <Header />
+        <Header ambientes={ambientes} />
         {children}
-        <Footer />
+        <Footer ambientes={ambientes} />
       </body>
     </html>
   )
