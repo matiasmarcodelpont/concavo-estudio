@@ -15,7 +15,7 @@ exports[`Producto matches snapshot 1`] = `
     >
       <img
         alt="Piso simil Madera"
-        class="object-cover group-hover:scale-105 transition-all duration-1000 opacity-0"
+        class="object-cover group-hover:scale-105 opacity-0"
         data-nimg="fill"
         decoding="async"
         loading="lazy"
@@ -28,8 +28,11 @@ exports[`Producto matches snapshot 1`] = `
     <div
       class="mb-4 group-hover:text-light-gray transition-colors duration-500"
     >
+      <span
+        style="font-size: 0px;"
+      />
       <h1
-        class="uppercase italic text-sm xs:text-base sm:text-lg mt-4 mb-0 sm:mt-6 sm:mb-0 md:mt-8 md:mb-0"
+        class="uppercase italic opacity-100 text-sm xs:text-base sm:text-lg mt-4 mb-0 sm:mt-6 sm:mb-0 md:mt-8 md:mb-0"
       >
         Piso simil Madera
       </h1>

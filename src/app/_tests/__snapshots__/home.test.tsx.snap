@@ -53,7 +53,7 @@ exports[`Home renders homepage unchanged 1`] = `
         style="font-size: 0px;"
       />
       <h1
-        class="uppercase mt-12 mb-6 sm:mt-16 sm:mb-9 md:mt-20 md:mb-12 italic text-xl sm:text-2xl md:text-3xl transition-all duration-1000 opacity-0"
+        class="uppercase mt-12 mb-6 sm:mt-16 sm:mb-9 md:mt-20 md:mb-12 italic opacity-0 text-xl sm:text-2xl md:text-3xl"
         id="productos-concavo"
       >
         Nuestros Productos
@@ -76,7 +76,7 @@ exports[`Home renders homepage unchanged 1`] = `
             >
               <img
                 alt="Azulejos verdes"
-                class="object-cover group-hover:scale-105 transition-all duration-1000 opacity-0"
+                class="object-cover group-hover:scale-105 opacity-0"
                 data-nimg="fill"
                 decoding="async"
                 loading="lazy"
@@ -89,8 +89,11 @@ exports[`Home renders homepage unchanged 1`] = `
             <div
               class="mb-4 group-hover:text-light-gray transition-colors duration-500"
             >
+              <span
+                style="font-size: 0px;"
+              />
               <h1
-                class="uppercase italic text-sm xs:text-base sm:text-lg mt-4 mb-0 sm:mt-6 sm:mb-0 md:mt-8 md:mb-0"
+                class="uppercase italic opacity-100 text-sm xs:text-base sm:text-lg mt-4 mb-0 sm:mt-6 sm:mb-0 md:mt-8 md:mb-0"
               >
                 Azulejos verdes
               </h1>
@@ -117,7 +120,7 @@ exports[`Home renders homepage unchanged 1`] = `
             >
               <img
                 alt="Azulejos azules"
-                class="object-cover group-hover:scale-105 transition-all duration-1000 opacity-0"
+                class="object-cover group-hover:scale-105 opacity-0"
                 data-nimg="fill"
                 decoding="async"
                 loading="lazy"
@@ -130,8 +133,11 @@ exports[`Home renders homepage unchanged 1`] = `
             <div
               class="mb-4 group-hover:text-light-gray transition-colors duration-500"
             >
+              <span
+                style="font-size: 0px;"
+              />
               <h1
-                class="uppercase italic text-sm xs:text-base sm:text-lg mt-4 mb-0 sm:mt-6 sm:mb-0 md:mt-8 md:mb-0"
+                class="uppercase italic opacity-100 text-sm xs:text-base sm:text-lg mt-4 mb-0 sm:mt-6 sm:mb-0 md:mt-8 md:mb-0"
               >
                 Azulejos azules
               </h1>
