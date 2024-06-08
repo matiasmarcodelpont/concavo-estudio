@@ -10,6 +10,7 @@ describe('Common functions', () => {
         name: 'Living/Comedor',
         productos: [],
         colaboradores: [],
+        images: [],
       },
       {
         slug: 'cocina',
@@ -20,6 +21,7 @@ describe('Common functions', () => {
           },
         ],
         colaboradores: [],
+        images: [],
       },
     ]
 

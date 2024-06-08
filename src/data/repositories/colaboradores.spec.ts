@@ -163,6 +163,7 @@ describe('colaboradores repository', () => {
         name: 'Living/Comedor',
         productos: [],
         colaboradores: [],
+        images: [],
       },
       {
         slug: 'cocina',
@@ -176,6 +177,7 @@ describe('colaboradores repository', () => {
           },
         ],
         colaboradores: [],
+        images: [],
       },
     ]
 
@@ -304,6 +306,7 @@ describe('colaboradores repository', () => {
         name: 'Living/Comedor',
         productos: [],
         colaboradores: [],
+        images: [],
       },
       {
         slug: 'cocina',
@@ -317,6 +320,7 @@ describe('colaboradores repository', () => {
           },
         ],
         colaboradores: [],
+        images: [],
       },
     ]
 
