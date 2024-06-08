@@ -1,3 +1,5 @@
+'use client'
+
 import { QRCode } from 'react-qrcode-logo'
 import config from '../../../tailwind.config'
 import { forwardRef } from 'react'
