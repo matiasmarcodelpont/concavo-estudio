@@ -148,7 +148,7 @@ exports[`Producto renders producto page unchanged 1`] = `
       </h1>
       <ul
         aria-label="Productos relacionados"
-        class="grid grid-cols-auto-fill-200 sm:grid-cols-auto-fill-300 gap-12"
+        class="grid grid-cols-auto-fit-100 xs:grid-cols-auto-fit-150 sm:grid-cols-auto-fill-200 md:grid-cols-auto-fill-300 gap-4"
       >
         <li>
           <a
@@ -178,7 +178,7 @@ exports[`Producto renders producto page unchanged 1`] = `
               class="mb-4 group-hover:text-light-gray transition-colors duration-500"
             >
               <h1
-                class="uppercase italic text-lg mt-4 mb-0 sm:mt-6 sm:mb-0 md:mt-8 md:mb-0"
+                class="uppercase italic text-sm xs:text-base sm:text-lg mt-4 mb-0 sm:mt-6 sm:mb-0 md:mt-8 md:mb-0"
               >
                 Piso simil Madera
               </h1>
@@ -213,7 +213,7 @@ exports[`Producto renders producto page unchanged 1`] = `
               class="mb-4 group-hover:text-light-gray transition-colors duration-500"
             >
               <h1
-                class="uppercase italic text-lg mt-4 mb-0 sm:mt-6 sm:mb-0 md:mt-8 md:mb-0"
+                class="uppercase italic text-sm xs:text-base sm:text-lg mt-4 mb-0 sm:mt-6 sm:mb-0 md:mt-8 md:mb-0"
               >
                 Sofá Carlos V
               </h1>
