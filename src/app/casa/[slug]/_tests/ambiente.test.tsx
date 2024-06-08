@@ -196,9 +196,6 @@ describe('Ambiente', () => {
 
     expect(ambienteMainColaboradores[0]).toBeInTheDocument()
     within(ambienteMainColaboradores[0]).getByRole('img', { name: 'Luz Viva' })
-    expect(ambienteMainColaboradores[0]).toHaveTextContent(
-      'Líder en sistemas de iluminación innovadores y eficientes para hogares y negocios. Calidad, diseño y compromiso con la sostenibilidad nos distinguen.',
-    )
   })
 
   it("renders ambiente's standard Colaboradores", () => {

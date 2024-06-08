@@ -4,11 +4,11 @@ exports[`Producto matches snapshot 1`] = `
 <div>
   <a
     aria-label="Piso simil Madera"
-    class="flex flex-col gap-2 cursor-pointer text-dark-gray group"
+    class="cursor-pointer text-dark-gray group"
     href="/productos/piso-madera"
   >
     <div
-      class="h-[450px] relative overflow-hidden"
+      class="pt-[100%] relative overflow-hidden"
     >
       <img
         alt="Piso simil Madera"
@@ -26,7 +26,7 @@ exports[`Producto matches snapshot 1`] = `
       class="mb-4 group-hover:text-light-gray transition-colors duration-500"
     >
       <h1
-        class="uppercase italic text-lg m-0"
+        class="uppercase italic text-lg mt-4 mb-0 sm:mt-6 sm:mb-0 md:mt-8 md:mb-0"
       >
         Piso simil Madera
       </h1>
