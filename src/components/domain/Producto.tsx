@@ -41,7 +41,9 @@ export const Producto = ({ concavo = false, className, ...producto }: ProductoPr
           />
         </div>
         <div className='mb-4 group-hover:text-light-gray transition-colors duration-500'>
-          <Heading className='text-lg mt-4 mb-0 sm:mt-6 sm:mb-0 md:mt-8 md:mb-0'>{producto.name}</Heading>
+          <Heading className='text-sm xs:text-base sm:text-lg mt-4 mb-0 sm:mt-6 sm:mb-0 md:mt-8 md:mb-0'>
+            {producto.name}
+          </Heading>
           {concavo && (
             <p className='text-xs text-center mt-0 leading-none' aria-label='dimensions'>
               AAA x LLL x PPP

@@ -134,6 +134,22 @@ const data: DataSet = {
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptas explicabo aliquam tenetur. Eligendi deleniti ratione doloribus dolores dolorum, reprehenderit maiores odit itaque quos tenetur, architecto earum est, iste accusantium.',
       colaborador: null,
     },
+    {
+      slug: 'bañadera-kahlo',
+      name: 'Bañadera Kahlo',
+      link: 'https://example.com',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptas explicabo aliquam tenetur. Eligendi deleniti ratione doloribus dolores dolorum, reprehenderit maiores odit itaque quos tenetur, architecto earum est, iste accusantium.',
+      colaborador: null,
+    },
+    {
+      slug: 'bañadera-kahlo',
+      name: 'Bañadera Kahlo',
+      link: 'https://example.com',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptas explicabo aliquam tenetur. Eligendi deleniti ratione doloribus dolores dolorum, reprehenderit maiores odit itaque quos tenetur, architecto earum est, iste accusantium.',
+      colaborador: null,
+    },
   ],
   colaboradores: [
     {

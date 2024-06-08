@@ -48,7 +48,7 @@ export default function Home() {
           Nuestros Productos
         </Heading>
 
-        <GridFluid className='gap-12' aria-labelledby='productos-concavo'>
+        <GridFluid aria-labelledby='productos-concavo'>
           {productos.map((producto) => (
             <li key={producto.slug}>
               <Producto {...producto} concavo />

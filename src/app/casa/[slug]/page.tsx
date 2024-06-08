@@ -51,7 +51,7 @@ export default function Ambiente({ params }: { params: { slug: string } }) {
           Productos
         </Heading>
 
-        <GridFluid className='gap-12' aria-label='Productos'>
+        <GridFluid aria-label='Productos'>
           {productos.map((producto) => (
             <li key={producto.slug}>
               <Producto {...producto} />

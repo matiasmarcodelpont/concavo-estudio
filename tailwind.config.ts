@@ -30,6 +30,9 @@ const config = {
       },
     },
     extend: {
+      screens: {
+        xs: '375px',
+      },
       /* https://befonts.com/editorial-new-font-family.html */
       /* https://befonts.com/tt-norms-pro-serif-font.html */
       fontFamily: {
@@ -37,6 +40,9 @@ const config = {
         'tt-norms': ['var(--tt-norms)'],
       },
       gridTemplateColumns: {
+        'auto-fit-100': 'repeat(auto-fit, minmax(100px, 1fr))',
+        'auto-fit-150': 'repeat(auto-fit, minmax(150px, 1fr))',
+        'auto-fill-200': 'repeat(auto-fill, minmax(200px, 1fr))',
         'auto-fill-300': 'repeat(auto-fill, minmax(300px, 1fr))',
       },
       keyframes: {
