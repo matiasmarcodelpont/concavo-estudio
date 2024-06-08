@@ -212,9 +212,20 @@ exports[`Footer matches snapshot 1`] = `
       </div>
     </div>
     <div
-      class="h-24 w-24 bg-bone text-black mt-2 flex-shrink-0 grid place-content-center"
+      data-testid="mock-qr"
     >
-      QR
+      Mock QR Code: 
+      http://localhostnull
+    </div>
+    <div
+      class="absolute left-[-100vw]"
+    >
+      <div
+        data-testid="mock-qr"
+      >
+        Mock QR Code: 
+        http://localhostnull
+      </div>
     </div>
   </section>
 </footer>
