@@ -9,7 +9,7 @@ interface VideoProps {
 
 export const Video = ({ src, title, href, copy }: VideoProps) => {
   return (
-    <Link href={href} className='block relative w-full h-[80vh] overflow-hidden'>
+    <Link href={href} className='block relative w-full h-[95vh] overflow-hidden'>
       <video
         src={src}
         title={title}

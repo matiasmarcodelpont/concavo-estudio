@@ -9,7 +9,7 @@ interface HeaderProps {
 
 export const Header = ({ ambientes }: HeaderProps) => {
   return (
-    <header className='px-4 flex items-center gap-2 sticky top-0 z-40 bg-bone shadow'>
+    <header className='px-4 flex items-center gap-2 fixed w-full z-40 bg-bone shadow animate-navbar-fade-in'>
       <NavBarLayout ambientes={ambientes}></NavBarLayout>
       <Link href='/' className='uppercase text-lg text-center flex flex-col items-center m-auto p-4 md:p-6'>
         <Logo />
