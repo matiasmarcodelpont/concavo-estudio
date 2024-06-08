@@ -150,12 +150,15 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
             class="cursor-pointer text-dark-gray group"
             href="/productos/azulejos-guardados"
           >
+            <span
+              style="font-size: 0px;"
+            />
             <div
-              class="pt-[100%] relative overflow-hidden"
+              class="pt-[100%] relative overflow-hidden "
             >
               <img
                 alt="Azulejos Guardados"
-                class="object-cover group-hover:scale-105 transition-transform duration-1000"
+                class="object-cover group-hover:scale-105 transition-all duration-1000 opacity-0"
                 data-nimg="fill"
                 decoding="async"
                 loading="lazy"
@@ -182,12 +185,15 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
             class="cursor-pointer text-dark-gray group"
             href="/productos/luz-led"
           >
+            <span
+              style="font-size: 0px;"
+            />
             <div
-              class="pt-[100%] relative overflow-hidden"
+              class="pt-[100%] relative overflow-hidden "
             >
               <img
                 alt="Luz Led"
-                class="object-cover group-hover:scale-105 transition-transform duration-1000"
+                class="object-cover group-hover:scale-105 transition-all duration-1000 opacity-0"
                 data-nimg="fill"
                 decoding="async"
                 loading="lazy"

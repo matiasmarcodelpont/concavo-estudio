@@ -3,7 +3,7 @@
 exports[`Video component matches snapshot 1`] = `
 <div>
   <a
-    class="block relative w-full h-[80vh] overflow-hidden"
+    class="block relative w-full h-[95vh] overflow-hidden"
     href="fake-link"
   >
     <video
