@@ -6,6 +6,7 @@ import Heading from '@/components/domain/Heading'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
 import { StandardColaborador } from '@/components/domain/Colaborador'
 import { Button } from '@/components/ui/button'
+import { GridFluid } from '@/components/layouts/Fluid'
 
 export default function Producto({ params }: { params: { slug: string } }) {
   const producto = productosRepository.getProducto(decodeURIComponent(params.slug))
@@ -39,7 +40,7 @@ export default function Producto({ params }: { params: { slug: string } }) {
         </Carousel>
 
         <section className='px-4 sm:px-6 md:px-8 mt-10 md:w-1/2'>
-          <Heading className='text-center mt-0 hidden md:block'>{producto.name}</Heading>
+          <Heading className='text-center mt-0 sm:mt-0 md:mt-0 hidden md:block'>{producto.name}</Heading>
           <p>{producto.description}</p>
           {producto.colaborador && <p className='mt-8'>{producto.colaborador.contact}</p>}
 
@@ -49,21 +50,21 @@ export default function Producto({ params }: { params: { slug: string } }) {
             </Button>
           )}
 
-          {producto.colaborador && <StandardColaborador {...producto.colaborador} className='mt-10' />}
+          {producto.colaborador && <StandardColaborador {...producto.colaborador} className='mt-16' />}
         </section>
       </div>
 
       {relatedProductos.length > 0 && (
-        <section>
-          <Heading className='text-center'>Más productos</Heading>
+        <section className='mx-6 sm:mx-10 md:mx-12 mb-12 text-center'>
+          <Heading className='text-xl sm:text-2xl md:text-3xl'>Más productos</Heading>
 
-          <ul aria-label='Productos relacionados'>
+          <GridFluid className='gap-12' aria-label='Productos relacionados'>
             {relatedProductos.map((producto) => (
               <li key={producto.slug}>
                 <ProductoRelacionado {...producto} />
               </li>
             ))}
-          </ul>
+          </GridFluid>
         </section>
       )}
     </main>

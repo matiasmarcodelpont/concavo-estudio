@@ -9,13 +9,13 @@ exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
       class="mb-12"
     >
       <h1
-        class="uppercase mt-12 mb-6 italic text-xl sm:text-2xl md:text-3xl hidden"
+        class="uppercase mt-12 mb-6 sm:mt-16 sm:mb-9 md:mt-20 md:mb-12 italic text-xl sm:text-2xl md:text-3xl hidden"
       >
         Casa Cóncavo
       </h1>
       <ul
         aria-label="Lista de Ambientes"
-        class="space-y-4"
+        class="space-y-4 sm:space-y-8 md:space-y-12"
       >
         <li>
           <a
@@ -41,7 +41,7 @@ exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
               class="relative max-w-[1600px] flex justify-between grow z-30"
             >
               <p
-                class="text-xl sm:text-2xl md:text-3xl text-white"
+                class="text-xl sm:text-2xl md:text-3xl text-bone"
               >
                 Cocina
               </p>
@@ -88,7 +88,7 @@ exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
               class="relative max-w-[1600px] flex justify-between grow z-30"
             >
               <p
-                class="text-xl sm:text-2xl md:text-3xl text-white"
+                class="text-xl sm:text-2xl md:text-3xl text-bone"
               >
                 Living/Comedor
               </p>
@@ -110,119 +110,6 @@ exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
               </svg>
             </div>
           </a>
-        </li>
-      </ul>
-    </section>
-    <section
-      class="mx-4 sm:mx-6 md:mx-8 mb-12"
-    >
-      <h1
-        class="uppercase mt-12 mb-6 italic text-xl sm:text-2xl md:text-3xl"
-      >
-        Nuestros Colaboradores
-      </h1>
-      <ul
-        aria-label="Lista de los principales Colaboradores"
-        class="flex flex-wrap gap-10 sm:gap-12 md:gap-14 lg:gap-16 mb-10 justify-center sm:mb-12 md:mb-14 lg:mb-16"
-      >
-        <li
-          class="list-none"
-        >
-          <div
-            class="flex flex-col items-center w-[200px] sm:w-[300px]"
-          >
-            <div
-              class="w-[200px] sm:w-[300px] h-[100px] m-auto relative mb-3"
-            >
-              <img
-                alt="Elegance"
-                class="object-contain grayscale"
-                data-nimg="fill"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fcolaboradores%2Felegance.png&w=3840&q=75"
-                srcset="/_next/image?url=%2Fcolaboradores%2Felegance.png&w=640&q=75 640w, /_next/image?url=%2Fcolaboradores%2Felegance.png&w=750&q=75 750w, /_next/image?url=%2Fcolaboradores%2Felegance.png&w=828&q=75 828w, /_next/image?url=%2Fcolaboradores%2Felegance.png&w=1080&q=75 1080w, /_next/image?url=%2Fcolaboradores%2Felegance.png&w=1200&q=75 1200w, /_next/image?url=%2Fcolaboradores%2Felegance.png&w=1920&q=75 1920w, /_next/image?url=%2Fcolaboradores%2Felegance.png&w=2048&q=75 2048w, /_next/image?url=%2Fcolaboradores%2Felegance.png&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-            </div>
-            <p
-              class="text-xs text-darkGray mb-3 text-left"
-            >
-              Líder en revestimientos de suelos elegantes y duraderos para hogares y negocios. Calidad, innovación y compromiso con la sostenibilidad nos distinguen.
-            </p>
-          </div>
-        </li>
-        <li
-          class="list-none"
-        >
-          <div
-            class="flex flex-col items-center w-[200px] sm:w-[300px]"
-          >
-            <div
-              class="w-[200px] sm:w-[300px] h-[100px] m-auto relative mb-3"
-            >
-              <img
-                alt="Luz Viva"
-                class="object-contain grayscale"
-                data-nimg="fill"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=3840&q=75"
-                srcset="/_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=640&q=75 640w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=750&q=75 750w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=828&q=75 828w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=1080&q=75 1080w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=1200&q=75 1200w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=1920&q=75 1920w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=2048&q=75 2048w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-            </div>
-            <p
-              class="text-xs text-darkGray mb-3 text-left"
-            >
-              Líder en sistemas de iluminación innovadores y eficientes para hogares y negocios. Calidad, diseño y compromiso con la sostenibilidad nos distinguen.
-            </p>
-          </div>
-        </li>
-      </ul>
-      <ul
-        aria-label="Lista del resto de los Colaboradores"
-        class="flex flex-wrap gap-10 sm:gap-12 md:gap-14 lg:gap-16 justify-center"
-      >
-        <li
-          class="list-none"
-        >
-          <div
-            class="w-[200px] sm:w-[300px] h-[100px] m-auto relative mb-3"
-          >
-            <img
-              alt="Muebles de Arte"
-              class="object-contain grayscale"
-              data-nimg="fill"
-              decoding="async"
-              loading="lazy"
-              sizes="100vw"
-              src="/_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=3840&q=75"
-              srcset="/_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=640&q=75 640w, /_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=750&q=75 750w, /_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=828&q=75 828w, /_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=1080&q=75 1080w, /_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=1200&q=75 1200w, /_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=1920&q=75 1920w, /_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=2048&q=75 2048w, /_next/image?url=%2Fcolaboradores%2Fmuebles-arte.png&w=3840&q=75 3840w"
-              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-            />
-          </div>
-        </li>
-        <li
-          class="list-none"
-        >
-          <div
-            class="w-[200px] sm:w-[300px] h-[100px] m-auto relative mb-3"
-          >
-            <img
-              alt="Cocina Design"
-              class="object-contain grayscale"
-              data-nimg="fill"
-              decoding="async"
-              loading="lazy"
-              sizes="100vw"
-              src="/_next/image?url=%2Fcolaboradores%2Fcocina-design.png&w=3840&q=75"
-              srcset="/_next/image?url=%2Fcolaboradores%2Fcocina-design.png&w=640&q=75 640w, /_next/image?url=%2Fcolaboradores%2Fcocina-design.png&w=750&q=75 750w, /_next/image?url=%2Fcolaboradores%2Fcocina-design.png&w=828&q=75 828w, /_next/image?url=%2Fcolaboradores%2Fcocina-design.png&w=1080&q=75 1080w, /_next/image?url=%2Fcolaboradores%2Fcocina-design.png&w=1200&q=75 1200w, /_next/image?url=%2Fcolaboradores%2Fcocina-design.png&w=1920&q=75 1920w, /_next/image?url=%2Fcolaboradores%2Fcocina-design.png&w=2048&q=75 2048w, /_next/image?url=%2Fcolaboradores%2Fcocina-design.png&w=3840&q=75 3840w"
-              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-            />
-          </div>
         </li>
       </ul>
     </section>

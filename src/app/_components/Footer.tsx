@@ -7,12 +7,12 @@ import { Ambiente, OmitReferences } from '@/data/types'
 import { Instagram, MailIcon } from 'lucide-react'
 import { useHandleQr } from './hooks'
 
-const getAllProducts = (ambientes: OmitReferences<Ambiente>[]) => {
+const getAllProducts = (ambientes: OmitReferences<Omit<Ambiente, 'images'>>[]) => {
   return ambientes.flatMap(({ slug }) => productosRepository.getProductosInAmbiente(slug))
 }
 
 interface FooterProps {
-  ambientes: OmitReferences<Ambiente>[]
+  ambientes: OmitReferences<Omit<Ambiente, 'images'>>[]
 }
 
 export const Footer = ({ ambientes }: FooterProps) => {

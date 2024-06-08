@@ -8,7 +8,7 @@ type StandardColaboradorProps = Omit<StandardColaboradorType, 'isMain' | 'descri
 
 export const StandardColaborador = ({ slug, name, className }: StandardColaboradorProps) => {
   return (
-    <div className={cn('w-[200px] sm:w-[300px] h-[100px] m-auto relative mb-3', className)}>
+    <div className={cn('w-full h-[40px] m-auto relative mb-3', className)}>
       <Image
         fill
         src={`/colaboradores/${slug}.png`}
@@ -25,7 +25,6 @@ export const MainColaborador = ({ ...colaborador }: MainColaboradorProps) => {
   return (
     <div className='flex flex-col items-center w-[200px] sm:w-[300px]'>
       <StandardColaborador {...colaborador} />
-      <p className='text-xs text-darkGray mb-3 text-left'>{colaborador.description}</p>
     </div>
   )
 }

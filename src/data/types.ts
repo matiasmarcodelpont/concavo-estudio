@@ -24,10 +24,23 @@ export function isProductoConcavo(producto: Producto): producto is ProductoConca
   return producto.colaborador === null
 }
 
+export interface Puntito {
+  productoSlug: string
+  coordinates: { x: number; y: number }
+}
+
+export interface AmbienteImage {
+  src: string
+  width: number
+  height: number
+  puntitos: Puntito[]
+}
+
 export interface Ambiente {
   slug: string
   name: string
   productos: Reference[]
+  images: AmbienteImage[]
 }
 
 interface BaseColaborador {

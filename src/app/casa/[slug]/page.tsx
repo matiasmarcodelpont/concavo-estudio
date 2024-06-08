@@ -2,11 +2,11 @@ import { notFound } from 'next/navigation'
 
 import { colaboradoresRepository, productosRepository, ambientesRepository } from '@/controllers'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
-import Image from 'next/image'
 import { FlexWrap, GridFluid } from '@/components/layouts/Fluid'
 import { Producto } from '@/components/domain/Producto'
 import { MainColaborador, StandardColaborador } from '@/components/domain/Colaborador'
 import Heading from '@/components/domain/Heading'
+import { AmbienteImageWithPuntitos } from './_components/AmbienteImageWithPuntitos'
 
 export default function Ambiente({ params }: { params: { slug: string } }) {
   const ambiente = ambientesRepository.getAmbiente(decodeURIComponent(params.slug))
@@ -29,14 +29,9 @@ export default function Ambiente({ params }: { params: { slug: string } }) {
           }}
         >
           <CarouselContent>
-            {[0, 1, 2].map((i) => (
-              <CarouselItem className='relative' key={i}>
-                <Image
-                  src={`/ambientes/${ambiente.slug}/${i.toString()}.jpeg`}
-                  alt={ambiente.name}
-                  fill
-                  className='object-cover'
-                />
+            {ambiente.images.map((image) => (
+              <CarouselItem className='relative' key={image.src}>
+                <AmbienteImageWithPuntitos ambiente={ambiente} image={image} />
               </CarouselItem>
             ))}
           </CarouselContent>
@@ -46,12 +41,12 @@ export default function Ambiente({ params }: { params: { slug: string } }) {
         </Carousel>
       </section>
 
-      <section aria-labelledby='productos-heading' className='mx-4 sm:mx-6 md:mx-8 mb-12'>
+      <section aria-labelledby='productos-heading' className='mx-6 sm:mx-10 md:mx-12 mb-12'>
         <Heading className='text-xl sm:text-2xl md:text-3xl' id='productos-heading'>
           Productos
         </Heading>
 
-        <GridFluid className='gap-4' aria-label='Productos'>
+        <GridFluid className='gap-12' aria-label='Productos'>
           {productos.map((producto) => (
             <li key={producto.slug}>
               <Producto {...producto} />
@@ -60,7 +55,7 @@ export default function Ambiente({ params }: { params: { slug: string } }) {
         </GridFluid>
       </section>
 
-      <section aria-labelledby='colaboradores-heading' className='mx-4 sm:mx-6 md:mx-8 mb-12'>
+      <section aria-labelledby='colaboradores-heading' className='mx-6 sm:mx-10 md:mx-12 mb-12'>
         <Heading className='text-xl sm:text-2xl md:text-3xl' id='colaboradores-heading'>
           Colaboradores
         </Heading>

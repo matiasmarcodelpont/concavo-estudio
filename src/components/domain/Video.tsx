@@ -1,4 +1,3 @@
-import { ChevronDown } from 'lucide-react'
 import Link from 'next/link'
 
 interface VideoProps {
@@ -23,9 +22,8 @@ export const Video = ({ src, title, href, copy }: VideoProps) => {
       <div className='absolute inset-0 bg-black opacity-50 z-20' />
       <div className='absolute inset-0 flex flex-col z-30 justify-center items-center'>
         {copy}
-        <div className='absolute bottom-0 right-1/2 p-2 md:p-4 translate-x-[50%] flex flex-col items-center gap-2 text-white text-base md:text-lg'>
-          COMENZAR
-          <ChevronDown size='30px' color='white' />
+        <div className='absolute bottom-4 right-1/2 p-2 md:p-4 translate-x-[50%] flex flex-col items-center gap-2 text-bone text-sm sm:text-base md:text-lg'>
+          START HERE
         </div>
       </div>
     </Link>

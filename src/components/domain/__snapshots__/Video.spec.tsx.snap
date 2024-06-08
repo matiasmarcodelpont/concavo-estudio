@@ -22,25 +22,9 @@ exports[`Video component matches snapshot 1`] = `
     >
       Lorem, ipsum dolor sit amet consectetur adipisicing elit
       <div
-        class="absolute bottom-0 right-1/2 p-2 md:p-4 translate-x-[50%] flex flex-col items-center gap-2 text-white text-base md:text-lg"
+        class="absolute bottom-4 right-1/2 p-2 md:p-4 translate-x-[50%] flex flex-col items-center gap-2 text-bone text-sm sm:text-base md:text-lg"
       >
-        COMENZAR
-        <svg
-          class="lucide lucide-chevron-down "
-          fill="none"
-          height="30px"
-          stroke="white"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          width="30px"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="m6 9 6 6 6-6"
-          />
-        </svg>
+        START HERE
       </div>
     </div>
   </a>

@@ -3,7 +3,7 @@
 import { Button } from '@/components/ui/button'
 import { Drawer, DrawerContent, DrawerTrigger } from '@/components/ui/drawer'
 import { OmitReferences, Ambiente } from '@/data/types'
-import { Equal } from 'lucide-react'
+import { Equal, X } from 'lucide-react'
 import Link from 'next/link'
 import { ReactNode, useCallback, useEffect, useState } from 'react'
 
@@ -11,7 +11,7 @@ export const NavBarLayout = ({
   ambientes,
   opened = false,
 }: {
-  ambientes: OmitReferences<Ambiente>[]
+  ambientes: OmitReferences<Omit<Ambiente, 'images'>>[]
   children?: ReactNode
   opened?: boolean
 }) => {
@@ -73,7 +73,7 @@ export const NavBarLayout = ({
       </DrawerTrigger>
       <DrawerContent className='pl-6 pr-7 uppercase overflow-y-auto'>
         <header className='border-black border-b mb-4'>
-          <h1 className='my-4 font-bold text-xl'>Cóncavo</h1>
+          <X className='mb-4 mt-6' />
         </header>
 
         <nav>

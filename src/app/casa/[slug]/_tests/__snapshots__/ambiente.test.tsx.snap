@@ -6,7 +6,7 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
     class="mx-auto text-center"
   >
     <h1
-      class="uppercase mt-12 mb-6 italic text-xl sm:text-2xl md:text-3xl text-center"
+      class="uppercase mt-12 mb-6 sm:mt-16 sm:mb-9 md:mt-20 md:mb-12 italic text-xl sm:text-2xl md:text-3xl text-center"
     >
       Cocina
     </h1>
@@ -32,54 +32,31 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
             >
               <img
                 alt="Cocina"
-                class="object-cover"
-                data-nimg="fill"
+                class="size-full object-cover"
+                data-nimg="1"
                 decoding="async"
+                height="600"
                 loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fambientes%2Fcocina%2F0.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fambientes%2Fcocina%2F0.jpeg&w=640&q=75 640w, /_next/image?url=%2Fambientes%2Fcocina%2F0.jpeg&w=750&q=75 750w, /_next/image?url=%2Fambientes%2Fcocina%2F0.jpeg&w=828&q=75 828w, /_next/image?url=%2Fambientes%2Fcocina%2F0.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fambientes%2Fcocina%2F0.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fambientes%2Fcocina%2F0.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fambientes%2Fcocina%2F0.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fambientes%2Fcocina%2F0.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                src="/_next/image?url=%2Fambientes%2Fcocina%2F&w=1920&q=75"
+                srcset="/_next/image?url=%2Fambientes%2Fcocina%2F&w=828&q=75 1x, /_next/image?url=%2Fambientes%2Fcocina%2F&w=1920&q=75 2x"
+                style="color: transparent;"
+                width="800"
               />
-            </div>
-            <div
-              aria-roledescription="slide"
-              class="min-w-0 shrink-0 grow-0 basis-full relative"
-              role="group"
-            >
-              <img
-                alt="Cocina"
-                class="object-cover"
-                data-nimg="fill"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fambientes%2Fcocina%2F1.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fambientes%2Fcocina%2F1.jpeg&w=640&q=75 640w, /_next/image?url=%2Fambientes%2Fcocina%2F1.jpeg&w=750&q=75 750w, /_next/image?url=%2Fambientes%2Fcocina%2F1.jpeg&w=828&q=75 828w, /_next/image?url=%2Fambientes%2Fcocina%2F1.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fambientes%2Fcocina%2F1.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fambientes%2Fcocina%2F1.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fambientes%2Fcocina%2F1.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fambientes%2Fcocina%2F1.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-            </div>
-            <div
-              aria-roledescription="slide"
-              class="min-w-0 shrink-0 grow-0 basis-full relative"
-              role="group"
-            >
-              <img
-                alt="Cocina"
-                class="object-cover"
-                data-nimg="fill"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fambientes%2Fcocina%2F2.jpeg&w=3840&q=75"
-                srcset="/_next/image?url=%2Fambientes%2Fcocina%2F2.jpeg&w=640&q=75 640w, /_next/image?url=%2Fambientes%2Fcocina%2F2.jpeg&w=750&q=75 750w, /_next/image?url=%2Fambientes%2Fcocina%2F2.jpeg&w=828&q=75 828w, /_next/image?url=%2Fambientes%2Fcocina%2F2.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fambientes%2Fcocina%2F2.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fambientes%2Fcocina%2F2.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fambientes%2Fcocina%2F2.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fambientes%2Fcocina%2F2.jpeg&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
+              <a
+                class="absolute size-8 p-2 rounded-full bg-black/20 hover:scale-125 transition -translate-x-1/2 -translate-y-1/2"
+                href="/productos/azulejos-guardados"
+                style="top: 0px; left: 0px;"
+              >
+                <div
+                  class="size-full rounded-full bg-white"
+                />
+              </a>
             </div>
           </div>
         </div>
         <button
-          class="absolute transition-opacity left-0 top-1/2 -translate-y-1/2"
+          class="absolute transition-opacity left-0 top-1/2 -translate-y-1/2 opacity-30"
+          disabled=""
         >
           <svg
             class="lucide lucide-chevron-left "
@@ -104,7 +81,8 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
           </span>
         </button>
         <button
-          class="absolute transition-opacity right-0 top-1/2 -translate-y-1/2"
+          class="absolute transition-opacity right-0 top-1/2 -translate-y-1/2 opacity-30"
+          disabled=""
         >
           <svg
             class="lucide lucide-chevron-right "
@@ -132,26 +110,26 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
     </section>
     <section
       aria-labelledby="productos-heading"
-      class="mx-4 sm:mx-6 md:mx-8 mb-12"
+      class="mx-6 sm:mx-10 md:mx-12 mb-12"
     >
       <h1
-        class="uppercase mt-12 mb-6 italic text-xl sm:text-2xl md:text-3xl"
+        class="uppercase mt-12 mb-6 sm:mt-16 sm:mb-9 md:mt-20 md:mb-12 italic text-xl sm:text-2xl md:text-3xl"
         id="productos-heading"
       >
         Productos
       </h1>
       <ul
         aria-label="Productos"
-        class="grid grid-cols-auto-fill-200 sm:grid-cols-auto-fill-300 gap-4"
+        class="grid grid-cols-auto-fill-200 sm:grid-cols-auto-fill-300 gap-12"
       >
         <li>
           <a
             aria-label="Azulejos Guardados"
-            class="flex flex-col gap-2 cursor-pointer text-dark-gray group"
+            class="cursor-pointer text-dark-gray group"
             href="/productos/azulejos-guardados"
           >
             <div
-              class="h-[450px] relative overflow-hidden"
+              class="pt-[100%] relative overflow-hidden"
             >
               <img
                 alt="Azulejos Guardados"
@@ -169,7 +147,7 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
               class="mb-4 group-hover:text-light-gray transition-colors duration-500"
             >
               <h1
-                class="uppercase italic text-lg m-0"
+                class="uppercase italic text-lg mt-4 mb-0 sm:mt-6 sm:mb-0 md:mt-8 md:mb-0"
               >
                 Azulejos Guardados
               </h1>
@@ -179,11 +157,11 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
         <li>
           <a
             aria-label="Luz Led"
-            class="flex flex-col gap-2 cursor-pointer text-dark-gray group"
+            class="cursor-pointer text-dark-gray group"
             href="/productos/luz-led"
           >
             <div
-              class="h-[450px] relative overflow-hidden"
+              class="pt-[100%] relative overflow-hidden"
             >
               <img
                 alt="Luz Led"
@@ -201,7 +179,7 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
               class="mb-4 group-hover:text-light-gray transition-colors duration-500"
             >
               <h1
-                class="uppercase italic text-lg m-0"
+                class="uppercase italic text-lg mt-4 mb-0 sm:mt-6 sm:mb-0 md:mt-8 md:mb-0"
               >
                 Luz Led
               </h1>
@@ -212,10 +190,10 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
     </section>
     <section
       aria-labelledby="colaboradores-heading"
-      class="mx-4 sm:mx-6 md:mx-8 mb-12"
+      class="mx-6 sm:mx-10 md:mx-12 mb-12"
     >
       <h1
-        class="uppercase mt-12 mb-6 italic text-xl sm:text-2xl md:text-3xl"
+        class="uppercase mt-12 mb-6 sm:mt-16 sm:mb-9 md:mt-20 md:mb-12 italic text-xl sm:text-2xl md:text-3xl"
         id="colaboradores-heading"
       >
         Colaboradores
@@ -231,7 +209,7 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
             class="flex flex-col items-center w-[200px] sm:w-[300px]"
           >
             <div
-              class="w-[200px] sm:w-[300px] h-[100px] m-auto relative mb-3"
+              class="w-full h-[40px] m-auto relative mb-3"
             >
               <img
                 alt="Luz Viva"
@@ -245,11 +223,6 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
                 style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
               />
             </div>
-            <p
-              class="text-xs text-darkGray mb-3 text-left"
-            >
-              Líder en sistemas de iluminación innovadores y eficientes para hogares y negocios. Calidad, diseño y compromiso con la sostenibilidad nos distinguen.
-            </p>
           </div>
         </li>
       </ul>
@@ -261,7 +234,7 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
           class="list-none"
         >
           <div
-            class="w-[200px] sm:w-[300px] h-[100px] m-auto relative mb-3"
+            class="w-full h-[40px] m-auto relative mb-3"
           >
             <img
               alt="Cocina Design"
