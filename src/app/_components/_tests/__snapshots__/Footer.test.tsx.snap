@@ -215,7 +215,7 @@ exports[`Footer matches snapshot 1`] = `
       data-testid="mock-qr"
     >
       Mock QR Code: 
-      http://localhostnull
+      null
     </div>
     <div
       class="absolute left-[-100vw]"
@@ -224,7 +224,7 @@ exports[`Footer matches snapshot 1`] = `
         data-testid="mock-qr"
       >
         Mock QR Code: 
-        http://localhostnull
+        null
       </div>
     </div>
   </section>
