@@ -34,10 +34,13 @@ export const Producto = ({ concavo = false, className, ...producto }: ProductoPr
             fill
             src={`/productos/${producto.slug}.jpg`}
             alt={producto.name}
-            className={cn('object-cover group-hover:scale-105', animate ? 'opacity-100' : 'opacity-0')}
+            className={cn(
+              'object-cover group-hover:scale-105 transition-all duration-1000',
+              animate ? 'opacity-100' : 'opacity-0',
+            )}
           />
         </div>
-        <div className='mb-4 group-hover:text-light-gray transition-colors duration-500'>
+        <div className='mb-4 group-hover:text-light-gray transition-colors'>
           <Heading
             className='text-sm xs:text-base sm:text-lg mt-4 mb-0 sm:mt-6 sm:mb-0 md:mt-8 md:mb-0'
             animated={false}

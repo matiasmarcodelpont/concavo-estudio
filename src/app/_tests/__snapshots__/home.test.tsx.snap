@@ -76,7 +76,7 @@ exports[`Home renders homepage unchanged 1`] = `
             >
               <img
                 alt="Azulejos verdes"
-                class="object-cover group-hover:scale-105 opacity-0"
+                class="object-cover group-hover:scale-105 transition-all duration-1000 opacity-0"
                 data-nimg="fill"
                 decoding="async"
                 loading="lazy"
@@ -87,7 +87,7 @@ exports[`Home renders homepage unchanged 1`] = `
               />
             </div>
             <div
-              class="mb-4 group-hover:text-light-gray transition-colors duration-500"
+              class="mb-4 group-hover:text-light-gray transition-colors"
             >
               <span
                 style="font-size: 0px;"
@@ -120,7 +120,7 @@ exports[`Home renders homepage unchanged 1`] = `
             >
               <img
                 alt="Azulejos azules"
-                class="object-cover group-hover:scale-105 opacity-0"
+                class="object-cover group-hover:scale-105 transition-all duration-1000 opacity-0"
                 data-nimg="fill"
                 decoding="async"
                 loading="lazy"
@@ -131,7 +131,7 @@ exports[`Home renders homepage unchanged 1`] = `
               />
             </div>
             <div
-              class="mb-4 group-hover:text-light-gray transition-colors duration-500"
+              class="mb-4 group-hover:text-light-gray transition-colors"
             >
               <span
                 style="font-size: 0px;"

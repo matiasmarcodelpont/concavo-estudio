@@ -15,7 +15,7 @@ exports[`Producto matches snapshot 1`] = `
     >
       <img
         alt="Piso simil Madera"
-        class="object-cover group-hover:scale-105 opacity-0"
+        class="object-cover group-hover:scale-105 transition-all duration-1000 opacity-0"
         data-nimg="fill"
         decoding="async"
         loading="lazy"
@@ -26,7 +26,7 @@ exports[`Producto matches snapshot 1`] = `
       />
     </div>
     <div
-      class="mb-4 group-hover:text-light-gray transition-colors duration-500"
+      class="mb-4 group-hover:text-light-gray transition-colors"
     >
       <span
         style="font-size: 0px;"
