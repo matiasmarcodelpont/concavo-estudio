@@ -1,7 +1,5 @@
-'use client'
-
 import { usePathname } from 'next/navigation'
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { QRCode } from 'react-qrcode-logo'
 
 export const useHandleQr = () => {
@@ -9,7 +7,10 @@ export const useHandleQr = () => {
   const qrRef = useRef<QRCode>(null)
 
   const pathname = usePathname()
-  const currentUrl = `${window.location.origin}${pathname}`
+  const currentUrl = useMemo(
+    () => (process.env.NEXT_PUBLIC_BASE_URL ? `${process.env.NEXT_PUBLIC_BASE_URL}${pathname}` : ''),
+    [pathname],
+  )
 
   const handleClick = () => {
     setClickCount((prev) => prev + 1)
