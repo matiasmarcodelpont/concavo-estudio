@@ -4,7 +4,7 @@ import { NavBarLayout } from './NavBarLayout'
 import { Ambiente, OmitReferences } from '@/data/types'
 
 interface HeaderProps {
-  ambientes: OmitReferences<Ambiente>[]
+  ambientes: OmitReferences<Omit<Ambiente, 'images'>>[]
 }
 
 export const Header = ({ ambientes }: HeaderProps) => {
