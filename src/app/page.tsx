@@ -1,16 +1,10 @@
-'use client'
-
 import { productosRepository } from '@/controllers'
 import { Producto } from '@/components/domain/Producto'
 import { Video } from '@/components/domain/Video'
 import Heading from '@/components/domain/Heading'
 import { GridFluid } from '@/components/layouts/Fluid'
-import { Waypoint } from 'react-waypoint'
-import { useState } from 'react'
-import { cn } from '@/lib/utils'
 
 export default function Home() {
-  const [animate, setAnimate] = useState(false)
   const productos = productosRepository.getProductosConcavo()
 
   return (
@@ -33,18 +27,7 @@ export default function Home() {
       </section>
 
       <section className='mx-6 sm:mx-10 md:mx-12 mb-12'>
-        <Waypoint
-          onEnter={() => {
-            setAnimate(true)
-          }}
-        />
-        <Heading
-          id='productos-concavo'
-          className={cn(
-            'text-xl sm:text-2xl md:text-3xl transition-all duration-1000',
-            animate ? 'animate-slide-up' : 'opacity-0',
-          )}
-        >
+        <Heading id='productos-concavo' className='text-xl sm:text-2xl md:text-3xl'>
           Nuestros Productos
         </Heading>
 

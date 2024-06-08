@@ -1,9 +1,10 @@
 'use client'
 
+import AnimatedX from '@/components/ui/animatedX'
 import { Button } from '@/components/ui/button'
 import { Drawer, DrawerContent, DrawerTrigger } from '@/components/ui/drawer'
 import { OmitReferences, Ambiente } from '@/data/types'
-import { Equal, X } from 'lucide-react'
+import { Equal } from 'lucide-react'
 import Link from 'next/link'
 import { ReactNode, useCallback, useEffect, useState } from 'react'
 
@@ -65,41 +66,43 @@ export const NavBarLayout = ({
   ]
 
   return (
-    <Drawer direction='left' open={drawerOpen} onOpenChange={setDrawerOpen}>
-      <DrawerTrigger asChild>
-        <Button variant='ghost' size='icon' aria-label='Open navigation menu'>
-          <Equal className='size-6 sm:size-9' />
-        </Button>
-      </DrawerTrigger>
-      <DrawerContent className='pl-6 pr-7 uppercase overflow-y-auto'>
-        <header className='border-black border-b mb-4'>
-          <X className='mb-4 mt-6' />
-        </header>
+    <>
+      <Drawer direction='left' open={drawerOpen} onOpenChange={setDrawerOpen}>
+        <DrawerTrigger asChild>
+          <Button variant='ghost' size='icon' aria-label='Open navigation menu'>
+            <Equal className='size-6 sm:size-9' />
+          </Button>
+        </DrawerTrigger>
+        <DrawerContent className='pl-6 pr-7 uppercase overflow-y-auto'>
+          <header className='border-black border-b mb-4 pl-2 py-10 sm:py-12 cursor-pointer' onClick={closeDrawer}>
+            <AnimatedX />
+          </header>
 
-        <nav>
-          <ul>
-            {links.map(({ text, href, links }) => (
-              <li key={href} className='my-4'>
-                <Link href={href} onClick={handleNavigation} className='hover:underline' scroll={false}>
-                  {text}
-                </Link>
+          <nav>
+            <ul>
+              {links.map(({ text, href, links }) => (
+                <li key={href} className='my-4'>
+                  <Link href={href} onClick={handleNavigation} className='hover:underline' scroll={false}>
+                    {text}
+                  </Link>
 
-                {links && (
-                  <ul className='ml-4'>
-                    {links.map(({ text, href }) => (
-                      <li key={href} className='my-2'>
-                        <Link href={href} onClick={handleNavigation} className='hover:underline' scroll={false}>
-                          {text}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </DrawerContent>
-    </Drawer>
+                  {links && (
+                    <ul className='ml-4'>
+                      {links.map(({ text, href }) => (
+                        <li key={href} className='my-2'>
+                          <Link href={href} onClick={handleNavigation} className='hover:underline' scroll={false}>
+                            {text}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </DrawerContent>
+      </Drawer>
+    </>
   )
 }

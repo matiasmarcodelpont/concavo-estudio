@@ -59,16 +59,32 @@ const config = {
           to: { top: '0' },
         },
         'slide-up': {
-          from: { transform: 'translateY(100px)', opacity: '0' },
+          from: { transform: 'translateY(50px)', opacity: '0' },
           '50%': { opacity: '0' },
           to: { transform: 'translateY(0px)', opacity: '1' },
+        },
+        'transform-translate': {
+          to: { transform: 'translateY(3.5px) rotate(45deg)' },
+        },
+        'transform-translate-negative': {
+          to: { transform: 'translateY(-3.5px) rotate(-45deg)' },
+        },
+        'transform-translate-mini': {
+          to: { transform: 'translateY(2.8px) rotate(45deg)' },
+        },
+        'transform-translate-negative-mini': {
+          to: { transform: 'translateY(-2.8px) rotate(-45deg)' },
         },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'navbar-fade-in': 'navbar-fade-in 2.5s ease-in-out',
-        'slide-up': 'slide-up 10s ease-in-out',
+        'slide-up': 'slide-up 1.25s ease-out',
+        'transform-translate': 'transform-translate 1s both',
+        'transform-translate-negative': 'transform-translate-negative 1s both',
+        'transform-translate-mini': 'transform-translate-mini 1s both',
+        'transform-translate-negative-mini': 'transform-translate-negative-mini 1s both',
       },
     },
   },
