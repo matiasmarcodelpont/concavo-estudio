@@ -17,7 +17,7 @@ export const Header = ({ ambientes }: HeaderProps) => {
   return (
     <header
       className={cn(
-        'px-4 flex items-center gap-2 w-full z-40 bg-bone shadow animate-navbar-fade-in',
+        'px-4 flex items-center gap-2 w-full z-40 bg-bone shadow animate-navbar-fade-in opacity-90',
         pathname === '/' ? 'fixed' : 'sticky top-0',
       )}
     >
