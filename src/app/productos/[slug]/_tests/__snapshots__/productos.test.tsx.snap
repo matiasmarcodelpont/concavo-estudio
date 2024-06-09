@@ -141,7 +141,9 @@ exports[`Producto renders producto page unchanged 1`] = `
         >
           Lámpara de diseño con detalles de Hierro
         </h1>
-        <p />
+        <p
+          class="animate-fade-in"
+        />
       </section>
     </div>
     <section
