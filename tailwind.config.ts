@@ -94,7 +94,7 @@ const config = {
         'transform-translate-mini': 'transform-translate-mini 1s both',
         'transform-translate-negative-mini': 'transform-translate-negative-mini 1s both',
         'puntito-outer': 'puntito-outer 1.5s ease-in-out infinite',
-        'fade-in': 'fade-in 1.5s ease-in-out',
+        'fade-in': 'fade-in 1.5s ease-in-out both',
       },
     },
   },

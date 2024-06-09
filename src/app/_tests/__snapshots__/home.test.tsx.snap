@@ -14,7 +14,7 @@ exports[`Home renders homepage unchanged 1`] = `
       class="mb-12"
     >
       <a
-        class="block relative w-full h-[95vh] overflow-hidden"
+        class="block relative w-full h-[95vh] overflow-hidden group"
         href="/casa"
       >
         <video
@@ -32,14 +32,14 @@ exports[`Home renders homepage unchanged 1`] = `
           class="absolute inset-0 flex flex-col z-30 justify-center items-center"
         >
           <p
-            class="text-bone text-sm sm:text-base md:text-lg font-extralight md:leading-tight sm:leading-tight leading-tight max-w-[600px] max-h-[200px] m-auto p-6 sm:p-8 md:p-12"
+            class="text-bone text-sm sm:text-base md:text-lg font-extralight md:leading-tight sm:leading-tight leading-tight max-w-[600px] max-h-[200px] m-auto p-6 sm:p-8 md:p-12 opacity-0 animate-fade-in delay-1000"
           >
             CÓNCAVO nace de la experimentación.
             <br />
             Es un camino de disfrute y creación. De imaginar un espacio relajado, armónico y luminoso.
           </p>
           <div
-            class="absolute bottom-4 right-1/2 p-2 md:p-4 translate-x-[50%] flex flex-col items-center gap-2 text-bone text-sm sm:text-base md:text-lg"
+            class="absolute bottom-4 right-1/2 p-2 md:p-4 translate-x-[50%] flex flex-col items-center gap-2 text-bone text-sm sm:text-base md:text-lg transition-all group-hover:text-light-gray"
           >
             START HERE
           </div>
