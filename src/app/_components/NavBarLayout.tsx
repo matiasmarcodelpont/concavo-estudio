@@ -73,7 +73,7 @@ export const NavBarLayout = ({
             <Equal className='size-6 sm:size-9' />
           </Button>
         </DrawerTrigger>
-        <DrawerContent className='pl-6 pr-7 uppercase overflow-y-auto'>
+        <DrawerContent className='pl-6 pr-7 uppercase overflow-y-auto min-w-[30%] max-w-[600px]'>
           <header className='border-black border-b mb-4 pl-2 py-10 sm:py-12 cursor-pointer' onClick={closeDrawer}>
             <AnimatedX />
           </header>
