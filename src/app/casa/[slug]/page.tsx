@@ -30,7 +30,7 @@ export default function Ambiente({ params }: { params: { slug: string } }) {
           opts={{
             loop: true,
           }}
-          plugins={[Autoplay({ delay: 5000 })]}
+          plugins={[Autoplay({ delay: 4000 })]}
         >
           <CarouselContent>
             {ambiente.images.map((image) => (
