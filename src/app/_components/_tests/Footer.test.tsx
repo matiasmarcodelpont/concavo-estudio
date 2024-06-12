@@ -10,6 +10,14 @@ jest.mock('@/controllers', () => ({
   },
 }))
 
+jest.mock('@/components/ui/qr', () => ({
+  Qr: ({ value, onClick }: { value: string; onClick: React.MouseEventHandler<HTMLDivElement> }) => (
+    <div data-testid='mock-qr' onClick={onClick}>
+      Mock QR Code: {value}
+    </div>
+  ),
+}))
+
 describe('Footer', () => {
   type GetProductosInAmbiente = (slug: string) => Producto[]
   ;(productosRepository.getProductosInAmbiente as jest.MockedFunction<GetProductosInAmbiente>).mockImplementation(
