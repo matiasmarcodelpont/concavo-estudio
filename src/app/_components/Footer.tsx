@@ -1,7 +1,11 @@
+'use client'
+
 import Logo from '@/components/domain/Logo'
+import { Qr } from '@/components/ui/qr'
 import { productosRepository } from '@/controllers'
 import { Ambiente, OmitReferences } from '@/data/types'
 import { Instagram, MailIcon } from 'lucide-react'
+import { useHandleQr } from './hooks'
 
 const getAllProducts = (ambientes: OmitReferences<Omit<Ambiente, 'images'>>[]) => {
   return ambientes.flatMap(({ slug }) => productosRepository.getProductosInAmbiente(slug))
@@ -13,6 +17,8 @@ interface FooterProps {
 
 export const Footer = ({ ambientes }: FooterProps) => {
   const productos = getAllProducts(ambientes)
+
+  const { currentUrl, handleClick, qrRef } = useHandleQr()
 
   const siteMap = [
     {
@@ -88,7 +94,10 @@ export const Footer = ({ ambientes }: FooterProps) => {
             ))}
           </div>
         </div>
-        <div className='h-24 w-24 bg-bone text-black mt-2 flex-shrink-0 grid place-content-center'>QR</div>
+        <Qr value={currentUrl} onClick={handleClick} />
+        <div className='absolute left-[-100vw]'>
+          <Qr ref={qrRef} value={currentUrl} size={300} />
+        </div>
       </section>
     </footer>
   )
