@@ -46,6 +46,9 @@ exports[`Ambiente matches snapshot 1`] = `
         />
       </svg>
     </div>
+    <span
+      style="font-size: 0px;"
+    />
   </a>
 </div>
 `;

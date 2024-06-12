@@ -32,10 +32,11 @@ const PuntitoLink = ({
   return (
     <Link
       href={`/productos/${puntito.producto.slug}`}
-      className='absolute size-8 p-2 rounded-full bg-black/20 hover:scale-125 transition -translate-x-1/2 -translate-y-1/2'
+      className='absolute animate-fade-in delay-1000 -translate-x-1/2 -translate-y-1/2'
       style={{ top, left }}
     >
-      <div className='size-full rounded-full bg-white' />
+      <div className='size-8 rounded-full bg-bone absolute -top-4 -left-4 animate-puntito-outer' />
+      <div className='size-4 rounded-full bg-bone absolute -translate-x-1/2 -translate-y-1/2' />
     </Link>
   )
 }

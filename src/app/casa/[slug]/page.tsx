@@ -1,7 +1,10 @@
+'use client'
+
 import { notFound } from 'next/navigation'
 
+import Autoplay from 'embla-carousel-autoplay'
 import { colaboradoresRepository, productosRepository, ambientesRepository } from '@/controllers'
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
+import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel'
 import { FlexWrap, GridFluid } from '@/components/layouts/Fluid'
 import { Producto } from '@/components/domain/Producto'
 import { MainColaborador, StandardColaborador } from '@/components/domain/Colaborador'
@@ -27,6 +30,7 @@ export default function Ambiente({ params }: { params: { slug: string } }) {
           opts={{
             loop: true,
           }}
+          plugins={[Autoplay({ delay: 4000 })]}
         >
           <CarouselContent>
             {ambiente.images.map((image) => (
@@ -35,9 +39,6 @@ export default function Ambiente({ params }: { params: { slug: string } }) {
               </CarouselItem>
             ))}
           </CarouselContent>
-
-          <CarouselPrevious />
-          <CarouselNext />
         </Carousel>
       </section>
 
@@ -46,7 +47,7 @@ export default function Ambiente({ params }: { params: { slug: string } }) {
           Productos
         </Heading>
 
-        <GridFluid className='gap-12' aria-label='Productos'>
+        <GridFluid aria-label='Productos'>
           {productos.map((producto) => (
             <li key={producto.slug}>
               <Producto {...producto} />

@@ -3,8 +3,11 @@
 exports[`Producto renders producto page unchanged 1`] = `
 <div>
   <main>
+    <span
+      style="font-size: 0px;"
+    />
     <h1
-      class="uppercase text-3xl mt-12 mb-6 sm:mt-16 sm:mb-9 md:mt-20 md:mb-12 italic text-center md:hidden"
+      class="uppercase text-3xl mt-12 mb-6 sm:mt-16 sm:mb-9 md:mt-20 md:mb-12 italic opacity-0 text-center md:hidden"
     >
       Lámpara de diseño con detalles de Hierro
     </h1>
@@ -130,25 +133,33 @@ exports[`Producto renders producto page unchanged 1`] = `
       <section
         class="px-4 sm:px-6 md:px-8 mt-10 md:w-1/2"
       >
+        <span
+          style="font-size: 0px;"
+        />
         <h1
-          class="uppercase text-3xl mb-6 sm:mb-9 md:mb-12 italic text-center mt-0 sm:mt-0 md:mt-0 hidden md:block"
+          class="uppercase text-3xl mb-6 sm:mb-9 md:mb-12 italic opacity-0 text-center mt-0 sm:mt-0 md:mt-0 hidden md:block"
         >
           Lámpara de diseño con detalles de Hierro
         </h1>
-        <p />
+        <p
+          class="animate-fade-in"
+        />
       </section>
     </div>
     <section
       class="mx-6 sm:mx-10 md:mx-12 mb-12 text-center"
     >
+      <span
+        style="font-size: 0px;"
+      />
       <h1
-        class="uppercase mt-12 mb-6 sm:mt-16 sm:mb-9 md:mt-20 md:mb-12 italic text-xl sm:text-2xl md:text-3xl"
+        class="uppercase mt-12 mb-6 sm:mt-16 sm:mb-9 md:mt-20 md:mb-12 italic opacity-0 text-xl sm:text-2xl md:text-3xl"
       >
         Más productos
       </h1>
       <ul
         aria-label="Productos relacionados"
-        class="grid grid-cols-auto-fill-200 sm:grid-cols-auto-fill-300 gap-12"
+        class="grid grid-cols-auto-fit-100 xs:grid-cols-auto-fit-150 sm:grid-cols-auto-fill-200 md:grid-cols-auto-fill-300 gap-4"
       >
         <li>
           <a
@@ -156,12 +167,15 @@ exports[`Producto renders producto page unchanged 1`] = `
             class="cursor-pointer text-dark-gray group"
             href="/productos/piso-madera"
           >
+            <span
+              style="font-size: 0px;"
+            />
             <div
-              class="pt-[100%] relative overflow-hidden"
+              class="pt-[100%] relative overflow-hidden "
             >
               <img
                 alt="Piso simil Madera"
-                class="object-cover group-hover:scale-105 transition-transform duration-1000"
+                class="object-cover group-hover:scale-105 transition-all duration-1000 opacity-0"
                 data-nimg="fill"
                 decoding="async"
                 loading="lazy"
@@ -172,10 +186,13 @@ exports[`Producto renders producto page unchanged 1`] = `
               />
             </div>
             <div
-              class="mb-4 group-hover:text-light-gray transition-colors duration-500"
+              class="mb-4 group-hover:text-light-gray transition-colors"
             >
+              <span
+                style="font-size: 0px;"
+              />
               <h1
-                class="uppercase italic text-lg mt-4 mb-0 sm:mt-6 sm:mb-0 md:mt-8 md:mb-0"
+                class="uppercase italic opacity-100 text-sm xs:text-base sm:text-lg mt-4 mb-0 sm:mt-6 sm:mb-0 md:mt-8 md:mb-0"
               >
                 Piso simil Madera
               </h1>
@@ -188,12 +205,15 @@ exports[`Producto renders producto page unchanged 1`] = `
             class="cursor-pointer text-dark-gray group"
             href="/productos/sofa-carlos"
           >
+            <span
+              style="font-size: 0px;"
+            />
             <div
-              class="pt-[100%] relative overflow-hidden"
+              class="pt-[100%] relative overflow-hidden "
             >
               <img
                 alt="Sofá Carlos V"
-                class="object-cover group-hover:scale-105 transition-transform duration-1000"
+                class="object-cover group-hover:scale-105 transition-all duration-1000 opacity-0"
                 data-nimg="fill"
                 decoding="async"
                 loading="lazy"
@@ -204,10 +224,13 @@ exports[`Producto renders producto page unchanged 1`] = `
               />
             </div>
             <div
-              class="mb-4 group-hover:text-light-gray transition-colors duration-500"
+              class="mb-4 group-hover:text-light-gray transition-colors"
             >
+              <span
+                style="font-size: 0px;"
+              />
               <h1
-                class="uppercase italic text-lg mt-4 mb-0 sm:mt-6 sm:mb-0 md:mt-8 md:mb-0"
+                class="uppercase italic opacity-100 text-sm xs:text-base sm:text-lg mt-4 mb-0 sm:mt-6 sm:mb-0 md:mt-8 md:mb-0"
               >
                 Sofá Carlos V
               </h1>

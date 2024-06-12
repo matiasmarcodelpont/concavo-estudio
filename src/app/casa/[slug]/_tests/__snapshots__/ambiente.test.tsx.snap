@@ -5,8 +5,11 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
   <main
     class="mx-auto text-center"
   >
+    <span
+      style="font-size: 0px;"
+    />
     <h1
-      class="uppercase mt-12 mb-6 sm:mt-16 sm:mb-9 md:mt-20 md:mb-12 italic text-xl sm:text-2xl md:text-3xl text-center"
+      class="uppercase mt-12 mb-6 sm:mt-16 sm:mb-9 md:mt-20 md:mb-12 italic opacity-0 text-xl sm:text-2xl md:text-3xl text-center"
     >
       Cocina
     </h1>
@@ -43,84 +46,38 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
                 width="800"
               />
               <a
-                class="absolute size-8 p-2 rounded-full bg-black/20 hover:scale-125 transition -translate-x-1/2 -translate-y-1/2"
+                class="absolute animate-fade-in delay-1000 -translate-x-1/2 -translate-y-1/2"
                 href="/productos/azulejos-guardados"
                 style="top: 0px; left: 0px;"
               >
                 <div
-                  class="size-full rounded-full bg-white"
+                  class="size-8 rounded-full bg-bone absolute -top-4 -left-4 animate-puntito-outer"
+                />
+                <div
+                  class="size-4 rounded-full bg-bone absolute -translate-x-1/2 -translate-y-1/2"
                 />
               </a>
             </div>
           </div>
         </div>
-        <button
-          class="absolute transition-opacity left-0 top-1/2 -translate-y-1/2 opacity-30"
-          disabled=""
-        >
-          <svg
-            class="lucide lucide-chevron-left "
-            fill="none"
-            height="50px"
-            stroke="white"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            width="50px"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="m15 18-6-6 6-6"
-            />
-          </svg>
-          <span
-            class="sr-only"
-          >
-            Previous slide
-          </span>
-        </button>
-        <button
-          class="absolute transition-opacity right-0 top-1/2 -translate-y-1/2 opacity-30"
-          disabled=""
-        >
-          <svg
-            class="lucide lucide-chevron-right "
-            fill="none"
-            height="50px"
-            stroke="white"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            width="50px"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="m9 18 6-6-6-6"
-            />
-          </svg>
-          <span
-            class="sr-only"
-          >
-            Next slide
-          </span>
-        </button>
       </div>
     </section>
     <section
       aria-labelledby="productos-heading"
       class="mx-6 sm:mx-10 md:mx-12 mb-12"
     >
+      <span
+        style="font-size: 0px;"
+      />
       <h1
-        class="uppercase mt-12 mb-6 sm:mt-16 sm:mb-9 md:mt-20 md:mb-12 italic text-xl sm:text-2xl md:text-3xl"
+        class="uppercase mt-12 mb-6 sm:mt-16 sm:mb-9 md:mt-20 md:mb-12 italic opacity-0 text-xl sm:text-2xl md:text-3xl"
         id="productos-heading"
       >
         Productos
       </h1>
       <ul
         aria-label="Productos"
-        class="grid grid-cols-auto-fill-200 sm:grid-cols-auto-fill-300 gap-12"
+        class="grid grid-cols-auto-fit-100 xs:grid-cols-auto-fit-150 sm:grid-cols-auto-fill-200 md:grid-cols-auto-fill-300 gap-4"
       >
         <li>
           <a
@@ -128,12 +85,15 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
             class="cursor-pointer text-dark-gray group"
             href="/productos/azulejos-guardados"
           >
+            <span
+              style="font-size: 0px;"
+            />
             <div
-              class="pt-[100%] relative overflow-hidden"
+              class="pt-[100%] relative overflow-hidden "
             >
               <img
                 alt="Azulejos Guardados"
-                class="object-cover group-hover:scale-105 transition-transform duration-1000"
+                class="object-cover group-hover:scale-105 transition-all duration-1000 opacity-0"
                 data-nimg="fill"
                 decoding="async"
                 loading="lazy"
@@ -144,10 +104,13 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
               />
             </div>
             <div
-              class="mb-4 group-hover:text-light-gray transition-colors duration-500"
+              class="mb-4 group-hover:text-light-gray transition-colors"
             >
+              <span
+                style="font-size: 0px;"
+              />
               <h1
-                class="uppercase italic text-lg mt-4 mb-0 sm:mt-6 sm:mb-0 md:mt-8 md:mb-0"
+                class="uppercase italic opacity-100 text-sm xs:text-base sm:text-lg mt-4 mb-0 sm:mt-6 sm:mb-0 md:mt-8 md:mb-0"
               >
                 Azulejos Guardados
               </h1>
@@ -160,12 +123,15 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
             class="cursor-pointer text-dark-gray group"
             href="/productos/luz-led"
           >
+            <span
+              style="font-size: 0px;"
+            />
             <div
-              class="pt-[100%] relative overflow-hidden"
+              class="pt-[100%] relative overflow-hidden "
             >
               <img
                 alt="Luz Led"
-                class="object-cover group-hover:scale-105 transition-transform duration-1000"
+                class="object-cover group-hover:scale-105 transition-all duration-1000 opacity-0"
                 data-nimg="fill"
                 decoding="async"
                 loading="lazy"
@@ -176,10 +142,13 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
               />
             </div>
             <div
-              class="mb-4 group-hover:text-light-gray transition-colors duration-500"
+              class="mb-4 group-hover:text-light-gray transition-colors"
             >
+              <span
+                style="font-size: 0px;"
+              />
               <h1
-                class="uppercase italic text-lg mt-4 mb-0 sm:mt-6 sm:mb-0 md:mt-8 md:mb-0"
+                class="uppercase italic opacity-100 text-sm xs:text-base sm:text-lg mt-4 mb-0 sm:mt-6 sm:mb-0 md:mt-8 md:mb-0"
               >
                 Luz Led
               </h1>
@@ -192,8 +161,11 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
       aria-labelledby="colaboradores-heading"
       class="mx-6 sm:mx-10 md:mx-12 mb-12"
     >
+      <span
+        style="font-size: 0px;"
+      />
       <h1
-        class="uppercase mt-12 mb-6 sm:mt-16 sm:mb-9 md:mt-20 md:mb-12 italic text-xl sm:text-2xl md:text-3xl"
+        class="uppercase mt-12 mb-6 sm:mt-16 sm:mb-9 md:mt-20 md:mb-12 italic opacity-0 text-xl sm:text-2xl md:text-3xl"
         id="colaboradores-heading"
       >
         Colaboradores

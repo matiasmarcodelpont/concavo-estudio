@@ -41,8 +41,8 @@ export default function Producto({ params }: { params: { slug: string } }) {
 
         <section className='px-4 sm:px-6 md:px-8 mt-10 md:w-1/2'>
           <Heading className='text-center mt-0 sm:mt-0 md:mt-0 hidden md:block'>{producto.name}</Heading>
-          <p>{producto.description}</p>
-          {producto.colaborador && <p className='mt-8'>{producto.colaborador.contact}</p>}
+          <p className='animate-fade-in'>{producto.description}</p>
+          {producto.colaborador && <p className='mt-8 animate-fade-in'>{producto.colaborador.contact}</p>}
 
           {producto.link && (
             <Button asChild variant='outline' className='w-full mt-8'>
@@ -58,7 +58,7 @@ export default function Producto({ params }: { params: { slug: string } }) {
         <section className='mx-6 sm:mx-10 md:mx-12 mb-12 text-center'>
           <Heading className='text-xl sm:text-2xl md:text-3xl'>Más productos</Heading>
 
-          <GridFluid className='gap-12' aria-label='Productos relacionados'>
+          <GridFluid aria-label='Productos relacionados'>
             {relatedProductos.map((producto) => (
               <li key={producto.slug}>
                 <ProductoRelacionado {...producto} />
