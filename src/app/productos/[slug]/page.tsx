@@ -56,7 +56,7 @@ export default function Producto({ params }: { params: { slug: string } }) {
 
       {relatedProductos.length > 0 && (
         <section className='mx-6 sm:mx-10 md:mx-12 mb-12 text-center'>
-          <Heading className='text-xl sm:text-2xl md:text-3xl'>Más productos</Heading>
+          <Heading secondary>Más productos</Heading>
 
           <GridFluid aria-label='Productos relacionados'>
             {relatedProductos.map((producto) => (

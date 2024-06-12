@@ -1,7 +1,9 @@
+import Heading from '@/components/domain/Heading'
+
 export default function Nosotros() {
   return (
     <main>
-      <h1>Nosotros</h1>
+      <Heading>Nosotros</Heading>
     </main>
   )
 }

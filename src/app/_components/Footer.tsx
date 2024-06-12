@@ -52,11 +52,11 @@ export const Footer = ({ ambientes }: FooterProps) => {
   ]
 
   return (
-    <footer className='bg-black text-bone flex gap-6 sm:gap-8 px-4 sm:px-6 md:px-8 py-6 justify-evenly sm:justify-normal flex-wrap'>
+    <footer className='bg-black text-bone flex gap-12 sm:gap-16 px-6 sm:px-10 md:px-12 pt-10 pb-6 flex-wrap'>
       {siteMap.map(({ name, links }, index) => (
         <section key={`sitemap-${index.toString()}-${name}`}>
-          <h1 className='font-tt-norms uppercase text-2xl mb-2'>{name}</h1>
-          <ul className='text-sm space-y-2 '>
+          <h1 className='font-tt-norms uppercase text-xl mb-2'>{name}</h1>
+          <ul className='text-xs space-y-2'>
             {links.map(({ name, slug, href }) => (
               <li key={slug} className='hover:underline'>
                 <a href={href}>{name}</a>
@@ -66,7 +66,7 @@ export const Footer = ({ ambientes }: FooterProps) => {
         </section>
       ))}
 
-      <section className='flex gap-6 sm:gap-12 m-auto'>
+      <section className='flex gap-6 sm:gap-10 ml-auto'>
         <div className='flex flex-col items-center gap-2'>
           <Logo variant='white' className='w-[150px] h-[50px] sm:w-[150px] sm:h-[50px]' />
           <div className='flex gap-2'>

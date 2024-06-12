@@ -40,10 +40,11 @@ export const Producto = ({ concavo = false, className, ...producto }: ProductoPr
             )}
           />
         </div>
-        <div className='mb-4 group-hover:text-light-gray transition-colors'>
+        <div className='group-hover:text-light-gray transition-colors'>
           <Heading
-            className='text-sm xs:text-base sm:text-lg mt-4 mb-0 sm:mt-6 sm:mb-0 md:mt-8 md:mb-0'
+            className='text-sm xs:text-base sm:text-lg md:text-xl mt-3 sm:mt-3 md:mt-5 mb-0 sm:mb-0 md:mb-0'
             animated={false}
+            as='p'
           >
             {producto.name}
           </Heading>

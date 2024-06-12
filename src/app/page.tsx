@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
     <main className='text-center'>
-      <h1 className='hidden'>Cóncavo</h1>
+      <Heading className='hidden'>Cóncavo</Heading>
 
       <section className='mb-12'>
         <Video
@@ -27,7 +27,7 @@ export default function Home() {
       </section>
 
       <section className='mx-6 sm:mx-10 md:mx-12 mb-12'>
-        <Heading id='productos-concavo' className='text-xl sm:text-2xl md:text-3xl'>
+        <Heading id='productos-concavo' secondary>
           Nuestros Productos
         </Heading>
 

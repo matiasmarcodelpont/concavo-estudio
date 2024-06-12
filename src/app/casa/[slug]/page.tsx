@@ -23,7 +23,7 @@ export default function Ambiente({ params }: { params: { slug: string } }) {
 
   return (
     <main className='mx-auto text-center'>
-      <Heading className='text-xl sm:text-2xl md:text-3xl text-center'>{ambiente.name}</Heading>
+      <Heading className='text-center'>{ambiente.name}</Heading>
 
       <section className='mb-12'>
         <Carousel
@@ -43,7 +43,7 @@ export default function Ambiente({ params }: { params: { slug: string } }) {
       </section>
 
       <section aria-labelledby='productos-heading' className='mx-6 sm:mx-10 md:mx-12 mb-12'>
-        <Heading className='text-xl sm:text-2xl md:text-3xl' id='productos-heading'>
+        <Heading secondary id='productos-heading'>
           Productos
         </Heading>
 
@@ -57,7 +57,7 @@ export default function Ambiente({ params }: { params: { slug: string } }) {
       </section>
 
       <section aria-labelledby='colaboradores-heading' className='mx-6 sm:mx-10 md:mx-12 mb-12'>
-        <Heading className='text-xl sm:text-2xl md:text-3xl' id='colaboradores-heading'>
+        <Heading secondary id='colaboradores-heading'>
           Colaboradores
         </Heading>
 

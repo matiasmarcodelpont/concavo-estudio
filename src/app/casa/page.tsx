@@ -8,7 +8,7 @@ export default function CasaConcavo() {
   return (
     <main className='text-center'>
       <section className='mb-12'>
-        <Heading className='text-xl sm:text-2xl md:text-3xl hidden'>Casa Cóncavo</Heading>
+        <Heading className='hidden'>Casa Cóncavo</Heading>
 
         <ul aria-label='Lista de Ambientes' className='space-y-4 sm:space-y-8 md:space-y-12'>
           {ambientes.map((ambiente) => (

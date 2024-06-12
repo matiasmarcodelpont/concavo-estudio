@@ -15,7 +15,7 @@ export const GridFluid = ({ children, ...ulistProps }: Fluid & HTMLAttributes<HT
   <ul
     {...ulistProps}
     className={cn(
-      `grid grid-cols-auto-fit-100 xs:grid-cols-auto-fit-150 sm:grid-cols-auto-fill-200 md:grid-cols-auto-fill-300 gap-4`,
+      `grid grid-cols-auto-fit-100 xs:grid-cols-auto-fit-150 sm:grid-cols-auto-fill-200 md:grid-cols-auto-fill-300 gap-x-2 gap-y-8 md:gap-y-10`,
       ulistProps.className,
     )}
   >
