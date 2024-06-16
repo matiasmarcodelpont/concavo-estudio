@@ -3,7 +3,7 @@ import Heading from '@/components/domain/Heading'
 import { FlexWrap } from '@/components/layouts/Fluid'
 import { Colaborador } from '@/components/domain/Colaborador'
 
-export default function CasaConcavo() {
+export default function Colaboradores() {
   const colaboradores = colaboradoresRepository.getColaboradores()
 
   return (
