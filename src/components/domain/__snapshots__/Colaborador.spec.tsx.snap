@@ -6,7 +6,7 @@ exports[`Colaborador matches snapshot 1`] = `
     class="w-[200px] sm:w-[300px] h-[40px] m-auto relative mb-3"
   >
     <img
-      alt="Elegancee"
+      alt="Elegance"
       class="object-contain grayscale"
       data-nimg="fill"
       decoding="async"
