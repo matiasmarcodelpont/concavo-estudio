@@ -172,7 +172,7 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
       </h1>
       <ul
         aria-label="Colaboradores"
-        class="flex flex-wrap gap-10 sm:gap-12 md:gap-14 lg:gap-16 mb-10 sm:mb-12 md:mb-14 lg:mb-16"
+        class="flex flex-wrap gap-10 sm:gap-12 md:gap-14 lg:gap-16 mb-10 sm:mb-12 md:mb-14 lg:mb-16 justify-center"
       >
         <li
           class="list-none"
