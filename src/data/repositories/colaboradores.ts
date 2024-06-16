@@ -1,4 +1,4 @@
-import { DataSet, MainColaborador, StandardColaborador, isMainColaborador } from '../types'
+import { DataSet, Colaborador } from '../types'
 import { getProductosInAmbiente } from './common'
 
 /**
@@ -10,66 +10,22 @@ export function createColaboradoresRepository(data: DataSet) {
   return {
     /**
      * The colaboradores are the different brands of the productos in Casa Concavo.
-     * @returns The list of the main colaboradores.
+     * @returns The list of the colaboradores.
      */
-    getMainColaboradores(): Omit<MainColaborador, 'isMain' | 'email' | 'address'>[] {
-      return data.colaboradores.filter(isMainColaborador).map(({ slug, name, contact, website, description }) => ({
-        slug,
-        name,
-        contact,
-        website,
-        description,
-      }))
-    },
-
-    /**
-     * The colaboradores are the different brands of the productos in Casa Concavo.
-     * @returns The list of the standard colaboradores.
-     */
-    getStandardColaboradores(): Omit<StandardColaborador, 'isMain' | 'description' | 'email' | 'address'>[] {
+    getColaboradores(): Colaborador[] {
       return data.colaboradores
-        .filter((colaborador) => !isMainColaborador(colaborador))
-        .map(({ slug, name, contact, website }) => ({ slug, name, contact, website }))
     },
 
     /**
-     * This function returns the main colaboradores of the productos that are in a certain ambiente.
-     * @returns The list of the main colaboradores of the ambiente.
+     * This function returns the colaboradores of the productos that are in a certain ambiente.
+     * @returns The list of the colaboradores of the ambiente.
      */
-    getMainColaboradoresByAmbiente(ambienteSlug: string): Omit<MainColaborador, 'isMain' | 'email' | 'address'>[] {
+    getColaboradoresByAmbiente(ambienteSlug: string): Colaborador[] {
       const productosInAmbiente = getProductosInAmbiente(data.productos, data.ambientes, ambienteSlug)
 
-      return data.colaboradores
-        .filter((colaborador) =>
-          productosInAmbiente.some((productoInAmbiente) => productoInAmbiente.colaborador?.slug === colaborador.slug),
-        )
-        .filter(isMainColaborador)
-        .map(({ slug, name, contact, website, description }) => ({
-          slug,
-          name,
-          contact,
-          website,
-          description,
-        }))
-    },
-
-    /**
-     * This function returns the standard colaboradores of the productos that are in a certain ambiente.
-     * @returns The list of the standard colaboradores of the ambiente.
-     */
-    getStandardColaboradoresByAmbiente(
-      ambienteSlug: string,
-    ): Omit<StandardColaborador, 'isMain' | 'description' | 'email' | 'address'>[] {
-      const productosInAmbiente = getProductosInAmbiente(data.productos, data.ambientes, ambienteSlug)
-
-      return data.colaboradores
-        .filter(
-          (colaborador) =>
-            productosInAmbiente.some(
-              (productoInAmbiente) => productoInAmbiente.colaborador?.slug === colaborador.slug,
-            ) && !isMainColaborador(colaborador),
-        )
-        .map(({ slug, name, contact, website }) => ({ slug, name, contact, website }))
+      return data.colaboradores.filter((colaborador) =>
+        productosInAmbiente.some((productoInAmbiente) => productoInAmbiente.colaborador?.slug === colaborador.slug),
+      )
     },
   }
 }
