@@ -10,18 +10,22 @@ describe('colaboradores repository', () => {
         {
           slug: 'elegance',
           name: 'Elegance',
+          contact: 'elegance@contact.com',
         },
         {
           slug: 'luz-viva',
           name: 'Luz Viva',
+          contact: 'luz-viva@contact.com',
         },
         {
           slug: 'muebles-arte',
           name: 'Muebles de Arte',
+          contact: 'muebles-de-arte@contact.com',
         },
         {
           slug: 'cocina-design',
           name: 'Cocina Design',
+          contact: 'cocina-design@contact.com',
         },
       ]
 
@@ -100,20 +104,24 @@ describe('colaboradores repository', () => {
 
     const colaboradores: Colaborador[] = [
       {
-        slug: 'luz-viva',
-        name: 'Luz Viva',
-      },
-      {
-        slug: 'cocina-design',
-        name: 'Cocina Design',
-      },
-      {
         slug: 'elegance',
         name: 'Elegance',
+        contact: 'elegance@contact.com',
+      },
+      {
+        slug: 'luz-viva',
+        name: 'Luz Viva',
+        contact: 'luz-viva@contact.com',
       },
       {
         slug: 'muebles-arte',
         name: 'Muebles de Arte',
+        contact: 'muebles-de-arte@contact.com',
+      },
+      {
+        slug: 'cocina-design',
+        name: 'Cocina Design',
+        contact: 'cocina-design@contact.com',
       },
     ]
 
@@ -121,10 +129,12 @@ describe('colaboradores repository', () => {
       {
         slug: 'luz-viva',
         name: 'Luz Viva',
+        contact: 'luz-viva@contact.com',
       },
       {
         slug: 'cocina-design',
         name: 'Cocina Design',
+        contact: 'cocina-design@contact.com',
       },
     ]
 

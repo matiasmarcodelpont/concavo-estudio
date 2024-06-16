@@ -5,7 +5,8 @@ import { Colaborador } from './Colaborador'
 
 const colaborador = {
   slug: 'elegance',
-  name: 'Elegancee',
+  name: 'Elegance',
+  contact: 'contact@contact.com',
 }
 
 describe('Colaborador', () => {

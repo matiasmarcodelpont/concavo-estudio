@@ -106,18 +106,22 @@ jest.mock(
         {
           slug: 'luz-viva',
           name: 'Luz Viva',
+          contact: 'luz-viva@contact.com',
         },
         {
           slug: 'cocina-design',
           name: 'Cocina Design',
+          contact: 'cocina-design@contact.com',
         },
         {
           slug: 'elegance',
           name: 'Elegance',
+          contact: 'Elegance',
         },
         {
           slug: 'muebles-arte',
           name: 'Muebles de Arte',
+          contact: 'muebles-de-arte@contact.com',
         },
       ],
     }) satisfies DataSet,

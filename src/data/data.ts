@@ -175,18 +175,22 @@ const data: DataSet = {
     {
       slug: 'elegance',
       name: 'Elegance',
+      contact: 'Contacto: 5473-1862',
     },
     {
       slug: 'luz-viva',
       name: 'Luz Viva',
+      contact: 'Contacto: 5473-1862',
     },
     {
       slug: 'muebles-arte',
       name: 'Muebles de Arte',
+      contact: 'Contacto: 5473-1862',
     },
     {
       slug: 'cocina-design',
       name: 'Cocina Design',
+      contact: 'Contacto: 5473-1862',
     },
   ],
 }

@@ -46,6 +46,7 @@ export interface Ambiente {
 export interface Colaborador {
   name: string
   slug: string
+  contact: string
 }
 
 export interface DataSet {
