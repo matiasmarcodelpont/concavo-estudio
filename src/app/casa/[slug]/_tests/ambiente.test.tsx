@@ -116,7 +116,7 @@ jest.mock(
         {
           slug: 'elegance',
           name: 'Elegance',
-          contact: 'Elegance',
+          contact: 'elegance@contact.com',
         },
         {
           slug: 'muebles-arte',
