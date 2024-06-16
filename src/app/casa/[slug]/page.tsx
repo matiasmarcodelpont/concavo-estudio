@@ -63,7 +63,7 @@ export default function Ambiente({ params }: { params: { slug: string } }) {
         {colaboradores.length > 0 && (
           <FlexWrap
             aria-label='Colaboradores'
-            className='gap-10 sm:gap-12 md:gap-14 lg:gap-16 mb-10 sm:mb-12 md:mb-14 lg:mb-16'
+            className='gap-10 sm:gap-12 md:gap-14 lg:gap-16 mb-10 sm:mb-12 md:mb-14 lg:mb-16 justify-center'
           >
             {colaboradores.map((colaborador) => (
               <li key={colaborador.slug} className='list-none'>
