@@ -4,7 +4,7 @@ import { Producto as ProductoRelacionado } from '@/components/domain/Producto'
 import Image from 'next/image'
 import Heading from '@/components/domain/Heading'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
-import { StandardColaborador } from '@/components/domain/Colaborador'
+import { Colaborador } from '@/components/domain/Colaborador'
 import { Button } from '@/components/ui/button'
 import { GridFluid } from '@/components/layouts/Fluid'
 
@@ -50,7 +50,7 @@ export default function Producto({ params }: { params: { slug: string } }) {
             </Button>
           )}
 
-          {producto.colaborador && <StandardColaborador {...producto.colaborador} className='mt-16' />}
+          {producto.colaborador && <Colaborador {...producto.colaborador} className='mt-16' />}
         </section>
       </div>
 

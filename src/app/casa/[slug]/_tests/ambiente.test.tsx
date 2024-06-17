@@ -106,45 +106,22 @@ jest.mock(
         {
           slug: 'luz-viva',
           name: 'Luz Viva',
-          website: 'www.luzviva.com',
-          isMain: true,
-          description:
-            'Líder en sistemas de iluminación innovadores y eficientes para hogares y negocios. Calidad, diseño y compromiso con la sostenibilidad nos distinguen.',
-          email: 'info@luzviva.com',
-          address: 'Calle de la Luz 456, Ciudad Brillante, México',
-          contact: '',
+          contact: 'luz-viva@contact.com',
         },
         {
           slug: 'cocina-design',
           name: 'Cocina Design',
-          website: 'www.cocinadesign.com',
-          isMain: false,
-          description:
-            'Especialistas en diseño y equipamiento de cocinas de alta gama. Ofrecemos soluciones personalizadas para crear la cocina de tus sueños, combinando estilo, funcionalidad y calidad.',
-          email: null,
-          address: null,
-          contact: '',
+          contact: 'cocina-design@contact.com',
         },
         {
           slug: 'elegance',
           name: 'Elegance',
-          website: 'www.pisoselegance.es',
-          isMain: true,
-          description:
-            'Líder en revestimientos de suelos elegantes y duraderos para hogares y negocios. Calidad, innovación y compromiso con la sostenibilidad nos distinguen.',
-          email: 'info@pisoselegance.com',
-          address: 'Avenida del Diseño 123, Ciudad Elegante, España',
-          contact: '',
+          contact: 'elegance@contact.com',
         },
         {
           slug: 'muebles-arte',
           name: 'Muebles de Arte',
-          website: 'www.mueblesdearte.com',
-          isMain: false,
-          description: null,
-          email: null,
-          address: 'Calle del Diseño 789, Ciudad Creativa, Argentina',
-          contact: '',
+          contact: 'muebles-de-arte@contact.com',
         },
       ],
     }) satisfies DataSet,
@@ -201,7 +178,7 @@ describe('Ambiente', () => {
     expect(link1.href).toMatch(/^https?:\/\/[^/]+\/productos\/luz-led$/)
   })
 
-  it("renders ambiente's main Colaboradores", () => {
+  it("renders ambiente's Colaboradores", () => {
     render(
       <Ambiente
         params={{
@@ -210,37 +187,16 @@ describe('Ambiente', () => {
       />,
     )
 
-    const ambienteMainColaboradoresList = screen.getByRole('list', {
-      name: 'Colaboradores principales',
+    const ambienteColaboradoresList = screen.getByRole('list', {
+      name: 'Colaboradores',
     })
-    expect(ambienteMainColaboradoresList).toBeInTheDocument()
+    expect(ambienteColaboradoresList).toBeInTheDocument()
 
-    const ambienteMainColaboradores = within(ambienteMainColaboradoresList).getAllByRole('listitem')
-    expect(ambienteMainColaboradores).toHaveLength(1)
+    const ambienteColaboradores = within(ambienteColaboradoresList).getAllByRole('listitem')
+    expect(ambienteColaboradores).toHaveLength(2)
 
-    expect(ambienteMainColaboradores[0]).toBeInTheDocument()
-    within(ambienteMainColaboradores[0]).getByRole('img', { name: 'Luz Viva' })
-  })
-
-  it("renders ambiente's standard Colaboradores", () => {
-    render(
-      <Ambiente
-        params={{
-          slug: 'cocina',
-        }}
-      />,
-    )
-
-    const ambienteStandardColaboradoresList = screen.getByRole('list', {
-      name: 'Colaboradores secundarios',
-    })
-    expect(ambienteStandardColaboradoresList).toBeInTheDocument()
-
-    const ambienteStandardColaboradores = within(ambienteStandardColaboradoresList).getAllByRole('listitem')
-    expect(ambienteStandardColaboradores).toHaveLength(1)
-
-    expect(ambienteStandardColaboradores[0]).toBeInTheDocument()
-    within(ambienteStandardColaboradores[0]).getByRole('img', { name: 'Cocina Design' })
+    expect(ambienteColaboradores[0]).toBeInTheDocument()
+    within(ambienteColaboradores[0]).getByRole('img', { name: 'Luz Viva' })
   })
 
   it('shows the 404 page if producto is not found', () => {

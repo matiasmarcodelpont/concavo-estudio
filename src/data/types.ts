@@ -43,32 +43,10 @@ export interface Ambiente {
   images: AmbienteImage[]
 }
 
-interface BaseColaborador {
+export interface Colaborador {
   name: string
   slug: string
   contact: string
-}
-
-export type MainColaborador = BaseColaborador & {
-  isMain: true
-  website: string
-  description: string
-  email: string
-  address: string
-}
-
-export type StandardColaborador = BaseColaborador & {
-  isMain: false
-  website: string | null
-  description: string | null
-  email: string | null
-  address: string | null
-}
-
-export type Colaborador = MainColaborador | StandardColaborador
-
-export function isMainColaborador(colaborador: Colaborador): colaborador is MainColaborador {
-  return colaborador.isMain
 }
 
 export interface DataSet {

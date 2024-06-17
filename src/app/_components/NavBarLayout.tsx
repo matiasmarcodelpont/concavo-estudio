@@ -60,6 +60,10 @@ export const NavBarLayout = ({
       links: ambientes.map(({ slug, name }) => ({ text: name, href: `/casa/${slug}` })),
     },
     {
+      text: 'Colaboradores',
+      href: '/colaboradores',
+    },
+    {
       text: 'Nosotros',
       href: '/nosotros',
     },

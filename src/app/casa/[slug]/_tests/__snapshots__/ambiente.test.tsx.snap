@@ -9,7 +9,7 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
       style="font-size: 0px;"
     />
     <h1
-      class="uppercase mt-12 mb-6 sm:mt-16 sm:mb-9 md:mt-20 md:mb-12 italic opacity-0 text-xl sm:text-2xl md:text-3xl text-center"
+      class="font-editorial-new font-extralight tracking-[0.01em] uppercase mt-12 mb-6 sm:mt-16 sm:mb-9 md:mt-20 md:mb-12 italic text-3xl md:text-4xl opacity-0 text-center"
     >
       Cocina
     </h1>
@@ -70,14 +70,14 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
         style="font-size: 0px;"
       />
       <h1
-        class="uppercase mt-12 mb-6 sm:mt-16 sm:mb-9 md:mt-20 md:mb-12 italic opacity-0 text-xl sm:text-2xl md:text-3xl"
+        class="font-editorial-new font-extralight tracking-[0.01em] uppercase mt-12 mb-6 sm:mt-16 sm:mb-9 md:mt-20 md:mb-12 italic text-2xl md:text-3xl opacity-0"
         id="productos-heading"
       >
         Productos
       </h1>
       <ul
         aria-label="Productos"
-        class="grid grid-cols-auto-fit-100 xs:grid-cols-auto-fit-150 sm:grid-cols-auto-fill-200 md:grid-cols-auto-fill-300 gap-4"
+        class="grid grid-cols-auto-fit-100 xs:grid-cols-auto-fit-150 sm:grid-cols-auto-fill-200 md:grid-cols-auto-fill-300 gap-x-2 gap-y-8 md:gap-y-10"
       >
         <li>
           <a
@@ -104,16 +104,16 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
               />
             </div>
             <div
-              class="mb-4 group-hover:text-light-gray transition-colors"
+              class="group-hover:text-light-gray transition-colors"
             >
               <span
                 style="font-size: 0px;"
               />
-              <h1
-                class="uppercase italic opacity-100 text-sm xs:text-base sm:text-lg mt-4 mb-0 sm:mt-6 sm:mb-0 md:mt-8 md:mb-0"
+              <p
+                class="font-editorial-new font-extralight tracking-[0.01em] uppercase italic opacity-100 text-sm xs:text-base sm:text-lg md:text-xl mt-3 sm:mt-3 md:mt-5 mb-0 sm:mb-0 md:mb-0"
               >
                 Azulejos Guardados
-              </h1>
+              </p>
             </div>
           </a>
         </li>
@@ -142,16 +142,16 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
               />
             </div>
             <div
-              class="mb-4 group-hover:text-light-gray transition-colors"
+              class="group-hover:text-light-gray transition-colors"
             >
               <span
                 style="font-size: 0px;"
               />
-              <h1
-                class="uppercase italic opacity-100 text-sm xs:text-base sm:text-lg mt-4 mb-0 sm:mt-6 sm:mb-0 md:mt-8 md:mb-0"
+              <p
+                class="font-editorial-new font-extralight tracking-[0.01em] uppercase italic opacity-100 text-sm xs:text-base sm:text-lg md:text-xl mt-3 sm:mt-3 md:mt-5 mb-0 sm:mb-0 md:mb-0"
               >
                 Luz Led
-              </h1>
+              </p>
             </div>
           </a>
         </li>
@@ -165,48 +165,39 @@ exports[`Ambiente renders Ambiente unchanged 1`] = `
         style="font-size: 0px;"
       />
       <h1
-        class="uppercase mt-12 mb-6 sm:mt-16 sm:mb-9 md:mt-20 md:mb-12 italic opacity-0 text-xl sm:text-2xl md:text-3xl"
+        class="font-editorial-new font-extralight tracking-[0.01em] uppercase mt-12 mb-6 sm:mt-16 sm:mb-9 md:mt-20 md:mb-12 italic text-2xl md:text-3xl opacity-0"
         id="colaboradores-heading"
       >
         Colaboradores
       </h1>
       <ul
-        aria-label="Colaboradores principales"
-        class="flex flex-wrap gap-10 sm:gap-12 md:gap-14 lg:gap-16 mb-10 sm:mb-12 md:mb-14 lg:mb-16"
+        aria-label="Colaboradores"
+        class="flex flex-wrap gap-10 sm:gap-12 md:gap-14 lg:gap-16 mb-10 sm:mb-12 md:mb-14 lg:mb-16 justify-center"
       >
         <li
           class="list-none"
         >
           <div
-            class="flex flex-col items-center w-[200px] sm:w-[300px]"
+            class="w-[200px] sm:w-[300px] h-[40px] m-auto relative mb-3"
           >
-            <div
-              class="w-full h-[40px] m-auto relative mb-3"
-            >
-              <img
-                alt="Luz Viva"
-                class="object-contain grayscale"
-                data-nimg="fill"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=3840&q=75"
-                srcset="/_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=640&q=75 640w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=750&q=75 750w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=828&q=75 828w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=1080&q=75 1080w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=1200&q=75 1200w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=1920&q=75 1920w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=2048&q=75 2048w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-            </div>
+            <img
+              alt="Luz Viva"
+              class="object-contain grayscale"
+              data-nimg="fill"
+              decoding="async"
+              loading="lazy"
+              sizes="100vw"
+              src="/_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=3840&q=75"
+              srcset="/_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=640&q=75 640w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=750&q=75 750w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=828&q=75 828w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=1080&q=75 1080w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=1200&q=75 1200w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=1920&q=75 1920w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=2048&q=75 2048w, /_next/image?url=%2Fcolaboradores%2Fluz-viva.png&w=3840&q=75 3840w"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+            />
           </div>
         </li>
-      </ul>
-      <ul
-        aria-label="Colaboradores secundarios"
-        class="flex flex-wrap gap-10 sm:gap-12 md:gap-14 lg:gap-16 justify-center"
-      >
         <li
           class="list-none"
         >
           <div
-            class="w-full h-[40px] m-auto relative mb-3"
+            class="w-[200px] sm:w-[300px] h-[40px] m-auto relative mb-3"
           >
             <img
               alt="Cocina Design"

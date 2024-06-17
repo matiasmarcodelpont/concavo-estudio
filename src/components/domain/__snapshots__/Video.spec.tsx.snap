@@ -22,7 +22,7 @@ exports[`Video component matches snapshot 1`] = `
     >
       Lorem, ipsum dolor sit amet consectetur adipisicing elit
       <div
-        class="absolute bottom-4 right-1/2 p-2 md:p-4 translate-x-[50%] flex flex-col items-center gap-2 text-bone text-sm sm:text-base md:text-lg transition-all group-hover:text-light-gray"
+        class="absolute bottom-8 right-1/2 p-2 md:p-4 translate-x-[50%] flex flex-col items-center gap-2 text-bone text-xs sm:text-sm md:text-base transition-all group-hover:text-light-gray"
       >
         START HERE
       </div>

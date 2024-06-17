@@ -7,7 +7,7 @@ import { colaboradoresRepository, productosRepository, ambientesRepository } fro
 import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel'
 import { FlexWrap, GridFluid } from '@/components/layouts/Fluid'
 import { Producto } from '@/components/domain/Producto'
-import { MainColaborador, StandardColaborador } from '@/components/domain/Colaborador'
+import { Colaborador } from '@/components/domain/Colaborador'
 import Heading from '@/components/domain/Heading'
 import { AmbienteImageWithPuntitos } from './_components/AmbienteImageWithPuntitos'
 
@@ -18,8 +18,7 @@ export default function Ambiente({ params }: { params: { slug: string } }) {
   }
 
   const productos = productosRepository.getProductosInAmbiente(ambiente.slug)
-  const mainColaboradores = colaboradoresRepository.getMainColaboradoresByAmbiente(ambiente.slug)
-  const standardColaboradores = colaboradoresRepository.getStandardColaboradoresByAmbiente(ambiente.slug)
+  const colaboradores = colaboradoresRepository.getColaboradoresByAmbiente(ambiente.slug)
 
   return (
     <main className='mx-auto text-center'>
@@ -61,29 +60,18 @@ export default function Ambiente({ params }: { params: { slug: string } }) {
           Colaboradores
         </Heading>
 
-        {mainColaboradores.length > 0 && (
+        {colaboradores.length > 0 && (
           <FlexWrap
-            aria-label='Colaboradores principales'
-            className='gap-10 sm:gap-12 md:gap-14 lg:gap-16 mb-10 sm:mb-12 md:mb-14 lg:mb-16'
+            aria-label='Colaboradores'
+            className='gap-10 sm:gap-12 md:gap-14 lg:gap-16 mb-10 sm:mb-12 md:mb-14 lg:mb-16 justify-center'
           >
-            {mainColaboradores.map((colaborador) => (
+            {colaboradores.map((colaborador) => (
               <li key={colaborador.slug} className='list-none'>
-                <MainColaborador {...colaborador} />
+                <Colaborador {...colaborador} />
               </li>
             ))}
           </FlexWrap>
         )}
-
-        <FlexWrap
-          aria-label='Colaboradores secundarios'
-          className='gap-10 sm:gap-12 md:gap-14 lg:gap-16 justify-center'
-        >
-          {standardColaboradores.map((colaborador) => (
-            <li key={colaborador.slug} className='list-none'>
-              <StandardColaborador {...colaborador} />
-            </li>
-          ))}
-        </FlexWrap>
       </section>
     </main>
   )
