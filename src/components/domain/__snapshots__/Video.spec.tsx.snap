@@ -3,7 +3,7 @@
 exports[`Video component matches snapshot 1`] = `
 <div>
   <a
-    class="block relative w-full h-[95vh] overflow-hidden group"
+    class="block relative w-full dynamic-height-100dvh overflow-hidden group"
     href="fake-link"
   >
     <video
@@ -18,7 +18,7 @@ exports[`Video component matches snapshot 1`] = `
       class="absolute inset-0 bg-black opacity-50 z-20"
     />
     <div
-      class="absolute inset-0 flex flex-col z-30 justify-center items-center"
+      class="absolute inset-0 flex flex-col z-30 justify-center items-center pt-20"
     >
       Lorem, ipsum dolor sit amet consectetur adipisicing elit
       <div
