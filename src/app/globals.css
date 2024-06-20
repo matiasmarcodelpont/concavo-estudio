@@ -9,3 +9,8 @@
 body {
   font-family: var(--tt-norms);
 }
+
+.dynamic-height-100dvh {
+  height: 100vh;
+  height: 100dvh;
+}

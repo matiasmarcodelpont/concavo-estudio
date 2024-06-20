@@ -9,7 +9,7 @@ interface VideoProps {
 
 export const Video = ({ src, title, href, copy }: VideoProps) => {
   return (
-    <Link href={href} className='block relative w-full h-[95vh] overflow-hidden group'>
+    <Link href={href} className='block relative w-full dynamic-height-100dvh overflow-hidden group'>
       <video
         src={src}
         title={title}
@@ -20,7 +20,7 @@ export const Video = ({ src, title, href, copy }: VideoProps) => {
         loop
       />
       <div className='absolute inset-0 bg-black opacity-50 z-20' />
-      <div className='absolute inset-0 flex flex-col z-30 justify-center items-center'>
+      <div className='absolute inset-0 flex flex-col z-30 justify-center items-center pt-20'>
         {copy}
         <div className='absolute bottom-8 right-1/2 p-2 md:p-4 translate-x-[50%] flex flex-col items-center gap-2 text-bone text-xs sm:text-sm md:text-base transition-all group-hover:text-light-gray'>
           START HERE
