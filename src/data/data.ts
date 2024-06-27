@@ -179,8 +179,6 @@ const data: DataSet = {
       whatsapp: '11 4991-8163',
       instagram: '@destefano1913',
       email: 'marketing@destefano.com.ar',
-      website: 'test.com',
-      reference: 'juancito juancito',
     },
     {
       slug: 'toto',
