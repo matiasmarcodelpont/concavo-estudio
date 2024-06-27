@@ -6,8 +6,8 @@ import { Colaborador } from './Colaborador'
 const colaborador = {
   slug: 'elegance',
   name: 'Elegance',
-  contact: 'contact@contact.com',
-}
+  level: 'black',
+} as const
 
 describe('Colaborador', () => {
   it('matches snapshot', () => {
