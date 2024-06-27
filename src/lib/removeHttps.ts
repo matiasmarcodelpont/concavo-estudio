@@ -1,12 +1,20 @@
 function removeHttps(url: string) {
-  const parsedUrl = new URL(url)
+  let formattedUrl = url
 
-  let path = parsedUrl.pathname
-  if (path.endsWith('/')) {
-    path = path.slice(0, -1)
+  // Prepend http:// if no protocol is present
+  if (!/^https?:\/\//i.test(url)) {
+    formattedUrl = 'http://' + url
   }
 
-  return parsedUrl.host + path
+  const parsedUrl = new URL(formattedUrl)
+
+  // Remove the protocol if it's https
+  if (parsedUrl.protocol === 'https:') {
+    return parsedUrl.host + parsedUrl.pathname.replace(/\/$/, '')
+  }
+
+  // Return the URL without modifications if it's not https
+  return parsedUrl.host + parsedUrl.pathname.replace(/\/$/, '')
 }
 
 export default removeHttps
