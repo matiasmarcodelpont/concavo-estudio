@@ -10,10 +10,10 @@ import { GridFluid } from '@/components/layouts/Fluid'
 import { Globe, InstagramIcon, MailIcon, UserCheck } from 'lucide-react'
 import WhatsappIcon from '@/components/icons/WhatsappIcon'
 import { useMemo } from 'react'
-import removeHttps from '@/lib/removeHttps'
-import { addHttpsIfMissing } from '@/lib/addHttpsIfMissing'
 import { removeAtSign } from '@/lib/removeAtSign'
 import { capitalizeWords } from '@/lib/capitalizeWords'
+import { startsWithHttps } from '@/lib/startsWithHttps'
+import { removeHttpOrHttps } from '@/lib/removeHttpOrHttps'
 
 export default function Producto({ params }: { params: { slug: string } }) {
   const producto = productosRepository.getProducto(decodeURIComponent(params.slug))
@@ -55,8 +55,11 @@ export default function Producto({ params }: { params: { slug: string } }) {
                 {
                   icon: Globe,
                   value: producto.colaborador.website,
-                  href: producto.colaborador.website ? addHttpsIfMissing(producto.colaborador.website) : '',
-                  callback: removeHttps,
+                  href:
+                    producto.colaborador.website && startsWithHttps(producto.colaborador.website)
+                      ? producto.colaborador.website
+                      : '',
+                  callback: removeHttpOrHttps,
                 },
                 {
                   icon: InstagramIcon,
@@ -73,7 +76,11 @@ export default function Producto({ params }: { params: { slug: string } }) {
                   value: producto.colaborador.whatsapp,
                   // TODO: Format phone number
                 },
-                { icon: UserCheck, value: producto.colaborador.reference, callback: capitalizeWords },
+                {
+                  icon: UserCheck,
+                  value: producto.colaborador.reference,
+                  callback: capitalizeWords,
+                },
               ].map(({ icon, value, href, callback }, index) => (
                 <ContactInfo
                   key={`contact-info-${index.toString()}`}
@@ -125,9 +132,9 @@ const ContactInfo = ({ Icon, value, callback, href }: ContactInfoProps) => {
 
   return (
     value && (
-      <div className='mb-2'>
-        <Icon className='inline w-4 h-4 mr-2 text-dark-gray' />
-        <p className='mt-8 animate-fade-in inline margin-0'>
+      <div className='mb-2 flex gap-2 items-center '>
+        <Icon className='w-[16px] h-[16px] text-dark-gray' />
+        <p className='animate-fade-in margin-0 -mt-[2px]'>
           {href ? (
             <a href={href} target='_blank' className='hover:underline'>
               {parsedValue}

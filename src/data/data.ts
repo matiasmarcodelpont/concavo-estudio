@@ -104,7 +104,7 @@ const data: DataSet = {
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptas explicabo aliquam tenetur. Eligendi deleniti ratione doloribus dolores dolorum, reprehenderit maiores odit itaque quos tenetur, architecto earum est, iste accusantium.',
       link: 'https://example.com',
       colaborador: {
-        slug: 'de-stefano',
+        slug: 'diclimatizacion',
       },
     },
     {
@@ -192,21 +192,21 @@ const data: DataSet = {
       slug: 'sinteplast',
       name: 'Sinteplast',
       level: 'black',
-      website: 'https://www.sinteplast.com.ar/contacto',
+      website: 'https://www.sinteplast.com.ar/contacto/',
     },
     {
       slug: 'resta',
       name: 'Resta',
       level: 'black',
       whatsapp: '11 3697-7275',
-      reference: 'axelmontenegro@sanitariosresta.com.ar',
-      website: 'restadesign.it',
+      email: 'axelmontenegro@sanitariosresta.com.ar',
+      instagram: '@restadesign.it',
     },
     {
       slug: 'akai',
       name: 'Grupo Akai (Akai + Italighting)',
       level: 'black',
-      reference: 'Contacto Comercial: Sebastian Zazzarro / sebastian@italighting.com.ar',
+      reference: 'Contacto Comercial: Sebastian Zazzarro',
       email: 'sebastian@italighting.com.ar',
     },
     {
