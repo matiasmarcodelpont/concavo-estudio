@@ -46,7 +46,12 @@ export interface Ambiente {
 export interface Colaborador {
   name: string
   slug: string
-  contact: string
+  level: 'black' | 'gold' | 'silver' | 'standard'
+  whatsapp?: string
+  reference?: string
+  instagram?: string
+  email?: string
+  website?: string
 }
 
 export interface DataSet {

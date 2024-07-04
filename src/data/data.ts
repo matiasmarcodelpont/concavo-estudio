@@ -104,7 +104,7 @@ const data: DataSet = {
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptas explicabo aliquam tenetur. Eligendi deleniti ratione doloribus dolores dolorum, reprehenderit maiores odit itaque quos tenetur, architecto earum est, iste accusantium.',
       link: 'https://example.com',
       colaborador: {
-        slug: 'elegance',
+        slug: 'diclimatizacion',
       },
     },
     {
@@ -114,7 +114,7 @@ const data: DataSet = {
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptas explicabo aliquam tenetur. Eligendi deleniti ratione doloribus dolores dolorum, reprehenderit maiores odit itaque quos tenetur, architecto earum est, iste accusantium.',
       link: 'https://example.com',
       colaborador: {
-        slug: 'luz-viva',
+        slug: 'de-stefano',
       },
     },
     {
@@ -124,7 +124,7 @@ const data: DataSet = {
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptas explicabo aliquam tenetur. Eligendi deleniti ratione doloribus dolores dolorum, reprehenderit maiores odit itaque quos tenetur, architecto earum est, iste accusantium.',
       link: 'https://example.com',
       colaborador: {
-        slug: 'muebles-arte',
+        slug: 'de-stefano',
       },
     },
     {
@@ -135,7 +135,7 @@ const data: DataSet = {
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptas explicabo aliquam tenetur. Eligendi deleniti ratione doloribus dolores dolorum, reprehenderit maiores odit itaque quos tenetur, architecto earum est, iste accusantium.',
 
       colaborador: {
-        slug: 'cocina-design',
+        slug: 'de-stefano',
       },
     },
     {
@@ -173,24 +173,87 @@ const data: DataSet = {
   ],
   colaboradores: [
     {
-      slug: 'elegance',
-      name: 'Elegance',
-      contact: 'Contacto: 5473-1862',
+      slug: 'de-stefano',
+      name: 'De Stefano',
+      level: 'black',
+      whatsapp: '11 4991-8163',
+      instagram: '@destefano1913',
+      email: 'marketing@destefano.com.ar',
     },
     {
-      slug: 'luz-viva',
-      name: 'Luz Viva',
-      contact: 'Contacto: 5473-1862',
+      slug: 'toto',
+      name: 'Toto',
+      level: 'black',
+      whatsapp: '11 4991-8163',
+      instagram: '@toto.argentina',
+      email: 'marketing@destefano.com.ar',
     },
     {
-      slug: 'muebles-arte',
-      name: 'Muebles de Arte',
-      contact: 'Contacto: 5473-1862',
+      slug: 'sinteplast',
+      name: 'Sinteplast',
+      level: 'black',
+      website: 'https://www.sinteplast.com.ar/contacto/',
     },
     {
-      slug: 'cocina-design',
-      name: 'Cocina Design',
-      contact: 'Contacto: 5473-1862',
+      slug: 'resta',
+      name: 'Resta',
+      level: 'black',
+      whatsapp: '11 3697-7275',
+      email: 'axelmontenegro@sanitariosresta.com.ar',
+      instagram: '@restadesign.it',
+    },
+    {
+      slug: 'akai',
+      name: 'Grupo Akai (Akai + Italighting)',
+      level: 'black',
+      reference: 'Contacto Comercial: Sebastian Zazzarro',
+      email: 'sebastian@italighting.com.ar',
+    },
+    {
+      slug: 'cristalizando',
+      name: 'Cristalizando',
+      level: 'gold',
+      whatsapp: '(0387) 443-643',
+      instagram: '@cristalizandosa',
+      email: 'ventas@cristalizando.com',
+    },
+    {
+      slug: 'muchtek',
+      name: 'Muchtek Tecnoperfiles Group',
+      level: 'silver',
+      email: 'perfiles@muchtek.com',
+      instagram: '@muchtek.tecnoperfilesgroup',
+    },
+    {
+      slug: 'topcret',
+      name: 'Topcret',
+      level: 'silver',
+      whatsapp: '11 6688-8128',
+      instagram: '@topcretargentina',
+      email: 'argentina@topcret.com',
+    },
+    {
+      slug: 'cisilotto',
+      name: 'Cisilotto',
+      level: 'standard',
+      whatsapp: '11 3857-1212',
+      instagram: '@cisilotto.hnos',
+      email: 'ventas@cisilotto.com.ar',
+    },
+    {
+      slug: 'ecoaislacion',
+      name: 'Ecoaislacion',
+      level: 'standard',
+      whatsapp: '11 2696-6442',
+      instagram: '@ecoaislacion.oeste',
+    },
+    {
+      slug: 'diclimatizacion',
+      name: 'Diclimatizacion',
+      level: 'standard',
+      whatsapp: '11 3216-7203',
+      instagram: '@diclimatizacion',
+      reference: 'Luciano Marchi',
     },
   ],
 }
