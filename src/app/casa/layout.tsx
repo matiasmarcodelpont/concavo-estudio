@@ -1,16 +1,16 @@
 import type { Metadata } from 'next'
 
-import './globals.css'
+import '../globals.css'
 
 import { cn } from '@/lib/utils'
 import { editorialNew, ttNorms } from '@/lib/fonts'
-import { Header } from './_components/Header'
-import { Footer } from './_components/Footer'
+import { Header } from '../_components/Header'
 import { ambientesRepository } from '@/controllers'
+import { Footer } from '../_components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Estudio Cóncavo',
-  description: 'Piezas de autor elaboradas artesanalmente.',
+  title: 'Casa Cóncavo',
+  description: 'Una serie de casas co-creadas por Estudio Cóncavo.',
 }
 
 export default function RootLayout({
@@ -23,11 +23,11 @@ export default function RootLayout({
   return (
     <html lang='es'>
       <head>
-        <link rel='icon' href='/manifest/favicon_concavo.ico' sizes='any' />
-        <link rel='icon' href='/manifest/icon_concavo?<generated>' type='image/<generated>' sizes='<generated>' />
+        <link rel='icon' href='/manifest/favicon_casa.ico' sizes='any' />
+        <link rel='icon' href='/manifest/icon_casa?<generated>' type='image/<generated>' sizes='<generated>' />
         <link
           rel='apple-touch-icon'
-          href='/manifest/apple-icon_concavo?<generated>'
+          href='/manifest/apple-icon_casa?<generated>'
           type='image/<generated>'
           sizes='<generated>'
         />
