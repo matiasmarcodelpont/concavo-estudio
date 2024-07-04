@@ -9,11 +9,10 @@ import { Button } from '@/components/ui/button'
 import { GridFluid } from '@/components/layouts/Fluid'
 import { Globe, InstagramIcon, MailIcon, UserCheck } from 'lucide-react'
 import WhatsappIcon from '@/components/icons/WhatsappIcon'
-import { useMemo } from 'react'
 import { removeAtSign } from '@/lib/removeAtSign'
-import { capitalizeWords } from '@/lib/capitalizeWords'
 import { startsWithHttps } from '@/lib/startsWithHttps'
 import { removeHttpOrHttps } from '@/lib/removeHttpOrHttps'
+import { cn } from '@/lib/utils'
 
 export default function Producto({ params }: { params: { slug: string } }) {
   const producto = productosRepository.getProducto(decodeURIComponent(params.slug))
@@ -54,12 +53,11 @@ export default function Producto({ params }: { params: { slug: string } }) {
               {[
                 {
                   icon: Globe,
-                  value: producto.colaborador.website,
+                  value: producto.colaborador.website ? removeHttpOrHttps(producto.colaborador.website) : undefined,
                   href:
                     producto.colaborador.website && startsWithHttps(producto.colaborador.website)
                       ? producto.colaborador.website
                       : '',
-                  callback: removeHttpOrHttps,
                 },
                 {
                   icon: InstagramIcon,
@@ -74,20 +72,19 @@ export default function Producto({ params }: { params: { slug: string } }) {
                 {
                   icon: WhatsappIcon,
                   value: producto.colaborador.whatsapp,
-                  // TODO: Format phone number
                 },
                 {
                   icon: UserCheck,
                   value: producto.colaborador.reference,
-                  callback: capitalizeWords,
+                  className: 'capitalize',
                 },
-              ].map(({ icon, value, href, callback }, index) => (
+              ].map(({ icon, value, href, className }, index) => (
                 <ContactInfo
                   key={`contact-info-${index.toString()}`}
                   Icon={icon}
                   value={value}
-                  callback={callback}
                   href={href}
+                  className={className}
                 />
               ))}
             </article>
@@ -123,24 +120,22 @@ export default function Producto({ params }: { params: { slug: string } }) {
 interface ContactInfoProps {
   Icon: React.ElementType
   value?: string
-  callback?: (value: string) => string
   href?: string
+  className?: string
 }
 
-const ContactInfo = ({ Icon, value, callback, href }: ContactInfoProps) => {
-  const parsedValue = useMemo(() => (callback && value ? callback(value) : value), [callback, value])
-
+const ContactInfo = ({ Icon, value, href, className }: ContactInfoProps) => {
   return (
     value && (
-      <div className='mb-2 flex gap-2 items-center '>
+      <div className={cn('mb-2 flex gap-2 items-center', className)}>
         <Icon className='w-[16px] h-[16px] text-dark-gray' />
         <p className='animate-fade-in margin-0 -mt-[2px]'>
           {href ? (
             <a href={href} target='_blank' className='hover:underline'>
-              {parsedValue}
+              {value}
             </a>
           ) : (
-            parsedValue
+            value
           )}
         </p>
       </div>
