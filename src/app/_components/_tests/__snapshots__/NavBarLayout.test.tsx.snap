@@ -32,7 +32,7 @@ exports[`NavBarLayout renders links to all pages and to each ambiente 1`] = `
     >
       <a
         class="hover:underline"
-        href="/casa"
+        href="/casa-concavo"
       >
         Casa Cóncavo
       </a>
