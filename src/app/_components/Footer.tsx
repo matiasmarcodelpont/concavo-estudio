@@ -1,11 +1,10 @@
 'use client'
 
-import Logo from '@/components/domain/Logo'
 import { Qr } from '@/components/ui/qr'
 import { productosRepository } from '@/controllers'
 import { Ambiente, OmitReferences } from '@/data/types'
-import { Instagram, MailIcon } from 'lucide-react'
 import { useHandleQr } from './hooks'
+import LogoAndSocialMedia from '@/components/domain/LogoAndSocialMedia'
 
 const getAllProducts = (ambientes: OmitReferences<Omit<Ambiente, 'images'>>[]) => {
   return ambientes.flatMap(({ slug }) => productosRepository.getProductosInAmbiente(slug))
@@ -67,33 +66,7 @@ export const Footer = ({ ambientes }: FooterProps) => {
       ))}
 
       <section className='flex gap-6 sm:gap-10 ml-auto'>
-        <div className='flex flex-col items-center gap-2'>
-          <Logo variant='white' className='w-[150px] h-[50px] sm:w-[150px] sm:h-[50px]' />
-          <div className='flex gap-2'>
-            {[
-              {
-                name: 'instagram',
-                Icon: Instagram,
-                href: 'https://www.instagram.com/concavoestudio/',
-              },
-              {
-                name: 'email',
-                Icon: MailIcon,
-                href: 'mailto:ventas@concavoestudio.com',
-              },
-            ].map(({ name, Icon, href }, index) => (
-              <a
-                key={`${index.toString()}-${name}`}
-                href={href}
-                target='_blank'
-                className='rounded-full transition-all border-black hover:border-bone border-[1px] p-2'
-                aria-label={name}
-              >
-                <Icon size={20} />
-              </a>
-            ))}
-          </div>
-        </div>
+        <LogoAndSocialMedia />
         <Qr value={currentUrl} onClick={handleClick} />
         <div className='absolute left-[-100vw]'>
           <Qr ref={qrRef} value={currentUrl} size={300} />
