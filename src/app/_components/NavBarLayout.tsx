@@ -56,7 +56,7 @@ export const NavBarLayout = ({
     },
     {
       text: 'Casa Cóncavo',
-      href: '/casa',
+      href: '/casa-concavo',
       links: ambientes.map(({ slug, name }) => ({ text: name, href: `/casa/${slug}` })),
     },
     {

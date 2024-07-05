@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom'
 import { render, screen, within } from '@testing-library/react'
 
-import CasaConcavo from '@/app/casa/page'
+import CasaConcavo from '@/app/casa-concavo/page'
 
 jest.mock('@/data/data.ts', () => ({
   ambientes: [
