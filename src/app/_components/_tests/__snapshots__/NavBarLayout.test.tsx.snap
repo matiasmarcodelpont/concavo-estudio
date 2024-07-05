@@ -6,18 +6,269 @@ exports[`NavBarLayout renders links to all pages and to each ambiente 1`] = `
     <li
       class="my-4"
     >
+      <svg
+        class="inline mr-3 mb-1 text-black"
+        fill="none"
+        height="24"
+        viewBox="0 0 569 569"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <mask
+          height="569"
+          id="mask0_2090_30"
+          maskUnits="userSpaceOnUse"
+          style="mask-type: alpha;"
+          width="569"
+          x="0"
+          y="0"
+        >
+          <rect
+            fill="currentColor"
+            height="569"
+            width="569"
+          />
+        </mask>
+        <g
+          mask="url(#mask0_2090_30)"
+        >
+          <mask
+            height="356"
+            id="mask1_2090_30"
+            maskUnits="userSpaceOnUse"
+            style="mask-type: luminance;"
+            width="569"
+            x="1"
+            y="107"
+          >
+            <path
+              d="M569.616 107H1V462.552H569.616V107Z"
+              fill="white"
+            />
+          </mask>
+          <g
+            mask="url(#mask1_2090_30)"
+          >
+            <mask
+              height="118"
+              id="mask2_2090_30"
+              maskUnits="userSpaceOnUse"
+              style="mask-type: luminance;"
+              width="282"
+              x="144"
+              y="109"
+            >
+              <path
+                d="M144.454 109.179H425.761V226.542H144.454V109.179Z"
+                fill="white"
+              />
+            </mask>
+            <g
+              mask="url(#mask2_2090_30)"
+            >
+              <mask
+                height="118"
+                id="mask3_2090_30"
+                maskUnits="userSpaceOnUse"
+                style="mask-type: luminance;"
+                width="282"
+                x="144"
+                y="109"
+              >
+                <path
+                  d="M425.688 109.179C425.688 173.863 362.762 226.303 285.146 226.303C207.525 226.303 144.6 173.863 144.6 109.179"
+                  fill="white"
+                />
+              </mask>
+              <g
+                mask="url(#mask3_2090_30)"
+              >
+                <path
+                  d="M568.066 462.375H2.14941V107.343H568.066V462.375Z"
+                  fill="currentColor"
+                />
+              </g>
+            </g>
+            <mask
+              height="235"
+              id="mask4_2090_30"
+              maskUnits="userSpaceOnUse"
+              style="mask-type: luminance;"
+              width="564"
+              x="3"
+              y="226"
+            >
+              <path
+                d="M3.98535 226.178H566.235V460.538H3.98535V226.178Z"
+                fill="white"
+              />
+            </mask>
+            <g
+              mask="url(#mask4_2090_30)"
+            >
+              <mask
+                height="235"
+                id="mask5_2090_30"
+                maskUnits="userSpaceOnUse"
+                style="mask-type: luminance;"
+                width="563"
+                x="4"
+                y="226"
+              >
+                <path
+                  d="M566.23 226.302C566.23 355.665 440.383 460.538 285.147 460.538C129.905 460.538 4.05859 355.665 4.05859 226.302"
+                  fill="white"
+                />
+              </mask>
+              <g
+                mask="url(#mask5_2090_30)"
+              >
+                <path
+                  d="M568.066 462.374H2.14941V107.343H568.066V462.374Z"
+                  fill="currentColor"
+                />
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
       <a
         class="hover:underline"
         href="/"
       >
         Cóncavo
       </a>
-      <ul
-        class="ml-4"
-      >
+      <ul>
         <li
           class="my-2"
         >
+          <svg
+            class="text-black inline mr-3 mb-1 opacity-0"
+            fill="none"
+            height="24"
+            viewBox="0 0 569 569"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <mask
+              height="569"
+              id="mask0_2090_30"
+              maskUnits="userSpaceOnUse"
+              style="mask-type: alpha;"
+              width="569"
+              x="0"
+              y="0"
+            >
+              <rect
+                fill="currentColor"
+                height="569"
+                width="569"
+              />
+            </mask>
+            <g
+              mask="url(#mask0_2090_30)"
+            >
+              <mask
+                height="356"
+                id="mask1_2090_30"
+                maskUnits="userSpaceOnUse"
+                style="mask-type: luminance;"
+                width="569"
+                x="1"
+                y="107"
+              >
+                <path
+                  d="M569.616 107H1V462.552H569.616V107Z"
+                  fill="white"
+                />
+              </mask>
+              <g
+                mask="url(#mask1_2090_30)"
+              >
+                <mask
+                  height="118"
+                  id="mask2_2090_30"
+                  maskUnits="userSpaceOnUse"
+                  style="mask-type: luminance;"
+                  width="282"
+                  x="144"
+                  y="109"
+                >
+                  <path
+                    d="M144.454 109.179H425.761V226.542H144.454V109.179Z"
+                    fill="white"
+                  />
+                </mask>
+                <g
+                  mask="url(#mask2_2090_30)"
+                >
+                  <mask
+                    height="118"
+                    id="mask3_2090_30"
+                    maskUnits="userSpaceOnUse"
+                    style="mask-type: luminance;"
+                    width="282"
+                    x="144"
+                    y="109"
+                  >
+                    <path
+                      d="M425.688 109.179C425.688 173.863 362.762 226.303 285.146 226.303C207.525 226.303 144.6 173.863 144.6 109.179"
+                      fill="white"
+                    />
+                  </mask>
+                  <g
+                    mask="url(#mask3_2090_30)"
+                  >
+                    <path
+                      d="M568.066 462.375H2.14941V107.343H568.066V462.375Z"
+                      fill="currentColor"
+                    />
+                  </g>
+                </g>
+                <mask
+                  height="235"
+                  id="mask4_2090_30"
+                  maskUnits="userSpaceOnUse"
+                  style="mask-type: luminance;"
+                  width="564"
+                  x="3"
+                  y="226"
+                >
+                  <path
+                    d="M3.98535 226.178H566.235V460.538H3.98535V226.178Z"
+                    fill="white"
+                  />
+                </mask>
+                <g
+                  mask="url(#mask4_2090_30)"
+                >
+                  <mask
+                    height="235"
+                    id="mask5_2090_30"
+                    maskUnits="userSpaceOnUse"
+                    style="mask-type: luminance;"
+                    width="563"
+                    x="4"
+                    y="226"
+                  >
+                    <path
+                      d="M566.23 226.302C566.23 355.665 440.383 460.538 285.147 460.538C129.905 460.538 4.05859 355.665 4.05859 226.302"
+                      fill="white"
+                    />
+                  </mask>
+                  <g
+                    mask="url(#mask5_2090_30)"
+                  >
+                    <path
+                      d="M568.066 462.374H2.14941V107.343H568.066V462.374Z"
+                      fill="currentColor"
+                    />
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+           
           <a
             class="hover:underline"
             href="/#productos-concavo"
@@ -30,18 +281,233 @@ exports[`NavBarLayout renders links to all pages and to each ambiente 1`] = `
     <li
       class="my-4"
     >
+      <svg
+        class="inline mr-3 mb-1 text-black"
+        fill="none"
+        height="24"
+        viewBox="0 0 588 588"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <mask
+          height="588"
+          id="mask0_2090_75"
+          maskUnits="userSpaceOnUse"
+          style="mask-type: alpha;"
+          width="588"
+          x="0"
+          y="0"
+        >
+          <rect
+            fill="currentColor"
+            height="588"
+            width="588"
+          />
+        </mask>
+        <g
+          mask="url(#mask0_2090_75)"
+        >
+          <mask
+            height="125"
+            id="mask1_2090_75"
+            maskUnits="userSpaceOnUse"
+            style="mask-type: luminance;"
+            width="296"
+            x="146"
+            y="352"
+          >
+            <path
+              d="M146.83 352.972H441.126V476.01H146.83V352.972Z"
+              fill="white"
+            />
+          </mask>
+          <g
+            mask="url(#mask1_2090_75)"
+          >
+            <mask
+              height="123"
+              id="mask2_2090_75"
+              maskUnits="userSpaceOnUse"
+              style="mask-type: luminance;"
+              width="295"
+              x="146"
+              y="353"
+            >
+              <path
+                d="M146.919 475.999C146.919 408.381 212.69 353.57 293.827 353.57C374.965 353.57 440.736 408.381 440.736 475.999H146.919Z"
+                fill="white"
+              />
+            </mask>
+            <g
+              mask="url(#mask2_2090_75)"
+            >
+              <path
+                d="M-4.24414 107.76H592.254V480.249H-4.24414V107.76Z"
+                fill="currentColor"
+              />
+            </g>
+          </g>
+          <mask
+            height="246"
+            id="mask3_2090_75"
+            maskUnits="userSpaceOnUse"
+            style="mask-type: luminance;"
+            width="589"
+            x="0"
+            y="112"
+          >
+            <path
+              d="M0 112H588.009V357.217H0V112Z"
+              fill="white"
+            />
+          </mask>
+          <g
+            mask="url(#mask3_2090_75)"
+          >
+            <mask
+              height="245"
+              id="mask4_2090_75"
+              maskUnits="userSpaceOnUse"
+              style="mask-type: luminance;"
+              width="588"
+              x="0"
+              y="112"
+            >
+              <path
+                d="M0.0107422 356.863C0.0107422 221.627 131.558 112.01 293.828 112.01C456.097 112.01 587.65 221.627 587.65 356.863H0.0107422Z"
+                fill="white"
+              />
+            </mask>
+            <g
+              mask="url(#mask4_2090_75)"
+            >
+              <path
+                d="M-4.24414 107.761H592.254V480.249H-4.24414V107.761Z"
+                fill="currentColor"
+              />
+            </g>
+          </g>
+        </g>
+      </svg>
       <a
         class="hover:underline"
         href="/casa-concavo"
       >
         Casa Cóncavo
       </a>
-      <ul
-        class="ml-4"
-      >
+      <ul>
         <li
           class="my-2"
         >
+          <svg
+            class="text-black inline mr-3 mb-1 opacity-0"
+            fill="none"
+            height="24"
+            viewBox="0 0 588 588"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <mask
+              height="588"
+              id="mask0_2090_75"
+              maskUnits="userSpaceOnUse"
+              style="mask-type: alpha;"
+              width="588"
+              x="0"
+              y="0"
+            >
+              <rect
+                fill="currentColor"
+                height="588"
+                width="588"
+              />
+            </mask>
+            <g
+              mask="url(#mask0_2090_75)"
+            >
+              <mask
+                height="125"
+                id="mask1_2090_75"
+                maskUnits="userSpaceOnUse"
+                style="mask-type: luminance;"
+                width="296"
+                x="146"
+                y="352"
+              >
+                <path
+                  d="M146.83 352.972H441.126V476.01H146.83V352.972Z"
+                  fill="white"
+                />
+              </mask>
+              <g
+                mask="url(#mask1_2090_75)"
+              >
+                <mask
+                  height="123"
+                  id="mask2_2090_75"
+                  maskUnits="userSpaceOnUse"
+                  style="mask-type: luminance;"
+                  width="295"
+                  x="146"
+                  y="353"
+                >
+                  <path
+                    d="M146.919 475.999C146.919 408.381 212.69 353.57 293.827 353.57C374.965 353.57 440.736 408.381 440.736 475.999H146.919Z"
+                    fill="white"
+                  />
+                </mask>
+                <g
+                  mask="url(#mask2_2090_75)"
+                >
+                  <path
+                    d="M-4.24414 107.76H592.254V480.249H-4.24414V107.76Z"
+                    fill="currentColor"
+                  />
+                </g>
+              </g>
+              <mask
+                height="246"
+                id="mask3_2090_75"
+                maskUnits="userSpaceOnUse"
+                style="mask-type: luminance;"
+                width="589"
+                x="0"
+                y="112"
+              >
+                <path
+                  d="M0 112H588.009V357.217H0V112Z"
+                  fill="white"
+                />
+              </mask>
+              <g
+                mask="url(#mask3_2090_75)"
+              >
+                <mask
+                  height="245"
+                  id="mask4_2090_75"
+                  maskUnits="userSpaceOnUse"
+                  style="mask-type: luminance;"
+                  width="588"
+                  x="0"
+                  y="112"
+                >
+                  <path
+                    d="M0.0107422 356.863C0.0107422 221.627 131.558 112.01 293.828 112.01C456.097 112.01 587.65 221.627 587.65 356.863H0.0107422Z"
+                    fill="white"
+                  />
+                </mask>
+                <g
+                  mask="url(#mask4_2090_75)"
+                >
+                  <path
+                    d="M-4.24414 107.761H592.254V480.249H-4.24414V107.761Z"
+                    fill="currentColor"
+                  />
+                </g>
+              </g>
+            </g>
+          </svg>
+           
           <a
             class="hover:underline"
             href="/casa/ambiente-1"
@@ -52,6 +518,115 @@ exports[`NavBarLayout renders links to all pages and to each ambiente 1`] = `
         <li
           class="my-2"
         >
+          <svg
+            class="text-black inline mr-3 mb-1 opacity-0"
+            fill="none"
+            height="24"
+            viewBox="0 0 588 588"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <mask
+              height="588"
+              id="mask0_2090_75"
+              maskUnits="userSpaceOnUse"
+              style="mask-type: alpha;"
+              width="588"
+              x="0"
+              y="0"
+            >
+              <rect
+                fill="currentColor"
+                height="588"
+                width="588"
+              />
+            </mask>
+            <g
+              mask="url(#mask0_2090_75)"
+            >
+              <mask
+                height="125"
+                id="mask1_2090_75"
+                maskUnits="userSpaceOnUse"
+                style="mask-type: luminance;"
+                width="296"
+                x="146"
+                y="352"
+              >
+                <path
+                  d="M146.83 352.972H441.126V476.01H146.83V352.972Z"
+                  fill="white"
+                />
+              </mask>
+              <g
+                mask="url(#mask1_2090_75)"
+              >
+                <mask
+                  height="123"
+                  id="mask2_2090_75"
+                  maskUnits="userSpaceOnUse"
+                  style="mask-type: luminance;"
+                  width="295"
+                  x="146"
+                  y="353"
+                >
+                  <path
+                    d="M146.919 475.999C146.919 408.381 212.69 353.57 293.827 353.57C374.965 353.57 440.736 408.381 440.736 475.999H146.919Z"
+                    fill="white"
+                  />
+                </mask>
+                <g
+                  mask="url(#mask2_2090_75)"
+                >
+                  <path
+                    d="M-4.24414 107.76H592.254V480.249H-4.24414V107.76Z"
+                    fill="currentColor"
+                  />
+                </g>
+              </g>
+              <mask
+                height="246"
+                id="mask3_2090_75"
+                maskUnits="userSpaceOnUse"
+                style="mask-type: luminance;"
+                width="589"
+                x="0"
+                y="112"
+              >
+                <path
+                  d="M0 112H588.009V357.217H0V112Z"
+                  fill="white"
+                />
+              </mask>
+              <g
+                mask="url(#mask3_2090_75)"
+              >
+                <mask
+                  height="245"
+                  id="mask4_2090_75"
+                  maskUnits="userSpaceOnUse"
+                  style="mask-type: luminance;"
+                  width="588"
+                  x="0"
+                  y="112"
+                >
+                  <path
+                    d="M0.0107422 356.863C0.0107422 221.627 131.558 112.01 293.828 112.01C456.097 112.01 587.65 221.627 587.65 356.863H0.0107422Z"
+                    fill="white"
+                  />
+                </mask>
+                <g
+                  mask="url(#mask4_2090_75)"
+                >
+                  <path
+                    d="M-4.24414 107.761H592.254V480.249H-4.24414V107.761Z"
+                    fill="currentColor"
+                  />
+                </g>
+              </g>
+            </g>
+          </svg>
+           
           <a
             class="hover:underline"
             href="/casa/ambiente-2"
@@ -62,6 +637,115 @@ exports[`NavBarLayout renders links to all pages and to each ambiente 1`] = `
         <li
           class="my-2"
         >
+          <svg
+            class="text-black inline mr-3 mb-1 opacity-0"
+            fill="none"
+            height="24"
+            viewBox="0 0 588 588"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <mask
+              height="588"
+              id="mask0_2090_75"
+              maskUnits="userSpaceOnUse"
+              style="mask-type: alpha;"
+              width="588"
+              x="0"
+              y="0"
+            >
+              <rect
+                fill="currentColor"
+                height="588"
+                width="588"
+              />
+            </mask>
+            <g
+              mask="url(#mask0_2090_75)"
+            >
+              <mask
+                height="125"
+                id="mask1_2090_75"
+                maskUnits="userSpaceOnUse"
+                style="mask-type: luminance;"
+                width="296"
+                x="146"
+                y="352"
+              >
+                <path
+                  d="M146.83 352.972H441.126V476.01H146.83V352.972Z"
+                  fill="white"
+                />
+              </mask>
+              <g
+                mask="url(#mask1_2090_75)"
+              >
+                <mask
+                  height="123"
+                  id="mask2_2090_75"
+                  maskUnits="userSpaceOnUse"
+                  style="mask-type: luminance;"
+                  width="295"
+                  x="146"
+                  y="353"
+                >
+                  <path
+                    d="M146.919 475.999C146.919 408.381 212.69 353.57 293.827 353.57C374.965 353.57 440.736 408.381 440.736 475.999H146.919Z"
+                    fill="white"
+                  />
+                </mask>
+                <g
+                  mask="url(#mask2_2090_75)"
+                >
+                  <path
+                    d="M-4.24414 107.76H592.254V480.249H-4.24414V107.76Z"
+                    fill="currentColor"
+                  />
+                </g>
+              </g>
+              <mask
+                height="246"
+                id="mask3_2090_75"
+                maskUnits="userSpaceOnUse"
+                style="mask-type: luminance;"
+                width="589"
+                x="0"
+                y="112"
+              >
+                <path
+                  d="M0 112H588.009V357.217H0V112Z"
+                  fill="white"
+                />
+              </mask>
+              <g
+                mask="url(#mask3_2090_75)"
+              >
+                <mask
+                  height="245"
+                  id="mask4_2090_75"
+                  maskUnits="userSpaceOnUse"
+                  style="mask-type: luminance;"
+                  width="588"
+                  x="0"
+                  y="112"
+                >
+                  <path
+                    d="M0.0107422 356.863C0.0107422 221.627 131.558 112.01 293.828 112.01C456.097 112.01 587.65 221.627 587.65 356.863H0.0107422Z"
+                    fill="white"
+                  />
+                </mask>
+                <g
+                  mask="url(#mask4_2090_75)"
+                >
+                  <path
+                    d="M-4.24414 107.761H592.254V480.249H-4.24414V107.761Z"
+                    fill="currentColor"
+                  />
+                </g>
+              </g>
+            </g>
+          </svg>
+           
           <a
             class="hover:underline"
             href="/casa/ambiente-3"

@@ -10,7 +10,21 @@ body {
   font-family: var(--tt-norms);
 }
 
-.dynamic-height-100dvh {
-  height: 100vh;
-  height: 100dvh;
+.video-dynamic-height-100dvh {
+  height: calc(100vh - 115px);
+  height: calc(100dvh - 115px);
+}
+
+@media (max-width: 768px) {
+  .video-dynamic-height-100dvh {
+    height: calc(100vh - 99px);
+    height: calc(100dvh - 99px);
+  }
+}
+
+@media (max-width: 640px) {
+  .video-dynamic-height-100dvh {
+    height: calc(100vh - 82px);
+    height: calc(100dvh - 82px);
+  }
 }
