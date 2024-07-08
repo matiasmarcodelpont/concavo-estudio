@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom'
 import { render, screen, within } from '@testing-library/react'
 
-import Ambiente from '@/app/casa/[slug]/page'
+import Ambiente from '@/app/casa-concavo/[slug]/page'
 import { DataSet } from '@/data/types'
 
 // Mocks needed for carousel component not to fail.
