@@ -44,7 +44,7 @@ exports[`NavBarLayout renders links to all pages and to each ambiente 1`] = `
         >
           <a
             class="hover:underline"
-            href="/casa/ambiente-1"
+            href="/casa-concavo/ambiente-1"
           >
             Ambiente 1
           </a>
@@ -54,7 +54,7 @@ exports[`NavBarLayout renders links to all pages and to each ambiente 1`] = `
         >
           <a
             class="hover:underline"
-            href="/casa/ambiente-2"
+            href="/casa-concavo/ambiente-2"
           >
             Ambiente 2
           </a>
@@ -64,7 +64,7 @@ exports[`NavBarLayout renders links to all pages and to each ambiente 1`] = `
         >
           <a
             class="hover:underline"
-            href="/casa/ambiente-3"
+            href="/casa-concavo/ambiente-3"
           >
             Ambiente 3
           </a>
