@@ -12,6 +12,10 @@ import Favicons from './_components/Favicons'
 export const metadata: Metadata = {
   title: 'Estudio Cóncavo',
   description: 'Piezas de autor elaboradas artesanalmente.',
+  icons: {
+    icon: '/manifest/favicon_concavo.ico',
+    apple: '/manifest/apple_icon_concavo.png',
+  },
 }
 
 export default function RootLayout({

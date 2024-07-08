@@ -36,13 +36,13 @@ export const Footer = ({ ambientes }: FooterProps) => {
         {
           name: 'Casa Cóncavo',
           slug: 'casa-concavo',
-          href: '/casa',
+          href: '/casa-concavo',
         },
       ],
     },
     {
       name: 'Ambientes',
-      links: ambientes.map(({ name, slug }) => ({ name, slug, href: `/casa/${slug}` })),
+      links: ambientes.map(({ name, slug }) => ({ name, slug, href: `/casa-concavo/${slug}` })),
     },
     {
       name: 'Productos',
