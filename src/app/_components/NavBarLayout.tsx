@@ -1,5 +1,8 @@
 'use client'
 
+import LogoAndSocialMedia from '@/components/domain/LogoAndSocialMedia'
+import IsologoCasa from '@/components/icons/IsologoCasa'
+import IsologoConcavo from '@/components/icons/IsologoConcavo'
 import AnimatedX from '@/components/ui/animatedX'
 import { Button } from '@/components/ui/button'
 import { Drawer, DrawerContent, DrawerTrigger } from '@/components/ui/drawer'
@@ -53,11 +56,13 @@ export const NavBarLayout = ({
       text: 'Cóncavo',
       href: '/',
       links: [{ text: 'Productos', href: '/#productos-concavo' }],
+      icon: IsologoConcavo,
     },
     {
       text: 'Casa Cóncavo',
       href: '/casa-concavo',
       links: ambientes.map(({ slug, name }) => ({ text: name, href: `/casa-concavo/${slug}` })),
+      icon: IsologoCasa,
     },
     {
       text: 'Colaboradores',
@@ -77,23 +82,25 @@ export const NavBarLayout = ({
             <Equal className='size-6 sm:size-9' />
           </Button>
         </DrawerTrigger>
-        <DrawerContent className='pl-6 pr-7 uppercase overflow-y-auto min-w-[30%] max-w-[600px]'>
+        <DrawerContent className='pl-6 pr-7 uppercase overflow-y-auto min-w-[30%] max-w-[600px] flex flex-col'>
           <header className='border-black border-b mb-4 pl-2 py-10 sm:py-12 cursor-pointer' onClick={closeDrawer}>
             <AnimatedX />
           </header>
 
           <nav>
             <ul>
-              {links.map(({ text, href, links }) => (
+              {links.map(({ text, href, links, icon: Icon }) => (
                 <li key={href} className='my-4'>
+                  {Icon && <Icon className='inline mr-3 mb-1 text-black' />}
                   <Link href={href} onClick={handleNavigation} className='hover:underline' scroll={false}>
                     {text}
                   </Link>
 
                   {links && (
-                    <ul className='ml-4'>
+                    <ul>
                       {links.map(({ text, href }) => (
                         <li key={href} className='my-2'>
+                          <Icon className='inline mr-3 mb-1 opacity-0' /> {/* Placeholder */}
                           <Link href={href} onClick={handleNavigation} className='hover:underline' scroll={false}>
                             {text}
                           </Link>
@@ -105,6 +112,8 @@ export const NavBarLayout = ({
               ))}
             </ul>
           </nav>
+
+          <LogoAndSocialMedia variant='black' className='mt-auto p-7' />
         </DrawerContent>
       </Drawer>
     </>

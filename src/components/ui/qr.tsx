@@ -19,11 +19,9 @@ export const Qr = forwardRef(({ value, size = 80, onClick }: QrProps, ref) => {
         fgColor={config.theme.colors.black}
         quietZone={4}
         qrStyle='dots'
-        // ⬇️⬇️⬇️
-        logoImage='/logos/concavo_black.png' // TODO: Poner el otro logo de Cóncavo y handler el size
-        // ⬆️⬆️⬆️
+        logoImage='/logos/isologo_concavo_black.png'
         logoWidth={(size * 25) / 80}
-        logoHeight={(size * 25) / 3.5 / 80}
+        logoHeight={(size * 25) / 80}
         removeQrCodeBehindLogo
         logoPadding={(size * 1.5) / 80}
       />
