@@ -123,7 +123,7 @@ const data: DataSet = {
           <br />
           medida: 40.5 x Largo Libre
           <br />
-          apomazado semi taponado,
+          apomazado semi taponado
         </>
       ),
       link: 'https://destefano1913.com/tienda/baldosa/travertino-clasico-al-agua-baldosa/',
