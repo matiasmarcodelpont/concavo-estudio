@@ -1,3 +1,5 @@
+import { ReactNode } from 'react'
+
 export type WithNullProp<T, K extends keyof T> = Omit<T, K> & {
   [P in K]: null
 }
@@ -13,7 +15,7 @@ export type OmitReferences<T> = {
 export interface Producto {
   slug: string
   name: string
-  description: string
+  description: ReactNode
   link: string | null
   colaborador: Reference | null
 }
