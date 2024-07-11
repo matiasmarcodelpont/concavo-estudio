@@ -7,7 +7,6 @@ import { editorialNew, ttNorms } from '@/lib/fonts'
 import { Header } from './_components/Header'
 import { Footer } from './_components/Footer'
 import { ambientesRepository } from '@/controllers'
-import Favicons from './_components/Favicons'
 
 export const metadata: Metadata = {
   title: 'Estudio Cóncavo',
@@ -27,9 +26,6 @@ export default function RootLayout({
 
   return (
     <html lang='es'>
-      <head>
-        <Favicons />
-      </head>
       <body className={cn(editorialNew.variable, ttNorms.variable, 'bg-bone text-black')}>
         <Header ambientes={ambientes} />
         {children}
