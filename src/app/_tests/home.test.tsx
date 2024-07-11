@@ -3,7 +3,7 @@ import { render, screen, within } from '@testing-library/react'
 
 import Home from '../page'
 
-jest.mock('@/data/data.ts', () => ({
+jest.mock('@/data/data.tsx', () => ({
   productos: [
     {
       slug: 'azulejos-los-peores',
