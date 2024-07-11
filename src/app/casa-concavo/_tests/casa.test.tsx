@@ -3,7 +3,7 @@ import { render, screen, within } from '@testing-library/react'
 
 import CasaConcavo from '@/app/casa-concavo/page'
 
-jest.mock('@/data/data.ts', () => ({
+jest.mock('@/data/data.tsx', () => ({
   ambientes: [
     {
       slug: 'cocina',

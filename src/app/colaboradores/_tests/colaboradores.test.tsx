@@ -5,7 +5,7 @@ import Colaboradores from '../page'
 import { DataSet } from '@/data/types'
 
 jest.mock(
-  '@/data/data.ts',
+  '@/data/data.tsx',
   () =>
     ({
       ambientes: [],

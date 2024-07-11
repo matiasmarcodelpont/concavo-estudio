@@ -3,7 +3,7 @@ import { render, screen, within } from '@testing-library/react'
 
 import Producto from '../page'
 
-jest.mock('@/data/data.ts', () => ({
+jest.mock('@/data/data.tsx', () => ({
   ambientes: [
     {
       slug: 'living-comedor',

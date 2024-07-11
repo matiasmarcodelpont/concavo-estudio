@@ -35,7 +35,7 @@ Object.defineProperty(window, 'ResizeObserver', {
 })
 
 jest.mock(
-  '@/data/data.ts',
+  '@/data/data.tsx',
   () =>
     ({
       ambientes: [
