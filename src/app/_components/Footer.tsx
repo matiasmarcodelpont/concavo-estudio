@@ -1,16 +1,12 @@
 'use client'
 
 import { Qr } from '@/components/ui/qr'
-import { productosRepository } from '@/controllers'
-import { Ambiente, OmitReferences } from '@/data/types'
+import { ambientesRepository, productosRepository } from '@/controllers'
 import { useHandleQr } from './hooks'
 import LogoAndSocialMedia from '@/components/domain/LogoAndSocialMedia'
 
-interface FooterProps {
-  ambientes: OmitReferences<Omit<Ambiente, 'images'>>[]
-}
-
-export const Footer = ({ ambientes }: FooterProps) => {
+export const Footer = () => {
+  const ambientes = ambientesRepository.getAmbientes()
   const productos = productosRepository.getProductosConcavo()
 
   const { currentUrl, handleClick, qrRef } = useHandleQr()
