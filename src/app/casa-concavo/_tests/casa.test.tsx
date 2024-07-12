@@ -75,11 +75,11 @@ describe('Casa Cóncavo', () => {
     expect(ambientes[0]).toBeInTheDocument()
     const link0 = within(ambientes[0]).getByRole<HTMLAnchorElement>('link', { name: 'Cocina' })
     expect(link0).toBeInTheDocument()
-    expect(link0.href).toMatch(/^https?:\/\/[^/]+\/casa\/cocina$/)
+    expect(link0.href).toMatch(/^https?:\/\/[^/]+\/casa-concavo\/cocina$/)
 
     expect(ambientes[1]).toBeInTheDocument()
     const link1 = within(ambientes[1]).getByRole<HTMLAnchorElement>('link', { name: 'Living/Comedor' })
     expect(link1).toBeInTheDocument()
-    expect(link1.href).toMatch(/^https?:\/\/[^/]+\/casa\/living-comedor$/)
+    expect(link1.href).toMatch(/^https?:\/\/[^/]+\/casa-concavo\/living-comedor$/)
   })
 })

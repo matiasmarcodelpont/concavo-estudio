@@ -44,7 +44,7 @@ describe('Home', () => {
 
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     const link = video.parentElement!
-    expect(link).toHaveAttribute('href', '/casa')
+    expect(link).toHaveAttribute('href', '/casa-concavo')
   })
 
   it('renders concavo productos', () => {
