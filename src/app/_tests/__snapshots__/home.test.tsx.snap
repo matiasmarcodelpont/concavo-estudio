@@ -18,7 +18,7 @@ exports[`Home renders homepage unchanged 1`] = `
     >
       <a
         class="block relative w-full video-dynamic-height-100dvh overflow-hidden group"
-        href="/casa"
+        href="/casa-concavo"
       >
         <video
           autoplay=""
