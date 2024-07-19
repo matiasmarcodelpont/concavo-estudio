@@ -29,7 +29,7 @@ export default function RootLayout({
       <body className={cn(editorialNew.variable, ttNorms.variable, 'bg-bone text-black')}>
         <Header ambientes={ambientes} />
         {children}
-        <Footer ambientes={ambientes} />
+        <Footer />
       </body>
     </html>
   )

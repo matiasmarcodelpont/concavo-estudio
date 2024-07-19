@@ -1,12 +1,19 @@
 import { render } from '@testing-library/react'
 
 import { Footer } from '../Footer'
-import { productosRepository } from '@/controllers'
-import { Producto } from '@/data/types'
 
 jest.mock('@/controllers', () => ({
   productosRepository: {
-    getProductosInAmbiente: jest.fn(),
+    getProductosConcavo: jest.fn().mockReturnValue([
+      { name: `Producto 1`, slug: `producto-1` },
+      { name: `Producto 2`, slug: `producto-2` },
+    ]),
+  },
+  ambientesRepository: {
+    getAmbientes: jest.fn().mockReturnValue([
+      { name: 'Ambiente 1', slug: 'ambiente-1' },
+      { name: 'Ambiente 2', slug: 'ambiente-2' },
+    ]),
   },
 }))
 
@@ -19,32 +26,15 @@ jest.mock('@/components/ui/qr', () => ({
 }))
 
 describe('Footer', () => {
-  type GetProductosInAmbiente = (slug: string) => Producto[]
-  ;(productosRepository.getProductosInAmbiente as jest.MockedFunction<GetProductosInAmbiente>).mockImplementation(
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-expect-error
-    (slug) => {
-      return [
-        { name: `Producto 1 in ${slug}`, slug: `producto-1-${slug}` },
-        { name: `Producto 2 in ${slug}`, slug: `producto-2-${slug}` },
-      ]
-    },
-  )
-
-  const ambientes = [
-    { name: 'Ambiente 1', slug: 'ambiente-1' },
-    { name: 'Ambiente 2', slug: 'ambiente-2' },
-  ]
-
   it('matches snapshot', () => {
-    const { getByRole } = render(<Footer ambientes={ambientes} />)
+    const { getByRole } = render(<Footer />)
     const component = getByRole('contentinfo')
 
     expect(component).toMatchSnapshot()
   })
 
   it('has the home links', () => {
-    const { getByRole } = render(<Footer ambientes={ambientes} />)
+    const { getByRole } = render(<Footer />)
 
     const anchor1 = getByRole('link', { name: 'Cóncavo' }) as HTMLAnchorElement
     expect(anchor1.href).toMatch(/^https?:\/\/[^/]+\/$/)
@@ -57,7 +47,7 @@ describe('Footer', () => {
   })
 
   it('has the ambiente links', () => {
-    const { getByRole } = render(<Footer ambientes={ambientes} />)
+    const { getByRole } = render(<Footer />)
 
     const anchor1 = getByRole('link', { name: 'Ambiente 1' }) as HTMLAnchorElement
     expect(anchor1.href).toMatch(/^https?:\/\/[^/]+\/casa-concavo\/ambiente-1$/)
@@ -67,28 +57,22 @@ describe('Footer', () => {
   })
 
   it('has the producto links', () => {
-    const { getByRole } = render(<Footer ambientes={ambientes} />)
+    const { getByRole } = render(<Footer />)
 
-    const anchor1 = getByRole('link', { name: 'Producto 1 in ambiente-1' }) as HTMLAnchorElement
-    expect(anchor1.href).toMatch(/^https?:\/\/[^/]+\/productos\/producto-1-ambiente-1$/)
+    const anchor1 = getByRole('link', { name: 'Producto 1' }) as HTMLAnchorElement
+    expect(anchor1.href).toMatch(/^https?:\/\/[^/]+\/productos\/producto-1$/)
 
-    const anchor2 = getByRole('link', { name: 'Producto 2 in ambiente-1' }) as HTMLAnchorElement
-    expect(anchor2.href).toMatch(/^https?:\/\/[^/]+\/productos\/producto-2-ambiente-1$/)
-
-    const anchor3 = getByRole('link', { name: 'Producto 1 in ambiente-2' }) as HTMLAnchorElement
-    expect(anchor3.href).toMatch(/^https?:\/\/[^/]+\/productos\/producto-1-ambiente-2$/)
-
-    const anchor4 = getByRole('link', { name: 'Producto 2 in ambiente-2' }) as HTMLAnchorElement
-    expect(anchor4.href).toMatch(/^https?:\/\/[^/]+\/productos\/producto-2-ambiente-2$/)
+    const anchor2 = getByRole('link', { name: 'Producto 2' }) as HTMLAnchorElement
+    expect(anchor2.href).toMatch(/^https?:\/\/[^/]+\/productos\/producto-2$/)
   })
 
   it('has Concavo logo', () => {
-    const { getByAltText } = render(<Footer ambientes={ambientes} />)
+    const { getByAltText } = render(<Footer />)
     getByAltText('Logo Cóncavo')
   })
 
   it('has social media links', () => {
-    const { getByLabelText } = render(<Footer ambientes={ambientes} />)
+    const { getByLabelText } = render(<Footer />)
 
     const instagramAnchor = getByLabelText('instagram') as HTMLAnchorElement
     expect(instagramAnchor.href).toBe('https://www.instagram.com/concavoestudio/')

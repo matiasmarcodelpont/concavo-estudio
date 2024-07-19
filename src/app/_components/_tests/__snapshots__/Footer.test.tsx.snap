@@ -2,7 +2,7 @@
 
 exports[`Footer matches snapshot 1`] = `
 <footer
-  class="bg-black text-bone flex gap-12 sm:gap-16 px-6 sm:px-10 md:px-12 pt-10 pb-6 flex-wrap"
+  class="bg-black text-bone flex gap-10 sm:gap-14 px-6 sm:px-10 md:px-12 pt-10 pb-6 flex-wrap"
 >
   <section>
     <h1
@@ -11,7 +11,7 @@ exports[`Footer matches snapshot 1`] = `
       Home
     </h1>
     <ul
-      class="text-xs space-y-2"
+      class="text-xs gap-y-2 gap-x-6 flex flex-col flex-wrap max-h-[200px]"
     >
       <li
         class="hover:underline"
@@ -46,10 +46,10 @@ exports[`Footer matches snapshot 1`] = `
     <h1
       class="font-tt-norms uppercase text-xl mb-2"
     >
-      Ambientes
+      Casa Concavo
     </h1>
     <ul
-      class="text-xs space-y-2"
+      class="text-xs gap-y-2 gap-x-6 flex flex-col flex-wrap max-h-[200px]"
     >
       <li
         class="hover:underline"
@@ -75,45 +75,27 @@ exports[`Footer matches snapshot 1`] = `
     <h1
       class="font-tt-norms uppercase text-xl mb-2"
     >
-      Productos
+      Productos Concavo
     </h1>
     <ul
-      class="text-xs space-y-2"
+      class="text-xs gap-y-2 gap-x-6 flex flex-col flex-wrap max-h-[200px]"
     >
       <li
         class="hover:underline"
       >
         <a
-          href="/productos/producto-1-ambiente-1"
+          href="/productos/producto-1"
         >
-          Producto 1 in ambiente-1
+          Producto 1
         </a>
       </li>
       <li
         class="hover:underline"
       >
         <a
-          href="/productos/producto-2-ambiente-1"
+          href="/productos/producto-2"
         >
-          Producto 2 in ambiente-1
-        </a>
-      </li>
-      <li
-        class="hover:underline"
-      >
-        <a
-          href="/productos/producto-1-ambiente-2"
-        >
-          Producto 1 in ambiente-2
-        </a>
-      </li>
-      <li
-        class="hover:underline"
-      >
-        <a
-          href="/productos/producto-2-ambiente-2"
-        >
-          Producto 2 in ambiente-2
+          Producto 2
         </a>
       </li>
     </ul>

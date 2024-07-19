@@ -1,21 +1,13 @@
 'use client'
 
 import { Qr } from '@/components/ui/qr'
-import { productosRepository } from '@/controllers'
-import { Ambiente, OmitReferences } from '@/data/types'
+import { ambientesRepository, productosRepository } from '@/controllers'
 import { useHandleQr } from './hooks'
 import LogoAndSocialMedia from '@/components/domain/LogoAndSocialMedia'
 
-const getAllProducts = (ambientes: OmitReferences<Omit<Ambiente, 'images'>>[]) => {
-  return ambientes.flatMap(({ slug }) => productosRepository.getProductosInAmbiente(slug))
-}
-
-interface FooterProps {
-  ambientes: OmitReferences<Omit<Ambiente, 'images'>>[]
-}
-
-export const Footer = ({ ambientes }: FooterProps) => {
-  const productos = getAllProducts(ambientes)
+export const Footer = () => {
+  const ambientes = ambientesRepository.getAmbientes()
+  const productos = productosRepository.getProductosConcavo()
 
   const { currentUrl, handleClick, qrRef } = useHandleQr()
 
@@ -41,21 +33,21 @@ export const Footer = ({ ambientes }: FooterProps) => {
       ],
     },
     {
-      name: 'Ambientes',
+      name: 'Casa Concavo',
       links: ambientes.map(({ name, slug }) => ({ name, slug, href: `/casa-concavo/${slug}` })),
     },
     {
-      name: 'Productos',
+      name: 'Productos Concavo',
       links: productos.map(({ name, slug }) => ({ name, slug, href: `/productos/${slug}` })),
     },
   ]
 
   return (
-    <footer className='bg-black text-bone flex gap-12 sm:gap-16 px-6 sm:px-10 md:px-12 pt-10 pb-6 flex-wrap'>
+    <footer className='bg-black text-bone flex gap-10 sm:gap-14 px-6 sm:px-10 md:px-12 pt-10 pb-6 flex-wrap'>
       {siteMap.map(({ name, links }, index) => (
         <section key={`sitemap-${index.toString()}-${name}`}>
           <h1 className='font-tt-norms uppercase text-xl mb-2'>{name}</h1>
-          <ul className='text-xs space-y-2'>
+          <ul className='text-xs gap-y-2 gap-x-6 flex flex-col flex-wrap max-h-[200px]'>
             {links.map(({ name, slug, href }) => (
               <li key={slug} className='hover:underline'>
                 <a href={href}>{name}</a>
