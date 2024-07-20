@@ -30,8 +30,8 @@ const LogoAndSocialMedia = ({ variant = 'white', className }: LogoAndSocialMedia
             href={href}
             target='_blank'
             className={cn(
-              'rounded-full transition-all  border-[1px] p-2',
-              variant === 'white' ? 'border-black hover:border-bone' : 'border-bone hover:border-black',
+              'rounded-full transition-all border-[1px] border-[transparent] p-2',
+              variant === 'white' ? 'hover:border-bone' : 'hover:border-black',
             )}
             aria-label={name}
           >
