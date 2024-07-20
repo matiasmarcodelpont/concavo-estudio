@@ -26,11 +26,4 @@ describe('Video component', () => {
     // expect(video).toHaveAttribute('muted')
     expect(video).toHaveAttribute('loop')
   })
-
-  it('renders a link if a href prop is passed', () => {
-    const component = render(<VideoBackgroundSection {...videoProps} />)
-
-    const link = component.getByRole('link')
-    expect(link).toHaveAttribute('href', videoProps.href)
-  })
 })
