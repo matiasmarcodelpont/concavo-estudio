@@ -2,8 +2,10 @@
 
 exports[`Logo matches snapshot 1`] = `
 <img
-  alt="Logo Cóncavo"
-  class="object-contain"
+  alt="Cóncavo"
+  class="object-contain w-[150px] sm:w-[200px]"
+  height="176"
   src="/logos/concavo_black.png"
+  width="690"
 />
 `;
