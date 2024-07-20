@@ -2,16 +2,16 @@
 
 exports[`Footer matches snapshot 1`] = `
 <footer
-  class="bg-black text-bone flex gap-10 sm:gap-14 px-6 sm:px-10 md:px-12 pt-10 pb-6 flex-wrap"
+  class="bg-white text-black flex gap-10 sm:gap-14 px-6 sm:px-10 md:px-12 pt-10 pb-6 flex-wrap"
 >
   <section>
     <h1
-      class="font-tt-norms uppercase text-xl mb-2"
+      class="font-tt-norms font-bold uppercase mb-2"
     >
       Home
     </h1>
     <ul
-      class="text-xs gap-y-2 gap-x-6 flex flex-col flex-wrap max-h-[200px]"
+      class="text-xs gap-y-2 gap-x-6 flex flex-col flex-wrap max-h-[150px]"
     >
       <li
         class="hover:underline"
@@ -44,12 +44,12 @@ exports[`Footer matches snapshot 1`] = `
   </section>
   <section>
     <h1
-      class="font-tt-norms uppercase text-xl mb-2"
+      class="font-tt-norms font-bold uppercase mb-2"
     >
       Casa Concavo
     </h1>
     <ul
-      class="text-xs gap-y-2 gap-x-6 flex flex-col flex-wrap max-h-[200px]"
+      class="text-xs gap-y-2 gap-x-6 flex flex-col flex-wrap max-h-[150px]"
     >
       <li
         class="hover:underline"
@@ -73,12 +73,12 @@ exports[`Footer matches snapshot 1`] = `
   </section>
   <section>
     <h1
-      class="font-tt-norms uppercase text-xl mb-2"
+      class="font-tt-norms font-bold uppercase mb-2"
     >
       Productos Concavo
     </h1>
     <ul
-      class="text-xs gap-y-2 gap-x-6 flex flex-col flex-wrap max-h-[200px]"
+      class="text-xs gap-y-2 gap-x-6 flex flex-col flex-wrap max-h-[150px]"
     >
       <li
         class="hover:underline"
@@ -116,8 +116,8 @@ exports[`Footer matches snapshot 1`] = `
           decoding="async"
           loading="lazy"
           sizes="100vw"
-          src="/_next/image?url=%2Flogos%2Fconcavo_white.png&w=3840&q=75"
-          srcset="/_next/image?url=%2Flogos%2Fconcavo_white.png&w=640&q=75 640w, /_next/image?url=%2Flogos%2Fconcavo_white.png&w=750&q=75 750w, /_next/image?url=%2Flogos%2Fconcavo_white.png&w=828&q=75 828w, /_next/image?url=%2Flogos%2Fconcavo_white.png&w=1080&q=75 1080w, /_next/image?url=%2Flogos%2Fconcavo_white.png&w=1200&q=75 1200w, /_next/image?url=%2Flogos%2Fconcavo_white.png&w=1920&q=75 1920w, /_next/image?url=%2Flogos%2Fconcavo_white.png&w=2048&q=75 2048w, /_next/image?url=%2Flogos%2Fconcavo_white.png&w=3840&q=75 3840w"
+          src="/_next/image?url=%2Flogos%2Fconcavo_black.png&w=3840&q=75"
+          srcset="/_next/image?url=%2Flogos%2Fconcavo_black.png&w=640&q=75 640w, /_next/image?url=%2Flogos%2Fconcavo_black.png&w=750&q=75 750w, /_next/image?url=%2Flogos%2Fconcavo_black.png&w=828&q=75 828w, /_next/image?url=%2Flogos%2Fconcavo_black.png&w=1080&q=75 1080w, /_next/image?url=%2Flogos%2Fconcavo_black.png&w=1200&q=75 1200w, /_next/image?url=%2Flogos%2Fconcavo_black.png&w=1920&q=75 1920w, /_next/image?url=%2Flogos%2Fconcavo_black.png&w=2048&q=75 2048w, /_next/image?url=%2Flogos%2Fconcavo_black.png&w=3840&q=75 3840w"
           style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
         />
       </div>
@@ -126,7 +126,7 @@ exports[`Footer matches snapshot 1`] = `
       >
         <a
           aria-label="instagram"
-          class="rounded-full transition-all border-[1px] p-2 border-black hover:border-bone"
+          class="rounded-full transition-all border-[1px] p-2 border-bone hover:border-black"
           href="https://www.instagram.com/concavoestudio/"
           target="_blank"
         >
@@ -163,7 +163,7 @@ exports[`Footer matches snapshot 1`] = `
         </a>
         <a
           aria-label="email"
-          class="rounded-full transition-all border-[1px] p-2 border-black hover:border-bone"
+          class="rounded-full transition-all border-[1px] p-2 border-bone hover:border-black"
           href="mailto:ventas@concavoestudio.com"
           target="_blank"
         >
