@@ -57,7 +57,7 @@ exports[`Header matches snapshot 1`] = `
     />
   </a>
   <div
-    class="flex-shrink-0 w-[40px] h-[10px] bg-mustard sm:size-9 invisible"
+    class="flex-shrink-0 w-[40px] h-[10px] sm:size-9 invisible"
   />
 </header>
 `;

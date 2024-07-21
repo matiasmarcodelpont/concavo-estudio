@@ -9,8 +9,7 @@ const config = {
     colors: {
       white: '#FFFFFF',
       black: '#2D1A18',
-      bone: '#EBE5DF',
-      mustard: '#D1A24C',
+      bone: '#F0F0EF',
       'dark-gray': '#464242',
       'light-gray': '#979697',
       'black-green': '#1B2722',
