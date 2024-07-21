@@ -11,26 +11,28 @@ export default function Home() {
 
   return (
     <main className='text-center'>
-      <div className='h-[14vw] min-h-32' />
+      <section className='h-[60vw] min-h-[400px] max-h-[80vh] animate-fade-in delay-250 flex flex-col justify-center items-center'>
+        <h1 className='mb-4 z-50'>
+          <Logo className='m-auto' />
+        </h1>
 
-      <h1 className='mb-4 sticky top-4 z-50 animate-fade-in delay-250'>
-        <Logo className='m-auto' />
-      </h1>
+        <p className='font-editorial-new font-extralight sm:text-xl mb-6'>
+          Un camino de disfrute y creación.
+          <br />
+          De imaginar espacios relajados, armónicos y luminosos.
+          <br />
+          De crear sensaciones de <em>calma.</em>
+          <br />
+        </p>
 
-      <p className='font-editorial-new font-extralight sm:text-xl mb-6 animate-fade-in delay-250'>
-        Un camino de disfrute y creación.
-        <br />
-        De imaginar espacios relajados, armónicos y luminosos.
-        <br />
-        De crear sensaciones de <em>calma.</em>
-        <br />
-      </p>
+        <IsologoConcavo className='size-12' />
+      </section>
 
-      <IsologoConcavo className='mx-auto size-12 animate-fade-in delay-250' />
-
-      <div className='h-[14vw] min-h-32' />
-
-      <VideoBackgroundSection src='/casa.mp4' title='Casa Cóncavo' className='h-[60vw] min-h-[400px] group mb-12'>
+      <VideoBackgroundSection
+        src='/casa.mp4'
+        title='Casa Cóncavo'
+        className='h-[60vw] min-h-[400px] max-h-[80vh] group mb-12'
+      >
         <div className='flex flex-col h-full bg-[#0003] justify-around items-center'>
           <div className='pt-2 pb-1 border-white uppercase invisible'>Start here</div>
 
