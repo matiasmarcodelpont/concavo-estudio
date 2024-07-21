@@ -24,7 +24,7 @@ describe('Logo', () => {
   it('renders the logo', () => {
     const { getByAltText } = render(<Logo />)
 
-    const logo = getByAltText('Logo Cóncavo')
+    const logo = getByAltText('Cóncavo')
 
     expect(logo).toHaveAttribute('src', '/logos/concavo_black.png')
   })
