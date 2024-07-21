@@ -36,21 +36,18 @@ exports[`Home renders homepage unchanged 1`] = `
           class="text-bone text-xl sm:text-2xl font-bold uppercase tracking-[.2em]"
         >
           Casa
-          <div
-            class="h-[50px] sm:h-[67px] relative w-[300px] sm:w-[400px] -mt-[.5em]"
-          >
-            <img
-              alt="Logo Cóncavo"
-              class="object-contain"
-              data-nimg="fill"
-              decoding="async"
-              loading="lazy"
-              sizes="100vw"
-              src="/_next/image?url=%2Flogos%2Fconcavo_white.png&w=3840&q=75"
-              srcset="/_next/image?url=%2Flogos%2Fconcavo_white.png&w=640&q=75 640w, /_next/image?url=%2Flogos%2Fconcavo_white.png&w=750&q=75 750w, /_next/image?url=%2Flogos%2Fconcavo_white.png&w=828&q=75 828w, /_next/image?url=%2Flogos%2Fconcavo_white.png&w=1080&q=75 1080w, /_next/image?url=%2Flogos%2Fconcavo_white.png&w=1200&q=75 1200w, /_next/image?url=%2Flogos%2Fconcavo_white.png&w=1920&q=75 1920w, /_next/image?url=%2Flogos%2Fconcavo_white.png&w=2048&q=75 2048w, /_next/image?url=%2Flogos%2Fconcavo_white.png&w=3840&q=75 3840w"
-              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-            />
-          </div>
+          <img
+            alt="Cóncavo"
+            class="object-contain w-[300px] sm:w-[400px] -mt-[.5em]"
+            data-nimg="1"
+            decoding="async"
+            height="3715"
+            loading="lazy"
+            src="/_next/image?url=%2Flogos%2Fconcavo_white.png&w=3840&q=75"
+            srcset="/_next/image?url=%2Flogos%2Fconcavo_white.png&w=3840&q=75 1x"
+            style="color: transparent;"
+            width="12773"
+          />
         </p>
         <a
           class="font-editorial-new px-6 pt-2 pb-1 text-bone border rounded-full border-white uppercase"
