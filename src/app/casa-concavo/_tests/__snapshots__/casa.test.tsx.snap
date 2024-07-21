@@ -2,9 +2,7 @@
 
 exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
 <div>
-  <main
-    class="text-center"
-  >
+  <main>
     <section
       class="mb-12"
     >
@@ -16,6 +14,26 @@ exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
       >
         Casa Cóncavo
       </h1>
+      <article
+        class="relative text-left p-[1.75em] mt-20 mb-16 mx-6 xs:mx-12 sm:mx-20 md:mx-32 lg:mx-72 bg-white font-editorial-new font-extralight text-base md:text-xl w-fit max-w-[270px] xs:max-w-[320px] md:max-w-[400px]"
+      >
+        <strong
+          class="font-regular"
+        >
+          CASA CÓNCAVO
+        </strong>
+         es nuestra forma de vivir las casa pensando en el todo y en el detalle. Conocé nuestra primera casa: ´Whitehaven´.
+        <div
+          class="absolute -top-3 md:-top-4 -left-0"
+        >
+          <div
+            class="absolute w-[0.5px] h-6 md:h-8 bg-black"
+          />
+          <div
+            class="absolute w-[0.5px] h-6 md:h-8 bg-black rotate-90"
+          />
+        </div>
+      </article>
       <ul
         aria-label="Lista de Ambientes"
         class="space-y-2"
