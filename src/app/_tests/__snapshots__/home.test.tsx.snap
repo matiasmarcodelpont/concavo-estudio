@@ -9,45 +9,53 @@ exports[`Home renders homepage unchanged 1`] = `
       style="font-size: 0px;"
     />
     <h1
-      class="font-editorial-new font-extralight tracking-[0.01em] uppercase mt-12 mb-6 sm:mt-16 sm:mb-9 md:mt-20 md:mb-12 italic text-3xl md:text-4xl opacity-0 hidden"
+      class="font-editorial-new tracking-[0.01em] uppercase mt-12 mb-6 sm:mt-16 sm:mb-9 md:mt-20 md:mb-12 text-3xl md:text-4xl opacity-0 hidden"
     >
       Cóncavo
     </h1>
     <section
-      class="mb-12"
+      class="relative h-[60vw] min-h-[400px] group mb-12"
     >
-      <a
-        class="block relative w-full video-dynamic-height-100dvh overflow-hidden group"
-        href="/casa-concavo"
+      <video
+        autoplay=""
+        class="absolute top-0 left-0 w-full h-full pointer-events-none -z-10 border-none object-cover"
+        height="100%"
+        loop=""
+        src="/casa.mp4"
+        title="Casa Cóncavo"
+      />
+      <div
+        class="flex flex-col h-full bg-[#0003] justify-around items-center"
       >
-        <video
-          autoplay=""
-          class="absolute top-0 left-0 w-full h-full border-0 pointer-events-none z-10 border-none object-cover"
-          height="100%"
-          loop=""
-          src="/casa.mp4"
-          title="Casa Cóncavo"
-        />
         <div
-          class="absolute inset-0 bg-black opacity-50 z-20"
-        />
-        <div
-          class="absolute inset-0 flex flex-col z-30 justify-center items-center"
+          class="pt-2 pb-1 border-white uppercase invisible"
         >
-          <p
-            class="text-bone text-sm sm:text-base md:text-lg font-extralight md:leading-tight sm:leading-tight leading-tight max-w-[600px] max-h-[200px] m-auto p-6 sm:p-8 md:p-12 opacity-0 animate-fade-in delay-1000"
-          >
-            CÓNCAVO nace de la experimentación.
-            <br />
-            Es un camino de disfrute y creación. De imaginar un espacio relajado, armónico y luminoso.
-          </p>
-          <div
-            class="absolute bottom-8 right-1/2 p-2 md:p-4 translate-x-[50%] flex flex-col items-center gap-2 text-bone text-xs sm:text-sm md:text-base transition-all group-hover:text-light-gray"
-          >
-            START HERE
-          </div>
+          Start here
         </div>
-      </a>
+        <p
+          class="text-bone text-xl sm:text-2xl font-bold uppercase tracking-[.2em]"
+        >
+          Casa
+          <img
+            alt="Cóncavo"
+            class="object-contain w-[300px] sm:w-[400px] -mt-[.5em]"
+            data-nimg="1"
+            decoding="async"
+            height="3715"
+            loading="lazy"
+            src="/_next/image?url=%2Flogos%2Fconcavo_white.png&w=3840&q=75"
+            srcset="/_next/image?url=%2Flogos%2Fconcavo_white.png&w=3840&q=75 1x"
+            style="color: transparent;"
+            width="12773"
+          />
+        </p>
+        <a
+          class="font-editorial-new px-6 pt-2 pb-1 text-bone border rounded-full border-white uppercase"
+          href="/casa-concavo"
+        >
+          Start here
+        </a>
+      </div>
     </section>
     <section
       class="mx-6 sm:mx-10 md:mx-12 mb-12"
@@ -56,10 +64,10 @@ exports[`Home renders homepage unchanged 1`] = `
         style="font-size: 0px;"
       />
       <h1
-        class="font-editorial-new font-extralight tracking-[0.01em] uppercase mt-12 mb-6 sm:mt-16 sm:mb-9 md:mt-20 md:mb-12 italic text-2xl md:text-3xl opacity-0"
+        class="font-editorial-new tracking-[0.01em] uppercase mt-12 mb-6 sm:mt-16 sm:mb-9 md:mt-20 md:mb-12 text-2xl md:text-3xl opacity-0"
         id="productos-concavo"
       >
-        Nuestros Productos
+        Nuestra tienda
       </h1>
       <ul
         aria-labelledby="productos-concavo"
@@ -96,7 +104,7 @@ exports[`Home renders homepage unchanged 1`] = `
                 style="font-size: 0px;"
               />
               <p
-                class="font-editorial-new font-extralight tracking-[0.01em] uppercase italic opacity-100 text-sm xs:text-base sm:text-lg md:text-xl mt-3 sm:mt-3 md:mt-5 mb-0 sm:mb-0 md:mb-0"
+                class="font-editorial-new tracking-[0.01em] uppercase opacity-100 text-sm xs:text-base sm:text-lg md:text-xl mt-3 sm:mt-3 md:mt-5 mb-0 sm:mb-0 md:mb-0"
               >
                 Azulejos verdes
               </p>
@@ -140,7 +148,7 @@ exports[`Home renders homepage unchanged 1`] = `
                 style="font-size: 0px;"
               />
               <p
-                class="font-editorial-new font-extralight tracking-[0.01em] uppercase italic opacity-100 text-sm xs:text-base sm:text-lg md:text-xl mt-3 sm:mt-3 md:mt-5 mb-0 sm:mb-0 md:mb-0"
+                class="font-editorial-new tracking-[0.01em] uppercase opacity-100 text-sm xs:text-base sm:text-lg md:text-xl mt-3 sm:mt-3 md:mt-5 mb-0 sm:mb-0 md:mb-0"
               >
                 Azulejos azules
               </p>

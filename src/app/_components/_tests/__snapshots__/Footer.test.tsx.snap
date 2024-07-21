@@ -106,27 +106,24 @@ exports[`Footer matches snapshot 1`] = `
     <div
       class="flex flex-col items-center gap-2"
     >
-      <div
-        class="relative w-[150px] h-[50px] sm:w-[150px] sm:h-[50px]"
-      >
-        <img
-          alt="Logo Cóncavo"
-          class="object-contain"
-          data-nimg="fill"
-          decoding="async"
-          loading="lazy"
-          sizes="100vw"
-          src="/_next/image?url=%2Flogos%2Fconcavo_black.png&w=3840&q=75"
-          srcset="/_next/image?url=%2Flogos%2Fconcavo_black.png&w=640&q=75 640w, /_next/image?url=%2Flogos%2Fconcavo_black.png&w=750&q=75 750w, /_next/image?url=%2Flogos%2Fconcavo_black.png&w=828&q=75 828w, /_next/image?url=%2Flogos%2Fconcavo_black.png&w=1080&q=75 1080w, /_next/image?url=%2Flogos%2Fconcavo_black.png&w=1200&q=75 1200w, /_next/image?url=%2Flogos%2Fconcavo_black.png&w=1920&q=75 1920w, /_next/image?url=%2Flogos%2Fconcavo_black.png&w=2048&q=75 2048w, /_next/image?url=%2Flogos%2Fconcavo_black.png&w=3840&q=75 3840w"
-          style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-        />
-      </div>
+      <img
+        alt="Cóncavo"
+        class="object-contain w-[150px] h-[50px] sm:w-[150px] sm:h-[50px]"
+        data-nimg="1"
+        decoding="async"
+        height="3715"
+        loading="lazy"
+        src="/_next/image?url=%2Flogos%2Fconcavo_white.png&w=3840&q=75"
+        srcset="/_next/image?url=%2Flogos%2Fconcavo_white.png&w=3840&q=75 1x"
+        style="color: transparent;"
+        width="12773"
+      />
       <div
         class="flex gap-2"
       >
         <a
           aria-label="instagram"
-          class="rounded-full transition-all border-[1px] p-2 border-bone hover:border-black"
+          class="rounded-full transition-all border-[1px] border-[transparent] p-2 hover:border-bone"
           href="https://www.instagram.com/concavoestudio/"
           target="_blank"
         >
@@ -163,7 +160,7 @@ exports[`Footer matches snapshot 1`] = `
         </a>
         <a
           aria-label="email"
-          class="rounded-full transition-all border-[1px] p-2 border-bone hover:border-black"
+          class="rounded-full transition-all border-[1px] border-[transparent] p-2 hover:border-bone"
           href="mailto:ventas@concavoestudio.com"
           target="_blank"
         >

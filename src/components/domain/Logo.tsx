@@ -7,10 +7,15 @@ interface LogoProps {
 }
 
 const Logo = ({ variant = 'black', className }: LogoProps) => {
+  const size = variant === 'black' ? { width: 690, height: 176 } : { width: 12773, height: 3715 }
+
   return (
-    <div className={cn('w-[150px] h-[50px] sm:w-[201px] sm:h-[67px] relative', className)}>
-      <Image fill src={`/logos/concavo_${variant}.png`} alt='Logo Cóncavo' className='object-contain' />
-    </div>
+    <Image
+      src={`/logos/concavo_${variant}.png`}
+      alt='Cóncavo'
+      className={cn('object-contain w-[150px] sm:w-[200px]', className)}
+      {...size}
+    />
   )
 }
 
