@@ -42,8 +42,7 @@ describe('Home', () => {
     const component = render(<Home />)
     const video = component.getByTitle('Casa Cóncavo')
 
-    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-    const link = video.parentElement!
+    const link = within(video.parentElement as HTMLElement).getByRole('link')
     expect(link).toHaveAttribute('href', '/casa-concavo')
   })
 
