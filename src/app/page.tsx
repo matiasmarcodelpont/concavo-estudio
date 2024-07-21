@@ -12,7 +12,7 @@ export default function Home() {
     <main className='text-center'>
       <Heading className='hidden'>Cóncavo</Heading>
 
-      <VideoBackgroundSection src='/casa.mp4' title='Casa Cóncavo' className='h-[60vw] min-h-[400px] group mb-12'>
+      <VideoBackgroundSection src='/casa.mp4' title='Casa Cóncavo' className='video-dynamic-height-100dvh group mb-12'>
         <div className='flex flex-col h-full bg-[#0003] justify-around items-center'>
           <div className='pt-2 pb-1 border-white uppercase invisible'>Start here</div>
 
