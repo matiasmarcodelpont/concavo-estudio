@@ -123,7 +123,7 @@ exports[`Footer matches snapshot 1`] = `
       >
         <a
           aria-label="instagram"
-          class="rounded-full transition-all border-[1px] p-2 border-black hover:border-bone"
+          class="rounded-full transition-all border-[1px] border-[transparent] p-2 hover:border-bone"
           href="https://www.instagram.com/concavoestudio/"
           target="_blank"
         >
@@ -160,7 +160,7 @@ exports[`Footer matches snapshot 1`] = `
         </a>
         <a
           aria-label="email"
-          class="rounded-full transition-all border-[1px] p-2 border-black hover:border-bone"
+          class="rounded-full transition-all border-[1px] border-[transparent] p-2 hover:border-bone"
           href="mailto:ventas@concavoestudio.com"
           target="_blank"
         >
