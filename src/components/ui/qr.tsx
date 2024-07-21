@@ -23,7 +23,7 @@ export const Qr = forwardRef(({ value, size = 80, onClick }: QrProps, ref) => {
         logoWidth={(size * 25) / 80}
         logoHeight={(size * 25) / 80}
         removeQrCodeBehindLogo
-        logoPadding={(size * 1.5) / 80}
+        logoPadding={(size * 2.5) / 80}
       />
     </div>
   )
