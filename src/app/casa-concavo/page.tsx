@@ -10,7 +10,7 @@ export default function CasaConcavo() {
       <section className='mb-12'>
         <Heading className='hidden'>Casa Cóncavo</Heading>
 
-        <ul aria-label='Lista de Ambientes' className='space-y-4 sm:space-y-8 md:space-y-12'>
+        <ul aria-label='Lista de Ambientes' className='space-y-2'>
           {ambientes.map((ambiente) => (
             <li key={ambiente.slug}>
               <Ambiente {...ambiente} />

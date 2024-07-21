@@ -28,7 +28,7 @@ export default function Home() {
 
       <section className='mx-6 sm:mx-10 md:mx-12 mb-12'>
         <Heading id='productos-concavo' secondary>
-          Nuestros Productos
+          Nuestra tienda
         </Heading>
 
         <GridFluid aria-labelledby='productos-concavo'>
