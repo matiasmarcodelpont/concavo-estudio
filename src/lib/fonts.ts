@@ -3,6 +3,11 @@ import localFont from 'next/font/local'
 export const editorialNew = localFont({
   src: [
     {
+      path: '../../public/fonts/editorialNew/PPEditorialNew-Regular.otf',
+      style: 'normal',
+      weight: '400',
+    },
+    {
       path: '../../public/fonts/editorialNew/PPEditorialNew-Ultralight-BF644b21500d0c0.otf',
       style: 'normal',
       weight: '200',

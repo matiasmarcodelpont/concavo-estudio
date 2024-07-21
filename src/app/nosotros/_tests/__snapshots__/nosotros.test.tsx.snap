@@ -7,7 +7,7 @@ exports[`Nosotros renders nosotros unchanged 1`] = `
       style="font-size: 0px;"
     />
     <h1
-      class="font-editorial-new font-extralight tracking-[0.01em] uppercase mt-12 mb-6 sm:mt-16 sm:mb-9 md:mt-20 md:mb-12 italic text-3xl md:text-4xl opacity-0"
+      class="font-editorial-new tracking-[0.01em] uppercase mt-12 mb-6 sm:mt-16 sm:mb-9 md:mt-20 md:mb-12 text-3xl md:text-4xl opacity-0"
     >
       Nosotros
     </h1>

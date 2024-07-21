@@ -49,7 +49,7 @@ describe('Home', () => {
   it('renders concavo productos', () => {
     render(<Home />)
 
-    const productosList = screen.getByRole('list', { name: 'Nuestros Productos' })
+    const productosList = screen.getByRole('list', { name: 'Nuestra tienda' })
     expect(productosList).toBeInTheDocument()
 
     const productos = within(productosList).getAllByRole('listitem')
