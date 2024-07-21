@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main className='text-center'>
       <section className='h-[60vw] min-h-[400px] max-h-[80vh] animate-fade-in delay-250 flex flex-col justify-center items-center'>
-        <h1 className='mb-4 z-50'>
+        <h1 className='mb-4'>
           <Logo className='m-auto' />
         </h1>
 
