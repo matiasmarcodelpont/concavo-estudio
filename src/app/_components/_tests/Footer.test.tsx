@@ -68,7 +68,7 @@ describe('Footer', () => {
 
   it('has Concavo logo', () => {
     const { getByAltText } = render(<Footer />)
-    getByAltText('Logo Cóncavo')
+    getByAltText('Cóncavo')
   })
 
   it('has social media links', () => {
