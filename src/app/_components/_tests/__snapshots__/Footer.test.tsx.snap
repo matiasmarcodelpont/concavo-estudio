@@ -111,19 +111,19 @@ exports[`Footer matches snapshot 1`] = `
         class="object-contain w-[150px] h-[50px] sm:w-[150px] sm:h-[50px]"
         data-nimg="1"
         decoding="async"
-        height="3715"
+        height="176"
         loading="lazy"
-        src="/_next/image?url=%2Flogos%2Fconcavo_white.png&w=3840&q=75"
-        srcset="/_next/image?url=%2Flogos%2Fconcavo_white.png&w=3840&q=75 1x"
+        src="/_next/image?url=%2Flogos%2Fconcavo_black.png&w=1920&q=75"
+        srcset="/_next/image?url=%2Flogos%2Fconcavo_black.png&w=750&q=75 1x, /_next/image?url=%2Flogos%2Fconcavo_black.png&w=1920&q=75 2x"
         style="color: transparent;"
-        width="12773"
+        width="690"
       />
       <div
         class="flex gap-2"
       >
         <a
           aria-label="instagram"
-          class="rounded-full transition-all border-[1px] border-[transparent] p-2 hover:border-bone"
+          class="rounded-full transition-all border-[1px] border-[transparent] p-2 hover:border-black"
           href="https://www.instagram.com/concavoestudio/"
           target="_blank"
         >
@@ -160,7 +160,7 @@ exports[`Footer matches snapshot 1`] = `
         </a>
         <a
           aria-label="email"
-          class="rounded-full transition-all border-[1px] border-[transparent] p-2 hover:border-bone"
+          class="rounded-full transition-all border-[1px] border-[transparent] p-2 hover:border-black"
           href="mailto:ventas@concavoestudio.com"
           target="_blank"
         >
