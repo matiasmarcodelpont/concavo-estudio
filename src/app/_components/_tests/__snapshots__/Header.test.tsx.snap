@@ -2,7 +2,7 @@
 
 exports[`Header matches snapshot 1`] = `
 <header
-  class="fixed top-0 w-full bg-bone z-10 flex justify-between px-2 sm:px-6 py-4 items-center"
+  class="fixed top-0 w-full bg-bone flex justify-between px-2 sm:px-6 py-4 items-center z-10"
 >
   <button
     aria-controls="radix-:r0:"
@@ -40,7 +40,7 @@ exports[`Header matches snapshot 1`] = `
     </svg>
   </button>
   <h1
-    class=""
+    class="my-0"
   >
     <a
       href="/"

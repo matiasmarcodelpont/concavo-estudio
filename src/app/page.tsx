@@ -11,11 +11,13 @@ export default function Home() {
 
   return (
     <main className='text-center'>
-      <section className='h-[60vw] min-h-[400px] max-h-[80vh] animate-fade-in delay-250 flex flex-col justify-center items-center'>
-        <h1 className='mb-4'>
-          <Logo className='m-auto' />
-        </h1>
+      <div className='h-[17vh]' />
 
+      <h1 className='animate-fade-in delay-250 sticky top-4 z-30 mb-4 my-0'>
+        <Logo className='m-auto' />
+      </h1>
+
+      <section className='animate-fade-in delay-250 flex flex-col justify-center items-center'>
         <p className='font-editorial-new font-extralight sm:text-xl mb-6'>
           Un camino de disfrute y creación.
           <br />
@@ -28,6 +30,7 @@ export default function Home() {
         <IsologoConcavo className='size-12' />
       </section>
 
+      <div className='h-[17vh]' />
       <VideoBackgroundSection
         src='/casa.mp4'
         title='Casa Cóncavo'

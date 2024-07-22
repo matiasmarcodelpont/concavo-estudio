@@ -2,11 +2,13 @@
 
 exports[`Footer matches snapshot 1`] = `
 <footer
-  class="bg-white text-black flex gap-10 sm:gap-14 px-6 sm:px-10 md:px-12 pt-10 pb-6 flex-wrap"
+  class="bg-white text-black flex gap-5 md:gap-10 px-6 sm:px-10 md:px-12 pt-10 pb-6"
 >
-  <section>
+  <section
+    class="hidden md:block shrink-0"
+  >
     <h1
-      class="font-tt-norms font-bold uppercase mb-2"
+      class="text-base lg:text-xl font-tt-norms font-bold uppercase mb-2"
     >
       Home
     </h1>
@@ -42,9 +44,11 @@ exports[`Footer matches snapshot 1`] = `
       </li>
     </ul>
   </section>
-  <section>
+  <section
+    class="hidden md:block shrink-0"
+  >
     <h1
-      class="font-tt-norms font-bold uppercase mb-2"
+      class="text-base lg:text-xl font-tt-norms font-bold uppercase mb-2"
     >
       Casa Concavo
     </h1>
@@ -71,11 +75,13 @@ exports[`Footer matches snapshot 1`] = `
       </li>
     </ul>
   </section>
-  <section>
+  <section
+    class="hidden md:block shrink-0"
+  >
     <h1
-      class="font-tt-norms font-bold uppercase mb-2"
+      class="text-base lg:text-xl font-tt-norms font-bold uppercase mb-2"
     >
-      Productos Concavo
+      Productos
     </h1>
     <ul
       class="text-xs gap-y-2 gap-x-6 flex flex-col flex-wrap max-h-[150px]"
@@ -101,10 +107,10 @@ exports[`Footer matches snapshot 1`] = `
     </ul>
   </section>
   <section
-    class="flex gap-6 sm:gap-10 ml-auto"
+    class="flex gap-6 xs:gap-14 sm:gap-10 ml-auto mr-auto md:mr-0 flex-wrap"
   >
     <div
-      class="flex flex-col items-center gap-2"
+      class="flex flex-col items-center gap-2 shrink-0 mx-auto"
     >
       <img
         alt="Cóncavo"
@@ -191,13 +197,17 @@ exports[`Footer matches snapshot 1`] = `
       </div>
     </div>
     <div
-      data-testid="mock-qr"
+      class="mx-auto"
     >
-      Mock QR Code: 
-      null
+      <div
+        data-testid="mock-qr"
+      >
+        Mock QR Code: 
+        null
+      </div>
     </div>
     <div
-      class="absolute left-[-100vw]"
+      class="absolute left-[-100vw] top-0 shrink"
     >
       <div
         data-testid="mock-qr"
