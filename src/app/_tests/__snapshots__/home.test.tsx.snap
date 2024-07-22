@@ -5,16 +5,167 @@ exports[`Home renders homepage unchanged 1`] = `
   <main
     class="text-center"
   >
-    <span
-      style="font-size: 0px;"
-    />
-    <h1
-      class="font-editorial-new tracking-[0.01em] uppercase mt-12 mb-6 sm:mt-16 sm:mb-9 md:mt-20 md:mb-12 text-3xl md:text-4xl opacity-0 hidden"
-    >
-      Cóncavo
-    </h1>
     <section
-      class="relative h-[60vw] min-h-[400px] group mb-12"
+      class="h-[60vw] min-h-[400px] max-h-[80vh] animate-fade-in delay-250 flex flex-col justify-center items-center"
+    >
+      <h1
+        class="mb-4"
+      >
+        <img
+          alt="Cóncavo"
+          class="object-contain w-[150px] sm:w-[200px] m-auto"
+          data-nimg="1"
+          decoding="async"
+          height="176"
+          loading="lazy"
+          src="/_next/image?url=%2Flogos%2Fconcavo_black.png&w=1920&q=75"
+          srcset="/_next/image?url=%2Flogos%2Fconcavo_black.png&w=750&q=75 1x, /_next/image?url=%2Flogos%2Fconcavo_black.png&w=1920&q=75 2x"
+          style="color: transparent;"
+          width="690"
+        />
+      </h1>
+      <p
+        class="font-editorial-new font-extralight sm:text-xl mb-6"
+      >
+        Un camino de disfrute y creación.
+        <br />
+        De imaginar espacios relajados, armónicos y luminosos.
+        <br />
+        De crear sensaciones de 
+        <em>
+          calma.
+        </em>
+        <br />
+      </p>
+      <svg
+        class="text-black size-12"
+        fill="none"
+        height="24"
+        viewBox="0 0 569 569"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <mask
+          height="569"
+          id="mask0_2090_30"
+          maskUnits="userSpaceOnUse"
+          style="mask-type: alpha;"
+          width="569"
+          x="0"
+          y="0"
+        >
+          <rect
+            fill="currentColor"
+            height="569"
+            width="569"
+          />
+        </mask>
+        <g
+          mask="url(#mask0_2090_30)"
+        >
+          <mask
+            height="356"
+            id="mask1_2090_30"
+            maskUnits="userSpaceOnUse"
+            style="mask-type: luminance;"
+            width="569"
+            x="1"
+            y="107"
+          >
+            <path
+              d="M569.616 107H1V462.552H569.616V107Z"
+              fill="white"
+            />
+          </mask>
+          <g
+            mask="url(#mask1_2090_30)"
+          >
+            <mask
+              height="118"
+              id="mask2_2090_30"
+              maskUnits="userSpaceOnUse"
+              style="mask-type: luminance;"
+              width="282"
+              x="144"
+              y="109"
+            >
+              <path
+                d="M144.454 109.179H425.761V226.542H144.454V109.179Z"
+                fill="white"
+              />
+            </mask>
+            <g
+              mask="url(#mask2_2090_30)"
+            >
+              <mask
+                height="118"
+                id="mask3_2090_30"
+                maskUnits="userSpaceOnUse"
+                style="mask-type: luminance;"
+                width="282"
+                x="144"
+                y="109"
+              >
+                <path
+                  d="M425.688 109.179C425.688 173.863 362.762 226.303 285.146 226.303C207.525 226.303 144.6 173.863 144.6 109.179"
+                  fill="white"
+                />
+              </mask>
+              <g
+                mask="url(#mask3_2090_30)"
+              >
+                <path
+                  d="M568.066 462.375H2.14941V107.343H568.066V462.375Z"
+                  fill="currentColor"
+                />
+              </g>
+            </g>
+            <mask
+              height="235"
+              id="mask4_2090_30"
+              maskUnits="userSpaceOnUse"
+              style="mask-type: luminance;"
+              width="564"
+              x="3"
+              y="226"
+            >
+              <path
+                d="M3.98535 226.178H566.235V460.538H3.98535V226.178Z"
+                fill="white"
+              />
+            </mask>
+            <g
+              mask="url(#mask4_2090_30)"
+            >
+              <mask
+                height="235"
+                id="mask5_2090_30"
+                maskUnits="userSpaceOnUse"
+                style="mask-type: luminance;"
+                width="563"
+                x="4"
+                y="226"
+              >
+                <path
+                  d="M566.23 226.302C566.23 355.665 440.383 460.538 285.147 460.538C129.905 460.538 4.05859 355.665 4.05859 226.302"
+                  fill="white"
+                />
+              </mask>
+              <g
+                mask="url(#mask5_2090_30)"
+              >
+                <path
+                  d="M568.066 462.374H2.14941V107.343H568.066V462.374Z"
+                  fill="currentColor"
+                />
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </section>
+    <section
+      class="relative h-[60vw] min-h-[400px] max-h-[80vh] group mb-12"
     >
       <video
         autoplay=""
