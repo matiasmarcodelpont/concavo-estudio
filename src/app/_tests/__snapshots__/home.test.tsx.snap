@@ -5,25 +5,28 @@ exports[`Home renders homepage unchanged 1`] = `
   <main
     class="text-center"
   >
-    <section
-      class="h-[60vw] min-h-[400px] max-h-[80vh] animate-fade-in delay-250 flex flex-col justify-center items-center"
+    <div
+      class="h-[17vh]"
+    />
+    <h1
+      class="animate-fade-in delay-250 sticky top-9 z-30 mb-4"
     >
-      <h1
-        class="mb-4"
-      >
-        <img
-          alt="Cóncavo"
-          class="object-contain w-[150px] sm:w-[200px] m-auto"
-          data-nimg="1"
-          decoding="async"
-          height="176"
-          loading="lazy"
-          src="/_next/image?url=%2Flogos%2Fconcavo_black.png&w=1920&q=75"
-          srcset="/_next/image?url=%2Flogos%2Fconcavo_black.png&w=750&q=75 1x, /_next/image?url=%2Flogos%2Fconcavo_black.png&w=1920&q=75 2x"
-          style="color: transparent;"
-          width="690"
-        />
-      </h1>
+      <img
+        alt="Cóncavo"
+        class="object-contain w-[150px] sm:w-[200px] m-auto"
+        data-nimg="1"
+        decoding="async"
+        height="176"
+        loading="lazy"
+        src="/_next/image?url=%2Flogos%2Fconcavo_black.png&w=1920&q=75"
+        srcset="/_next/image?url=%2Flogos%2Fconcavo_black.png&w=750&q=75 1x, /_next/image?url=%2Flogos%2Fconcavo_black.png&w=1920&q=75 2x"
+        style="color: transparent;"
+        width="690"
+      />
+    </h1>
+    <section
+      class="animate-fade-in delay-250 flex flex-col justify-center items-center"
+    >
       <p
         class="font-editorial-new font-extralight sm:text-xl mb-6"
       >
@@ -164,6 +167,9 @@ exports[`Home renders homepage unchanged 1`] = `
         </g>
       </svg>
     </section>
+    <div
+      class="h-[17vh]"
+    />
     <section
       class="relative h-[60vw] min-h-[400px] max-h-[80vh] group mb-12"
     >

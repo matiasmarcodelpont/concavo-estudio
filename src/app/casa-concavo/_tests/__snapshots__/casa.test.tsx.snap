@@ -4,7 +4,7 @@ exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
 <div>
   <main>
     <section
-      class="mb-12"
+      class="mb-12 pt-3 sm:pt-8 md:pt-20"
     >
       <span
         style="font-size: 0px;"
@@ -15,7 +15,7 @@ exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
         Casa Cóncavo
       </h1>
       <article
-        class="relative text-left p-[1.75em] mt-20 mb-16 mx-6 xs:mx-12 sm:mx-20 md:mx-32 lg:mx-72 bg-white font-editorial-new font-extralight text-base md:text-xl w-fit max-w-[270px] xs:max-w-[320px] md:max-w-[400px]"
+        class="relative text-left p-[1.75em] mb-16 mx-6 xs:mx-12 sm:mx-20 md:mx-32 lg:mx-72 bg-white font-editorial-new font-extralight text-base md:text-xl w-fit max-w-[270px] xs:max-w-[320px] md:max-w-[400px]"
       >
         <strong
           class="font-regular"
