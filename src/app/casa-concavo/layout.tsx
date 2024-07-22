@@ -14,5 +14,5 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  return <div className='mt-[125.89px]'>{children}</div>
+  return children
 }

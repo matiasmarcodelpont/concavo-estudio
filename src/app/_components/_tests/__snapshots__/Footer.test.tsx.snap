@@ -207,7 +207,7 @@ exports[`Footer matches snapshot 1`] = `
       </div>
     </div>
     <div
-      class="absolute left-[-100vw] shrink"
+      class="absolute left-[-100vw] top-0 shrink"
     >
       <div
         data-testid="mock-qr"

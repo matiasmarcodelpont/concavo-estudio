@@ -40,7 +40,7 @@ exports[`Header matches snapshot 1`] = `
     </svg>
   </button>
   <h1
-    class=""
+    class="my-0"
   >
     <a
       href="/"

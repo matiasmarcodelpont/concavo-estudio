@@ -13,7 +13,7 @@ export default function Home() {
     <main className='text-center'>
       <div className='h-[17vh]' />
 
-      <h1 className='animate-fade-in delay-250 sticky top-9 z-30 mb-4'>
+      <h1 className='animate-fade-in delay-250 sticky top-4 z-30 mb-4 my-0'>
         <Logo className='m-auto' />
       </h1>
 

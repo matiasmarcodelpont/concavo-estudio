@@ -62,7 +62,7 @@ export const Footer = () => {
         <div className='mx-auto'>
           <Qr value={currentUrl} onClick={handleClick} />
         </div>
-        <div className='absolute left-[-100vw] shrink'>
+        <div className='absolute left-[-100vw] top-0 shrink'>
           <Qr ref={qrRef} value={currentUrl} size={300} />
         </div>
       </section>
