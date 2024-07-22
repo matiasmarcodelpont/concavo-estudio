@@ -4,15 +4,35 @@ import { VideoBackgroundSection } from '@/components/domain/VideoBackgroundSecti
 import Heading from '@/components/domain/Heading'
 import { GridFluid } from '@/components/layouts/Fluid'
 import Logo from '@/components/domain/Logo'
+import IsologoConcavo from '@/components/icons/IsologoConcavo'
 
 export default function Home() {
   const productos = productosRepository.getProductosConcavo()
 
   return (
     <main className='text-center'>
-      <Heading className='hidden'>Cóncavo</Heading>
+      <section className='h-[60vw] min-h-[400px] max-h-[80vh] animate-fade-in delay-250 flex flex-col justify-center items-center'>
+        <h1 className='mb-4'>
+          <Logo className='m-auto' />
+        </h1>
 
-      <VideoBackgroundSection src='/casa.mp4' title='Casa Cóncavo' className='h-[60vw] min-h-[400px] group mb-12'>
+        <p className='font-editorial-new font-extralight sm:text-xl mb-6'>
+          Un camino de disfrute y creación.
+          <br />
+          De imaginar espacios relajados, armónicos y luminosos.
+          <br />
+          De crear sensaciones de <em>calma.</em>
+          <br />
+        </p>
+
+        <IsologoConcavo className='size-12' />
+      </section>
+
+      <VideoBackgroundSection
+        src='/casa.mp4'
+        title='Casa Cóncavo'
+        className='h-[60vw] min-h-[400px] max-h-[80vh] group mb-12'
+      >
         <div className='flex flex-col h-full bg-[#0003] justify-around items-center'>
           <div className='pt-2 pb-1 border-white uppercase invisible'>Start here</div>
 
