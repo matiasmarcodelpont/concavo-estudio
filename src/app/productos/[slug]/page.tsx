@@ -36,7 +36,12 @@ export default function Producto({ params }: { params: { slug: string } }) {
           <CarouselContent>
             {[0, 1, 2].map((i) => (
               <CarouselItem className='relative' key={i}>
-                <Image src={`/productos/${producto.slug}.jpg`} alt={producto.name} fill className='object-cover' />
+                <Image
+                  src={`/productos/${producto.colaborador ? '' : 'concavo/'}${producto.slug}.jpg`}
+                  alt={producto.name}
+                  fill
+                  className='object-cover'
+                />
               </CarouselItem>
             ))}
           </CarouselContent>

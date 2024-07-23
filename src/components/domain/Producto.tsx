@@ -32,7 +32,7 @@ export const Producto = ({ concavo = false, className, ...producto }: ProductoPr
         <div className='pt-[100%] relative overflow-hidden '>
           <Image
             fill
-            src={`/productos/${producto.slug}.jpg`}
+            src={`/productos/${concavo ? 'concavo/' : ''}${producto.slug}.jpg`}
             alt={producto.name}
             className={cn(
               'object-cover group-hover:scale-105 transition-all duration-1000',
