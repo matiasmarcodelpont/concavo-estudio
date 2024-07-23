@@ -14,10 +14,25 @@ const COLORS = [
 const ConcavoColors = () => {
   return (
     <>
-      <div className='flex gap-1'>
+      {/* <div className='flex gap-1'>
         {COLORS.map((color) => (
           <span key={`concavo-color-rect-${color}`} style={{ backgroundColor: color }} className='grow max-w-10 h-12' />
         ))}
+      </div>
+
+      <br /> */}
+
+      <div className='flex gap-1 flex-wrap'>
+        <div className='flex gap-1'>
+          {COLORS.slice(0, 5).map((color) => (
+            <span key={`concavo-color-sq-${color}`} style={{ backgroundColor: color }} className='size-8 shrink-0' />
+          ))}
+        </div>
+        <div className='flex gap-1'>
+          {COLORS.slice(5).map((color) => (
+            <span key={`concavo-color-sq-${color}`} style={{ backgroundColor: color }} className='size-8 shrink-0' />
+          ))}
+        </div>
       </div>
 
       <br />
