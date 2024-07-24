@@ -8,7 +8,7 @@ const config = {
     /* https://drive.google.com/drive/folders/19bB4pKolAMLZXp2lQSfvys5W3QaJYBOa */
     colors: {
       white: '#FFFFFF',
-      black: '#2D1A18',
+      black: '#2D1B17',
       bone: '#F0F0EF',
       'dark-gray': '#464242',
       'light-gray': '#979697',
