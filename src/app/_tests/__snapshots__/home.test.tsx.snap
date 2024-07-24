@@ -28,7 +28,7 @@ exports[`Home renders homepage unchanged 1`] = `
       class="animate-fade-in delay-250 flex flex-col justify-center items-center"
     >
       <p
-        class="font-editorial-new font-extralight sm:text-xl mb-6"
+        class="font-editorial-new font-extralight sm:text-xl mb-6 mx-2"
       >
         Un camino de disfrute y creación.
         <br />

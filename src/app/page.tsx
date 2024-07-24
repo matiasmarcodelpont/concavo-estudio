@@ -18,7 +18,7 @@ export default function Home() {
       </h1>
 
       <section className='animate-fade-in delay-250 flex flex-col justify-center items-center'>
-        <p className='font-editorial-new font-extralight sm:text-xl mb-6'>
+        <p className='font-editorial-new font-extralight sm:text-xl mb-6 mx-2'>
           Un camino de disfrute y creación.
           <br />
           De imaginar espacios relajados, armónicos y luminosos.
