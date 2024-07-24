@@ -36,7 +36,12 @@ export default function Producto({ params }: { params: { slug: string } }) {
           <CarouselContent>
             {[0, 1, 2].map((i) => (
               <CarouselItem className='relative' key={i}>
-                <Image src={`/productos/${producto.slug}.jpg`} alt={producto.name} fill className='object-cover' />
+                <Image
+                  src={`/productos/${producto.colaborador ? '' : 'concavo/'}${producto.slug}.jpg`}
+                  alt={producto.name}
+                  fill
+                  className='object-cover'
+                />
               </CarouselItem>
             ))}
           </CarouselContent>
@@ -47,7 +52,7 @@ export default function Producto({ params }: { params: { slug: string } }) {
 
         <section className='px-4 sm:px-6 md:px-8 mt-10 md:w-1/2'>
           <Heading className='text-center mt-0 sm:mt-0 md:mt-0 hidden md:block'>{producto.name}</Heading>
-          <p className='animate-fade-in'>{producto.description}</p>
+          <div className='animate-fade-in'>{producto.description}</div>
           {producto.colaborador && (
             <article className='my-10'>
               {[

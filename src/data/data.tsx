@@ -1,3 +1,4 @@
+import { productosConcavo } from './data-concavo'
 import { DataSet } from './types'
 
 const data: DataSet = {
@@ -265,6 +266,7 @@ const data: DataSet = {
       link: '',
       colaborador: { slug: 'resta' },
     },
+    ...productosConcavo,
   ],
   colaboradores: [
     {

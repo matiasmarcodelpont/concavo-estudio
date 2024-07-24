@@ -15,7 +15,7 @@ export const Qr = forwardRef(({ value, size = 80, onClick }: QrProps, ref) => {
         ref={ref as React.MutableRefObject<QRCode>}
         size={size}
         value={value}
-        bgColor={config.theme.colors.bone}
+        bgColor={config.theme.colors.white}
         fgColor={config.theme.colors.black}
         quietZone={4}
         qrStyle='dots'
