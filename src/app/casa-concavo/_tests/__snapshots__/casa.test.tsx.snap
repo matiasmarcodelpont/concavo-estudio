@@ -4,24 +4,19 @@ exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
 <div>
   <main>
     <section
-      class="pt-6 sm:pt-8 md:pt-20"
+      class="pb-24 sm:pb-32 md:pb-40 pt-28 sm:pt-36 md:pt-48 flex"
     >
-      <span
-        style="font-size: 0px;"
+      <div
+        class="flex-grow-[1]"
       />
-      <h1
-        class="font-editorial-new tracking-[0.01em] uppercase mt-12 mb-6 sm:mt-16 sm:mb-9 md:mt-20 md:mb-12 text-3xl md:text-4xl opacity-0 hidden"
-      >
-        Casa Cóncavo
-      </h1>
       <article
-        class="relative text-left p-[1.75em] mb-10 md:mb-16 mx-6 xs:mx-12 sm:mx-20 md:mx-32 lg:mx-72 bg-white font-editorial-new font-extralight text-base md:text-xl w-fit max-w-[270px] xs:max-w-[320px] md:max-w-[400px]"
+        class="relative bg-white text-sm sm:text-base md:text-lg text-left p-[1.75em] mx-8 w-fit max-w-[330px] sm:max-w-[380px] md:max-w-[420px]"
       >
-        <strong
-          class="font-regular"
+        <h1
+          class="font-extrabold inline"
         >
           CASA CÓNCAVO
-        </strong>
+        </h1>
          es nuestra forma de vivir las casa pensando en el todo y en el detalle. Conocé nuestra primera casa: ´Whitehaven´.
         <div
           class="absolute -top-3 md:-top-4 -left-0"
@@ -34,6 +29,11 @@ exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
           />
         </div>
       </article>
+      <div
+        class="flex-grow-[2]"
+      />
+    </section>
+    <section>
       <ul
         aria-label="Lista de Ambientes"
         class="space-y-2"

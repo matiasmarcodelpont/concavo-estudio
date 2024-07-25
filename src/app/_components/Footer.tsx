@@ -43,9 +43,9 @@ export const Footer = () => {
   ]
 
   return (
-    <footer className='bg-white text-black flex gap-5 md:gap-10 px-6 sm:px-10 md:px-12 pt-10 pb-6'>
+    <footer className='bg-white text-black flex gap-5 md:gap-10 px-6 sm:px-10 md:px-12 pt-10 pb-6 flex-wrap-reverse'>
       {siteMap.map(({ name, links }, index) => (
-        <section key={`sitemap-${index.toString()}-${name}`} className='hidden md:block shrink-0'>
+        <section key={`sitemap-${index.toString()}-${name}`} className='hidden md:block'>
           <h1 className='text-base lg:text-xl font-tt-norms font-bold uppercase mb-2'>{name}</h1>
           <ul className='text-xs gap-y-2 gap-x-6 flex flex-col flex-wrap max-h-[150px]'>
             {links.map(({ name, slug, href }) => (
@@ -57,12 +57,12 @@ export const Footer = () => {
         </section>
       ))}
 
-      <section className='flex gap-6 xs:gap-14 sm:gap-10 ml-auto mr-auto md:mr-0 flex-wrap'>
-        <LogoAndSocialMedia variant='black' className='shrink-0 mx-auto' />
+      <section className='flex gap-6 xs:gap-10 sm:gap-14 ml-auto mr-auto md:mr-0 flex-wrap'>
+        <LogoAndSocialMedia variant='black' className='mx-auto' />
         <div className='mx-auto'>
           <Qr value={currentUrl} onClick={handleClick} />
         </div>
-        <div className='absolute left-[-100vw] top-0 shrink'>
+        <div className='absolute left-[-100vw] top-0'>
           <Qr ref={qrRef} value={currentUrl} size={300} />
         </div>
       </section>

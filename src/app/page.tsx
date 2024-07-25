@@ -13,12 +13,12 @@ export default function Home() {
     <main className='text-center'>
       <div className='h-[17vh]' />
 
-      <h1 className='animate-fade-in delay-250 sticky top-4 z-30 mb-4 my-0'>
+      <h1 className='animate-fade-in delay-250 sticky top-4 z-30 mb-4 my-0 pointer-events-none'>
         <Logo className='m-auto' />
       </h1>
 
       <section className='animate-fade-in delay-250 flex flex-col justify-center items-center'>
-        <p className='font-editorial-new font-extralight sm:text-xl mb-6'>
+        <p className='font-editorial-new font-extralight sm:text-xl mb-6 mx-2'>
           Un camino de disfrute y creación.
           <br />
           De imaginar espacios relajados, armónicos y luminosos.
@@ -31,22 +31,21 @@ export default function Home() {
       </section>
 
       <div className='h-[17vh]' />
+
       <VideoBackgroundSection
         src='/casa.mp4'
         title='Casa Cóncavo'
         className='h-[60vw] min-h-[400px] max-h-[80vh] group mb-12'
       >
-        <div className='flex flex-col h-full bg-[#0003] justify-around items-center'>
-          <div className='pt-2 pb-1 border-white uppercase invisible'>Start here</div>
-
-          <p className='text-bone text-xl sm:text-2xl font-bold uppercase tracking-[.2em]'>
+        <div className='flex flex-col h-full bg-[#0003] items-center'>
+          <p className='text-white text-lg sm:text-xl font-bold uppercase tracking-[.2em] mt-auto mb-16'>
             Casa
-            <Logo variant='white' className='w-[300px] sm:w-[400px] -mt-[.5em]' />
+            <Logo variant='white' className='w-[200px] sm:w-[250px] -mt-[.5em]' />
           </p>
 
           <a
             href='/casa-concavo'
-            className='font-editorial-new px-6 pt-2 pb-1 text-bone border rounded-full border-white uppercase'
+            className='font-editorial-new text-sm sm:text-base px-6 pt-2 pb-1 text-white border rounded-full border-white uppercase mb-auto'
           >
             Start here
           </a>

@@ -2,10 +2,10 @@
 
 exports[`Footer matches snapshot 1`] = `
 <footer
-  class="bg-white text-black flex gap-5 md:gap-10 px-6 sm:px-10 md:px-12 pt-10 pb-6"
+  class="bg-white text-black flex gap-5 md:gap-10 px-6 sm:px-10 md:px-12 pt-10 pb-6 flex-wrap-reverse"
 >
   <section
-    class="hidden md:block shrink-0"
+    class="hidden md:block"
   >
     <h1
       class="text-base lg:text-xl font-tt-norms font-bold uppercase mb-2"
@@ -45,7 +45,7 @@ exports[`Footer matches snapshot 1`] = `
     </ul>
   </section>
   <section
-    class="hidden md:block shrink-0"
+    class="hidden md:block"
   >
     <h1
       class="text-base lg:text-xl font-tt-norms font-bold uppercase mb-2"
@@ -76,7 +76,7 @@ exports[`Footer matches snapshot 1`] = `
     </ul>
   </section>
   <section
-    class="hidden md:block shrink-0"
+    class="hidden md:block"
   >
     <h1
       class="text-base lg:text-xl font-tt-norms font-bold uppercase mb-2"
@@ -107,10 +107,10 @@ exports[`Footer matches snapshot 1`] = `
     </ul>
   </section>
   <section
-    class="flex gap-6 xs:gap-14 sm:gap-10 ml-auto mr-auto md:mr-0 flex-wrap"
+    class="flex gap-6 xs:gap-10 sm:gap-14 ml-auto mr-auto md:mr-0 flex-wrap"
   >
     <div
-      class="flex flex-col items-center gap-2 shrink-0 mx-auto"
+      class="flex flex-col items-center gap-2 mx-auto"
     >
       <img
         alt="Cóncavo"
@@ -207,7 +207,7 @@ exports[`Footer matches snapshot 1`] = `
       </div>
     </div>
     <div
-      class="absolute left-[-100vw] top-0 shrink"
+      class="absolute left-[-100vw] top-0"
     >
       <div
         data-testid="mock-qr"

@@ -9,7 +9,7 @@ exports[`Home renders homepage unchanged 1`] = `
       class="h-[17vh]"
     />
     <h1
-      class="animate-fade-in delay-250 sticky top-4 z-30 mb-4 my-0"
+      class="animate-fade-in delay-250 sticky top-4 z-30 mb-4 my-0 pointer-events-none"
     >
       <img
         alt="Cóncavo"
@@ -28,7 +28,7 @@ exports[`Home renders homepage unchanged 1`] = `
       class="animate-fade-in delay-250 flex flex-col justify-center items-center"
     >
       <p
-        class="font-editorial-new font-extralight sm:text-xl mb-6"
+        class="font-editorial-new font-extralight sm:text-xl mb-6 mx-2"
       >
         Un camino de disfrute y creación.
         <br />
@@ -182,32 +182,27 @@ exports[`Home renders homepage unchanged 1`] = `
         title="Casa Cóncavo"
       />
       <div
-        class="flex flex-col h-full bg-[#0003] justify-around items-center"
+        class="flex flex-col h-full bg-[#0003] items-center"
       >
-        <div
-          class="pt-2 pb-1 border-white uppercase invisible"
-        >
-          Start here
-        </div>
         <p
-          class="text-bone text-xl sm:text-2xl font-bold uppercase tracking-[.2em]"
+          class="text-white text-lg sm:text-xl font-bold uppercase tracking-[.2em] mt-auto mb-16"
         >
           Casa
           <img
             alt="Cóncavo"
-            class="object-contain w-[300px] sm:w-[400px] -mt-[.5em]"
+            class="object-contain w-[200px] sm:w-[250px] -mt-[.5em]"
             data-nimg="1"
             decoding="async"
-            height="3715"
+            height="176"
             loading="lazy"
-            src="/_next/image?url=%2Flogos%2Fconcavo_white.png&w=3840&q=75"
-            srcset="/_next/image?url=%2Flogos%2Fconcavo_white.png&w=3840&q=75 1x"
+            src="/_next/image?url=%2Flogos%2Fconcavo_white.png&w=1920&q=75"
+            srcset="/_next/image?url=%2Flogos%2Fconcavo_white.png&w=750&q=75 1x, /_next/image?url=%2Flogos%2Fconcavo_white.png&w=1920&q=75 2x"
             style="color: transparent;"
-            width="12773"
+            width="690"
           />
         </p>
         <a
-          class="font-editorial-new px-6 pt-2 pb-1 text-bone border rounded-full border-white uppercase"
+          class="font-editorial-new text-sm sm:text-base px-6 pt-2 pb-1 text-white border rounded-full border-white uppercase mb-auto"
           href="/casa-concavo"
         >
           Start here
