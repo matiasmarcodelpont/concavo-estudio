@@ -28,13 +28,13 @@ export const Footer = () => {
         {
           name: 'Casa Cóncavo',
           slug: 'casa-concavo',
-          href: '/casa-concavo',
+          href: '/casa-concavo/white-haven',
         },
       ],
     },
     {
       name: 'Casa Concavo',
-      links: ambientes.map(({ name, slug }) => ({ name, slug, href: `/casa-concavo/${slug}` })),
+      links: ambientes.map(({ name, slug }) => ({ name, slug, href: `/casa-concavo/white-haven/${slug}` })),
     },
     {
       name: 'Productos',

@@ -203,7 +203,7 @@ exports[`Home renders homepage unchanged 1`] = `
         </p>
         <a
           class="font-editorial-new text-sm sm:text-base px-6 pt-2 pb-1 text-white border rounded-full border-white uppercase mb-auto"
-          href="/casa-concavo"
+          href="/casa-concavo/white-haven"
         >
           Start here
         </a>

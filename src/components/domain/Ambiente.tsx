@@ -12,7 +12,7 @@ export const Ambiente = ({ className, slug, name }: { className?: string; slug: 
 
   return (
     <Link
-      href={`/casa-concavo/${slug}`}
+      href={`/casa-concavo/white-haven/${slug}`}
       className={cn(className, 'relative block w-full h-[40vw] min-h-[300px]')}
       aria-label={name}
     >
