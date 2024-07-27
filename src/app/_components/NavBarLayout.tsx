@@ -63,7 +63,7 @@ export const NavBarLayout = ({
       links: [
         {
           href: '/casa-concavo/white-haven',
-          text: 'White haven',
+          text: 'CC1 - Whitehaven',
           links: ambientes.map(({ slug, name }) => ({ text: name, href: `/casa-concavo/white-haven/${slug}` })),
         },
       ],
