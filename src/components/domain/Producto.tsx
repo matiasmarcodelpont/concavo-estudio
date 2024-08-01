@@ -27,7 +27,6 @@ export const Producto = ({ concavo = false, className, ...producto }: ProductoPr
           onEnter={() => {
             setAnimate(true)
           }}
-          bottomOffset='20%'
         />
         <div className='pt-[100%] relative overflow-hidden '>
           <Image
