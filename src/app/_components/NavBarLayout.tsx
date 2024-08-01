@@ -87,12 +87,12 @@ export const NavBarLayout = ({
             <Equal className='size-6 sm:size-9' />
           </Button>
         </DrawerTrigger>
-        <DrawerContent className='pl-6 pr-7 uppercase overflow-y-auto min-w-[30%] max-w-[600px] flex flex-col'>
+        <DrawerContent className='px-6 uppercase h-full overflow-y-auto flex flex-col relative'>
           <header className='border-black border-b mb-4 pl-2 py-10 sm:py-12 cursor-pointer' onClick={closeDrawer}>
             <AnimatedX />
           </header>
 
-          <nav>
+          <nav className='pr-6 sm:pr-12 md:pr-20 lg:pr-32'>
             <ul>
               {links.map(({ text, href, links, icon: Icon }) => (
                 <li key={text} className='my-6'>

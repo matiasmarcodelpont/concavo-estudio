@@ -30,13 +30,10 @@ const DrawerContent = React.forwardRef<
 >(({ className, children, ...props }, ref) => (
   <DrawerPortal>
     <DrawerOverlay />
-    <DrawerPrimitive.Content
-      ref={ref}
-      className={cn('fixed inset-y-0 start-0 z-50 bg-bone', className)}
-      asChild
-      {...props}
-    >
-      <aside>{children}</aside>
+    <DrawerPrimitive.Content ref={ref} className={cn('fixed inset-y-0 start-0 z-50 bg-bone')}>
+      <aside className={className} {...props}>
+        {children}
+      </aside>
     </DrawerPrimitive.Content>
   </DrawerPortal>
 ))

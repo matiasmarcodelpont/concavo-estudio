@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`NavBarLayout renders links to all pages and to each ambiente 1`] = `
-<nav>
+<nav
+  class="pr-6 sm:pr-12 md:pr-20 lg:pr-32"
+>
   <ul>
     <li
       class="my-6"
