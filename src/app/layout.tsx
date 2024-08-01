@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang='es'>
       <body className={cn(editorialNew.variable, ttNorms.variable, 'bg-bone text-black relative')}>
         <Header ambientes={ambientes} />
-        <div className='mt-[72px] sm:mt-[83.01px]'>{children}</div>
+        <div className='mt-[72px] sm:mt-[83.01px] overflow-auto'>{children}</div>
         <Footer />
       </body>
     </html>

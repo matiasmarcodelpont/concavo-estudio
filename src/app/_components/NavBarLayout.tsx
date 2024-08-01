@@ -55,13 +55,18 @@ export const NavBarLayout = ({
     {
       text: 'Cóncavo',
       href: '/',
-      links: [{ text: 'Productos', href: '/#productos-concavo' }],
+      links: [{ text: 'Productos', href: '/#productos-concavo', links: undefined }],
       icon: IsologoConcavo,
     },
     {
       text: 'Casa Cóncavo',
-      href: '/casa-concavo',
-      links: ambientes.map(({ slug, name }) => ({ text: name, href: `/casa-concavo/${slug}` })),
+      links: [
+        {
+          href: '/casa-concavo/white-haven',
+          text: 'CC1 - Whitehaven',
+          links: ambientes.map(({ slug, name }) => ({ text: name, href: `/casa-concavo/white-haven/${slug}` })),
+        },
+      ],
       icon: IsologoCasa,
     },
     {
@@ -90,20 +95,42 @@ export const NavBarLayout = ({
           <nav>
             <ul>
               {links.map(({ text, href, links, icon: Icon }) => (
-                <li key={href} className='my-4'>
-                  {Icon && <Icon className='inline mr-3 mb-1 text-black' />}
-                  <Link href={href} onClick={handleNavigation} className='hover:underline' scroll={false}>
-                    {text}
-                  </Link>
+                <li key={text} className='my-6'>
+                  {Icon && <Icon className='inline mr-3 mb-1' />}
+
+                  {href ? (
+                    <Link href={href} onClick={handleNavigation} className='hover:underline' scroll={false}>
+                      {text}
+                    </Link>
+                  ) : (
+                    <span>{text}</span>
+                  )}
 
                   {links && (
-                    <ul>
-                      {links.map(({ text, href }) => (
+                    <ul className='font-light'>
+                      {links.map(({ text, href, links }) => (
                         <li key={href} className='my-2'>
                           <Icon className='inline mr-3 mb-1 opacity-0' /> {/* Placeholder */}
                           <Link href={href} onClick={handleNavigation} className='hover:underline' scroll={false}>
                             {text}
                           </Link>
+                          {links && (
+                            <ul className='ml-6 text-sm'>
+                              {links.map(({ text, href }) => (
+                                <li key={href} className='my-1'>
+                                  <Icon className='inline mr-3 mb-1 opacity-0' /> {/* Placeholder */}
+                                  <Link
+                                    href={href}
+                                    onClick={handleNavigation}
+                                    className='hover:underline'
+                                    scroll={false}
+                                  >
+                                    {text}
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
                         </li>
                       ))}
                     </ul>

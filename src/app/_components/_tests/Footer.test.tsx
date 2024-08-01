@@ -43,17 +43,17 @@ describe('Footer', () => {
     expect(anchor2.href).toMatch(/^https?:\/\/[^/]+\/#productos-concavo$/)
 
     const anchor3 = getByRole('link', { name: 'Casa Cóncavo' }) as HTMLAnchorElement
-    expect(anchor3.href).toMatch(/^https?:\/\/[^/]+\/casa-concavo$/)
+    expect(anchor3.href).toMatch(/^https?:\/\/[^/]+\/casa-concavo\/white-haven$/)
   })
 
   it('has the ambiente links', () => {
     const { getByRole } = render(<Footer />)
 
     const anchor1 = getByRole('link', { name: 'Ambiente 1' }) as HTMLAnchorElement
-    expect(anchor1.href).toMatch(/^https?:\/\/[^/]+\/casa-concavo\/ambiente-1$/)
+    expect(anchor1.href).toMatch(/^https?:\/\/[^/]+\/casa-concavo\/white-haven\/ambiente-1$/)
 
     const anchor2 = getByRole('link', { name: 'Ambiente 2' }) as HTMLAnchorElement
-    expect(anchor2.href).toMatch(/^https?:\/\/[^/]+\/casa-concavo\/ambiente-2$/)
+    expect(anchor2.href).toMatch(/^https?:\/\/[^/]+\/casa-concavo\/white-haven\/ambiente-2$/)
   })
 
   it('has the producto links', () => {

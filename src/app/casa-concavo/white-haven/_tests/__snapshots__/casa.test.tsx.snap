@@ -42,7 +42,7 @@ exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
           <a
             aria-label="Cocina"
             class="relative block w-full h-[40vw] min-h-[300px]"
-            href="/casa-concavo/cocina"
+            href="/casa-concavo/white-haven/cocina"
           >
             <img
               alt="Cocina"
@@ -76,7 +76,7 @@ exports[`Casa Cóncavo renders Casa Cóncavo unchanged 1`] = `
           <a
             aria-label="Living/Comedor"
             class="relative block w-full h-[40vw] min-h-[300px]"
-            href="/casa-concavo/living-comedor"
+            href="/casa-concavo/white-haven/living-comedor"
           >
             <img
               alt="Living/Comedor"

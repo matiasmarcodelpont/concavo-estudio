@@ -5,6 +5,7 @@ import Heading from '@/components/domain/Heading'
 import { GridFluid } from '@/components/layouts/Fluid'
 import Logo from '@/components/domain/Logo'
 import IsologoConcavo from '@/components/icons/IsologoConcavo'
+import Link from 'next/link'
 
 export default function Home() {
   const productos = productosRepository.getProductosConcavo()
@@ -43,12 +44,12 @@ export default function Home() {
             <Logo variant='white' className='w-[200px] sm:w-[250px] -mt-[.5em]' />
           </p>
 
-          <a
-            href='/casa-concavo'
+          <Link
+            href='/casa-concavo/white-haven'
             className='font-editorial-new text-sm sm:text-base px-6 pt-2 pb-1 text-white border rounded-full border-white uppercase mb-auto'
           >
             Start here
-          </a>
+          </Link>
         </div>
       </VideoBackgroundSection>
 

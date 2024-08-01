@@ -42,8 +42,8 @@ describe('Home', () => {
     const component = render(<Home />)
     const video = component.getByTitle('Casa Cóncavo')
 
-    const link = within(video.parentElement as HTMLElement).getByRole('link')
-    expect(link).toHaveAttribute('href', '/casa-concavo')
+    const link = within(video.parentElement as HTMLElement).getByRole<HTMLAnchorElement>('link')
+    expect(link.href).toMatch(/^https?:\/\/[^/]+\/casa-concavo\/white-haven$/)
   })
 
   it('renders concavo productos', () => {
