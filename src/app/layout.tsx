@@ -7,6 +7,7 @@ import { editorialNew, ttNorms } from '@/lib/fonts'
 import { Header } from './_components/Header'
 import { Footer } from './_components/Footer'
 import { ambientesRepository } from '@/controllers'
+import WhatsappBubble from './_components/WhatsappBubble'
 
 export const metadata: Metadata = {
   title: 'Estudio Cóncavo',
@@ -28,7 +29,10 @@ export default function RootLayout({
     <html lang='es'>
       <body className={cn(editorialNew.variable, ttNorms.variable, 'bg-bone text-black relative')}>
         <Header ambientes={ambientes} />
+
         <div className='pt-[72px] sm:pt-[83.01px]'>{children}</div>
+        <WhatsappBubble />
+
         <Footer />
       </body>
     </html>
