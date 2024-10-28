@@ -19,7 +19,7 @@ exports[`About Us renders About Us unchanged 1`] = `
       class="space-y-24"
     >
       <div
-        class="min-h-[400px] sm:min-h-[600px] md:min-h-[800px] max-h-[85vh] relative"
+        class="min-h-[400px] sm:min-h-[600px] max-h-[80vh] relative"
       >
         <img
           alt="Creadores de Cóncavo"
@@ -197,8 +197,8 @@ exports[`About Us renders About Us unchanged 1`] = `
             decoding="async"
             loading="lazy"
             sizes="100vw"
-            src="/_next/image?url=%2Fabout-us%2Fcoti.png%3F1730145947307&w=3840&q=75"
-            srcset="/_next/image?url=%2Fabout-us%2Fcoti.png%3F1730145947307&w=640&q=75 640w, /_next/image?url=%2Fabout-us%2Fcoti.png%3F1730145947307&w=750&q=75 750w, /_next/image?url=%2Fabout-us%2Fcoti.png%3F1730145947307&w=828&q=75 828w, /_next/image?url=%2Fabout-us%2Fcoti.png%3F1730145947307&w=1080&q=75 1080w, /_next/image?url=%2Fabout-us%2Fcoti.png%3F1730145947307&w=1200&q=75 1200w, /_next/image?url=%2Fabout-us%2Fcoti.png%3F1730145947307&w=1920&q=75 1920w, /_next/image?url=%2Fabout-us%2Fcoti.png%3F1730145947307&w=2048&q=75 2048w, /_next/image?url=%2Fabout-us%2Fcoti.png%3F1730145947307&w=3840&q=75 3840w"
+            src="/_next/image?url=%2Fabout-us%2Fcoti.png%3F1730146426293&w=3840&q=75"
+            srcset="/_next/image?url=%2Fabout-us%2Fcoti.png%3F1730146426293&w=640&q=75 640w, /_next/image?url=%2Fabout-us%2Fcoti.png%3F1730146426293&w=750&q=75 750w, /_next/image?url=%2Fabout-us%2Fcoti.png%3F1730146426293&w=828&q=75 828w, /_next/image?url=%2Fabout-us%2Fcoti.png%3F1730146426293&w=1080&q=75 1080w, /_next/image?url=%2Fabout-us%2Fcoti.png%3F1730146426293&w=1200&q=75 1200w, /_next/image?url=%2Fabout-us%2Fcoti.png%3F1730146426293&w=1920&q=75 1920w, /_next/image?url=%2Fabout-us%2Fcoti.png%3F1730146426293&w=2048&q=75 2048w, /_next/image?url=%2Fabout-us%2Fcoti.png%3F1730146426293&w=3840&q=75 3840w"
             style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
           />
         </div>
@@ -229,8 +229,8 @@ exports[`About Us renders About Us unchanged 1`] = `
             decoding="async"
             loading="lazy"
             sizes="100vw"
-            src="/_next/image?url=%2Fabout-us%2Ffelix.png%3F1730145947307&w=3840&q=75"
-            srcset="/_next/image?url=%2Fabout-us%2Ffelix.png%3F1730145947307&w=640&q=75 640w, /_next/image?url=%2Fabout-us%2Ffelix.png%3F1730145947307&w=750&q=75 750w, /_next/image?url=%2Fabout-us%2Ffelix.png%3F1730145947307&w=828&q=75 828w, /_next/image?url=%2Fabout-us%2Ffelix.png%3F1730145947307&w=1080&q=75 1080w, /_next/image?url=%2Fabout-us%2Ffelix.png%3F1730145947307&w=1200&q=75 1200w, /_next/image?url=%2Fabout-us%2Ffelix.png%3F1730145947307&w=1920&q=75 1920w, /_next/image?url=%2Fabout-us%2Ffelix.png%3F1730145947307&w=2048&q=75 2048w, /_next/image?url=%2Fabout-us%2Ffelix.png%3F1730145947307&w=3840&q=75 3840w"
+            src="/_next/image?url=%2Fabout-us%2Ffelix.png%3F1730146426293&w=3840&q=75"
+            srcset="/_next/image?url=%2Fabout-us%2Ffelix.png%3F1730146426293&w=640&q=75 640w, /_next/image?url=%2Fabout-us%2Ffelix.png%3F1730146426293&w=750&q=75 750w, /_next/image?url=%2Fabout-us%2Ffelix.png%3F1730146426293&w=828&q=75 828w, /_next/image?url=%2Fabout-us%2Ffelix.png%3F1730146426293&w=1080&q=75 1080w, /_next/image?url=%2Fabout-us%2Ffelix.png%3F1730146426293&w=1200&q=75 1200w, /_next/image?url=%2Fabout-us%2Ffelix.png%3F1730146426293&w=1920&q=75 1920w, /_next/image?url=%2Fabout-us%2Ffelix.png%3F1730146426293&w=2048&q=75 2048w, /_next/image?url=%2Fabout-us%2Ffelix.png%3F1730146426293&w=3840&q=75 3840w"
             style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
           />
         </div>
