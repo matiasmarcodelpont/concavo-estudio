@@ -896,9 +896,9 @@ exports[`NavBarLayout renders links to all pages and to each ambiente 1`] = `
     >
       <a
         class="hover:underline"
-        href="/nosotros"
+        href="/about-us"
       >
-        Nosotros
+        About Us
       </a>
     </li>
   </ul>

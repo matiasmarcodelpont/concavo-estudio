@@ -74,8 +74,8 @@ export const NavBarLayout = ({
       href: '/colaboradores',
     },
     {
-      text: 'Nosotros',
-      href: '/nosotros',
+      text: 'About Us',
+      href: '/about-us',
     },
   ]
 

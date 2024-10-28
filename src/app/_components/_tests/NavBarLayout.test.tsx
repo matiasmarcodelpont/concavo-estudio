@@ -52,7 +52,7 @@ describe('NavBarLayout', () => {
     const colaboradoresLink = getByRole('link', { name: 'Colaboradores' }) as HTMLAnchorElement
     expect(colaboradoresLink.href).toMatch(/^https?:\/\/[^/]+\/colaboradores$/)
 
-    const aboutLink = getByRole('link', { name: 'Nosotros' }) as HTMLAnchorElement
-    expect(aboutLink.href).toMatch(/^https?:\/\/[^/]+\/nosotros$/)
+    const aboutLink = getByRole('link', { name: 'About Us' }) as HTMLAnchorElement
+    expect(aboutLink.href).toMatch(/^https?:\/\/[^/]+\/about-us$/)
   })
 })

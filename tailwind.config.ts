@@ -32,8 +32,6 @@ const config = {
       screens: {
         xs: '375px',
       },
-      /* https://befonts.com/editorial-new-font-family.html */
-      /* https://befonts.com/tt-norms-pro-serif-font.html */
       fontFamily: {
         'editorial-new': ['var(--editorial-new)'],
         'tt-norms': ['var(--tt-norms)'],

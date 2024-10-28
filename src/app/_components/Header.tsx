@@ -15,7 +15,7 @@ export const Header = ({ ambientes }: HeaderProps) => {
   const pathname = usePathname()
 
   return (
-    <header className='fixed top-0 w-full bg-bone flex justify-between px-2 sm:px-6 py-4 items-center z-10'>
+    <header className='fixed top-0 w-full bg-bone flex justify-between px-2 sm:px-6 py-4 items-center z-20'>
       <NavBarLayout ambientes={ambientes} />
 
       <h1 className={cn(pathname == '/' ? 'invisible' : '', 'my-0')}>
