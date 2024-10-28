@@ -2,7 +2,7 @@
 
 exports[`Header matches snapshot 1`] = `
 <header
-  class="fixed top-0 w-full bg-bone flex justify-between px-2 sm:px-6 py-4 items-center z-10"
+  class="fixed top-0 w-full bg-bone flex justify-between px-2 sm:px-6 py-4 items-center z-20"
 >
   <button
     aria-controls="radix-:r0:"
