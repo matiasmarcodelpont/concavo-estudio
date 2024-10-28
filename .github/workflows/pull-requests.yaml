@@ -50,4 +50,4 @@ jobs:
         with:
           node-version: '20.x'
       - run: npm ci
-      - run: npm test -- -u
+      - run: npm test
