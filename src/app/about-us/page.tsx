@@ -80,12 +80,7 @@ export default function AboutUs() {
           </Heading>
 
           <div className='xl:mr-8 shrink-0 h-[400px] w-[230px] xs:w-[320px] sm:w-[400px] relative'>
-            <Image
-              src={`/about-us/coti.png?${new Date().getTime().toString()}`}
-              alt='Arquitecta'
-              fill
-              className='object-cover'
-            />
+            <Image src={`/about-us/coti.png`} alt='Arquitecta' fill className='object-cover' />
           </div>
 
           <p className='text-base xl:text-lg sm:text-xl max-w-[725px] text-left text-balance mt-[24px] xl:mt-[110px]'>
@@ -105,12 +100,7 @@ export default function AboutUs() {
           </Heading>
 
           <div className='xl:ml-8 shrink-0 h-[400px] w-[230px] xs:w-[320px] sm:w-[400px] relative'>
-            <Image
-              src={`/about-us/felix.png?${new Date().getTime().toString()}`}
-              alt='Director Creativo'
-              fill
-              className='object-cover'
-            />
+            <Image src={`/about-us/felix.png`} alt='Director Creativo' fill className='object-cover' />
           </div>
 
           <p className='text-base xl:text-lg sm:text-xl max-w-[725px] text-right text-balance mt-[24px] xl:mt-[110px]'>
