@@ -53,7 +53,7 @@ export default function AboutUs() {
       </h1>
 
       <section className='space-y-24'>
-        <div className='min-h-[400px] sm:min-h-[600px] md:min-h-[800px] max-h-[85vh] relative'>
+        <div className='min-h-[400px] sm:min-h-[600px] max-h-[80vh] relative'>
           <Image src='/about-us/coti-felix.png' alt='Creadores de Cóncavo' fill className='object-cover' />
         </div>
 
