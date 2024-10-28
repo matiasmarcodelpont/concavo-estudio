@@ -1,6 +1,6 @@
 import Heading from '@/components/domain/Heading'
-import IsologoConcavo from '@/components/icons/IsologoConcavo'
 import Image from 'next/image'
+import IsologoConcavo from '@/components/icons/IsologoConcavo'
 
 const EQUIPO = [
   {
