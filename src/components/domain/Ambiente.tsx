@@ -28,6 +28,7 @@ export const Ambiente = ({ className, slug, name }: { className?: string; slug: 
           {name}
         </Heading>
       </div>
+
       <Waypoint
         onEnter={() => {
           setAnimate(true)
