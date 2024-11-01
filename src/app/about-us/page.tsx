@@ -57,13 +57,13 @@ export default function AboutUs() {
         <span className='italic'>About </span>Us
       </h1>
 
-      <section className='space-y-24 sticky top-[72px] md:top-[8px] bg-bone'>
+      <section className='space-y-24 sticky top-[72px] md:top-[81px] bg-bone'>
         <div className='min-h-[400px] sm:min-h-[600px] md:min-h-[800px] lg:min-h-[900px] relative'>
           <Image src='/about-us/coti-felix.png' alt='Creadores de Cóncavo' fill className='object-cover' />
         </div>
       </section>
 
-      <div className='space-y-24 z-10 bg-bone relative py-12'>
+      <div className='space-y-24 z-10 bg-bone relative py-16'>
         <section className='space-y-24 bg-bone'>
           <article className='flex justify-center items-center'>
             <p className='text-base xs:text-lg sm:text-xl px-8 xs:px-10 sm:px-14 max-w-[800px] text-center text-balance'>
