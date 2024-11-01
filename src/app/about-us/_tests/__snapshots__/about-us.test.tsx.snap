@@ -16,7 +16,7 @@ exports[`About Us renders About Us unchanged 1`] = `
       Us
     </h1>
     <section
-      class="space-y-24 sticky top-[72px] md:top-[8px] bg-bone"
+      class="space-y-24 sticky top-[72px] md:top-[81px] bg-bone"
     >
       <div
         class="min-h-[400px] sm:min-h-[600px] md:min-h-[800px] lg:min-h-[900px] relative"
@@ -35,7 +35,7 @@ exports[`About Us renders About Us unchanged 1`] = `
       </div>
     </section>
     <div
-      class="space-y-24 z-10 bg-bone relative py-12"
+      class="space-y-24 z-10 bg-bone relative py-16"
     >
       <section
         class="space-y-24 bg-bone"
