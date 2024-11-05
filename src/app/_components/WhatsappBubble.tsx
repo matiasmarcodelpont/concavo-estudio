@@ -17,7 +17,7 @@ const WhatsappBubble = () => {
     <>
       <Link
         className={cn(
-          'fixed right-3 bottom-2 sm:right-4 sm:bottom-3 md:right-5 md:bottom-4 lg:right-6 lg:bottom-5 xl:right-7 bg-bone p-2 rounded-full hover:scale-105 transition-all',
+          'fixed right-3 bottom-2 sm:right-4 sm:bottom-3 md:right-5 md:bottom-4 lg:right-6 lg:bottom-5 xl:right-7 bg-bone p-2 rounded-full hover:scale-105 transition-all z-50 shadow-lg',
           show ? 'visible opacity-80' : 'invisible opacity-0',
         )}
         target='_blank'
