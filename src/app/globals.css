@@ -8,4 +8,5 @@
 
 body {
   font-family: var(--tt-norms);
+  font-variant-ligatures: no-common-ligatures;
 }
