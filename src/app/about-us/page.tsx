@@ -51,7 +51,7 @@ const EQUIPO = [
 
 export default function AboutUs() {
   return (
-    <main className='text-center overflow-hidden'>
+    <main className='text-center'>
       <h1 className='uppercase font-editorial-new font-light text-5xl sm:text-6xl [word-spacing:5px] mt-16 mb-4'>
         <span className='italic'>About</span> Us
       </h1>
@@ -66,7 +66,7 @@ export default function AboutUs() {
 
       <div className='bg-bone relative'>
         <div className='m-auto px-8 pt-4 md:pt-6 max-w-[1024px]'>
-          <p className='mb-4'>
+          <p className='mb-4 text-sm sm:text-base leading-6'>
             Somos un equipo conformado por la arquitecta Constanza Llorente y el artista visual Félix Llambias. Creamos
             y desarrollamos productos elaborados localmente para el hogar. Trabajamos con artesanos apasionados por el
             arte y la belleza para crear piezas únicas hechas por manos argentinas.
@@ -92,7 +92,7 @@ export default function AboutUs() {
                   Arquitecta
                 </Heading>
 
-                <p className='hidden sm:block text-left mx-4 max-w-[580px]'>
+                <p className='hidden sm:block text-left mx-4 max-w-[580px] text-sm sm:text-base leading-6'>
                   Después de haber vivido y trabajado cuatro años en Australia y un año en Brasil, pude encontrar mi
                   pasión por la naturaleza. Me gusta pensar cada espacio en relación al exterior y así aprovechar todo
                   lo que nos ofrece en los espacios interiores. Usar materiales nobles, crear espacios funcionales y lo
@@ -101,7 +101,7 @@ export default function AboutUs() {
               </div>
             </div>
 
-            <p className='sm:hidden text-left my-2'>
+            <p className='sm:hidden text-left my-2 text-sm sm:text-base leading-6'>
               Después de haber vivido y trabajado cuatro años en Australia y un año en Brasil, pude encontrar mi pasión
               por la naturaleza. Me gusta pensar cada espacio en relación al exterior y así aprovechar todo lo que nos
               ofrece en los espacios interiores. Usar materiales nobles, crear espacios funcionales y lo que encuentro
@@ -127,7 +127,7 @@ export default function AboutUs() {
                   Director Creativo
                 </Heading>
 
-                <p className='hidden sm:block text-right mx-4 max-w-[580px]'>
+                <p className='hidden sm:block text-right mx-4 max-w-[580px] text-sm sm:text-base leading-6'>
                   Mi interés por la calidez y el paso del tiempo son motivaciones para lograr una visión sensible y
                   natural. Formas, texturas, reflejos, contrastes y movimientos son mis inspiraciones para generar un
                   mundo de sensaciones en el observador. Un ojo agudizado en el detalle.
@@ -135,7 +135,7 @@ export default function AboutUs() {
               </div>
             </div>
 
-            <p className='sm:hidden text-right my-2'>
+            <p className='sm:hidden text-right my-2 text-sm sm:text-base leading-6'>
               Mi interés por la calidez y el paso del tiempo son motivaciones para lograr una visión sensible y natural.
               Formas, texturas, reflejos, contrastes y movimientos son mis inspiraciones para generar un mundo de
               sensaciones en el observador. Un ojo agudizado en el detalle.
