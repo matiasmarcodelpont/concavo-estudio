@@ -157,7 +157,7 @@ export default function AboutUs() {
               width={564}
               height={846}
               className='w-full aspect-[5/2] object-cover'
-              style={{objectPosition: '50% 62%'}}
+              style={{ objectPosition: '50% 62%' }}
             />
           </section>
 

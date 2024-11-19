@@ -32,7 +32,7 @@ exports[`Producto matches snapshot 1`] = `
         style="font-size: 0px;"
       />
       <p
-        class="font-editorial-new tracking-[0.01em] uppercase opacity-100 text-sm xs:text-base sm:text-lg md:text-xl mt-3 sm:mt-3 md:mt-5 mb-0 sm:mb-0 md:mb-0"
+        class="font-editorial-new tracking-[0.01em] font-light uppercase opacity-100 text-sm xs:text-base sm:text-lg md:text-xl mt-3 sm:mt-3 md:mt-5 mb-0 sm:mb-0 md:mb-0"
       >
         Piso simil Madera
       </p>
