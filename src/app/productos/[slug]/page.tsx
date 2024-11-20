@@ -26,7 +26,7 @@ export default function Producto({ params }: { params: { slug: string } }) {
     <main>
       <Heading className='text-center md:hidden'>{producto.name}</Heading>
 
-      <div className='mb-16 flex flex-wrap'>
+      <div className='mb-16 flex flex-wrap mx-auto'>
         <Carousel
           opts={{
             loop: true,
@@ -97,7 +97,7 @@ export default function Producto({ params }: { params: { slug: string } }) {
 
           {producto.link && (
             <Button asChild variant='outline' className='w-full mt-8'>
-              <a href={producto.link}>Ver en tienda</a>
+              <a href={producto.link} target="_blank">Ver en tienda</a>
             </Button>
           )}
 

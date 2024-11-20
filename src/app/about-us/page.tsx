@@ -61,11 +61,11 @@ export default function AboutUs() {
         alt='Creadores de Cóncavo'
         width={4427}
         height={2551}
-        className='w-full h-[90vw] max-h-[765px] object-cover sticky top-[72px]'
+        className='w-full h-[90vw] max-h-[765px] object-cover sticky top-[72px] mb-[1px]'
       />
 
       <div className='bg-bone relative'>
-        <div className='m-auto px-8 pt-4 md:pt-6 max-w-[1024px]'>
+        <div className='m-auto px-8 pt-12 sm:pt-16 max-w-[1024px]'>
           <p className='mb-4 text-sm sm:text-base leading-6'>
             Somos un equipo conformado por la arquitecta Constanza Llorente y el artista visual Félix Llambias. Creamos
             y desarrollamos productos elaborados localmente para el hogar. Trabajamos con artesanos apasionados por el
