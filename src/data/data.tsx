@@ -149,10 +149,10 @@ const data: DataSet = {
       name: 'INODORO DE COLGAR AP + WASHLET C5 ELONGATED ',
       description: (
         <>
-          Los Washlet de TOTO®️ son asientos con bidet electrónico incorporado, climatización del agua y de la
+          Los Washlet de TOTO son asientos con bidet electrónico incorporado, climatización del agua y de la
           tabla,secador automático y desodorizante.
           <br />
-          Cuentan con tecnología CEFIONTEC®️, cerámica ultra lisa que no deja lugar para residuos. TORNADO FLUSH®️, el
+          Cuentan con tecnología CEFIONTEC, cerámica ultra lisa que no deja lugar para residuos. TORNADO FLUSH, el
           sistema de descarga 360°, elimina por completo todos los desechos utilizando menos agua.
         </>
       ),
