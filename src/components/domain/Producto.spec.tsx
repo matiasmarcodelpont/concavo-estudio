@@ -10,6 +10,14 @@ const producto = {
   link: null,
 }
 
+const productoConcavo = {
+  slug: 'super-bacha',
+  name: 'Super bacha',
+  description: '',
+  link: null,
+  dimensions: 'AA X LL X HH',
+}
+
 describe('Producto', () => {
   it('matches snapshot', () => {
     const { container } = render(<Producto {...producto} />)
@@ -40,7 +48,7 @@ describe('Producto', () => {
   })
 
   it('should render the dimensions if the producto is from concavo', () => {
-    const component = render(<Producto {...producto} concavo />)
+    const component = render(<Producto {...productoConcavo} concavo />)
     const dimensions = component.getByRole('paragraph', { name: 'dimensions' })
 
     expect(dimensions).toBeInTheDocument()

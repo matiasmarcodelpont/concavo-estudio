@@ -20,7 +20,7 @@ export interface Producto {
   colaborador: Reference | null
 }
 
-export type ProductoConcavo = WithNullProp<Producto, 'colaborador' | 'link'>
+export type ProductoConcavo = WithNullProp<Producto, 'colaborador' | 'link'> & { dimensions: string }
 
 export function isProductoConcavo(producto: Producto): producto is ProductoConcavo {
   return producto.colaborador === null

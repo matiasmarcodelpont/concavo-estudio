@@ -1,6 +1,6 @@
 'use client'
 
-import { OmitReferences, Producto as ProductoType } from '@/data/types'
+import { OmitReferences, ProductoConcavo, Producto as ProductoType } from '@/data/types'
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -9,11 +9,16 @@ import { Waypoint } from 'react-waypoint'
 import { useState } from 'react'
 
 interface ProductoProps extends OmitReferences<ProductoType> {
-  concavo?: boolean
+  concavo?: true
   className?: string
 }
 
-export const Producto = ({ concavo = false, className, ...producto }: ProductoProps) => {
+interface ProductoConcavoProps extends OmitReferences<ProductoConcavo> {
+  concavo?: false
+  className?: string
+}
+
+export const Producto = ({ concavo = false, className, ...producto }: ProductoProps | ProductoConcavoProps) => {
   const [animate, setAnimate] = useState(false)
 
   return (
@@ -47,9 +52,9 @@ export const Producto = ({ concavo = false, className, ...producto }: ProductoPr
           >
             {producto.name}
           </Heading>
-          {concavo && (
+          {'dimensions' in producto && (
             <p className='text-xs text-center mt-0 leading-none' aria-label='dimensions'>
-              AAA x LLL x PPP
+              {producto.dimensions}
             </p>
           )}
         </div>

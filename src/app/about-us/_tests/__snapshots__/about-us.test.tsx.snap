@@ -17,7 +17,7 @@ exports[`About Us renders About Us unchanged 1`] = `
     </h1>
     <img
       alt="Creadores de Cóncavo"
-      class="w-full h-[90vw] max-h-[765px] object-cover sticky top-[72px]"
+      class="w-full h-[90vw] max-h-[765px] object-cover sticky top-[72px] mb-[1px]"
       data-nimg="1"
       decoding="async"
       height="2551"
@@ -31,7 +31,7 @@ exports[`About Us renders About Us unchanged 1`] = `
       class="bg-bone relative"
     >
       <div
-        class="m-auto px-8 pt-4 md:pt-6 max-w-[1024px]"
+        class="m-auto px-8 pt-12 sm:pt-16 max-w-[1024px]"
       >
         <p
           class="mb-4 text-sm sm:text-base leading-6"

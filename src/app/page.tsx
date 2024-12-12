@@ -9,6 +9,7 @@ import Link from 'next/link'
 
 export default function Home() {
   const productos = productosRepository.getProductosConcavo()
+  console.log('👽 ~ file: page.tsx:12 ~ Home ~ productos:', productos)
 
   return (
     <main className='text-center'>
@@ -59,11 +60,13 @@ export default function Home() {
         </Heading>
 
         <GridFluid aria-labelledby='productos-concavo'>
-          {productos.map((producto) => (
-            <li key={producto.slug}>
-              <Producto {...producto} concavo />
-            </li>
-          ))}
+          {productos.map((producto) => {
+            return (
+              <li key={producto.slug}>
+                <Producto {...producto} concavo />
+              </li>
+            )
+          })}
         </GridFluid>
       </section>
     </main>
