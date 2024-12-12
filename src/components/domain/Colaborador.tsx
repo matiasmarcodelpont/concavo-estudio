@@ -23,7 +23,7 @@ export const Colaborador = ({ slug, name, className }: ColaboradorProps) => {
       />
       <div
         className={cn(
-          'w-[200px] sm:w-[300px] h-[40px] m-auto relative mb-3 transition-all duration-1000',
+          'w-[200px] sm:w-[300px] h-[40px] m-auto relative transition-all duration-1000',
           animate ? 'opacity-100' : 'opacity-0',
           className,
         )}
