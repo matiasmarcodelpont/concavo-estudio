@@ -9,7 +9,6 @@ import Link from 'next/link'
 
 export default function Home() {
   const productos = productosRepository.getProductosConcavo()
-  console.log('👽 ~ file: page.tsx:12 ~ Home ~ productos:', productos)
 
   return (
     <main className='text-center'>
