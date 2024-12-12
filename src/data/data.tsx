@@ -104,8 +104,8 @@ const data: DataSet = {
       ],
     },
     {
-      slug: 'jardin',
-      name: 'Jardín',
+      slug: 'exterior',
+      name: 'Exterior',
       productos: [{ slug: 'travertino' }, { slug: 'teclas-de-luz' }],
       images: [
         { src: '0.jpeg', width: 1500, height: 2000, puntitos: [] },
