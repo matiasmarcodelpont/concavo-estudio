@@ -270,8 +270,16 @@ exports[`About Us renders About Us unchanged 1`] = `
                 >
                   Empresa Constructora
                 </p>
-                <p>
-                  Civil Construcción SRL
+                <p
+                  class="inline-flex flex-row flex-nowrap gap-1 [&_i]:not-italic [&_i]:text-nowrap"
+                >
+                  <i>
+                    Civil Construcción SRL
+                  </i>
+                   — 
+                  <i>
+                    11 5616-9553
+                  </i>
                 </p>
               </div>
             </div>
@@ -287,8 +295,16 @@ exports[`About Us renders About Us unchanged 1`] = `
                 >
                   Paisajismo
                 </p>
-                <p>
-                  Epifita Arquitectura & Paisaje
+                <p
+                  class="inline-flex flex-row flex-nowrap gap-1 [&_i]:not-italic [&_i]:text-nowrap"
+                >
+                  <i>
+                    Epifita Arquitectura & Paisaje
+                  </i>
+                   — 
+                  <i>
+                    11 5772-1878
+                  </i>
                 </p>
               </div>
             </div>
@@ -304,8 +320,16 @@ exports[`About Us renders About Us unchanged 1`] = `
                 >
                   Interiorismo
                 </p>
-                <p>
-                  Mercedes Navarro
+                <p
+                  class="inline-flex flex-row flex-nowrap gap-1 [&_i]:not-italic [&_i]:text-nowrap"
+                >
+                  <i>
+                    Mercedes Navarro
+                  </i>
+                   — 
+                  <i>
+                    11 5097-8911
+                  </i>
                 </p>
               </div>
             </div>
@@ -321,8 +345,16 @@ exports[`About Us renders About Us unchanged 1`] = `
                 >
                   Proyecto Lumínico
                 </p>
-                <p>
-                  Alejandra Rodriguez
+                <p
+                  class="inline-flex flex-row flex-nowrap gap-1 [&_i]:not-italic [&_i]:text-nowrap"
+                >
+                  <i>
+                    Alejandra Rodriguez
+                  </i>
+                   — 
+                  <i>
+                    11 4448-0564
+                  </i>
                 </p>
               </div>
             </div>
@@ -338,8 +370,16 @@ exports[`About Us renders About Us unchanged 1`] = `
                 >
                   Diseñadora
                 </p>
-                <p>
-                  Trinidad Azpiroz
+                <p
+                  class="inline-flex flex-row flex-nowrap gap-1 [&_i]:not-italic [&_i]:text-nowrap"
+                >
+                  <i>
+                    Trinidad Azpiroz
+                  </i>
+                   — 
+                  <i>
+                    11 6305-3928
+                  </i>
                 </p>
               </div>
             </div>
@@ -355,8 +395,16 @@ exports[`About Us renders About Us unchanged 1`] = `
                 >
                   Redes
                 </p>
-                <p>
-                  Lucía de la Torre
+                <p
+                  class="inline-flex flex-row flex-nowrap gap-1 [&_i]:not-italic [&_i]:text-nowrap"
+                >
+                  <i>
+                    Lucía de la Torre
+                  </i>
+                   — 
+                  <i>
+                    11 6787-6374
+                  </i>
                 </p>
               </div>
             </div>
@@ -372,8 +420,41 @@ exports[`About Us renders About Us unchanged 1`] = `
                 >
                   Web
                 </p>
-                <p>
-                  Facundo y Matías Marcó del Pont
+                <p
+                  class="inline-flex flex-row flex-nowrap gap-1 [&_i]:not-italic [&_i]:text-nowrap"
+                >
+                  <i>
+                    Facundo Marcó del Pont
+                  </i>
+                   — 
+                  <i>
+                    11 3178-7583
+                  </i>
+                </p>
+              </div>
+            </div>
+            <div>
+              <span
+                style="font-size: 0px;"
+              />
+              <div
+                class="opacity-0"
+              >
+                <p
+                  class="font-editorial-new uppercase font-extralight leading-4 text-lg"
+                >
+                  Web
+                </p>
+                <p
+                  class="inline-flex flex-row flex-nowrap gap-1 [&_i]:not-italic [&_i]:text-nowrap"
+                >
+                  <i>
+                    Matías Marcó del Pont
+                  </i>
+                   — 
+                  <i>
+                    11 6295-6880
+                  </i>
                 </p>
               </div>
             </div>
@@ -389,8 +470,16 @@ exports[`About Us renders About Us unchanged 1`] = `
                 >
                   Marketing y PR
                 </p>
-                <p>
-                  María E. Magnolle
+                <p
+                  class="inline-flex flex-row flex-nowrap gap-1 [&_i]:not-italic [&_i]:text-nowrap"
+                >
+                  <i>
+                    María E. Magnolle
+                  </i>
+                   — 
+                  <i>
+                    11 6647-0364
+                  </i>
                 </p>
               </div>
             </div>
@@ -450,27 +539,18 @@ exports[`About Us renders About Us unchanged 1`] = `
                     <p
                       class="font-editorial-new uppercase font-extralight leading-4 text-lg"
                     >
-                      Proyecto Lumínico
-                    </p>
-                    <p>
-                      Alejandra Rodriguez
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <span
-                    style="font-size: 0px;"
-                  />
-                  <div
-                    class="opacity-0"
-                  >
-                    <p
-                      class="font-editorial-new uppercase font-extralight leading-4 text-lg"
-                    >
                       Diseñadora
                     </p>
-                    <p>
-                      Trinidad Azpiroz
+                    <p
+                      class="inline-flex flex-nowrap gap-1 [&_i]:not-italic [&_i]:text-nowrap flex-row-reverse"
+                    >
+                      <i>
+                        Trinidad Azpiroz
+                      </i>
+                       — 
+                      <i>
+                        11 6305-3928
+                      </i>
                     </p>
                   </div>
                 </div>
@@ -486,8 +566,16 @@ exports[`About Us renders About Us unchanged 1`] = `
                     >
                       Redes
                     </p>
-                    <p>
-                      Lucía de la Torre
+                    <p
+                      class="inline-flex flex-nowrap gap-1 [&_i]:not-italic [&_i]:text-nowrap flex-row-reverse"
+                    >
+                      <i>
+                        Lucía de la Torre
+                      </i>
+                       — 
+                      <i>
+                        11 6787-6374
+                      </i>
                     </p>
                   </div>
                 </div>
@@ -503,8 +591,41 @@ exports[`About Us renders About Us unchanged 1`] = `
                     >
                       Web
                     </p>
-                    <p>
-                      Facundo y Matías Marcó del Pont
+                    <p
+                      class="inline-flex flex-nowrap gap-1 [&_i]:not-italic [&_i]:text-nowrap flex-row-reverse"
+                    >
+                      <i>
+                        Facundo Marcó del Pont
+                      </i>
+                       — 
+                      <i>
+                        11 3178-7583
+                      </i>
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <span
+                    style="font-size: 0px;"
+                  />
+                  <div
+                    class="opacity-0"
+                  >
+                    <p
+                      class="font-editorial-new uppercase font-extralight leading-4 text-lg"
+                    >
+                      Web
+                    </p>
+                    <p
+                      class="inline-flex flex-nowrap gap-1 [&_i]:not-italic [&_i]:text-nowrap flex-row-reverse"
+                    >
+                      <i>
+                        Matías Marcó del Pont
+                      </i>
+                       — 
+                      <i>
+                        11 6295-6880
+                      </i>
                     </p>
                   </div>
                 </div>
@@ -520,15 +641,23 @@ exports[`About Us renders About Us unchanged 1`] = `
                     >
                       Marketing y PR
                     </p>
-                    <p>
-                      María E. Magnolle
+                    <p
+                      class="inline-flex flex-nowrap gap-1 [&_i]:not-italic [&_i]:text-nowrap flex-row-reverse"
+                    >
+                      <i>
+                        María E. Magnolle
+                      </i>
+                       — 
+                      <i>
+                        11 6647-0364
+                      </i>
                     </p>
                   </div>
                 </div>
               </div>
             </div>
             <div
-              class="w-1/2 pl-2 md:pl-3  text-start flex flex-col"
+              class="w-1/2 pl-2 md:pl-3 text-start flex flex-col"
             >
               <div
                 class="flex"
@@ -551,8 +680,16 @@ exports[`About Us renders About Us unchanged 1`] = `
                         >
                           Empresa Constructora
                         </p>
-                        <p>
-                          Civil Construcción SRL
+                        <p
+                          class="inline-flex flex-row flex-nowrap gap-1 [&_i]:not-italic [&_i]:text-nowrap"
+                        >
+                          <i>
+                            Civil Construcción SRL
+                          </i>
+                           — 
+                          <i>
+                            11 5616-9553
+                          </i>
                         </p>
                       </div>
                     </div>
@@ -568,8 +705,16 @@ exports[`About Us renders About Us unchanged 1`] = `
                         >
                           Paisajismo
                         </p>
-                        <p>
-                          Epifita Arquitectura & Paisaje
+                        <p
+                          class="inline-flex flex-row flex-nowrap gap-1 [&_i]:not-italic [&_i]:text-nowrap"
+                        >
+                          <i>
+                            Epifita Arquitectura & Paisaje
+                          </i>
+                           — 
+                          <i>
+                            11 5772-1878
+                          </i>
                         </p>
                       </div>
                     </div>
@@ -585,8 +730,41 @@ exports[`About Us renders About Us unchanged 1`] = `
                         >
                           Interiorismo
                         </p>
-                        <p>
-                          Mercedes Navarro
+                        <p
+                          class="inline-flex flex-row flex-nowrap gap-1 [&_i]:not-italic [&_i]:text-nowrap"
+                        >
+                          <i>
+                            Mercedes Navarro
+                          </i>
+                           — 
+                          <i>
+                            11 5097-8911
+                          </i>
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        style="font-size: 0px;"
+                      />
+                      <div
+                        class="opacity-0"
+                      >
+                        <p
+                          class="font-editorial-new uppercase font-extralight leading-4 text-lg"
+                        >
+                          Proyecto Lumínico
+                        </p>
+                        <p
+                          class="inline-flex flex-row flex-nowrap gap-1 [&_i]:not-italic [&_i]:text-nowrap"
+                        >
+                          <i>
+                            Alejandra Rodriguez
+                          </i>
+                           — 
+                          <i>
+                            11 4448-0564
+                          </i>
                         </p>
                       </div>
                     </div>
