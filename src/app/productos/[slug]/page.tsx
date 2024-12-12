@@ -97,7 +97,9 @@ export default function Producto({ params }: { params: { slug: string } }) {
 
           {producto.link && (
             <Button asChild variant='outline' className='w-full mt-8'>
-              <a href={producto.link} target="_blank">Ver en tienda</a>
+              <a href={producto.link} target='_blank'>
+                Ver en tienda
+              </a>
             </Button>
           )}
 
