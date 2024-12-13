@@ -59,11 +59,13 @@ export default function Home() {
         </Heading>
 
         <GridFluid aria-labelledby='productos-concavo'>
-          {productos.map((producto) => (
-            <li key={producto.slug}>
-              <Producto {...producto} concavo />
-            </li>
-          ))}
+          {productos.map((producto) => {
+            return (
+              <li key={producto.slug}>
+                <Producto {...producto} concavo />
+              </li>
+            )
+          })}
         </GridFluid>
       </section>
     </main>

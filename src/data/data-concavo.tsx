@@ -55,6 +55,7 @@ export const productosConcavo = [
     ),
     link: null,
     colaborador: null,
+    dimensions: '620 x 320 x 110 mm (h)',
   },
   {
     slug: 'bacha-testa',
@@ -63,7 +64,7 @@ export const productosConcavo = [
       <>
         Bacha de apoyo | exenta
         <br />
-        Medidas: 620 x 320 x 110 mm (h)
+        Medidas: 450 x 320 x 110 mm (h)
         <br />
         Material: concreto
         <br />
@@ -81,6 +82,7 @@ export const productosConcavo = [
     ),
     link: null,
     colaborador: null,
+    dimensions: '450 x 320 x 110 mm (h)',
   },
   {
     slug: 'bacha-costa',
@@ -89,7 +91,7 @@ export const productosConcavo = [
       <>
         Bacha de apoyo | exenta
         <br />
-        Medidas: diametro 360 x 110 mm (h)
+        Medidas: 360 x 110 mm (h)
         <br />
         Material: concreto
         <br />
@@ -107,6 +109,7 @@ export const productosConcavo = [
     ),
     link: null,
     colaborador: null,
+    dimensions: '360 x 110 mm (h)',
   },
   {
     slug: 'bacha-dieste',
@@ -133,6 +136,7 @@ export const productosConcavo = [
     ),
     link: null,
     colaborador: null,
+    dimensions: 'AAA x LLL x PPP',
   },
   {
     slug: 'bañadera-kahlo',
@@ -159,6 +163,7 @@ export const productosConcavo = [
     ),
     link: null,
     colaborador: null,
+    dimensions: '1750 x 860 x 470 mm (h)',
   },
   {
     slug: 'bañadera-testa',
@@ -185,6 +190,7 @@ export const productosConcavo = [
     ),
     link: null,
     colaborador: null,
+    dimensions: '1570 x 780 x 440 mm (h)',
   },
   {
     slug: 'lampara-dieste',
@@ -225,6 +231,7 @@ export const productosConcavo = [
     ),
     link: null,
     colaborador: null,
+    dimensions: 'AAA x LLL x PPP',
   },
   {
     slug: 'aplique-botero',
@@ -255,5 +262,6 @@ export const productosConcavo = [
     ),
     link: null,
     colaborador: null,
+    dimensions: 'AAA x LLL x PPP',
   },
 ]

@@ -6,7 +6,7 @@ exports[`Colaborador matches snapshot 1`] = `
     style="font-size: 0px;"
   />
   <div
-    class="w-[200px] sm:w-[300px] h-[40px] m-auto relative mb-3 transition-all duration-1000 opacity-0"
+    class="w-[200px] sm:w-[300px] h-[40px] m-auto relative transition-all duration-1000 opacity-0"
   >
     <img
       alt="Elegance"

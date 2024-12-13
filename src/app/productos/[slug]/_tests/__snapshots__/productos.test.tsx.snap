@@ -12,7 +12,7 @@ exports[`Producto renders producto page unchanged 1`] = `
       Lámpara de diseño con detalles de Hierro
     </h1>
     <div
-      class="mb-16 flex flex-wrap"
+      class="mb-16 flex flex-wrap mx-auto"
     >
       <div
         aria-roledescription="carousel"

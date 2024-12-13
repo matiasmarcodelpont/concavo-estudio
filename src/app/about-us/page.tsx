@@ -5,47 +5,62 @@ import Image from 'next/image'
 import IsologoConcavo from '@/components/icons/IsologoConcavo'
 import { Waypoint } from 'react-waypoint'
 import { useState } from 'react'
+import { cn } from '@/lib/utils'
 
 const EQUIPO = [
   {
     slug: 'empresa-constructora',
     position: 'Empresa Constructora',
     name: 'Civil Construcción SRL',
+    phone: '11 5616-9553',
   },
   {
     slug: 'paisajismo',
     position: 'Paisajismo',
     name: 'Epifita Arquitectura & Paisaje',
+    phone: '11 5772-1878',
   },
   {
     slug: 'interiorismo',
     position: 'Interiorismo',
     name: 'Mercedes Navarro',
+    phone: '11 5097-8911',
   },
   {
     slug: 'proyecto-luminico',
     position: 'Proyecto Lumínico',
     name: 'Alejandra Rodriguez',
+    phone: '11 4448-0564',
   },
   {
     slug: 'diseñadora',
     position: 'Diseñadora',
     name: 'Trinidad Azpiroz',
+    phone: '11 6305-3928',
   },
   {
     slug: 'redes',
     position: 'Redes',
     name: 'Lucía de la Torre',
+    phone: '11 6787-6374',
   },
   {
     slug: 'web',
     position: 'Web',
-    name: 'Facundo y Matías Marcó del Pont',
+    name: 'Facundo Marcó del Pont',
+    phone: '11 3178-7583',
+  },
+  {
+    slug: 'web',
+    position: 'Web',
+    name: 'Matías Marcó del Pont',
+    phone: '11 6295-6880',
   },
   {
     slug: 'marketing-pr',
     position: 'Marketing y PR',
     name: 'María E. Magnolle',
+    phone: '11 6647-0364',
   },
 ]
 
@@ -146,8 +161,8 @@ export default function AboutUs() {
             <Heading className='italic text-3xl my-8'>Equipo</Heading>
 
             <div className='space-y-6 mb-6'>
-              {EQUIPO.map(({ slug, position, name }) => (
-                <EquipoMember key={slug} position={position} name={name} />
+              {EQUIPO.map(({ slug, position, name, phone }) => (
+                <EquipoMember key={slug} position={position} name={name} phone={phone} />
               ))}
             </div>
 
@@ -177,18 +192,18 @@ export default function AboutUs() {
                 />
 
                 <div className='space-y-6 mt-6'>
-                  {EQUIPO.slice(3).map(({ slug, position, name }) => (
-                    <EquipoMember key={slug} position={position} name={name} />
+                  {EQUIPO.slice(4).map(({ slug, position, name, phone }) => (
+                    <EquipoMember key={slug} position={position} name={name} phone={phone} reverse />
                   ))}
                 </div>
               </div>
 
-              <div className='w-1/2 pl-2 md:pl-3  text-start flex flex-col'>
+              <div className='w-1/2 pl-2 md:pl-3 text-start flex flex-col'>
                 <div className='flex'>
                   <div className='flex-grow'>
                     <div className='space-y-6 mb-3'>
-                      {EQUIPO.slice(0, 3).map(({ slug, position, name }) => (
-                        <EquipoMember key={slug} position={position} name={name} size='big' />
+                      {EQUIPO.slice(0, 4).map(({ slug, position, name, phone }) => (
+                        <EquipoMember key={slug} position={position} name={name} phone={phone} />
                       ))}
                     </div>
                   </div>
@@ -213,12 +228,13 @@ export default function AboutUs() {
 }
 
 interface EquipoMemberProps {
-  size?: 'small' | 'big'
   position: string
   name: string
+  phone: string
+  reverse?: boolean
 }
 
-const EquipoMember = ({ position, name }: EquipoMemberProps) => {
+const EquipoMember = ({ position, name, phone, reverse }: EquipoMemberProps) => {
   const [animate, setAnimate] = useState(false)
 
   return (
@@ -231,7 +247,14 @@ const EquipoMember = ({ position, name }: EquipoMemberProps) => {
 
       <div className={animate ? 'animate-slide-up' : 'opacity-0'}>
         <p className='font-editorial-new uppercase font-extralight leading-4 text-lg'>{position}</p>
-        <p>{name}</p>
+        <p
+          className={cn(
+            'inline-flex flex-row flex-nowrap gap-1 [&_i]:not-italic [&_i]:text-nowrap',
+            reverse ? 'flex-row-reverse' : '',
+          )}
+        >
+          <i>{name}</i> — <i>{phone}</i>
+        </p>
       </div>
     </div>
   )

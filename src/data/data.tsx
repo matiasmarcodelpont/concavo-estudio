@@ -104,8 +104,8 @@ const data: DataSet = {
       ],
     },
     {
-      slug: 'jardin',
-      name: 'Jardín',
+      slug: 'exterior',
+      name: 'Exterior',
       productos: [{ slug: 'travertino' }, { slug: 'teclas-de-luz' }],
       images: [
         { src: '0.jpeg', width: 1500, height: 2000, puntitos: [] },
@@ -149,10 +149,10 @@ const data: DataSet = {
       name: 'INODORO DE COLGAR AP + WASHLET C5 ELONGATED ',
       description: (
         <>
-          Los Washlet de TOTO®️ son asientos con bidet electrónico incorporado, climatización del agua y de la
+          Los Washlet de TOTO son asientos con bidet electrónico incorporado, climatización del agua y de la
           tabla,secador automático y desodorizante.
           <br />
-          Cuentan con tecnología CEFIONTEC®️, cerámica ultra lisa que no deja lugar para residuos. TORNADO FLUSH®️, el
+          Cuentan con tecnología CEFIONTEC, cerámica ultra lisa que no deja lugar para residuos. TORNADO FLUSH, el
           sistema de descarga 360°, elimina por completo todos los desechos utilizando menos agua.
         </>
       ),
@@ -351,6 +351,52 @@ const data: DataSet = {
       whatsapp: '11 3216-7203',
       instagram: '@diclimatizacion',
       reference: 'Luciano Marchi',
+    },
+    {
+      slug: 'faplac',
+      name: 'Faplac',
+      level: 'black',
+      instagram: '@faplacmelamina',
+      email: 'marketing.faplac@arauco.com',
+    },
+    {
+      slug: 'cantersfont',
+      name: 'Cantersfont',
+      level: 'black',
+      whatsapp: '11 4091-7962',
+      instagram: '@cantersfont.oficial',
+      email: 'cantersfont@gmail.com',
+    },
+    {
+      slug: 'praga',
+      name: 'Praga',
+      level: 'black',
+      reference: 'Solange Goldschmidt',
+      whatsapp: '11 5415-1203',
+      instagram: '@pragapremiumstore',
+    },
+    {
+      slug: 'nodor',
+      name: 'Nodor',
+      level: 'black',
+      reference: 'Solange Goldschmidt',
+      whatsapp: '11 5415-1203',
+      instagram: '@pragapremiumstore',
+    },
+    {
+      slug: 'frida',
+      name: 'Frida',
+      level: 'silver',
+      reference: 'Rodrigo Bidart',
+      whatsapp: '11 3668-8022',
+    },
+    {
+      slug: 'occhipinti',
+      name: 'Occhipinti',
+      level: 'black',
+      instagram: '@occhipinti_ok',
+      whatsapp: '11 6818-7917',
+      website: 'https://www.occhipinti.com.ar',
     },
   ],
 }
